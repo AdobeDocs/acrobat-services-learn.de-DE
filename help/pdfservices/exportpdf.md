@@ -7,7 +7,7 @@ level: Beginner
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: aa5c88fb5725a3d1c50d5c6b73fce7add629b08d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%
@@ -35,7 +35,9 @@ In diesem Tutorial lernen Sie die Grundlagen zur Ausführung Ihres ersten PDF Se
 Verwenden Sie die folgenden Tutorials zu ersten Schritten, um Ihre API-Zugangsberechtigungen zu erstellen, Beispieldateien herunterzuladen und Ihre Umgebung einzurichten.
 
 [Erste Schritte mit PDF Services API und Java](gettingstartedjava.md)
+
 [Erste Schritte mit PDF Services API und .NET](gettingstartednet.md)
+
 [Erste Schritte mit PDF Services API und Node.js](createpdffromhtml.md)
 
 ## Schritt 2: PDF-Export-Vorgang mit den Beispieldateien ausführen

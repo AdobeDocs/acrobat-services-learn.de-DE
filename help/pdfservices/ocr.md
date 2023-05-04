@@ -8,7 +8,7 @@ thumbnail: KT-6677.jpg
 kt: 6677
 keywords: Held
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: c1937561d607f1eabbc1921d6090858abb13f0d3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 4%
@@ -30,7 +30,9 @@ In diesem Tutorial lernen Sie die Grundlagen zur Ausführung Ihres ersten PDF Se
 Verwenden Sie die folgenden Tutorials zu ersten Schritten, um Ihre API-Zugangsberechtigungen zu erstellen, Beispieldateien herunterzuladen und Ihre Umgebung einzurichten.
 
 [Erste Schritte mit PDF Services API und Java](gettingstartedjava.md)
+
 [Erste Schritte mit PDF Services API und .NET](gettingstartednet.md)
+
 [Erste Schritte mit PDF Services API und Node.js](createpdffromhtml.md)
 
 ## Führen Sie das in den Beispieldateien bereitgestellte OCR-Beispiel aus
