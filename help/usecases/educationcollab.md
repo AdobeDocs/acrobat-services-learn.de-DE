@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8091.jpg
-kt: 8091
+jira: KT-8091
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Informationen dazu, wie diese Methode aufgerufen wird, finden Sie unter [Projekt
 
 Die Benutzeroberfläche verwendet die PDF Embed-API zum Rendern von PDF in einem Webbrowser. Diese API kann kostenlos verwendet werden.
 
-Die PDF Embed-API verwendet andere Anmeldedaten als die PDF Services-API. Sie müssen daher [Anmeldeinformationen erstellen](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+Die PDF Embed-API verwendet andere Anmeldedaten als die PDF Services-API. Sie müssen also [Anmeldeinformationen erstellen](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 bevor du es benutzen kannst. Dann können Sie PDF Embed völlig kostenlos verwenden.
 
 Stellen Sie sicher, dass Sie die richtige Website-URL in das Token eingeben. Andernfalls können Sie die PDF möglicherweise nicht mit dem Token rendern.

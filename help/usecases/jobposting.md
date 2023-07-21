@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
-kt: 8092
+jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -199,7 +199,7 @@ Um die PDF in der Datenbanktabelle zu speichern, ändern Sie die Upload-Funktion
   result.writeToStream(writableStream);
 ```
 
-Erstellen Sie zum Schreiben des Inhalts einen WritableStreamBuffer. Mit dem finish-Ereignis ist es an der Zeit, die SQL-Abfrage auszuführen. Das node-postgres-Paket konvertiert den Buffer-Parameter automatisch in das BYTEA-Format. Die Abfrage leitet den Benutzer an /job/{id} um, einen Endpunkt, der später erstellt wird.
+Erstellen Sie zum Schreiben des Inhalts einen WritableStreamBuffer. Mit dem finish-Ereignis ist es an der Zeit, die SQL-Abfrage auszuführen. Das node-postgres-Paket konvertiert den Buffer-Parameter automatisch in das BYTEA-Format. Die Abfrage leitet den Benutzer zu /job/ um.{id}, einen Endpunkt, der später erstellt wird.
 
 Für die PDF Embed-API benötigen Sie außerdem einen Endpunkt, der nur den PDF-Inhalt zurückgibt:
 
@@ -220,7 +220,7 @@ Für die PDF Embed-API benötigen Sie außerdem einen Endpunkt, der nur den PDF-
 
 ## Einbetten der PDF
 
-Erstellen Sie jetzt den Endpunkt /job/{id}, der eine Vorlage rendert, die den Namen der angeforderten Stellenausschreibung und eine eingebettete PDF enthält.
+Erstellen Sie nun die Datei /job/{id} -Endpunkt, der eine Vorlage mit dem Namen der angeforderten Stellenausschreibung und einer eingebetteten PDF rendert.
 
 ```
 router.get('/job/:id', async function(req, res, next) {

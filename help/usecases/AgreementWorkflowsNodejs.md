@@ -5,10 +5,10 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-7473.jpg
-kt: 7473
+jira: KT-7473
 keywords: Empfohlen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 1%
@@ -190,7 +190,7 @@ Möglicherweise fällt Ihnen ein allgemeines Muster mit dem Code auf:
 
 Der Code erstellt ein Anmeldeinformationsobjekt und einen Ausführungskontext, initialisiert einen Vorgang und führt dann den Vorgang mit dem Ausführungskontext aus. Sie können dieses Muster im gesamten Beispielcode sehen.
 
-Durch einige Ergänzungen der Upload-Funktion, die diese Funktion aufruft, werden die vom Anwender hochgeladenen Word-Dokumente nun automatisch in das PDF-Format konvertiert.
+Durch einige Ergänzungen der Upload-Funktion, die diese Funktion aufruft, werden die vom Benutzer hochgeladenen Word-Dokumente nun automatisch in das PDF-Format konvertiert.
 
 Der folgende Code erstellt den Zielpfad für die konvertierte PDF und initiiert die Konvertierung:
 

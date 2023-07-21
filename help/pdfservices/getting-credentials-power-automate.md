@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-10382.jpg
-kt: 10382
+jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 2%
@@ -29,6 +29,7 @@ Bestehende Benutzer von Microsoft Power Automate können [Testanmeldeinformation
 
 >[!IMPORTANT]
 > Wenn Sie sich für eine Testversion anmelden, müssen Sie eine Adobe ID und keine Enterprise ID verwenden. Wenn Sie aktuell kein Abonnent der Adobe PDF Services-API sind und versuchen, sich mit Ihrer Enterprise ID anzumelden, wird möglicherweise ein Berechtigungsfehler angezeigt, da Ihr Unternehmen Sie nicht zur Verwendung der Adobe PDF Services-API berechtigt hat. Aus diesem Grund wird empfohlen, eine persönliche Adobe ID zu verwenden, die kostenlos ist.
+>
 
 1. Nachdem Sie sich angemeldet haben, werden Sie aufgefordert, einen Namen für Ihre neuen Anmeldeinformationen auszuwählen. Geben Sie Ihr *Berechtigungsname*.
 1. Aktivieren Sie das Kontrollkästchen, um den Entwicklerbedingungen zuzustimmen.
