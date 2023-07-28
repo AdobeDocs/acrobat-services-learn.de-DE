@@ -4,10 +4,11 @@ description: Übersichtsseite für Adobe PDF Services-API-Tutorials
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: PDF Services API
 thumbnail: KT-8116.jpg
 jira: KT-8116
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -22,10 +23,10 @@ ht-degree: 0%
 <tr>
  <td>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html">
-      <img alt="Einführung in PDF Services API" src="assets/introduction_1280.png" />
+      <img alt="Einführung in die PDF Services API" src="assets/introduction_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Einführung in PDF Services API</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Einführung in die PDF Services API</strong></a>
     </div>
     <em>Die PDF Services API von Adobe ermöglicht Entwicklern das Erstellen, Kombinieren, Exportieren und Extrahieren von Daten aus PDF über leistungsstarke und flexible Cloud-basierte APIs.</em>
     <br>
@@ -37,7 +38,7 @@ ht-degree: 0%
     <div>
    <a href="getting-credentials-power-automate.md"><strong>Abrufen von Anmeldedaten für [!DNL Microsoft Power Automate]</strong></a>
     </div>
-    <em>Hier erfahren Sie, wie Sie Anmeldeinformationen abrufen, um mit der Verwendung oder Testversion zu beginnen [!DNL Adobe PDF Services]</em>
+    <em>Hier erfahren Sie, wie Sie Anmeldeinformationen abrufen, um mit der Verwendung oder Testversion zu beginnen. [!DNL Adobe PDF Services]</em>
     <br>
   </td>
   <td>
@@ -52,12 +53,12 @@ ht-degree: 0%
   </td>
   <td>
    <a href="createpdffromhtml.md">
-      <img alt="Erstellen Sie mit der PDF Services API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office" src="assets/PDFServices_GettingStartedNode_thumb.jpg" />
+      <img alt="Erstellen Sie mit der PDF Services-API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office" src="assets/PDFServices_GettingStartedNode_thumb.jpg" />
    </a>
     <div>
-   <a href="createpdffromhtml.md"><strong>Erstellen einer PDF von HTML oder [!DNL MS Office] in wenigen Minuten mit PDF Services API und Node.js</strong></a>
+   <a href="createpdffromhtml.md"><strong>Erstellen Sie eine PDF von HTML oder [!DNL MS Office] in wenigen Minuten mit PDF Services API und Node.js</strong></a>
     </div>
-    <em>[!DNL Adobe PDF Services API] die Entwicklern freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services bietet, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</em>
+    <em>[!DNL Adobe PDF Services API] die Entwicklern freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services bietet, um die Anforderungen komplizierter Business-Workflows zu erfüllen</em>
     <br>
   </td>
 </tr>
@@ -67,7 +68,7 @@ ht-degree: 0%
       <img alt="Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr" src="assets/PDFServices_ExportPDF_thumb.jpg" />
    </a>
     <div>
-   <a href="exportpdf.md"><strong>Nutzung [!DNL PDF Services API] PDF exportieren nach [!DNL Word], [!DNL PowerPoint]und mehr</strong></a>
+   <a href="exportpdf.md"><strong>Hebelwirkung [!DNL PDF Services API] PDF exportieren nach [!DNL Word], [!DNL PowerPoint]und mehr</strong></a>
     </div>
     <em>Erfahren Sie, wie Sie die [!DNL PDF Services API] Exportvorgang mithilfe von Beispieldateien für die Sprachen Node.js, Java und .Net</em>
     <br>
@@ -99,7 +100,7 @@ ht-degree: 0%
     <div>
    <a href="gettingstartednet.md"><strong>Erste Schritte mit [!DNL Adobe PDF Services API] und .NET</strong></a>
     </div>
-    <em>[!DNL Adobe PDF Services API] die Entwicklern freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services bietet, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</em>
+    <em>[!DNL Adobe PDF Services API] die Entwicklern freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services bietet, um die Anforderungen komplizierter Business-Workflows zu erfüllen</em>
     <br>
   </td>
 </tr>

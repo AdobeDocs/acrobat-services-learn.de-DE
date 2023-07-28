@@ -5,9 +5,10 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
+feature: Use Cases
 jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -24,15 +25,15 @@ Stellen Sie sich folgendes Szenario vor: Sie haben eine Website, auf der Arbeitg
 
 ## Lernziel.
 
-Dieses praktische Tutorial führt durch ein Beispiel in Node.js, in dem [!DNL Adobe Acrobat Services] und ihre [SDK &quot;Node.js&quot;](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) , um diese Funktionen einer Stellenausschreibung hinzuzufügen. So entsteht eine Website, die einfacher zu nutzen ist und für Arbeitgeber und Arbeitssuchende gleichermaßen attraktiver ist. Hier ist die [vollständig](https://github.com/contentlab-io/adobe_job_posting) [Projektschlüssel](https://github.com/contentlab-io/adobe_job_posting), falls Sie die Schritte beim Lesen nachvollziehen möchten.
+Dieses praktische Tutorial führt durch ein Beispiel in Node.js, in dem [!DNL Adobe Acrobat Services] und ihre [SDK Node.js](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) , um diese Funktionen einer Stellenausschreibung hinzuzufügen. Dadurch wird eine Website geschaffen, die einfacher zu nutzen ist und für Arbeitgeber und Arbeitssuchende gleichermaßen attraktiver ist. Hier ist die [vollständig](https://github.com/contentlab-io/adobe_job_posting) [Projektschlüssel](https://github.com/contentlab-io/adobe_job_posting), falls Sie die Schritte beim Lesen nachvollziehen möchten.
 
-Richten Sie zunächst eine einfache Express-basierte Web-Anwendung Node.js ein. [Express](https://expressjs.com/) ist ein minimalistisches Framework für Web-Anwendungen, das Funktionen wie Weiterleitung und Vorlage bietet. Der Code für die Anwendung finden Sie unter [GitHub](https://github.com/contentlab-io/adobe_job_posting). Installieren Sie außerdem die [PostgreSQL-Datenbank](https://www.postgresql.org/) und richten Sie es zum Speichern der PDF ein.
+Richten Sie zunächst eine einfache Express-basierte Web-Anwendung Node.js ein. [Express](https://expressjs.com/) ist ein minimalistisches Framework für Web-Anwendungen, das Funktionen wie Weiterleitung und Vorlage bietet. Der Code für die Anwendung finden Sie unter [GitHub](https://github.com/contentlab-io/adobe_job_posting). Installieren Sie außerdem die [PostgreSQL-Datenbank](https://www.postgresql.org/) und richten Sie es so ein, dass es die PDF speichert.
 
-## relevant [!DNL Acrobat Services] APIs
+## Relevant [!DNL Acrobat Services] API
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 ## Erstellen von Adobe API-Zugangsberechtigungen
 
@@ -46,7 +47,7 @@ Sie können &quot;localhost&quot; nicht als Domäne verwenden. Geben Sie eine Do
 
 ## Hinzufügen eines Upload-Formulars und eines Handlers
 
-Mit einer funktionierenden Express-Anwendung und API-Anmeldedaten benötigen Sie außerdem ein Formular, mit dem Benutzer ihre Dokumente auf die Website hochladen können. Bearbeiten Sie dazu die Vorlage index.jade.
+Mit einer funktionierenden Express-Anwendung und API-Zugangsberechtigungen benötigen Sie außerdem ein Formular, mit dem Benutzer ihre Dokumente auf die Website hochladen können. Bearbeiten Sie dazu die Vorlage index.jade.
 
 Erstellen Sie ein Eingabefeld für den Namen der hochgeladenen Stellenausschreibung und für ein Dokument, das weitere Informationen enthält.
 
@@ -70,7 +71,7 @@ block content
     input(type="submit", value="Submit job posting")
 ```
 
-Als Nächstes fügen Sie der POST /upload einen Handler für die Aktionsanforderung hinzu. Fügen Sie dann eine Route für /upload zur Datei routes/index.js hinzu. Sie können eine neue Datei für diese Route erstellen, aber Sie müssen die Datei app.js aktualisieren, damit sie der neuen Datei entspricht. Innerhalb dieses Routenhandlers können Sie auf den angegebenen Namen und die hochgeladene Datei zugreifen.
+Als Nächstes fügen Sie der POST &quot;/upload&quot; einen Handler für die Aktionsanforderung hinzu. Fügen Sie dann eine Route für /upload zur Datei routes/index.js hinzu. Sie können eine neue Datei für diese Route erstellen, aber Sie müssen die Datei app.js aktualisieren, damit sie der neuen Datei entspricht. Innerhalb dieses Routenhandlers können Sie auf den angegebenen Namen und die hochgeladene Datei zugreifen.
 
 ```
 router.post('/upload', async function (req, res, next) {
@@ -85,7 +86,7 @@ Die Funktion ist asynchron, sodass Sie das await-Schlüsselwort in der Funktion 
 
 ![Screenshot der Website zur Stellenausschreibung](assets/jobs_1.png)
 
-## Verwenden der PDF Services API
+## Verwenden der PDF Services-API
 
 Bevor Sie die PDF Services API verwenden, müssen Sie die folgenden Importe oben in der Routendatei hinzufügen:
 
@@ -154,17 +155,17 @@ Verwenden Sie jetzt die optische Zeichenerkennung (OCR), um Bilder in Text zu ko
 
 Sie müssen diesen Vorgang nur einmal durchführen, da das Ergebnis ein FileRef ist, den der Code an setInput übergeben kann.
 
-Es gibt eine bessere Alternative als die Datei auf einer Festplatte zu speichern und eine übervereinfachte HTTP-Antwort zurückzugeben. Speichern Sie die PDF stattdessen in einer Datenbank und zeigen Sie eine Webseite an, auf der die PDF mithilfe der kostenlosen PDF Embed-API von Adobe eingebettet wird. Auf diese Weise ist die Stellenausschreibung oder Broschüre des Arbeitgebers auf der Website für Arbeitssuchende sichtbar, um sie zusammen mit Firmenlogos und anderen Gestaltungselementen zu finden und anzuzeigen.
+Es gibt eine bessere Alternative, als die Datei auf einer Festplatte zu speichern und eine übervereinfachte HTTP-Antwort zurückzugeben. Speichern Sie die PDF stattdessen in einer Datenbank und zeigen Sie eine Webseite an, auf der die PDF mithilfe der kostenlosen PDF Embed-API von Adobe eingebettet wird. Auf diese Weise ist die Stellenausschreibung oder Broschüre des Arbeitgebers auf der Website für Arbeitssuchende sichtbar, um sie zusammen mit Firmenlogos und anderen Gestaltungselementen zu finden und anzuzeigen.
 
 ## Speichern der PDF in einer Datenbank
 
-Speichern Sie die PDF in einer PostgreSQL-Datenbank. Holen Sie sich das node-postgres Paket, um eine Verbindung mit Postgres in Node.js herzustellen. Installieren Sie das Paket &quot;stream-buffer&quot;, da Sie den Inhalt der PDF irgendwann in einem Puffer speichern müssen. FileRef funktioniert nur mit Streams. Verwenden Sie daher das Paket stream-buffer, um den Inhalt in einen Puffer zu schreiben.
+Speichern Sie die PDF in einer PostgreSQL-Datenbank. Holen Sie sich das node-postgres Paket, um eine Verbindung mit Postgres in Node.js herzustellen. Installieren Sie das Paket &quot;stream-buffer&quot;, da Sie den Inhalt der PDF irgendwann in einem Puffer speichern müssen, und FileRef funktioniert nur mit Streams. Verwenden Sie daher das Paket stream-buffer, um den Inhalt in einen Puffer zu schreiben.
 
 ```
 npm install pg stream-buffers
 ```
 
-Erstellen Sie nun eine Datenbanktabelle für Stellenausschreibungen. Sie benötigt eine Spalte für eine eindeutige Kennung, eine Spalte für einen Namen und eine Spalte für die angehängte PDF. Sie können eine Datenbanktabelle über die Postgres-Befehlszeilenschnittstelle (CLI) erstellen:
+Erstellen Sie nun eine Datenbanktabelle für Stellenausschreibungen. Sie benötigt eine Spalte für einen eindeutigen Bezeichner, eine Spalte für einen Namen und eine Spalte für die angehängte PDF. Sie können eine Datenbanktabelle über die Postgres-Befehlszeilenschnittstelle (CLI) erstellen:
 
 ```
 CREATE TABLE job_postings (id TEXT PRIMARY KEY, name TEXT NOT NULL, attachment
@@ -199,7 +200,7 @@ Um die PDF in der Datenbanktabelle zu speichern, ändern Sie die Upload-Funktion
   result.writeToStream(writableStream);
 ```
 
-Erstellen Sie zum Schreiben des Inhalts einen WritableStreamBuffer. Mit dem finish-Ereignis ist es an der Zeit, die SQL-Abfrage auszuführen. Das node-postgres-Paket konvertiert den Buffer-Parameter automatisch in das BYTEA-Format. Die Abfrage leitet den Benutzer zu /job/ um.{id}, einen Endpunkt, der später erstellt wird.
+Erstellen Sie zum Schreiben des Inhalts einen WritableStreamBuffer. Mit dem Finish-Ereignis ist es an der Zeit, die SQL-Abfrage auszuführen. Das Paket node-postgres konvertiert den Parameter Buffer automatisch in das Format BYTEA. Die Abfrage leitet den Benutzer zu /job/ um.{id}, einen Endpunkt, der später erstellt wird.
 
 Für die PDF Embed-API benötigen Sie außerdem einen Endpunkt, der nur den PDF-Inhalt zurückgibt:
 
@@ -220,7 +221,7 @@ Für die PDF Embed-API benötigen Sie außerdem einen Endpunkt, der nur den PDF-
 
 ## Einbetten der PDF
 
-Erstellen Sie nun die Datei /job/{id} -Endpunkt, der eine Vorlage mit dem Namen der angeforderten Stellenausschreibung und einer eingebetteten PDF rendert.
+Erstellen Sie nun die Datei /job/{id} -Endpunkt, der eine Vorlage rendert, die den Namen der angeforderten Stellenausschreibung und eine eingebettete PDF enthält.
 
 ```
 router.get('/job/:id', async function(req, res, next) {
@@ -273,12 +274,12 @@ Wenn Sie eine Inline-Einbettung in Aktion anzeigen möchten, lesen Sie diese [Li
 
 ## Nächste Schritte
 
-In diesem praktischen Tutorial lernst du, wie du Node.js mit [!DNL Acrobat Services] , um eine hochgeladene [Stellenausschreibung](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) in verschiedenen Formaten auf eine PDF. Die resultierende PDF wurde dann in eine Webseite eingebettet. Diese Funktion können Sie nun auch in Ihre Website einbinden. So können Arbeitgeber Stellenbeschreibungen, Broschüren und mehr leichter hochladen und von Suchenden finden. Diese Funktionen helfen jedem, die nötigen Informationen zu erhalten, um seinen Traumjob zu finden.
+In diesem praktischen Tutorial lernst du, wie du Node.js mit [!DNL Acrobat Services] , um eine hochgeladene [Stellenausschreibung](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) in verschiedenen Formaten auf eine PDF. Die resultierende PDF wurde dann in eine Webseite eingebettet. Diese Funktion können Sie nun auf Ihrer Website hinzufügen, um es Arbeitgebern zu erleichtern, Stellenbeschreibungen, Broschüren und mehr hochzuladen, damit Arbeitssuchende sie leichter finden können. Diese Funktionen helfen jedem, die nötigen Informationen zu erhalten, um seinen Traumjob zu finden.
 
-[!DNL Acrobat Services] die wichtigsten Dokumentbearbeitungsfunktionen zu Ihrer Website oder App hinzufügen. Weitere Informationen zu den Möglichkeiten dieser APIs finden Sie in der folgenden Kurzanleitung:
+[!DNL Acrobat Services] die wichtigsten Funktionen zur Dokumentenverarbeitung zu Ihrer Website oder App hinzufügen. Weitere Informationen zu den Möglichkeiten dieser APIs finden Sie in der folgenden Kurzanleitung:
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 Um Ihre Website um benutzerfreundliche Funktionen zur Dokumentenverarbeitung zu erweitern, [Für kostenlosen Test anmelden](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Adobe PDF Embed-API ist immer kostenlos zu verwenden und Adobe PDF Services API ist für sechs Monate kostenlos, dann ist es nur \$0.05 pro Dokumenttransaktion, sodass Sie [pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) mit dem Wachstum eures Unternehmens.

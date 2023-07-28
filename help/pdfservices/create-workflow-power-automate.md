@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie den Adobe PDF Services-Connector in Microsoft
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-10379.jpg
 kt: 10379
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 2%
@@ -17,12 +18,12 @@ ht-degree: 2%
 
 # Erstellen Sie Ihren ersten Flow in Microsoft Power Automate
 
-Erfahren Sie, wie Sie Ihren ersten Flow in [Microsoft Power Automate](https://flow.microsoft.com) mit der [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) Connector.
+Erfahren Sie, wie Sie Ihren ersten Flow in [Microsoft Power Automate](https://flow.microsoft.com) mit dem Katalog [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) Connector.
 
-In diesem Tutorial lernen Sie Folgendes:
+In diesem praktischen Tutorial lernen Sie Folgendes:
 
 * Word-Dokumente in PDF konvertieren
-* PDF-Dokumente auf einer PDF zusammenführen
+* Zusammenführen von PDF-Dokumenten zu einer PDF
 * Protect eines PDF-Dokuments mit einem Kennwort
 
 ## Vorbereitung
@@ -56,7 +57,7 @@ In diesem Teil erstellen Sie einen neuen Textfluss in [Microsoft Power Automate]
 1. Navigieren Sie zu [Microsoft Power Automate](https://flow.microsoft.com) und melden Sie sich mit Ihren Anmeldedaten an.
 1. Wählen Sie in der Seitenleiste **[!UICONTROL Erstellen]**.
 
-   ![Schaltfläche &quot;Erstellen&quot;](assets/createButtonPowerAutomate.png)
+   ![Schaltfläche Erstellen](assets/createButtonPowerAutomate.png)
 
 1. Auswählen **[!UICONTROL Sofortfluss]**.
 1. Geben Sie Ihrem Flow einen Namen.
@@ -76,7 +77,7 @@ Rufen Sie als Nächstes den Dateiinhalt der Beispieldateien ab.
 1. Suchen nach *OneDrive* in der Suchleiste.
 1. Wählen Sie entweder Ihr geschäftliches oder persönliches OneDrive-Konto aus, indem Sie auf **[!UICONTROL OneDrive for Business]** oder **[!UICONTROL OneDrive]**.
 1. Suchen nach *Dateiinhalt abrufen* in der Suchleiste.
-1. Im Dialogfeld **[!UICONTROL Datei]** auf das Ordnersymbol , um zum *WordDocument01.docx* in OneDrive gespeichert.
+1. Im Dialogfeld &quot; **[!UICONTROL Datei]** auf das Ordnersymbol , um zum Dialogfeld &quot; *WordDocument01.docx* in OneDrive gespeichert.
 
    ![Abrufen von Dateiinhalten mit der OneDrive-Aktion in Microsoft Power Automate](assets/getFileContentOneDrive.png)
 
@@ -87,8 +88,8 @@ Nachdem Sie den Dateiinhalt fertig haben, können Sie das Dokument zum PDF konve
 1. In [Power Automate](https://flow.microsoft.com)&quot; die Option **[!UICONTROL + Neuer Schritt]**.
 1. Suchen nach *Adobe PDF Services* in der Suchleiste.
 1. Auswählen **[!UICONTROL Adobe PDF Services]**.
-1. Suchen nach *Word in PDF konvertieren* in der Suchleiste.
-1. In **[!UICONTROL Dateiname]**, benennen Sie Ihre Datei wie gewünscht, aber sie muss mit *.docx*. Diese Erweiterung ist für die Konvertierung von Word in PDF erforderlich.
+1. Suchen nach *Word-Datei nach PDF konvertieren* in der Suchleiste.
+1. In **[!UICONTROL Dateiname]**, benennen Sie Ihre Datei wie gewünscht, aber sie muss mit *.docx*. Diese Erweiterung ist für die Konvertierung von Dokumenten von Word in PDF erforderlich.
 1. Platzieren Sie den Cursor im **[!UICONTROL Dateiinhalt]** ein.
 1. Im Fenster &quot; **[!UICONTROL Dynamischer Inhalt]** &quot; die Option **[!UICONTROL Dateiinhalt]**.
 
@@ -104,9 +105,9 @@ Wenn das Dokument generiert wurde, speichern Sie die Datei wieder in OneDrive.
 1. Suchen nach *Dateiinhalt abrufen* in der Suchleiste.
 1. Suchen nach *Datei erstellen* in der Suchleiste.
 1. Auswählen **[!UICONTROL Datei erstellen]**.
-1. Im Dialogfeld **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
-1. In **[!UICONTROL Dateiname]**, benennen Sie Ihre Datei wie gewünscht, aber sie muss mit *.docx*. Diese Erweiterung ist für die Konvertierung von Word in PDF erforderlich.
-1. Im Dialogfeld **[!UICONTROL Dateiinhalt]** ein, verwenden Sie **[!UICONTROL Dynamischer Inhalt]** &quot; die Variable &quot;PDF-Dateiinhalt&quot; ein.
+1. Im Dialogfeld &quot; **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
+1. In **[!UICONTROL Dateiname]**, benennen Sie Ihre Datei wie gewünscht, aber sie muss mit *.docx*. Diese Erweiterung ist für die Konvertierung von Dokumenten von Word in PDF erforderlich.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiinhalt]** ein, verwenden Sie **[!UICONTROL Dynamischer Inhalt]** &quot;, um die Variable &quot;PDF-Dateiinhalt&quot; einzufügen.
 
 ### Flow testen
 
@@ -153,7 +154,7 @@ Um ein Dokument zu generieren, müssen Sie zunächst den Dateiinhalt der Word-Vo
 1. Suchen nach *OneDrive* in der Suchleiste.
 1. Wählen Sie entweder Ihr geschäftliches oder persönliches OneDrive-Konto aus, indem Sie auf **[!UICONTROL OneDrive for Business]** oder **[!UICONTROL OneDrive]**.
 1. Suchen nach *Dateiinhalt abrufen* in der Suchleiste.
-1. Im Dialogfeld **[!UICONTROL Datei]** auf das Ordnersymbol , um zum *WordDocument02.docx* in OneDrive gespeichert.
+1. Im Dialogfeld &quot; **[!UICONTROL Datei]** auf das Ordnersymbol , um zum Dialogfeld &quot; *WordDocument02.docx* in OneDrive gespeichert.
 
 ![Abrufen von Dateiinhalten aus OneDrive in Microsoft Power Automate](assets/getFileContentAction02.png)
 
@@ -162,8 +163,8 @@ Um ein Dokument zu generieren, müssen Sie zunächst den Dateiinhalt der Word-Vo
 1. Wählen Sie in Power Automate **[!UICONTROL + Neuer Schritt]**.
 1. Suchen nach *Adobe PDF Services* in der Suchleiste.
 1. Auswählen **[!UICONTROL Adobe PDF Services]**.
-1. Wählen Sie das **[!UICONTROL Dokument aus Word-Vorlage generieren]** action .
-1. Im Dialogfeld **[!UICONTROL Vorlagendateiname]** -Feld, benennen Sie Ihre Datei wie gewünscht, aber es muss mit *.docx*.
+1. Wählen Sie das **[!UICONTROL Dokument aus Word-Vorlage generieren]** action angezeigt.
+1. Im Dialogfeld &quot; **[!UICONTROL Vorlagendateiname]** -Feld, benennen Sie Ihre Datei wie gewünscht, aber es muss mit *.docx*.
 
 #### Daten zusammenführen
 
@@ -185,18 +186,17 @@ Kopieren Sie die folgenden JSON-Daten in die Datei **Daten zusammenführen** Fel
    ![Generieren von Dokumenten mit Daten-Tags in JSON](assets/generateDocumentJSONAction.png)
 
 1. Wiederholen Sie die Schritte 7-8 für die **[!UICONTROL LastName]** und **[!UICONTROL Gehalt]** Felder.
-1. Im Dialogfeld **[!UICONTROL Vorlagendateiinhalt]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das **[!UICONTROL Dateiinhalt]** Wert aus der *Dateiinhalt abrufen* -Schritt.
+1. Im Dialogfeld &quot; **[!UICONTROL Vorlagendateiinhalt]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das **[!UICONTROL Dateiinhalt]** Wert aus der *Dateiinhalt abrufen* -Schritt.
 
 ![Generieren eines Dokuments aus einer Word-Vorlagenaktion in Power Automate mit abgeschlossenen Werten](assets/generateDocumentJSONActionCompleted.png)
 
 >[!TIP]
 >
->Die *Dokument aus Word-Vorlage generieren* verwendet die Adobe Document Generation API. Weitere Informationen zum Erstellen von Vorlagen finden Sie in den folgenden Ressourcen:
+>Die *Dokument aus Word-Vorlage generieren* verwendet die Adobe Document Generation API. Wenn Sie mehr über das Erstellen von Vorlagen erfahren möchten, finden Sie hier einige Ressourcen:
 >
 >* [Weitere Informationen zur Generierung von Adobe-Dokumenten](https://developer.adobe.com/document-services/apis/doc-generation/)
 >* [Adobe-Tagger für die Dokumentgenerierung für Microsoft Word](https://appsource.microsoft.com/en-US/product/office/WA200002654)
 >* [Adobe Dokumentenerzeugung API - Dokumentation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)
-
 
 ### Speichern Sie die Datei auf OneDrive
 
@@ -207,9 +207,9 @@ Sobald das Dokument generiert wurde, können Sie die Datei wieder in OneDrive sp
 1. Wählen Sie entweder Ihr geschäftliches oder persönliches OneDrive-Konto aus, indem Sie auf **[!UICONTROL OneDrive for Business]** oder **[!UICONTROL OneDrive]**.
 1. Suchen nach *Datei erstellen* in der Suchleiste.
 1. Auswählen **[!UICONTROL Datei erstellen]**.
-1. Im Dialogfeld **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
-1. Im Dialogfeld **[!UICONTROL Dateiname]** den Namen der Datei fest. Da die Ausgabe eine PDF ist, muss Ihr Dateiname mit der Erweiterung .pdf enden.
-1. Verwenden Sie die **[!UICONTROL Dynamischer Inhalt]** &quot;, um die Variable &quot;PDF-Dateiinhalt&quot; in das Dialogfeld &quot; **[!UICONTROL Dateiinhalt]** ein.
+1. Im Dialogfeld &quot; **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiname]** den Namen der Datei fest. Da es sich bei der Ausgabe um eine PDF handelt, muss der Dateiname mit der Erweiterung .pdf enden.
+1. Verwenden Sie die **[!UICONTROL Dynamischer Inhalt]** &quot;, um die Variable &quot;PDF-Dateiinhalt&quot; in das Dialogfeld **[!UICONTROL Dateiinhalt]** ein.
 
 ### Flow testen
 
@@ -225,9 +225,9 @@ Sobald das Dokument generiert wurde, können Sie die Datei wieder in OneDrive sp
 Im OneDrive-Ordner wird jetzt eine aus dem Word-Dokument generierte PDF angezeigt. Wenn Sie das PDF-Dokument in OneDrive öffnen, sehen Sie, dass die Daten in den Text-Tag-Speicherorten zusammengeführt werden.
 
 
-## Teil 3: PDF in einem Gerät kombinieren
+## Teil 3: PDF in einem Programm kombinieren
 
-Nachdem Sie ein Word-Dokument erstellt und in eine PDF konvertiert haben, können Sie als Nächstes mehrere PDF-Dokumente kombinieren.
+Nachdem Sie nun ein Word-Dokument erstellt und in eine PDF konvertiert haben, können Sie als Nächstes mehrere PDF-Dokumente kombinieren.
 
 >[!NOTE]
 >
@@ -239,10 +239,10 @@ Nachdem Sie ein Word-Dokument erstellt und in eine PDF konvertiert haben, könne
 1. Suchen nach *Adobe PDF Services* in der Suchleiste.
 1. Auswählen **[!UICONTROL Adobe PDF Services]**.
 1. Wählen Sie das **[!UICONTROL PDF zusammenführen]** Aktion.
-1. Im Dialogfeld **[!UICONTROL Name der PDF-Zusammenführungsdatei]** geben Sie Ihren gewünschten Dateinamen ein (z. B.*CombinedDocument.pdf*).
-1. Im Dialogfeld **[!UICONTROL Dateiinhalt -1]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL Word in PDF konvertieren]** -Schritt.
+1. Im Dialogfeld &quot; **[!UICONTROL Name der PDF-Zusammenführungsdatei]** geben Sie Ihren gewünschten Dateinamen ein (z. B.*CombinedDocument.pdf*).
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiinhalt -1]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL Word-Datei nach PDF konvertieren]** -Schritt.
 1. Um das nächste Dokument hinzuzufügen, wählen Sie **+ [!UICONTROL Neues Element hinzufügen]**.
-1. Im Dialogfeld **[!UICONTROL Dateiinhalt - 2]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das **[!UICONTROL Inhalt der Ausgabedatei]** Wert aus der *Dokument aus Word-Vorlage generieren* -Schritt.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiinhalt - 2]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das **[!UICONTROL Inhalt der Ausgabedatei]** Wert aus der *Dokument aus Word-Vorlage generieren* -Schritt.
 
 ![PDF-Zusammenführungsaktion in Microsoft Power Automate](assets/mergePDFAction.png)
 
@@ -255,9 +255,9 @@ Nachdem das Dokument kombiniert wurde, können Sie es wieder in OneDrive speiche
 1. Wählen Sie entweder Ihr geschäftliches oder persönliches OneDrive-Konto aus, indem Sie auf **[!UICONTROL OneDrive for Business]** oder **[!UICONTROL OneDrive]**.
 1. Suchen nach *Datei erstellen* in der Suchleiste.
 1. Auswählen **[!UICONTROL Datei erstellen]**.
-1. Im Dialogfeld **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
-1. Im Dialogfeld **[!UICONTROL Dateiname]** den Namen der Datei fest. Da die Ausgabe eine PDF ist, muss Ihr Dateiname mit .pdf enden.
-1. Im Dialogfeld **[!UICONTROL Dateiinhalt]** ein, verwenden Sie **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL PDF zusammenführen]** -Schritt.
+1. Im Dialogfeld &quot; **[!UICONTROL Ordnerpfad]** &quot; das Ordnersymbol aus, um anzugeben, wo die Datei in OneDrive gespeichert werden soll.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiname]** den Namen der Datei fest. Da es sich bei der Ausgabe um eine PDF handelt, muss der Dateiname mit .pdf enden.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiinhalt]** ein, verwenden Sie **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL PDF zusammenführen]** -Schritt.
 
    ![Flow in Microsoft Power Automate - Übersicht](assets/flowOverviewSavedMergedDocument.png)
 
@@ -280,15 +280,15 @@ Nach dem Generieren Ihres Dokuments können Sie es vor der Bearbeitung schützen
 
 1. Wählen Sie beim Bearbeiten Ihres Workflows in Power Automate **+** zwischen den **[!UICONTROL PDF zusammenführen]** und die **[!UICONTROL Datei 3 erstellen]** Aktion.
 
-   ![Pluszeichen zwischen zwei Aktionen, um eine neue Aktion hinzuzufügen](assets/addActionToProtect.png)
+   ![Pluszeichen zwischen zwei Aktionen zum Hinzufügen einer neuen Aktion](assets/addActionToProtect.png)
 
 1. Auswählen **[!UICONTROL Aktion hinzufügen]**.
 1. Suchen nach *Adobe PDF Services* in der Suchleiste.
 1. Auswählen **[!UICONTROL Adobe PDF Services]**.
 1. Wählen Sie das **[!UICONTROL Protect PDF von der Anzeige]** Aktion.
-1. Im Dialogfeld **[!UICONTROL Dateiname]** &quot; den Namen auf den gewünschten Namen fest, sofern er mit der Erweiterung .pdf endet.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiname]** &quot; den Namen auf den gewünschten Namen fest, sofern er mit der Erweiterung .pdf endet.
 1. Legen Sie die **[!UICONTROL Kennwort]** auf Ihr angegebenes Kennwort, um das Dokument zu öffnen.
-1. Im Dialogfeld **[!UICONTROL Dateiinhalt]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL PDF zusammenführen]** -Schritt.
+1. Im Dialogfeld &quot; **[!UICONTROL Dateiinhalt]** das Feld **[!UICONTROL Dynamischer Inhalt]** , um das *PDF von Dateiinhalten* Wert aus der **[!UICONTROL PDF zusammenführen]** -Schritt.
 
 ### Speichern auf OneDrive aktualisieren
 
@@ -312,6 +312,6 @@ Im OneDrive-Ordner wird die kombinierte PDF angezeigt, auf der Sie jetzt aufgefo
 
 In diesem Tutorial haben Sie ein Word-Dokument in einen PDF konvertiert, ein Dokument auf der Grundlage von Daten generiert, Dokumente zusammengeführt und mit einem Kennwort geschützt. Um mehr zu erfahren, erkunden Sie einige der anderen Aktionen, die im Adobe PDF Services-Connector in Microsoft Power Automate verfügbar sind:
 
-* Zeigen Sie die in Microsoft Power Automate verfügbaren vorgefertigten Vorlagen an.
+* Sehen Sie sich die in Microsoft Power Automate verfügbaren vorgefertigten Vorlagen an.
 * Von Adobe lernen [Artikel](https://medium.com/adobetech/tagged/microsoft-power-automate) im Adobe Tech Blog.
 * Review [Dokumentation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) für die Adobe Document Generation API.

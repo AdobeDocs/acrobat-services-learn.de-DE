@@ -4,10 +4,11 @@ description: Entwickler können in nur wenigen Minuten mit der Ausführung von B
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6676.jpg
 kt: 6676
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Entwickler können in nur wenigen Minuten mit der Ausführung von Beispieldateie
 
 ## Schritt 1: Abrufen von Anmeldedaten und Herunterladen von Beispieldateien
 
-Der erste Schritt besteht darin, eine Zugangsberechtigung (API-Schlüssel) zu erhalten, um die Verwendung zu entsperren. [Für kostenlosen Test hier anmelden](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) und klicken Sie auf &quot;Jetzt loslegen&quot;, um Ihre neuen Anmeldeinformationen zu erstellen.
+Der erste Schritt besteht darin, eine Zugangsberechtigung (API-Schlüssel) zu erhalten, um die Verwendung zu entsperren. [Für die kostenlose Testversion hier anmelden](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) und klicken Sie auf &quot;Jetzt loslegen&quot;, um Ihre neuen Anmeldeinformationen zu erstellen.
 
 ![Schritt 1](assets/GettingStartedJava_step1.png)
 
@@ -40,7 +41,7 @@ Wählen Sie als Nächstes Java als Ihre Sprache, um die Java-spezifischen Beispi
 
 Sie erhalten eine ZIP-Datei namens PDFToolsSDK-JavaSamples.zip, die Sie herunterladen und in Ihrem lokalen Dateisystem speichern können.
 
-## Schritt 2: Java-Umgebung einrichten
+## Schritt 2: Einrichten Ihrer Java-Umgebung
 
 1. Installieren [Java 8 oder höher](https://www.oracle.com/java/technologies/javase-downloads.html) sofern noch nicht geschehen.
 1. Ausführen `javac -version` , um Ihre Installation zu bestätigen.
@@ -49,19 +50,19 @@ Sie erhalten eine ZIP-Datei namens PDFToolsSDK-JavaSamples.zip, die Sie herunter
 
 Die personalisierten Beispiele bieten alles von vorkonfiguriertem Beispielcode, einer eingebetteten JSON-Datei mit Anmeldeinformationen und vorkonfigurierten Verbindungen bis hin zu Abhängigkeiten.
 
-1. Herunterladen [Beispielprojekt](https://github.com/adobe/pdftools-java-sdk-samples).
-1. Beispielprojekt mit Maven erstellen: mvn clean install.
-1. Testen Sie den Beispielcode in der Befehlszeile oder in der bevorzugten IDE.
+1. Herunterladen [das Beispielprojekt](https://github.com/adobe/pdftools-java-sdk-samples).
+1. Erstellen Sie das Beispielprojekt mit Maven: mvn clean install.
+1. Testen Sie den Beispielcode in der Befehlszeile oder in der von Ihnen bevorzugten IDE.
 
 ## Abschließende Überlegungen
 
-Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige Workflows automatisiert und der Verarbeitungsaufwand auf die Cloud verlagert wird. In einer Welt, in der jeder Browser das PDF anders behandelt, können Sie mithilfe der Adobe PDF Embed-API und der PDF Services-API optimierte, zuverlässige und vorhersehbare Prozesse erstellen, die korrekt ausgeführt und angezeigt werden **jedes Mal** unabhängig von der Plattform oder dem Gerät.
+Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige Workflows automatisiert und der Verarbeitungsaufwand auf die Cloud verlagert wird. In einer Welt, in der jeder Browser das PDF anders behandelt, können Sie mithilfe der Adobe PDF Embed-API und der PDF Services-API optimierte, zuverlässige und vorhersehbare Prozesse erstellen, die korrekt ausgeführt werden und angezeigt werden **jedes Mal** unabhängig von der Plattform oder dem Gerät.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie in der Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie in der Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
 
-* PDF Services API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
 * [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) für PDF Services API-Fragen
 
@@ -69,6 +70,6 @@ Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige
 
 * Verwandte Artikel
 
-   [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-   [Juli-Version von [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Juli-Version von [!DNL Adobe Acrobat Services]: PDF-Einbettungs- und PDF-Dienste](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

@@ -4,10 +4,11 @@ description: Übersichtsseite für Adobe PDF Extract API
 type: Tutorial
 role: Developer
 skill: Beginner, Intermediate, Experienced
+feature: PDF Extract API
 thumbnail: KT-9247.jpg
 jira: KT-9247
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -28,10 +29,10 @@ Nutzt einen Web-Service auf Basis von maschinellem Lernen von Adobe Sensei, um S
 <tr>
  <td>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html">
-      <img alt="PDF wird analysiert: So einfach wie die Arbeit mit JSON-Daten mit der PDF Extract-API" src="assets/ParsingPDF_1280.png" />
+      <img alt="Parsing PDF: So einfach wie die Arbeit mit JSON-Daten mit PDF Extract API" src="assets/ParsingPDF_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>PDF wird analysiert: So einfach wie die Arbeit mit JSON-Daten mit der PDF Extract-API</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Parsing PDF: So einfach wie die Arbeit mit JSON-Daten mit PDF Extract API</strong></a>
     </div>
     <em>Erfahren Sie, wie der PDF Extract-Dienst in der Adobe PDF Services-API das Analysieren von PDF so einfach machen kann wie das Analysieren von JSON</em>
     <br>

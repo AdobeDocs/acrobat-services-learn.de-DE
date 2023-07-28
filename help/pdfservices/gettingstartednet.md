@@ -4,11 +4,12 @@ description: Entwickler können in nur wenigen Minuten mit der Ausführung von B
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-6675.jpg
 jira: KT-6675
 keywords: Empfohlen
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Entwickler können in nur wenigen Minuten mit der Ausführung von Beispieldateie
 
 ## Schritt 1: Abrufen von Anmeldedaten und Herunterladen von Beispieldateien
 
-Der erste Schritt besteht darin, eine Zugangsberechtigung (API-Schlüssel) zu erhalten, um die Verwendung zu entsperren. [Für kostenlosen Test hier anmelden](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) und klicken Sie auf &quot;Jetzt loslegen&quot;, um Ihre neuen Anmeldeinformationen zu erstellen.
+Der erste Schritt besteht darin, eine Zugangsberechtigung (API-Schlüssel) zu erhalten, um die Verwendung zu entsperren. [Für die kostenlose Testversion hier anmelden](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) und klicken Sie auf &quot;Jetzt loslegen&quot;, um Ihre neuen Anmeldeinformationen zu erstellen.
 
 ![Schritt 1](assets/GettingStartedJava_step1.png)
 
@@ -41,7 +42,7 @@ Wählen Sie als Nächstes &quot;Node.js&quot; als Ihre Sprache aus, um die spezi
 
 Sie erhalten eine ZIP-Datei mit dem Namen PDFToolsSDK-.NetSamples.zip, die Sie herunterladen und in Ihrem lokalen Dateisystem speichern können.
 
-## Schritt 2: Einrichten der .NET-Umgebung und Ausführen des Beispielcodes
+## Schritt 2: .NET-Umgebung einrichten und Beispielcode ausführen
 
 1. Laden Sie das [.NET SDK](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install)
 1. Extrahieren Sie die heruntergeladene **[!UICONTROL PDFToolsSDK-.NetSamples.zip]** und entpacken Sie den Inhalt
@@ -58,7 +59,7 @@ Sie erhalten eine ZIP-Datei mit dem Namen PDFToolsSDK-.NetSamples.zip, die Sie h
 
    C:\Temp\PDFToolsAPI\ PDFToolsSDK-.NetSamples\adobe-DC.PDFTools.SDK.NET.Samples>cd CreatePDFFromDocx/
 
-1. Lauf `dotnet run CreatePDFFromDocx.csproj`
+1. Ansturm `dotnet run CreatePDFFromDocx.csproj`
 
    C:\Temp\PDFToolsAPI\ PDFToolsSDK-.NetSamples\adobe-DC.PDFTools.SDK.NET.Samples\CreatePDFFromDocx>dotnet run CreatePDFFromDocx.csproj
 
@@ -66,13 +67,13 @@ Ihre PDF wird an dem in der Ausgabe angegebenen Speicherort erstellt, der standa
 
 ## Abschließende Überlegungen
 
-Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige Workflows automatisiert und der Verarbeitungsaufwand auf die Cloud verlagert wird. In einer Welt, in der jeder Browser das PDF anders behandelt, können Sie mithilfe der Adobe PDF Embed-API und der PDF Services-API optimierte, zuverlässige und vorhersehbare Prozesse erstellen, die korrekt ausgeführt und angezeigt werden **jedes Mal** unabhängig von der Plattform oder dem Gerät.
+Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige Workflows automatisiert und der Verarbeitungsaufwand auf die Cloud verlagert wird. In einer Welt, in der jeder Browser das PDF anders behandelt, können Sie mithilfe der Adobe PDF Embed-API und der PDF Services-API optimierte, zuverlässige und vorhersehbare Prozesse erstellen, die korrekt ausgeführt werden und angezeigt werden **jedes Mal** unabhängig von der Plattform oder dem Gerät.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie auf der Seite [[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie auf der [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
 
-* PDF Services API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
 * [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) für PDF Services API-Fragen
 
@@ -82,4 +83,4 @@ Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige
 
   [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Juli-Version von [!DNL Adobe Acrobat Services]: PDF Embed and PDF Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [Juli-Version von [!DNL Adobe Acrobat Services]: PDF-Einbettungs- und PDF-Dienste](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

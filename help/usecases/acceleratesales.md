@@ -4,10 +4,11 @@ description: Erfahrt, wie ihr den Vertrieb durch die Integration von Dokumentene
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10222.jpg
 jira: KT-10222
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Vom Whitepaper über Verträge bis hin zu Verträgen und Vereinbarungen - währe
 
 Vertriebsvereinbarungen, Verträge und andere Dokumente können je nach Kriterium stark variieren. Ein Verkaufsvertrag kann beispielsweise nur bestimmte Bedingungen basierend auf einem bestimmten Kriterium enthalten, z. B. die Tatsache, dass er sich in einem bestimmten Land oder Staat befindet, oder bestimmte Produkte als Teil des Vertrags. Das manuelle Erstellen dieser Dokumente oder die Verwaltung vieler verschiedener Vorlagenvarianten kann die Rechtskosten für die manuelle Überprüfung von Änderungen erheblich erhöhen.
 
-[Adobe Dokumentenerzeugung API](https://developer.adobe.com/document-services/apis/doc-generation/) können Sie Daten aus Ihrem CRM oder einem anderen Datensystem übernehmen, um anhand dieser Daten dynamisch Verkaufsdokumente zu generieren.
+[API für die Dokumentenerzeugung in Adoben](https://developer.adobe.com/document-services/apis/doc-generation/) können Sie Daten aus Ihrem CRM oder einem anderen Datensystem übernehmen, um anhand dieser Daten dynamisch Verkaufsdokumente zu generieren.
 
 ## Zugangsdaten abrufen
 
@@ -34,9 +35,9 @@ Registrieren Sie sich zunächst für kostenlose Adobe PDF Services-Anmeldedaten:
 1. Melden Sie sich mit Ihrer Adobe ID an.
 1. Legen Sie Ihren Anmeldenamen fest (z. B. Verkaufsvereinbarungsdemo).
 
-   ![Screenshot der Einrichtung Ihres Anmeldenamens](assets/accsales_1.png)
+   ![Screenshot der Einrichtung Ihres Berechtigungsnamens](assets/accsales_1.png)
 
-1. Wählen Sie eine Sprache, in der Sie den Beispielcode herunterladen möchten (z. B. &quot;Node.js&quot;).
+1. Wählen Sie eine Sprache aus, in der Sie den Beispielcode herunterladen möchten (z. B. &quot;Node.js&quot;).
 1. Aktivieren, um zuzustimmen **[!UICONTROL Entwicklerbedingungen]**.
 1. Auswählen **[!UICONTROL Anmeldeinformationen erstellen]**.
 Eine Datei wird mit einer ZIP-Datei auf Ihren Computer heruntergeladen, die die Beispieldateien pdfservices-api-credentials.json und private.key für die Authentifizierung enthält.
@@ -109,11 +110,11 @@ Wenn Sie Daten aus einem bestimmten Datensystem abrufen, müssen Sie diese Daten
 
 ## Einfache Tags zu Ihrem Dokument hinzufügen
 
-In diesem Szenario wird ein Verkaufsauftragsdokument verwendet, das heruntergeladen werden kann. [hier](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
+In diesem Szenario wird ein Verkaufsauftragsdokument verwendet, das heruntergeladen werden kann [hier](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
 
 ![Screenshot des Beispielauftragsdokuments](assets/accsales_3.png)
 
-1. Öffnen Sie die *SalesOrder.docx* Beispieldokument in Microsoft Word.
+1. Öffnen Sie die *SalesOrder.docx* Beispieldokument in Microsoft Word verwenden.
 1. Wenn das Plug-in Dokumentenerzeugung installiert ist, wählen Sie **[!UICONTROL Dokumenterstellung]** in der Multifunktionsleiste. Wenn die Dokumentgenerierung nicht in Ihrem Menüband angezeigt wird, befolgen Sie diese Anweisungen.
 1. Auswählen **[!UICONTROL Erste Schritte]**.
 1. Kopieren Sie die oben geschriebenen JSON-Beispieldaten in die Datei *JSON-Daten* ein.
@@ -123,13 +124,13 @@ In diesem Szenario wird ein Verkaufsauftragsdokument verwendet, das heruntergela
 Navigieren Sie dann zum Fenster &quot;Dokumentenerzeugung - Tags&quot;, um Tags im Dokument zu platzieren.
 
 1. Wählen Sie den Text aus, den Sie ersetzen möchten (z. B. *FIRMENNAME*).
-1. Im Dialogfeld *Tagger für Dokumenterstellung* nach &quot;name&quot;.
+1. Im Dialogfeld &quot; *Tagger für Dokumenterstellung* nach &quot;name&quot;.
 1. Wählen Sie in der Liste der Tags den Namen unter Firma aus.
 1. Auswählen **[!UICONTROL Text einfügen]**.
 
    ![Screenshot des Einfügens des Tags](assets/accsales_5.png)
 
-   Dieser Prozess platziert ein Tag namens {{company.name}} weil sich das Tag unter dem Pfad in der JSON-Datei befindet.
+   Dieser Prozess platziert ein Tag mit dem Namen {{company.name}} weil sich das Tag unter dem Pfad in der JSON-Datei befindet.
 
    ```
    {
@@ -148,7 +149,7 @@ Wiederholen Sie diese Aktionen für einige der zusätzlichen Tags im Dokument, z
 
 Direkt in Microsoft Word können Sie eine Vorschau Ihres generierten Dokuments auf der Grundlage der Beispiel-JSON-Daten anzeigen.
 
-1. Im Dialogfeld *Tagger für Dokumenterstellung* &quot; die Option **[!UICONTROL Dokument generieren]**. Wenn Sie zum ersten Mal aufgefordert werden, sich mit Ihrer Adobe ID anzumelden, Auswählen **[!UICONTROL Anmelden]** und füllen Sie die Anweisungen zur Anmeldung mit Ihren Anmeldedaten aus.
+1. Im Dialogfeld &quot; *Tagger für Dokumenterstellung* &quot; die Option **[!UICONTROL Dokument generieren]**. Wenn Sie zum ersten Mal aufgefordert werden, sich mit Ihrer Adobe ID anzumelden, Auswählen **[!UICONTROL Anmelden]** und füllen Sie die Eingabeaufforderungen aus, um sich mit Ihren Anmeldeinformationen anzumelden.
 
    ![Screenshot der Vorschau eines generierten Dokuments](assets/accsales_6.png)
 
@@ -164,14 +165,14 @@ Sie können die Tags im Dokument sehen, die durch die Daten aus den ursprünglic
 
 ![Screenshot der Tags, die durch Daten ersetzt wurden](assets/accsales_9.png)
 
-## Hinzufügen einer Tabelle zur Vorlage
+## Hinzufügen einer Tabelle zu einer Vorlage
 
 Fügen Sie in diesem nächsten Szenario einer Tabelle im Dokument eine Produktliste hinzu.
 
 1. Setzen Sie den Cursor an die Stelle, an der die Tabelle platziert werden soll.
-1. Im Dialogfeld *Tagger für Dokumenterstellung* &quot; die Option **[!UICONTROL Erweitert]**.
+1. Im Dialogfeld &quot; *Tagger für Dokumenterstellung* &quot; die Option **[!UICONTROL Erweitert]**.
 1. Erweitern **[!UICONTROL Tabellen und Listen]**.
-1. Im Dialogfeld *Tabellendatensätze* ein, wählen Sie *referencesOrder*, bei dem es sich um ein Array handelt, das alle Produktelemente auflistet.
+1. Im Dialogfeld &quot; *Tabellendatensätze* ein, wählen Sie *referencesOrder*, bei dem es sich um ein Array handelt, das alle Produktelemente auflistet.
 1. Geben Sie im Feld Spaltendatensätze auswählen den gewünschten Eintrag ein. *Beschreibung* und *totalPaymentDue.price* ein.
 1. Auswählen **[!UICONTROL Tabelle einfügen]**.
 
@@ -184,14 +185,14 @@ Bearbeiten Sie die Tabelle, um sie wie jede andere Tabelle in Microsoft Word an 
 Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der Grundlage einer Datensammlung, z. B. eines Arrays, berechnen. Fügen Sie in diesem Szenario ein Feld hinzu, um die Zwischensumme zu berechnen.
 
 1. Wählen Sie das *0,00 $* neben dem Titel der Zwischensumme.
-1. Im Dialogfeld *[!UICONTROL Tagger für Dokumenterstellung]* Panel, erweitern **[!UICONTROL Numerische Berechnungen]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Tagger für Dokumenterstellung]* Panel, erweitern Sie **[!UICONTROL Numerische Berechnungen]**.
 1. Unter *[!UICONTROL Berechnungstyp auswählen]* wählen Sie **[!UICONTROL Aggregation]**.
 1. Unter *[!UICONTROL Typ auswählen]* wählen Sie **[!UICONTROL Summe]**.
 1. Unter *[!UICONTROL Datensätze auswählen]* wählen Sie **[!UICONTROL ReferencesOrder]**.
 1. Unter *[!UICONTROL Element zum Ausführen der Aggregation auswählen]** wählen Sie **[!UICONTROL totalPaymentsDue.price]**.
 1. Auswählen **[!UICONTROL Berechnung einfügen]**.
 
-Dieser Prozess fügt ein Berechnungstag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
+Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
 
 * Zwischensumme: `${{expr($sum(referencesOrder.totalPaymentDue.price))}}`
 Berechnet die Summe von referencesOrder.totalPaymentDue.price.
@@ -199,7 +200,7 @@ Berechnet die Summe von referencesOrder.totalPaymentDue.price.
 * Umsatzsteuer: `${{expr($sum(referencesOrder.totalPaymentDue.price)*0.08)}}`
 Berechnet den Preis und multipliziert mit 8%, um die Steuer zu berechnen.
 
-* Insgesamt fällig: `${{expr($sum(referencesOrder.totalPaymentDue.price)*1.08)}}`
+* Fälliger Gesamtbetrag: `${{expr($sum(referencesOrder.totalPaymentDue.price)*1.08)}}`
 Berechnet den Preis und multipliziert ihn mit 1,08, um die Zwischensumme + Steuer zu berechnen.
 
 ## Hinzufügen von bedingten Begriffen
@@ -211,11 +212,11 @@ Mit bedingten Abschnitten können Sie nur dann einen Satz oder Absatz einfügen,
 
    ![Screenshot der Auswahl](assets/accsales_11.png)
 
-1. Im Dialogfeld *[!UICONTROL Tagger für Dokumenterstellung]*&quot; die Option **[!UICONTROL Erweitert]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Tagger für Dokumenterstellung]*&quot; die Option **[!UICONTROL Erweitert]**.
 1. Erweitern **[!UICONTROL Bedingter Inhalt]**.
-1. Im Dialogfeld *[!UICONTROL Datensätze auswählen]* ein, suchen und wählen Sie **[!UICONTROL customer.address.state]**.
-1. Im Dialogfeld *[!UICONTROL Operator auswählen]* ein, wählen Sie **=**.
-1. Im Dialogfeld *[!UICONTROL Wertfeld]*, geben Sie *CA*.
+1. Im Dialogfeld &quot; *[!UICONTROL Datensätze auswählen]* ein, suchen und wählen Sie **[!UICONTROL customer.address.state]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Operator auswählen]* ein, wählen Sie **=**.
+1. Im Dialogfeld &quot; *[!UICONTROL Wertfeld]*, geben Sie *CA*.
 1. Auswählen **[!UICONTROL Bedingung einfügen]**.
 
 Der Abschnitt &quot;Kalifornien&quot; wird nur im generierten Dokument angezeigt, wenn customer.address.state = CA.
@@ -224,15 +225,15 @@ Wählen Sie als Nächstes den Abschnitt WASHINGTON PRIVACY STATEMENTS und wieder
 
 ## Dynamisches Bild hinzufügen.
 
-Mit der API zur Dokumentenerzeugung können Sie Bilder dynamisch aus Daten einfügen. Dies ist nützlich, wenn Sie verschiedene Untermarken haben und Logos, Porträtbilder oder Bilder ändern möchten, um sie für eine bestimmte Branche relevanter zu machen.
+Mit der API für die Dokumentenerzeugung können Sie Bilder dynamisch aus Daten einfügen. Dies ist nützlich, wenn Sie verschiedene Untermarken haben und Logos, Porträtbilder oder Bilder ändern möchten, um sie für eine bestimmte Branche relevanter zu machen.
 
 Bilder können über eine URL im Daten- oder base64-Inhalt übergeben werden. Im folgenden Beispiel wird eine URL verwendet.
 
 1. Platzieren Sie den Cursor an der Stelle, an der Sie ein Bild einfügen möchten.
-1. Im Dialogfeld *[!UICONTROL Tagger für Dokumenterstellung]* &quot; die Option **[!UICONTROL Erweitert]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Tagger für Dokumenterstellung]* &quot; die Option **[!UICONTROL Erweitert]**.
 1. Erweitern **[!UICONTROL Bilder]**.
-1. Im Dialogfeld *[!UICONTROL Tags auswählen]* ein, wählen Sie **[!UICONTROL Logo]**.
-1. Im Dialogfeld *[!UICONTROL Optionaler alternativer Text]* eine Beschreibung (z. B. Logo) ein. Dieser Vorgang fügt einen Bildplatzhalter ein, der wie folgt aussieht:
+1. Im Dialogfeld &quot; *[!UICONTROL Tags auswählen]* ein, wählen Sie **[!UICONTROL Logo]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Optionaler alternativer Text]* eine Beschreibung (z. B. Logo) ein. Dieser Vorgang fügt einen Bildplatzhalter ein, der wie folgt aussieht:
 
    ![Screenshot des Platzhalterbilds](assets/accsales_12.png)
 
@@ -252,7 +253,7 @@ Sie möchten das Bild jedoch dynamisch für ein Bild festlegen, das bereits im L
 1. Klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie **[!UICONTROL Alt-Text bearbeiten]**.
 1. Fügen Sie den Wert in das Fenster ein.
 
-Dieser Vorgang ersetzt das Bild durch ein Bild, das sich in der Logovariablen in den Daten befindet.
+Bei diesem Vorgang wird das Bild durch ein Bild ersetzt, das sich in der Logovariablen in den Daten befindet.
 
 ## Tags für Acrobat Sign hinzufügen
 
@@ -260,10 +261,10 @@ Mit Adobe Acrobat Sign können Sie elektronische Signaturen für Ihre Dokumente 
 
 1. Navigieren Sie zu der Stelle, an der im Beispieldokument eine Signatur erforderlich ist.
 1. Setze den Cursor an die Stelle, an der die Unterschrift nötig ist.
-1. Im Dialogfeld *[!UICONTROL Adobe > Dokumenterstellung > Tagger]* &quot; die Option **[!UICONTROL Adobe Sign]**.
-1. Im Dialogfeld *[!UICONTROL Anzahl der Empfänger angeben]* die Anzahl der Empfänger fest (in diesem Beispiel ist es einer).
-1. Im Dialogfeld *[!UICONTROL Empfänger]* ein, wählen Sie **[!UICONTROL Unterzeichner-1]**.
-1. Im Dialogfeld *[!UICONTROL Feld]* Typ, wählen Sie **[!UICONTROL Unterschrift]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Tagger für die Generierung von Adobe-Dokumenten]* &quot; die Option **[!UICONTROL Adobe Sign]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Anzahl der Empfänger angeben]* die Anzahl der Empfänger fest (in diesem Beispiel ist es einer).
+1. Im Dialogfeld &quot; *[!UICONTROL Empfänger]* ein, wählen Sie **[!UICONTROL Unterzeichner-1]**.
+1. Im Dialogfeld &quot; *[!UICONTROL Feld]* Typ, wählen Sie **[!UICONTROL Unterschrift]**.
 1. Auswählen **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
 Ein Tag wird in das Dokument eingefügt.
@@ -271,7 +272,7 @@ Ein Tag wird in das Dokument eingefügt.
 ![Screenshot des Signatur-Tags im Dokument](assets/accsales_15.png)
 
 Acrobat Sign bietet verschiedene andere Feldtypen, die Sie einfügen können, z. B. Datumsfelder.
-1. Im Dialogfeld *Feld* Typ, wählen Sie **[!UICONTROL Datum]**.
+1. Im Dialogfeld &quot; *Feld* Typ, wählen Sie **[!UICONTROL Datum]**.
 1. Bewegen Sie den Cursor über die Datumsposition im Dokument.
 1. Auswählen **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
@@ -349,9 +350,9 @@ Nachdem das Dokument generiert wurde, können Sie weitere Aktionen ausführen, z
 * PDF komprimieren, wenn große Bilder vorhanden sind
 * Elektronische Unterschriften im Dokument erfassen
 
-Weitere Informationen zu einigen der anderen verfügbaren Aktionen finden Sie in den Skripts im Ordner &quot;/src&quot; der Beispieldateien. Weitere Informationen erhalten Sie auch in der Dokumentation der verschiedenen Aktionen.
+Weitere Informationen zu einigen der anderen verfügbaren Aktionen finden Sie in den Skripts im Ordner &quot;/src&quot; in den Beispieldateien. Weitere Informationen erhalten Sie auch in der Dokumentation der verschiedenen Aktionen.
 
-## Weitere Nutzungsszenarien
+## Zusätzliche Anwendungsfälle
 
 [!DNL Adobe Acrobat Services] können mit digitalen Dokumenten-Workflows viele Bereiche eines Vertriebszyklus optimieren:
 

@@ -1,13 +1,13 @@
 ---
 title: Kontrolle über Ihr PDF-Online-Erlebnis und Sammeln von Analysen
-description: In diesem praktischen Tutorial lernen Sie, wie Sie die Adobe PDF Embed-API verwenden, um das Erscheinungsbild zu steuern, die Zusammenarbeit zu ermöglichen und Analysen über die Interaktion von Benutzern mit PDF zu sammeln, einschließlich der Zeit, die auf einer Seite und bei Suchvorgängen verbracht wird
+description: In diesem praktischen Tutorial lernen Sie, wie Sie die Adobe PDF Embed-API verwenden, um das Erscheinungsbild zu steuern, die Zusammenarbeit zu ermöglichen und Analysen über die Interaktion von Benutzern mit PDF zu sammeln, einschließlich der Zeit, die auf einer Seite und bei Suchvorgängen verbracht wird.
 type: Tutorial
 role: Developer
 level: Intermediate
 thumbnail: KT-7487.jpg
 jira: KT-7487
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
@@ -30,10 +30,10 @@ Hat Ihr Unternehmen PDF auf Ihrer Website veröffentlicht? Hier erfahren Sie, wi
   </td>
   <td>
     <a href="controlpdfexperience.md#part2">
-        <img alt="Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite" src="assets/ControlPDFPart2_thumb.png" />
+        <img alt="Teil 2: PDF Embed-API zu einer Webseite hinzufügen" src="assets/ControlPDFPart2_thumb.png" />
     </a>
     <div>
-    <a href="controlpdfexperience.md#part2"><strong>Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite</strong></a>
+    <a href="controlpdfexperience.md#part2"><strong>Teil 2: PDF Embed-API zu einer Webseite hinzufügen</strong></a>
     </div>
   </td>
   <td>
@@ -75,17 +75,17 @@ Im ersten Teil lernst du, wie du mit allem anfängst, was du für die ersten Tei
 ### Abrufen von Anmeldedaten
 
 1. Wechseln Sie zur Registerkarte [Website von Adobe.io](https://www.adobe.io/).
-1. Klicken **[!UICONTROL Weitere Informationen]** unter Entwicklung ansprechender Dokumentenerlebnisse.
+1. Klicken **[!UICONTROL Weitere Informationen]** unter Entwickeln Sie ansprechende Dokumentenerlebnisse.
 
    ![Screenshot der Schaltfläche &quot;Weitere Informationen&quot;](assets/ControlPDF_1.png)
 
-   Dadurch gelangen Sie zum [!DNL Adobe Acrobat Services] Startseite.
+   Dadurch gelangen Sie zur Registerkarte [!DNL Adobe Acrobat Services] Startseite.
 
 1. Klicken **[!UICONTROL Erste Schritte]** in der Navigationsleiste.
 
-   Sie sehen eine Option in **Erste Schritte mit [!DNL Acrobat Services] APIs** bis **Neue Anmeldeinformationen erstellen** oder **Vorhandene Anmeldeinformationen verwalten**.
+   Sie sehen eine Option in **Erste Schritte mit [!DNL Acrobat Services] API** bis **Neue Anmeldeinformationen erstellen** oder **Vorhandene Anmeldeinformationen verwalten**.
 
-1. Klicken **[!UICONTROL Erste Schritte]** unter **[!UICONTROL Neue Anmeldeinformationen erstellen]**.
+1. Klicken **[!UICONTROL Erste Schritte]** Schaltfläche unter **[!UICONTROL Neue Anmeldeinformationen erstellen]**.
 
    ![Screenshot der Schaltfläche &quot;Erste Schritte&quot;](assets/ControlPDF_2.png)
 
@@ -93,7 +93,7 @@ Im ersten Teil lernst du, wie du mit allem anfängst, was du für die ersten Tei
 
    >[!NOTE]
    >
-   >Diese Anmeldeinformationen können nur in der hier aufgeführten Anwendungsdomäne verwendet werden. Sie können jede beliebige Domäne verwenden.
+   >Diese Anmeldeinformationen können nur in der Anwendungsdomäne verwendet werden, die hier aufgeführt ist. Sie können jede beliebige Domäne verwenden.
 
    ![Screenshot der Anmeldedaten](assets/ControlPDF_3.png)
 
@@ -105,7 +105,7 @@ Im ersten Teil lernst du, wie du mit allem anfängst, was du für die ersten Tei
 
    ![Screenshot der Schaltfläche &quot;Anmeldeinformationen erstellen&quot;](assets/ControlPDF_4.png)
 
-## Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite {#part2}
+## Teil 2: PDF Embed-API zu einer Webseite hinzufügen {#part2}
 
 Im zweiten Teil lernen Sie, wie Sie die PDF Embed-API ganz einfach in eine Webseite einbetten können. Dazu verwenden Sie die Online-Demo von Adobe PDF Embed API, um unseren Code zu erstellen.
 
@@ -117,7 +117,7 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
    ![Screenshot von [!DNL Adobe Acrobat Services] Website](assets/ControlPDF_6.png)
 
-1. Klicken **[!UICONTROL APIs]** in der Navigationsleiste, und gehen Sie dann zur Registerkarte &quot; **[!UICONTROL PDF Embed-API]** &quot; im Dropdown-Link auswählen.
+1. Klicken **[!UICONTROL API]** in der Navigationsleiste, und gehen Sie dann zur Registerkarte &quot; **[!UICONTROL PDF Embed-API]** &quot; im Dropdown-Link auswählen.
 
    ![Screenshot der PDF Embed-API-Dropdown-Liste](assets/ControlPDF_7.png)
 
@@ -133,11 +133,11 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
    ![Screenshot der Anzeigemodi](assets/ControlPDF_9.png)
 
-1. Klicken **[!UICONTROL Volles Fenster]** Anzeigemodus, klicken Sie dann auf das **[!UICONTROL Anpassen]** , um Optionen ein- und auszuschalten.
+1. Klicken **[!UICONTROL Volles Fenster]** Anzeigemodus, klicken Sie dann auf das Symbol **[!UICONTROL Anpassen]** , um Optionen ein- und auszuschalten.
 
    ![Screenshot der Schaltfläche &quot;Anpassen&quot;](assets/ControlPDF_10.png)
 
-1. Deaktivieren **[!UICONTROL Herunterladen]** PDF-Option.
+1. Deaktivieren **[!UICONTROL Herunterladen]** PDF.
 1. Klicken **[!UICONTROL Code generieren]** , um die Codevorschau anzuzeigen.
 1. Kopieren **[!UICONTROL Client-ID]** im Fenster Client-Zugangsdaten aus Teil 1.
 
@@ -145,13 +145,13 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
 1. Öffnen Sie die **[!UICONTROL Web]** -> **[!UICONTROL Ressourcen]** -> **[!UICONTROL js]** -> **[!UICONTROL dc-config.js]** in Ihrem Code-Editor.
 
-   Die Variable &quot;clientID&quot; wird angezeigt.
+   Die Variable &quot;clientID&quot; ist bereits vorhanden.
 
 1. Fügen Sie Ihre Client-Anmeldedaten zwischen den doppelten Anführungszeichen ein, um die clientID auf Ihre Anmeldedaten festzulegen.
 
 1. Kehren Sie zur Entwickler-Sandbox-Codevorschau zurück.
 
-1. Kopieren Sie die zweite Zeile mit dem Adobe-Skript:
+1. Kopieren Sie die zweite Zeile, die das Adobe-Skript enthält:
 
    ```
    <script src=https://documentccloud.adobe.com/view-sdk/main.js></script>
@@ -159,11 +159,11 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
    ![Screenshot des Skripts](assets/ControlPDF_12.png)
 
-1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Ausübung]** -> **[!UICONTROL index.html]** -Datei.
+1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]** -Datei.
 
-1. Fügen Sie den Skriptcode in das `<head>` der Datei in Zeile 18 unter dem folgenden Kommentar: **TODO: ÜBUNG 1: EINBETTEN-API-SKRIPT-TAG EINFÜGEN**.
+1. Fügen Sie den Skriptcode in das `<head>` der Datei in Zeile 18 unter dem folgenden Kommentar: **TODO: ÜBUNG 1: API-SKRIPT-TAG EINBETTEN**.
 
-   ![Screenshot des einzufügenden Skriptcodes](assets/ControlPDF_13.png)
+   ![Screenshot der Stelle, an der Skriptcode eingefügt werden soll](assets/ControlPDF_13.png)
 
 1. Kehren Sie zur Entwickler-Sandbox-Codevorschau zurück und kopieren Sie die erste Codezeile, die Folgendes enthält:
 
@@ -173,11 +173,11 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
    ![Screenshot der Stelle, an der Code kopiert werden soll](assets/ControlPDF_14.png)
 
-1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Ausübung]** -> **[!UICONTROL index.html]** erneut aus.
+1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]** -Datei erneut aus.
 
-1. Fügen Sie die `<div>` in die `<body>` der Datei in Zeile 67 unter dem Kommentar, der **TODO: ÜBUNG 1: EINFÜGEN DES PDF-EINBETTUNGS-API-CODES**.
+1. Fügen Sie die `<div>` in die `<body>` der Datei in Zeile 67 unter dem Kommentar, der **TODO: ÜBUNG 1: PDF-EINBETTUNGS-API-CODE EINFÜGEN**.
 
-   ![Screenshot des einzufügenden Codes](assets/ControlPDF_15.png)
+   ![Screenshot der Stelle, an der Code eingefügt werden soll](assets/ControlPDF_15.png)
 
 1. Kehren Sie zur Entwickler-Sandbox-Codevorschau zurück und kopieren Sie die Codezeilen für die `<script>` unten:
 
@@ -193,15 +193,15 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
    </script>
    ```
 
-1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Ausübung]** -> **[!UICONTROL index.html]** erneut aus.
+1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie das Dialogfeld **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]** -Datei erneut aus.
 
-1. Fügen Sie die `<script>` in die `<body>` der Datei in Zeile 68 unter der Nummer `<div>` Tag.
+1. Fügen Sie die `<script>` in die `<body>` der Akte in Zeile 68 unter der Nummer `<div>` Tag.
 
-1. Änderungszeile 70 derselben **index.html** , um die zuvor erstellte clientID-Variable einzuschließen.
+1. Ändern der Zeile 70 derselben **index.html** -Datei, um die zuvor erstellte clientID-Variable einzuschließen.
 
    ![Screenshot der Zeile 70](assets/ControlPDF_16.png)
 
-1. Änderungszeile 72 derselben **index.html** -Datei, um den Speicherort der PDF-Datei zu aktualisieren und eine lokale Datei zu verwenden.
+1. Änderungszeile 72 derselben **index.html** , um den Speicherort der PDF-Datei zu aktualisieren und eine lokale Datei zu verwenden.
 
    In den Tutorial-Dateien in **/resources/pdfs/whitepaper.pdf**.
 
@@ -222,11 +222,11 @@ Es gibt viele verschiedene JavaScript-Ereignisse, die als Teil der PDF Embed-API
 
    ![Screenshot des Referenzhandbuchs](assets/ControlPDF_17.png)
 
-1. Kopieren Sie den auf der Website aufgeführten Beispielcode.
+1. Kopieren Sie den Beispielcode, der auf der Website aufgeführt ist.
 
    Verwenden Sie dies als Grundlage für unseren Code und ändern Sie ihn.
 
-   ![Screenshot des Quellcodes](assets/ControlPDF_18.png)
+   ![Screenshot der Stelle, an der der Beispielcode kopiert werden soll](assets/ControlPDF_18.png)
 
    ```
    const eventOptions = {
@@ -248,7 +248,7 @@ Es gibt viele verschiedene JavaScript-Ereignisse, die als Teil der PDF Embed-API
 
 1. Suchen Sie den zuvor hinzugefügten Codeabschnitt, der wie der folgende aussieht, und hängen Sie den Code oben nach diesem Code an in **index.html**:
 
-   ![Screenshot des einzufügenden Codes](assets/ControlPDF_19.png)
+   ![Screenshot der Stelle, an der Code eingefügt werden soll](assets/ControlPDF_19.png)
 
 1. Laden Sie die Seite in Ihren Webbrowser und öffnen Sie die Konsole, um die Konsolenausgaben aus den verschiedenen Ereignissen anzuzeigen, während Sie mit dem PDF-Viewer interagieren.
 
@@ -266,7 +266,7 @@ Nachdem Sie die Ereignisse in console.log ausgegeben haben, ändern wir das Verh
 
 1. Fügen Sie den Code in die Ereignis-Listener-Funktion ein.
 
-   ![Screenshot des einzufügenden Codes](assets/ControlPDF_23.png)
+   ![Screenshot der Stelle, an der Code eingefügt werden soll](assets/ControlPDF_23.png)
 
 1. Überprüfen Sie, ob die Konsole korrekt ausgibt, wenn die Seite geladen wird und Sie mit dem PDF Viewer interagieren.
 
@@ -301,7 +301,7 @@ Navigieren Sie zu diesem [Beispiel eines PDF hinter einer Paywall](https://www3.
 
 ### Paywall-Code hinzufügen
 
-1. Öffnen Sie snippets/paywallCode.html und kopieren Sie den Inhalt.
+1. Gehen Sie zu snippets/paywallCode.html und kopieren Sie den Inhalt.
 1. Suchen nach `<!-- TODO: EXERCISE 3: INSERT PAYWALL CODE -->` in exercise/index.html.
 
    ![Screenshot der Stelle, an der Code kopiert werden soll](assets/ControlPDF_26.png)
@@ -309,15 +309,15 @@ Navigieren Sie zu diesem [Beispiel eines PDF hinter einer Paywall](https://www3.
 1. Fügen Sie den kopierten Code nach dem Kommentar ein.
 1. Wechseln zu **snippets/paywallCode.js** und kopieren Sie den Inhalt.
 
-   ![Screenshot des einzufügenden Codes](assets/ControlPDF_27.png)
+   ![Screenshot der Stelle, an der Code eingefügt werden soll](assets/ControlPDF_27.png)
 
 1. Fügen Sie den Code an diesem Speicherort ein.
 
 ### Demo mit Paywall testen
 
-Jetzt können Sie die Demo anzeigen.
+Jetzt können Sie die Demo ansehen.
 
-1. Neu laden **index.html** auf Ihrer Website.
+1. Erneut laden **index.html** auf Ihrer Website.
 1. Scrollen Sie nach unten zu einer Seite > 2.
 1. Das Dialogfeld &quot;Aufrufen&quot; anzeigen, um den Benutzer nach der zweiten Seite herauszufordern.
 

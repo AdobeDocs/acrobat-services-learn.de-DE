@@ -3,7 +3,8 @@ user-guide-title: "[!DNL Adobe Acrobat Services]"
 breadcrumb-title: "[!DNL Acrobat Services]"
 user-guide-description: Weitere Informationen über [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
-source-git-commit: 264941900ac1e4778923645cef97a796b0213030
+feature-set: Acrobat Services
+source-git-commit: a43d53151702b9f689815d03226470ab9c44eb77
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -14,7 +15,7 @@ ht-degree: 7%
 # [!DNL Adobe Acrobat Services] API {#tutorials}
 
 + [Überblick](overview.md)
-+ PDF Services API {#pdfservices}
++ PDF Services-API {#pdfservices}
    + [Überblick](pdfservices/overview-pdfservices.md)
    + [Abrufen von Anmeldedaten für Microsoft Power Automate](pdfservices/getting-credentials-power-automate.md)
    + [Erstellen Sie Ihren ersten Flow in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
@@ -30,7 +31,7 @@ ht-degree: 7%
       + [Hinzufügen von Text-Tags](docgen/taggeraddtexttags.md)
       + [Hinzufügen von Bild-Tags](docgen/taggeraddimagetags.md)
       + [Hinzufügen von Tabellen und Listen-Tags](docgen/taggertables.md)
-      + [Festlegen von numerischen Berechnungs-Tags](docgen/taggercalculations.md)
+      + [Festlegen von numerischen Berechnungstags](docgen/taggercalculations.md)
       + [Festlegen von bedingtem Inhalt](docgen/taggerconditional.md)
 + PDF Extract API {#pdfextract}
    + [Überblick](pdfextract/overview-extract.md)
@@ -46,10 +47,10 @@ ht-degree: 7%
       + [Erstellen eines Einbettungslinks](acrobatsign/creating-an-embed-link.md)
       + [Generieren eines Zugriffstokens](acrobatsign/generating-an-access-token.md)
       + [Erstellen von temporären Dokumenten](acrobatsign/creating-a-transient-document.md)
-+ Nutzungsszenarien {#usecases}
++ Anwendungsfälle {#usecases}
    + [Überblick](usecases/overview-usecases.md)
-   + [Automatisierung von Workflows in Rechtsabteilungen.](usecases/automatelegalworkflows.md)
-   + [Modernisierung des Mitarbeiter-Onboarding](usecases/employeeonboarding.md)
+   + [Automatisierung von Dokumenten-Workflows.](usecases/automatelegalworkflows.md)
+   + [Modernisierung des Mitarbeiter-Onboarding.](usecases/employeeonboarding.md)
    + [Schnellere Vertriebsprozesse.](usecases/acceleratesales.md)
    + [Verwaltung von Verkaufsangeboten und Verträgen](usecases/sales.md)
    + [Erstellen einer Geheimhaltungsvereinbarung](usecases/nda.md)

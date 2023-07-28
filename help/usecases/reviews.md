@@ -1,13 +1,14 @@
 ---
 title: Überprüfungen und Genehmigungen
-description: Workflow zur Abstimmung und Genehmigung von Dokumenten im Team lernen
+description: Workflow zur Abstimmung und Genehmigung von Dokumenten im Team entwickeln
 type: Tutorial
 role: Developer
 level: Intermediate
+feature: Use Cases
 thumbnail: KT-8094.jpg
 jira: KT-8094
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -30,7 +31,7 @@ Die Anwendung verfügt über die folgenden Funktionen:
 
 * Konvertieren verschiedener Dateitypen in PDF
 
-* Dateiuploads aktivieren
+* Datei-Uploads aktivieren
 
 * Benutzern die Möglichkeit geben, Kommentare und Anmerkungen hinzuzufügen
 
@@ -42,7 +43,7 @@ Die Anwendung verfügt über die folgenden Funktionen:
 
 ## Relevante APIs und Ressourcen
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -54,9 +55,9 @@ Bevor Sie den Code starten, müssen Sie [Zugangsdaten erstellen](https://www.ado
 
 Wenn Sie Anmeldeinformationen für die PDF Services-API erstellen, wählen Sie die Option **Erstellen eines personalisierten Codebeispiels** und wählen Sie &quot;Node.js&quot; für die Sprache aus. Speichern Sie die ZIP-Datei und extrahieren Sie pdftools-api-credentials.json und private.key in das Stammverzeichnis Ihres Node.js Express-Projekts.
 
-## Einrichten eines Projekts und von Abhängigkeiten
+## Projekt und Abhängigkeiten einrichten
 
-Richten Sie das Projekt &quot;Node.js&quot; und das Express-Projekt so ein, dass statische Dateien aus einem Ordner mit dem Namen &quot;public&quot; bereitgestellt werden. Sie können Ihre Projektmethoden entsprechend Ihren Vorlieben einrichten. Zum schnellen Einstieg können Sie den [Express-App-Generator](https://expressjs.com/en/starter/generator.html). Oder wenn du die Dinge einfach halten willst, kannst du [von vorne beginnen](https://expressjs.com/en/starter/hello-world.html) und speichere deinen Code in einer einzigen JavaScript-Datei. Im oben verknüpften Beispielprojekt verwenden Sie den Ein-Datei-Ansatz und behalten den gesamten Code in der Datei &quot;index.js&quot;.
+Richten Sie das Projekt &quot;Node.js&quot; und das Express-Projekt so ein, dass statische Dateien aus einem Ordner mit dem Namen &quot;public&quot; bereitgestellt werden. Sie können Ihre Projektmethoden entsprechend Ihren Vorlieben einrichten. Um schnell loszulegen, können Sie die [Express-App-Generator](https://expressjs.com/en/starter/generator.html). Oder wenn du die Dinge einfach halten willst, kannst du [von vorne beginnen](https://expressjs.com/en/starter/hello-world.html) und speichere deinen Code in einer einzigen JavaScript-Datei. Im oben verknüpften Beispielprojekt verwenden Sie den Ein-Datei-Ansatz und behalten den gesamten Code in der Datei &quot;index.js&quot;.
 
 Kopieren Sie die `pdftools-api-credentials.json` und `private.key` -Dateien aus dem personalisierten Codebeispiel in das Stammverzeichnis des Projekts. Fügen Sie sie auch der .gitignore-Datei hinzu, sofern vorhanden, sodass Ihre Anmeldedaten nicht versehentlich an ein Repository gesendet werden.
 
@@ -94,7 +95,7 @@ Der Startcode sollte wie folgt aussehen:
   } );
 ```
 
-Jetzt kannst du mit [!DNL Acrobat Services] APIs.
+Jetzt kannst du mit [!DNL Acrobat Services] APIs
 
 ## Konvertieren einer Datei auf einen PDF
 
@@ -165,7 +166,7 @@ app.post( "/upload", ( req, res ) => {
 
 ## Upload-Seite erstellen
 
-Um Dateien aus der Webanwendung hochzuladen, erstellen Sie jetzt ein `index.html` im Ordner &quot;uploads&quot;. Fügen Sie auf der Seite ein Formular für den Datei-Upload hinzu, das die Datei an den Endpunkt /upload sendet:
+Um Dateien aus der Webanwendung hochzuladen, erstellen Sie jetzt ein `index.html` -Webseite im Ordner &quot;uploads&quot;. Fügen Sie auf der Seite ein Formular für den Datei-Upload hinzu, das die Datei an den Endpunkt /upload sendet:
 
 ```
 <form ref="uploadForm" 
@@ -179,9 +180,9 @@ Um Dateien aus der Webanwendung hochzuladen, erstellen Sie jetzt ein `index.html
 
 ![Screenshot der Funktion zum Hochladen von Dateien auf eine Webseite](assets/reviews_1.png)
 
-Sie können jetzt Dokumente auf den Server Node.js hochladen. Der Server speichert die Datei im Ordner &quot;uploads/drafts&quot; und erstellt daneben eine PDF-Version.
+Sie können jetzt Dokumente auf den Server Node.js hochladen. Der Server speichert die Datei im Ordner &quot;uploads/drafts&quot; und erstellt daneben eine PDF-Format-Version.
 
-Sie können die hochgeladenen Dokumente jetzt einbetten. Verwenden Sie daher die PDF Embed-API, um den Benutzern das Hinzufügen von Kommentaren und Anmerkungen zu den Dokumenten zu ermöglichen.
+Sie können die hochgeladenen Dokumente jetzt einbetten. Verwenden Sie daher die PDF Embed-API, um es Benutzern zu ermöglichen, den Dokumenten auf einfache Weise Kommentare und Anmerkungen hinzuzufügen.
 
 ## Auflisten von PDF-Dateien
 
@@ -222,7 +223,7 @@ app.get( "/download/:file", function( req, res ){
 });
 ```
 
-Aktualisieren Sie die Seite &quot;index.html&quot; mit einem Dateilistenelement, das zur Ladezeit gefüllt wird. Jedes Element kann mit einer Webseite draft.html verknüpft werden, und Sie übergeben den Dateinamen mithilfe von Abfragezeichenfolgen-Parametern an die Seite.
+Aktualisieren Sie die Seite &quot;index.html&quot; mit einem Dateilistenelement, das zur Ladezeit gefüllt wird. Jedes Element kann mit einer draft.html-Webseite verknüpft werden, und Sie übergeben den Dateinamen mithilfe von Abfragezeichenfolgen-Parametern an die Seite.
 
 >[!NOTE]
 >
@@ -302,7 +303,7 @@ Fügen Sie einen Dokumentereignislistener für das adobe_dc_view_sdk.ready-Ereig
 
 ## Erstellen eines Benutzerprofils
 
-Standardmäßig werden Kommentare und Anmerkungen in dieser Ansicht als &quot;Gast&quot; angezeigt. Sie können den Namen des aktuellen Reviewers für die Kommentare und Anmerkungen festlegen, indem Sie einen Benutzerprofil-Rückruf im Seitencode für die PDF-Ansicht registrieren. Es folgt ein Beispielprofil. In einer vollwertigen Anwendung, die Benutzerauthentifizierung enthält, können die Profilinformationen der angemeldeten Benutzersitzung auf diese Weise festgelegt werden, um jeden Kommentator des Dokuments im Überprüfungsworkflow zu identifizieren.
+Standardmäßig werden Kommentare und Anmerkungen in dieser Ansicht als &quot;Gast&quot; angezeigt. Sie können den Namen des aktuellen Reviewers für die Kommentare und Anmerkungen festlegen, indem Sie einen Benutzerprofil-Rückruf im Seitencode für die PDF-Ansicht registrieren. Im Folgenden finden Sie ein Beispielprofil. In einer vollwertigen Anwendung, die Benutzerauthentifizierung enthält, können die Profilinformationen der angemeldeten Benutzersitzung auf diese Weise festgelegt werden, um jeden Kommentator des Dokuments im Überprüfungsworkflow zu identifizieren.
 
 ```
   adobeDCView.registerCallback(
@@ -350,7 +351,7 @@ Fügen Sie ein `/save` Endpunkt auf den Servercode, der die PDF-Datei im Ordner 
   } );
 ```
 
-Registrieren Sie einen PDF-View-Rückruf für die SAVE_API, die den Inhalt auf den Endpunkt /save hochlädt. Sie können den Wert autoSaveFrequency ändern, damit die Anwendung Änderungen automatisch in einem Zeitgeber speichern kann und bei Abschluss zusätzliche Metadaten in die derzeit eingebettete Datei einbezieht.
+Registrieren Sie einen PDF-View-Rückruf für die SAVE_API, die den Inhalt auf den /save-Endpunkt hochlädt. Sie können den Wert autoSaveFrequency ändern, damit die Anwendung Änderungen automatisch in einem Zeitgeber speichern kann und bei Abschluss zusätzliche Metadaten in die derzeit eingebettete Datei einbezieht.
 
 ```
   adobeDCView.registerCallback(
@@ -432,7 +433,7 @@ Fügen Sie einen Endpunkt mit dem Namen /finalize hinzu, der die Funktion aufruf
   } );
 ```
 
-Zum Schluss füge noch einen Link zur Web-Seite &quot;main index.html&quot; zu diesem /finalize-Endpunkt hinzu. Über diesen Link können Benutzer das Ergebnis des Dokumentarbeitsablaufs herunterladen.
+Zum Schluss füge noch einen Link zur Web-Seite &quot;main index.html&quot; zu diesem Endpunkt hinzu. Über diesen Link können Benutzer das Ergebnis des Dokumentarbeitsablaufs herunterladen.
 
 ```
 <a href="/finalize">Download final PDF</a>

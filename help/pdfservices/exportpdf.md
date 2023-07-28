@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie den PDF Services API-Exportvorgang mithilfe v
 type: Tutorial
 role: Developer
 level: Intermediate
+feature: PDF Services API
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%
@@ -18,7 +19,7 @@ ht-degree: 5%
 
 ![PDF Hero Image erstellen](assets/ExportPDF_hero.jpg)
 
-Adobe PDF Services API konvertiert PDF-Dateien mithilfe von APIs in MS Office, Text und Bilder. Es gibt viele gängige Anwendungsfälle, um bestehende PDF für die Bearbeitung und Analyse von Inhalten freizuschalten, und mit PDF Services API können Entwickler diese Funktion einfach in bestehende Systeme und Anwendungen integrieren. Wandle PDF-Dateien in Microsoft Word um, um Inhalte zu bearbeiten, Genehmigungen zu erteilen und später zur Unterzeichnung zu versenden. So erstellst du benutzerdefinierte Vertrags-Workflows. Oder exportieren Sie PDF-Inhalte in das MS Excel-Format, um Rechnungen und Finanzberechnungen durchzuführen oder Daten zu analysieren.
+Adobe PDF Services API konvertiert PDF-Dateien mithilfe von APIs in MS Office-, Text- und Bilddateien. Es gibt viele gängige Anwendungsfälle, um bestehende PDF für die Bearbeitung und Analyse von Inhalten freizuschalten, und mit PDF Services API können Entwickler diese Funktion ganz einfach in bestehende Systeme und Anwendungen integrieren. Wandle PDF-Dateien in Microsoft Word um, um Inhalte zu bearbeiten, Genehmigungen zu erteilen und später zur Unterzeichnung zu versenden. So erstellst du benutzerdefinierte Vertrags-Workflows. Oder exportieren Sie PDF-Inhalte in das MS Excel-Format, um sie für Rechnungs- und Finanzberechnungen oder Datenanalysen zu verwenden.
 
 Der Exportvorgang unterstützt die folgenden PDF-Dateikonvertierungen:
 
@@ -40,7 +41,7 @@ Verwenden Sie die folgenden Tutorials zu ersten Schritten, um Ihre API-Zugangsbe
 
 [Erste Schritte mit PDF Services API und Node.js](createpdffromhtml.md)
 
-## Schritt 2: PDF-Export-Vorgang mit den Beispieldateien ausführen
+## Schritt 2: PDF-Exportvorgang mit den Beispieldateien ausführen
 
 **Java**
 
@@ -64,7 +65,7 @@ Die PDF wird im Verzeichnis &quot;src/main/resources&quot; erstellt.
 
    Beispiel: C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-NetSamples
 
-1. Wechseln Sie erneut in das Verzeichnis ExportPDFtoDocx.
+1. Wechseln Sie die Verzeichnisse erneut in das Verzeichnis ExportPDFtoDocx.
 
 1. Führen Sie den folgenden Befehl aus:
 
@@ -96,13 +97,13 @@ Und das Zielergebnis:
 
 output/exportPdfOutput.PPTX
 
-In ein anderes Format.
+in ein anderes Format konvertieren.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie auf der Seite [[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie auf der [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
 
-* PDF Services API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
+* PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
 * [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) für PDF Services API-Fragen
 

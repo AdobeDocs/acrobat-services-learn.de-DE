@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie eine dynamische PDF mit Vertraulichkeitsverei
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8098.jpg
 jira: KT-8098
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 3%
@@ -24,17 +25,17 @@ Das am häufigsten verwendete Format für eine Geheimhaltungsvereinbarung ist ei
 
 ## Lernziel.
 
-In diesem Tutorial erfährst du, wie du eine Microsoft Word-Vorlage für deine Vertraulichkeitsvereinbarung erstellst. Das kostenlose Add-in von Adobe für Microsoft Word, [Adobe > Dokumenterstellung > Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo), fügt &quot;Tags&quot; ein, um die dynamischen Werte einzugeben. Erfahren Sie, wie Sie die JSON-Daten an die Vorlage übergeben und eine dynamische PDF erstellen. Die resultierende PDF kann je nach Ihren Geschäftsanforderungen und -zielen per E-Mail an Ihre Mitarbeiter in deren Browser gesendet oder angezeigt werden. Um die Schritte in diesem Tutorial besser nachvollziehen zu können, brauchst du nur ein wenig Erfahrung mit Node.js, JavaScript, Express.js, HTML und CSS.
+In diesem Tutorial erfährst du, wie du eine Microsoft Word-Vorlage für deine Vertraulichkeitsvereinbarung erstellst. Das kostenlose Add-in von Adobe für Microsoft Word, [Tagger für die Generierung von Adobe-Dokumenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo), fügt &quot;Tags&quot; ein, um die dynamischen Werte einzugeben. Erfahren Sie, wie Sie die JSON-Daten an die Vorlage übergeben und eine dynamische PDF erstellen. Die resultierende PDF kann je nach Ihren Geschäftsanforderungen und -zielen per E-Mail an Ihre Mitarbeiter in deren Browser gesendet oder angezeigt werden. Um die Schritte in diesem Tutorial besser nachvollziehen zu können, brauchst du nur ein wenig Erfahrung mit Node.js, JavaScript, Express.js, HTML und CSS.
 
 ## Relevante APIs und Ressourcen
 
-Mit [!DNL Adobe Acrobat Services]können Sie PDF-Dokumente mithilfe dynamischer Daten im Handumdrehen generieren. [!DNL Acrobat Services] bietet eine Reihe von PDF-Tools, einschließlich Adobe Document Generation API zur Automatisierung [Erstellung einer Geheimhaltungsvereinbarung](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+Mit [!DNL Adobe Acrobat Services]können Sie PDF-Dokumente mithilfe dynamischer Daten im Handumdrehen generieren. [!DNL Acrobat Services] bietet eine Reihe von PDF-Tools, einschließlich Adobe Document Generation API zur Automatisierung von [Erstellung einer Geheimhaltungsvereinbarung](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
 
-* [Adobe Dokumentenerzeugung API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API für die Dokumentenerzeugung in Adoben](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 
 * [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
 
-* [Adobe > Dokumenterstellung > Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Tagger für die Generierung von Adobe-Dokumenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 * [Projektcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
 
@@ -42,7 +43,7 @@ Mit [!DNL Adobe Acrobat Services]können Sie PDF-Dokumente mithilfe dynamischer 
 
 ## Erstellen des JSON-Modells
 
-Die Microsoft Word-Vorlage hängt vom JSON-Modell ab. Erstellen Sie diese daher zuerst. Für das Tutorial verwenden Sie eine grundlegende JSON-Struktur, die Unternehmensdetails enthält, z. B. Kontaktinformationen.
+Die Microsoft Word-Vorlage hängt vom JSON-Modell ab. Erstellen Sie diese daher zuerst. Für das Tutorial verwenden Sie eine grundlegende JSON-Struktur, die Unternehmensdetails enthält, wie z. B. Kontaktinformationen.
 
 ```
 {
@@ -76,7 +77,7 @@ Erstellen Sie die Vorlage für die Geheimhaltungsvereinbarung in einem Microsoft
 
 Sie können die [kostenloses Add-in für die Dokumentgenerierung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) in Microsoft Word. Wenn Sie Teil eines Unternehmens sind, können Sie Ihren Microsoft Office-Administrator bitten, das kostenlose Add-in für alle zu installieren.
 
-Sobald Sie das Add-In installiert haben, finden Sie es auf der Registerkarte Start in der Kategorie Adobe . Um die Registerkarte zu öffnen, wählen Sie **Dokumenterstellung**:
+Sobald Sie das Add-In installiert haben, finden Sie es auf der Registerkarte Startseite unter der Kategorie Adobe . Um die Registerkarte zu öffnen, wählen Sie **Dokumenterstellung**:
 
 ![Screenshot des Add-Ins &quot;Dokumentenerzeugung&quot; in Word](assets/nda_1.png)
 
@@ -180,13 +181,13 @@ Durch diesen Aufruf wird das folgende Dokument mit der Geheimhaltungsvereinbarun
 
 [!DNL Adobe Acrobat Services] APIs fügen Inhalt zum Erstellen eines PDF-Dokuments ein. Ohne diese Tools müssen Sie möglicherweise den Code schreiben, um Office-Dokumente zu verarbeiten und mit Raw-PDF-Dateiformaten zu arbeiten. Mithilfe von Adobe PDF Services können Sie all diese Schritte mit einem einzigen API-Aufruf ausführen.
 
-Jetzt verwenden [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html) um Unterschriften für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, unterzeichnete Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [mit einem Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
+Verwenden Sie jetzt [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) um Unterschriften für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, unterzeichnete Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [Verwenden eines Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
 
-Weitere Informationen zum Adobe Sign-Prozess finden Sie unter [Dokumentation konsultieren](https://www.adobe.io/apis/documentcloud/sign/docs.html) oder lesen Sie diesen ausführlichen Blogpost.
+Weitere Informationen zum Adobe Sign-Prozess finden Sie unter [die Dokumentation konsultieren](https://www.adobe.io/apis/documentcloud/sign/docs.html) oder lesen Sie diesen ausführlichen Blogpost.
 
 ## Nächste Schritte
 
 In diesem praktischen Tutorial wurde der Adobe Document Generation Tagger verwendet, um PDF-Dokumente mithilfe von Microsoft Word-Vorlagen und JSON-Datendateien dynamisch zu generieren. Das Add-In unterstützte die [automatisch Vertraulichkeitsvereinbarungen erstellen](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) für jede Partei angepasst und nehmen Sie dann Signaturen mit der Sign-API ein.
 
 Mit diesen Techniken könnt ihr eigene Vertraulichkeitsvereinbarungen oder andere Dokumente dynamisch erstellen. So haben eure Teams mehr Zeit für produktive Aufgaben. Entdecken [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) um APIs und SDKs für Ihre bevorzugte Sprache und Laufzeit zu finden, sodass Sie PDF-Funktionen direkt zu Ihren Anwendungen hinzufügen können, um schnell PDF-Dokumente zu erstellen. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit einer sechsmonatigen kostenlosen Testversion
-[pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 $ pro Dokumenttransaktion.
+[pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion.

@@ -1,13 +1,14 @@
 ---
 title: Erstellen und Bearbeiten von Berichten
-description: Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website erstellen.
+description: Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website generieren.
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8093.jpg
 jira: KT-8093
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 1%
@@ -22,7 +23,7 @@ In Finanz-, Bildungs-, Marketing- und anderen Branchen nutzen PDF den Austausch 
 
 Sag es dir [einen Anbieter für Social-Media-Tracking gründen](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html). Ihre Kunden melden sich bei einem passwortgeschützten Teil Ihrer Website an, um ihre Kampagnenanalysen anzuzeigen. Oft möchten sie diese Statistiken mit ihren Führungskräften, Aktionären, Spendern oder anderen Stakeholdern teilen. Herunterladbare PDF-Dokumente sind eine großartige Möglichkeit für Ihre Kunden, Zahlen, Diagramme und mehr zu teilen.
 
-Durch Einbindung [PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) in Ihre Website einfügen, können Sie unterwegs PDF-Berichte für jeden Kunden erstellen. Ihr könnt PDF erstellen und diese anschließend zu einem einzigen, praktischen Bericht zusammenfassen, den eure Kunden herunterladen und an ihre Stakeholder weitergeben können.
+Durch Einbinden [PDF Services-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) in Ihre Website einfügen, können Sie unterwegs PDF-Berichte für jeden Kunden erstellen. Ihr könnt PDF erstellen und diese anschließend zu einem einzigen, praktischen Bericht zusammenfassen, den eure Kunden herunterladen und an ihre Stakeholder weitergeben können.
 
 ## Lernziel.
 
@@ -30,7 +31,7 @@ In diesem Tutorial lernen Sie, wie Sie das PDF Services SDK in einer Node.js- un
 
 ## Relevante APIs und Ressourcen
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -38,13 +39,13 @@ In diesem Tutorial lernen Sie, wie Sie das PDF Services SDK in einer Node.js- un
 
 >[!NOTE]
 >
->In diesem Tutorial geht es nicht um die Best Practices von Node.js oder wie Sie Ihre Webanwendungen schützen. Einige Bereiche der Website sind öffentlich zugänglich, und die Benennung von Dokumenten kann nicht produktionsfreundlich sein. Um den bestmöglichen Ansatz für den Entwurf eines solchen Systems zu besprechen, fragen Sie Ihre Architekten und Ingenieure.
+>In diesem Tutorial geht es nicht um die Best Practices von Node.js oder wie Sie Ihre Webanwendungen schützen können. Einige Bereiche der Website sind öffentlich zugänglich, und die Benennung von Dokumenten kann nicht produktionsfreundlich sein. Um den bestmöglichen Ansatz für den Entwurf eines solchen Systems zu besprechen, fragen Sie Ihre Architekten und Ingenieure.
 
 Hier verfügen Sie über eine grundlegende Express.js-Webanwendung, die über einen Bereich für Kundenberichte und einen Administratorbereich verfügt. Diese Anwendung kann Berichte für Social-Media-Kampagnen präsentieren. Beispielsweise kann veranschaulicht werden, wie oft auf eine Werbung geklickt wird.
 
 ![Screenshot mit personalisierten Reports](assets/report_1.png)
 
-Sie können dieses Projekt von der [GitHub-Repository](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
+Sie können dieses Projekt von der Seite [GitHub-Repository](https://github.com/afzaal-ahmad-zeeshan/express-adobe-pdf-tools).
 
 Sehen wir uns nun an, wie die Berichte veröffentlicht werden können.
 
@@ -75,7 +76,7 @@ res.status(500).render("crash", { error: error });
 
 Dieser Code listet alle Dateien auf und rendert eine Ansicht der Dateiliste.
 
-## Berichte auswählen
+## Auswählen von Berichten
 
 Auf der Nutzerseite hast du ein Formular, über das Kunden Dokumente auswählen können, die sie in ihren Kampagnenbericht für Social Media aufnehmen möchten. Der Einfachheit halber sollten Sie auf der Beispielseite nur den Dokumentnamen und ein Kontrollkästchen zur Auswahl des Dokuments anzeigen. Kunden können einen oder mehrere Berichte zum Zusammenführen in einem einzigen PDF-Dokument auswählen.
 
@@ -85,7 +86,7 @@ Für eine erweiterte Benutzeroberfläche können Sie hier auch eine Vorschau des
 
 ## Generieren eines PDF-Berichts
 
-Verwenden Sie das PDF Services SDK, um die PDF-Berichte aus Ihren Dateneingaben zu erstellen. Die Daten (wie in den Screenshots oben gezeigt) können aus verschiedenen Datenformaten wie Microsoft Word, Microsoft Excel, HTML, Grafiken und mehr stammen. Installieren Sie zunächst das npm-Paket für PDF Services SDK.
+Verwenden Sie das PDF Services SDK, um die PDF-Berichte aus Ihren Dateneingaben zu erstellen. Die Daten (wie in den Screenshots oben gezeigt) können aus verschiedenen Datenformaten wie Microsoft Word, Microsoft Excel, HTML, Grafiken und mehr stammen. Beginnen Sie mit der Installation des npm-Pakets für PDF Services SDK.
 
 ```
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
@@ -103,7 +104,7 @@ Nachdem Sie die Anmeldeinformationen eingerichtet haben, können Sie die PDF-Kon
 
 * Mehrere PDF-Dateien in einem Bericht kombinieren
 
-Die allgemeine Vorgehensweise ist ähnlich wie bei jeder anderen Operation. Der einzige Unterschied besteht in dem Dienst, den Sie verwenden. Im folgenden Code konvertieren Sie das RAW-Dokument in eine PDF-Datei:
+Die allgemeine Vorgehensweise ist für die Ausführung eines Vorgangs ähnlich. Der einzige Unterschied besteht in dem Dienst, den Sie verwenden. Im folgenden Code konvertieren Sie das RAW-Dokument in eine PDF-Datei:
 
 ```
 async function createPdf(rawFile, outputPdf) {
@@ -130,9 +131,9 @@ console.log('Exception encountered while executing operation', err);
 
 Im obigen Code lesen Sie die Anmeldeinformationen und erstellen den Ausführungskontext. Das PDF Services SDK erfordert den Ausführungskontext, um Ihre Anforderungen zu authentifizieren.
 
-Anschließend führen Sie den Vorgang PDF erstellen aus, mit dem die RAW-Dokumente in das PDF-Format konvertiert werden. Zum Schluss verwenden Sie den Katalog `outputPdf` zum Kopieren des PDF-Berichts. Im Codebeispiel finden Sie diesen Code unter der Datei src/helpers/pdf.js. Später in diesem Tutorial importieren Sie das PDF-Modul und rufen diese Methode auf.
+Anschließend führen Sie den Vorgang PDF erstellen aus, mit dem die RAW-Dokumente in das PDF-Format konvertiert werden. Zum Schluss verwenden Sie den Katalog `outputPdf` -Parameter, um den PDF-Bericht zu kopieren. Im Codebeispiel finden Sie diesen Code unter der Datei src/helpers/pdf.js. Später in diesem Tutorial importieren Sie das PDF-Modul und rufen diese Methode auf.
 
-Wie im vorherigen Abschnitt gezeigt, können Ihre Kunden auf der folgenden Seite die Berichte auswählen, die sie in PDF konvertieren möchten:
+Wie im vorherigen Abschnitt gezeigt, können Ihre Kunden auf die folgende Seite gehen, um die Berichte auszuwählen, die sie in PDF konvertieren möchten:
 
 ![Screenshot der Kundenfunktionalität](assets/report_3.png)
 
@@ -160,7 +161,7 @@ Und hier ist die Ausgabe-PDF:
 
 ![Screenshot eines allgemeinen Berichts](assets/report_6.png)
 
-Kunden können mehrere Dateien auswählen, um einen kombinierten Bericht zu erstellen. Wenn der Kunde mehrere Dokumente auswählt, führen Sie zwei Vorgänge aus: Das erste erstellt eine partielle PDF für jedes Dokument, das zweite kombiniert sie zu einem einzigen PDF-Bericht.
+Kunden können mehrere Dateien auswählen, um einen kombinierten Bericht zu erstellen. Wenn der Kunde mehr als ein Dokument auswählt, führen Sie zwei Vorgänge aus: Erstens erstellt er eine partielle PDF für jedes Dokument, und zweitens fasst er diese in einem einzigen PDF-Bericht zusammen.
 
 ```
 async function combinePdf(pdfs, outputPdf) {
@@ -218,4 +219,4 @@ In diesem praktischen Tutorial erfahren Sie, wie Sie die PDF Services-API verwen
 
 Diese Adobe-basierte Anwendung unterstützt Ihre [Social-Media-Dashboard-Kunden](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html) Ruft die benötigten Berichte ab, und teilt sie, ohne euch darüber Gedanken machen zu müssen, ob auf allen Empfängern Microsoft Office oder eine andere Software installiert ist. Sie können die gleichen Techniken in Ihrer eigenen Anwendung verwenden, um die Benutzer beim Anzeigen, Kombinieren und Herunterladen von Dokumenten zu unterstützen. Oder sehen Sie sich die vielen anderen APIs der Adobe an, um Signaturen hinzuzufügen und zu verfolgen und vieles mehr.
 
-für den Einstieg kannst du dein kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) erstellen Sie ansprechende Reporting-Erlebnisse für Ihre Mitarbeiter und Kunden. Ihr Konto sechs Monate lang kostenlos nutzen. [pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) Wenn Ihre Marketing-Maßnahmen steigen, belaufen sich die Gebühren auf \$0.05 pro Dokumenttransaktion.
+für den Einstieg kannst du dein [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) erstellen Sie ansprechende Reporting-Erlebnisse für Ihre Mitarbeiter und Kunden. Ihr Konto sechs Monate lang kostenlos nutzen. [pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) Wenn Ihre Marketing-Maßnahmen ansteigen, belaufen sich die Gebühren auf \$0.05 pro Dokumenttransaktion.

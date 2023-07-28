@@ -4,10 +4,11 @@ description: Erfahren Sie, wie Sie die Acrobat Sign API in Ihre Anwendung einbin
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Acrobat Sign API
 thumbnail: KT-8089.jpg
 jira: KT-8089
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 2%
@@ -18,29 +19,29 @@ ht-degree: 2%
 
 ![Use Case Hero-Banner](assets/UseCaseStartedHero.jpg)
 
-[Acrobat Sign API](https://www.adobe.io/apis/documentcloud/sign.html) ist eine großartige Möglichkeit, die Verwaltung von signierten Vereinbarungen zu verbessern. Entwickler können ihre Systeme ganz einfach mit der Sign-API integrieren, die eine zuverlässige, einfache Möglichkeit bietet, Dokumente hochzuladen, zum Signieren zu senden, Erinnerungen zu senden und elektronische Signaturen zu erfassen.
+[ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) ist eine großartige Möglichkeit, die Verwaltung von signierten Vereinbarungen zu verbessern. Entwickler können ihre Systeme ganz einfach mit der Sign-API integrieren, die eine zuverlässige, einfache Möglichkeit bietet, Dokumente hochzuladen, zum Signieren zu senden, Erinnerungen zu senden und elektronische Signaturen zu erfassen.
 
 ## Lernziel.
 
-In diesem praktischen Tutorial wird erläutert, wie Entwickler die Sign-API verwenden können, um Anwendungen und Workflows zu verbessern, die mit [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] umfasst [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (kostenlos) und [Adobe Dokumentenerzeugung API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+In diesem praktischen Tutorial wird erläutert, wie Entwickler die Sign-API verwenden können, um Anwendungen und Workflows zu verbessern, die mit [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] umfasst [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (kostenlos) und [API für die Dokumentenerzeugung in Adoben](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
-Insbesondere erfahren Sie, wie Sie die Acrobat Sign API in Ihre Anwendung integrieren, um Signaturen und andere Informationen, wie z. B. Mitarbeiterinformationen in einem Versicherungsformular, zu erfassen. Es werden generische Schritte mit vereinfachten HTTP-Anforderungen und -Antworten verwendet. Sie können diese Anforderungen in Ihrer bevorzugten Sprache implementieren. Sie können eine PDF mit einer Kombination aus [[!DNL Acrobat Services] APIs](https://www.adobe.io/apis/documentcloud/dcsdk/), laden Sie sie als [kurzlebig](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Dokument hinzufügen und mithilfe der Vereinbarung oder [Widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Workflow.
+Insbesondere erfahren Sie, wie Sie die Acrobat Sign API in Ihre Anwendung integrieren, um Signaturen und andere Informationen, wie z. B. Mitarbeiterinformationen in einem Versicherungsformular, zu erfassen. Es werden generische Schritte mit vereinfachten HTTP-Anforderungen und -Antworten verwendet. Sie können diese Anforderungen in Ihrer bevorzugten Sprache implementieren. Sie können eine PDF mit einer Kombination aus [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/), laden Sie sie als [vorübergehend](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Dokument hinzufügen und Endbenutzersignaturen mit der Vereinbarung oder [Widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Arbeitsablauf.
 
 ## Erstellen eines PDF-Dokuments
 
 Lege eine Microsoft Word-Vorlage an, und speichere sie auf dem PDF. Oder Sie können Ihre Pipeline mithilfe der Dokumentenerzeugung-API automatisieren, um eine in Word erstellte Vorlage hochzuladen und dann ein PDF-Dokument zu generieren. Die Dokumentenerzeugung-API ist Teil von [!DNL Acrobat Services], [sechs Monate lang kostenlos, danach zahlen wie gewohnt für nur 0,05 US-Dollar pro Dokumenttransaktion](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
 
-In diesem Beispiel ist die Vorlage nur ein einfaches Dokument, in dem einige Unterzeichnerfelder ausgefüllt werden müssen. Nennen Sie die Felder vorerst und fügen Sie später die tatsächlichen Felder in dieses Tutorial ein.
+In diesem Beispiel ist die Vorlage nur ein einfaches Dokument mit einigen Unterzeichnerfeldern, die ausgefüllt werden müssen. Nennen Sie die Felder vorerst und fügen Sie später die tatsächlichen Felder in dieses Tutorial ein.
 
 ![Screenshot des Versicherungsformulars mit einigen Feldern](assets/GSASAPI_1.png)
 
 ## Ermitteln des gültigen API-Zugriffspunkts
 
-Vor der Verwendung der Sign-API [ein kostenloses Entwicklerkonto erstellen](https://acrobat.adobe.com/ca/en/sign/developer-form.html) , um auf die API zuzugreifen, den Austausch und die Ausführung von Dokumenten zu testen und die E-Mail-Funktion zu testen.
+Vor der Arbeit mit der Sign-API: [ein kostenloses Entwicklerkonto erstellen](https://acrobat.adobe.com/ca/en/sign/developer-form.html) , um auf die API zuzugreifen, den Austausch und die Ausführung von Dokumenten zu testen und die E-Mail-Funktion zu testen.
 
-Adobe verteilt die Acrobat Sign API in vielen Bereitstellungseinheiten, die als &quot;Shards&quot; bezeichnet werden, auf der ganzen Welt. Jeder Shard dient dem Konto eines Kunden, z. B. NA1, NA2, NA3, EU1, JP1, AU1, IN1 und andere. Die Shard-Namen entsprechen geografischen Standorten. Diese Shards bilden den Basis-URI (Zugriffspunkte) der API-Endpunkte.
+Adobe verteilt die Acrobat Sign-API in vielen Bereitstellungseinheiten, die als &quot;Shards&quot; bezeichnet werden, auf der ganzen Welt. Jeder Shard dient dem Konto eines Kunden, z. B. NA1, NA2, NA3, EU1, JP1, AU1, IN1 und andere. Die Shard-Namen entsprechen geografischen Standorten. Diese Shards bilden den Basis-URI (Zugriffspunkte) der API-Endpunkte.
 
-Um auf die Sign-API zuzugreifen, müssen Sie zunächst den richtigen Zugriffspunkt für Ihr Konto ermitteln. Dies kann je nach Ihrem Standort api.na1.adobesign.com, api.na4.adobesign.com, api.eu1.adobesign.com oder andere sein.
+Um auf die Sign-API zuzugreifen, müssen Sie zunächst den richtigen Zugriffspunkt für Ihr Konto ermitteln, der je nach Speicherort api.na1.adobesign.com, api.na4.adobesign.com, api.eu1.adobesign.com oder andere sein kann.
 
 ```
   GET /api/rest/v6/baseUris HTTP/1.1
@@ -66,9 +67,9 @@ Im obigen Beispiel ist eine Antwort mit dem Wert als Zugriffspunkt.
 
 Mit Adobe Sign können Sie verschiedene Flows erstellen, die Dokumente für Signaturen oder Datenerfassung vorbereiten. Unabhängig vom Ablauf Ihrer Anwendung müssen Sie zuerst ein Dokument hochladen, das nur sieben Tage lang verfügbar ist. Die nachfolgenden API-Aufrufe müssen dann auf dieses temporäre Dokument verweisen.
 
-Das Dokument wird mit einer POST an die `/transientDocuments` Endpunkt. Die mehrteilige Anforderung besteht aus dem Dateinamen, einem Dateistream und dem MIME-Typ (Medien) der Dokumentdatei. Die Endpunktantwort enthält eine ID, die das Dokument identifiziert.
+Das Dokument wird mit einer Anforderung zur POST in die `/transientDocuments` Endpunkt. Die mehrteilige Anforderung besteht aus dem Dateinamen, einem Dateistream und dem MIME-Typ (Medien) der Dokumentdatei. Die Endpunktantwort enthält eine ID, die das Dokument identifiziert.
 
-Darüber hinaus kann Ihre Anwendung eine Rückruf-URL für Acrobat Sign zum Pingen angeben und die Anwendung benachrichtigen, wenn der Signaturvorgang abgeschlossen ist.
+Darüber hinaus kann Ihre Anwendung eine Rückruf-URL für Acrobat Sign zum Pingen angeben, wobei die App benachrichtigt wird, wenn der Signaturvorgang abgeschlossen ist.
 
 
 ```
@@ -90,7 +91,7 @@ Darüber hinaus kann Ihre Anwendung eine Rückruf-URL für Acrobat Sign zum Ping
 
 ## Erstellen eines Webformulars
 
-Webformulare (früher als Signatur-Widgets bezeichnet) sind gehostete Dokumente, die jeder signieren kann, der Zugriff hat. Beispiele für Webformulare sind Anmeldungsblätter, Haftungsausschlüsse und andere Dokumente, auf die viele Personen zugreifen und die online unterschreiben.
+Webformulare (früher als Signatur-Widgets bezeichnet) sind gehostete Dokumente, die jeder signieren kann, der über Zugriff verfügt. Beispiele für Webformulare sind Anmeldungsblätter, Haftungsausschlüsse und andere Dokumente, auf die viele Personen zugreifen und die sie online signieren.
 
 Um ein neues Webformular mit der Sign-API zu erstellen, müssen Sie zunächst ein temporäres Dokument hochladen. Die Anforderung der POST an die `/widgets` Endpunkt verwendet den zurückgegebenen `transientDocumentId` .
 
@@ -102,7 +103,7 @@ In diesem Beispiel lautet das Webformular `ACTIVE`, aber Sie können es in einem
 
 * ACTIVE: Sofortiges Hosten des Webformulars
 
-Die Informationen über die Teilnehmer des Formulars müssen ebenfalls definiert werden. Die `memberInfos` enthält Daten über die Teilnehmer, z. B. E-Mail. Derzeit unterstützt diese Gruppe nicht mehr als ein Mitglied. Da die E-Mail-Adresse des Webformular-Unterzeichners zum Zeitpunkt der Erstellung des Webformulars jedoch unbekannt ist, sollte die E-Mail-Adresse leer gelassen werden, wie im folgenden Beispiel dargestellt. Die `role` definiert die Rolle, die von den Membern in `memberInfos` (z. B. &quot;UNTERZEICHNER&quot; und &quot;GENEHMIGER&quot;).
+Die Angaben zu den Teilnehmern des Formulars müssen ebenfalls festgelegt werden. Die `memberInfos` enthält Daten zu den Teilnehmern, z. B. E-Mail. Derzeit unterstützt diese Gruppe nicht mehr als ein Mitglied. Da die E-Mail-Adresse des Webformular-Unterzeichners zum Zeitpunkt der Erstellung des Webformulars jedoch unbekannt ist, sollte die E-Mail-Adresse leer gelassen werden, wie im folgenden Beispiel dargestellt. Die `role` definiert die Rolle, die von den Membern in `memberInfos` (z. B. &quot;UNTERZEICHNER&quot; und &quot;GENEHMIGER&quot;).
 
 ```
   POST /api/rest/v6/widgets HTTP/1.1
@@ -181,7 +182,7 @@ Dieser Endpunkt gibt eine Liste zurück, sodass Sie das bestimmte Formular anhan
         "id": "CBJCHB...Wmc",
 ```
 
-## Webformular verwalten
+## Verwalten des Webformulars
 
 Dieses Formular ist ein PDF-Dokument, das von Benutzern ausgefüllt werden kann. Sie müssen dem Bearbeiter des Formulars jedoch mitteilen, welche Felder die Benutzer ausfüllen müssen und wo sie sich im Dokument befinden:
 
@@ -189,7 +190,7 @@ Dieses Formular ist ein PDF-Dokument, das von Benutzern ausgefüllt werden kann.
 
 Im obigen Dokument werden die Felder noch nicht angezeigt. Sie werden hinzugefügt, während definiert wird, welche Felder die Informationen des Unterzeichners sowie deren Größe und Position erfassen.
 
-Wechseln Sie zur Registerkarte [Webformulare](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) auf der Seite &quot;Ihre Vereinbarungen&quot; und suchen Sie nach dem Formular, das Sie erstellt haben.
+Wechseln Sie zur Registerkarte [Webformulare](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) &quot; auf der Seite &quot;Ihre Vereinbarungen&quot; und suchen Sie nach dem Formular, das Sie erstellt haben.
 
 ![Screenshot der Registerkarte &quot;Verwalten&quot; in Acrobat Sign](assets/GSASAPI_2.png)
 
@@ -209,7 +210,7 @@ Wenn Sie das Webformular fertig gestellt haben, müssen Sie es übermitteln, dam
 
 **Webformular-URL kopieren**: Verwenden Sie diese URL, um Benutzer zur Überprüfung und Signatur an eine gehostete Version dieser Vereinbarung zu senden. Beispiel:
 
-[https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
+[https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3...babw\*](https://secure.na4.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCndYscuKcDMPiVfQlpaGPb-5D7ebE9NUTQ6x6jK7PIs8HCtTzr3HOx8U6D5qqbabw*)
 
 **Webformular-Einbettungscode kopieren**: Fügen Sie die Vereinbarung Ihrer Website hinzu, indem Sie diesen Code kopieren und in Ihre HTML einfügen.
 
@@ -239,9 +240,9 @@ Als Nächstes signiert der Benutzer das Dokument mit einer zuvor gespeicherten S
 
 ![Screenshot der Unterschrift](assets/GSASAPI_10.png)
 
-Wenn der Benutzer auf **Anwenden**, fordert Adobe sie auf, ihre E-Mail zu öffnen und die Signatur zu bestätigen. Die Signatur steht bis zum Eingang der Bestätigung aus.
+Wenn der Benutzer auf **Anwenden**, weist die Adobe sie an, ihre E-Mail zu öffnen und die Signatur zu bestätigen. Die Signatur steht bis zum Eingang der Bestätigung aus.
 
-![Screenshot mit nur einem Schritt](assets/GSASAPI_11.png)
+![Screenshot von &quot;Nur ein weiterer Schritt&quot;](assets/GSASAPI_11.png)
 
 Diese Authentifizierung bietet zusätzliche Faktor-Authentifizierung und erhöht die Sicherheit des Unterzeichnungsprozesses.
 
@@ -275,9 +276,9 @@ Company Name","","","2021-03-07 19:32:59"
 
 Alternativ zu Webformularen können Sie Vereinbarungen erstellen. In den folgenden Abschnitten werden einige einfache Schritte zum Verwalten von Vereinbarungen mithilfe der Sign-API veranschaulicht.
 
-Wenn ein Dokument zum Signieren oder Genehmigen an bestimmte Empfänger gesendet wird, wird eine Vereinbarung erstellt. Sie können den Status und Abschluss einer Vereinbarung mithilfe von APIs nachverfolgen.
+Wenn ein Dokument zum Signieren oder Genehmigen an bestimmte Empfänger gesendet wird, wird eine Vereinbarung erstellt. Sie können den Status und den Abschluss einer Vereinbarung mithilfe von APIs nachverfolgen.
 
-Sie können eine Vereinbarung mit einem [Übergangsdokument](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)oder URL. In diesem Beispiel basiert die Vereinbarung auf dem `transientDocumentId`, wie auch das zuvor erstellte Webformular.
+Sie können eine Vereinbarung erstellen, indem Sie ein [temporäres Dokument](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)oder URL. In diesem Beispiel basiert die Vereinbarung auf dem `transientDocumentId`, wie auch das zuvor erstellte Webformular.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -316,9 +317,9 @@ In diesem Beispiel wird die Vereinbarung als WIRD_VERARBEITET erstellt. Sie kön
 
 * AUTHORING - Zum Hinzufügen oder Bearbeiten von Formularfeldern in der Vereinbarung
 
-* WIRD_VERARBEITET - zum sofortigen Senden der Vereinbarung
+* WIRD_VERARBEITET - Vereinbarung sofort senden
 
-Um einen Vereinbarungsstatus zu ändern, verwenden Sie den Katalog `PUT /agreements/{agreementId}/state` Endpunkt, um einen der folgenden zulässigen Statusübergänge auszuführen:
+Um einen Vereinbarungsstatus zu ändern, verwenden Sie den Katalog `PUT /agreements/{agreementId}/state` Endpunkt, um einen der unten aufgeführten zulässigen Statusübergänge auszuführen:
 
 * ENTWURF ZUM AUTHORING
 
@@ -326,7 +327,7 @@ Um einen Vereinbarungsstatus zu ändern, verwenden Sie den Katalog `PUT /agreeme
 
 * IN_PROCESS to CANCELLED
 
-Die `participantSetsInfo` Die obige Eigenschaft enthält E-Mails von Personen, von denen erwartet wird, dass sie an der Vereinbarung teilnehmen, und gibt an, welche Aktion sie ausführen (signieren, genehmigen, bestätigen usw.). Im obigen Beispiel gibt es nur einen Teilnehmer: Unterzeichner festlegen. Schriftliche Signaturen sind auf vier pro Dokument beschränkt.
+Die `participantSetsInfo` Die obige Eigenschaft enthält E-Mails von Personen, von denen erwartet wird, dass sie an der Vereinbarung teilnehmen, und gibt an, welche Aktion sie ausführen (signieren, genehmigen, bestätigen usw.). Im obigen Beispiel gibt es nur einen Teilnehmer: den Unterzeichner. Schriftliche Signaturen sind auf vier pro Dokument beschränkt.
 
 Im Gegensatz zu Webformularen versendet die Adobe eine Vereinbarung automatisch zur Signatur, wenn Sie eine Vereinbarung erstellen. Der Endpunkt gibt den eindeutigen Bezeichner der Vereinbarung zurück.
 
@@ -339,7 +340,7 @@ Im Gegensatz zu Webformularen versendet die Adobe eine Vereinbarung automatisch 
   }
 ```
 
-## Abrufen von Informationen über Vereinbarungsmitglieder
+## Abrufen von Informationen zu Vereinbarungsmitgliedern
 
 Nachdem Sie eine Vereinbarung erstellt haben, können Sie mit dem `/agreements/{agreementId}/members` -Endpunkt, um Informationen über Mitglieder der Vereinbarung abzurufen. Sie können beispielsweise überprüfen, ob ein Teilnehmer die Vereinbarung signiert hat.
 
@@ -384,9 +385,9 @@ Der resultierende JSON-Antwortkörper enthält Informationen über die Teilnehme
 
 Abhängig von den Geschäftsregeln kann eine Frist verhindern, dass Teilnehmer die Vereinbarung nach einem bestimmten Datum unterzeichnen. Wenn die Vereinbarung ein Ablaufdatum hat, können Sie Teilnehmer daran erinnern, sobald dieses Datum näher rückt.
 
-Basierend auf den Informationen der Vereinbarungsmitglieder, die Sie nach dem Aufruf der `/agreements/{agreementId}/members` im letzten Abschnitt können Sie E-Mail-Erinnerungen an alle Teilnehmer senden, die die Vereinbarung noch nicht unterzeichnet haben.
+Basierend auf den Informationen der Vereinbarungsmitglieder, die Sie nach dem Aufruf der `/agreements/{agreementId}/members` endpoint im letzten Abschnitt klicken, können Sie E-Mail-Erinnerungen an alle Teilnehmer ausgeben, die die Vereinbarung noch nicht unterzeichnet haben.
 
-Eine POST der `/agreements/{agreementId}/reminders` endpoint erstellt eine Erinnerung für die angegebenen Teilnehmer einer Vereinbarung, die vom `agreementId` -Parameter.
+Eine Anforderung zur POST an die `/agreements/{agreementId}/reminders` endpoint erstellt eine Erinnerung für die angegebenen Teilnehmer einer Vereinbarung, die vom `agreementId` -Parameter.
 
 ```
 POST /agreements/{agreementId}/reminders HTTP/1.1
@@ -437,8 +438,8 @@ Mit der Acrobat Sign-API können Sie Dokumente, Webformulare und Vereinbarungen 
 
 Eine Übersicht über die Funktionsweise der Sign-API finden Sie in den [Entwicklerhandbuch zur API-Nutzung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). Diese Dokumentation enthält kurze Artikel zu vielen der im Artikel beschriebenen Schritte sowie weitere verwandte Themen.
 
-Die Acrobat Sign-API ist über mehrere Ebenen von [Einzelbenutzer- und Mehrbenutzer-Abos für elektronische Signaturen](https://acrobat.adobe.com/de/de/sign/pricing/plans.html), damit Sie ein Preismodell wählen können, das Ihren Anforderungen am besten entspricht. Da Sie jetzt wissen, wie einfach es ist, die Sign-API in Ihre Anwendungen zu integrieren, könnten Sie an anderen Funktionen wie [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), ein Push-basiertes Programmiermodell. Anstatt dass Ihre App häufige Überprüfungen in Acrobat Sign-Ereignissen durchführen muss, können Sie mit Webhooks eine HTTP-URL registrieren, für die die Sign-API bei jedem Auftreten eines POST eine Ereignisrückrufanforderung ausführt. Webhooks ermöglichen eine robuste Programmierung, indem sie Ihre Anwendung mit Echtzeit- und Sofortaktualisierungen versorgen.
+Die Acrobat Sign-API ist über mehrere Ebenen von [Einzelbenutzer- und Mehrbenutzer-Abos für elektronische Signaturen](https://acrobat.adobe.com/de/de/sign/pricing/plans.html), damit Sie ein Preismodell wählen können, das Ihren Anforderungen am besten entspricht. Da Sie jetzt wissen, wie einfach es ist, die Sign-API in Ihre Anwendungen zu integrieren, sind Sie möglicherweise an anderen Funktionen wie [Acrobat Sign Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md), ein Push-basiertes Programmiermodell. Anstatt dass Ihre App häufige Überprüfungen in Acrobat Sign-Ereignissen durchführen muss, können Sie mit Webhooks eine HTTP-URL registrieren, für die die Sign-API bei jedem Auftreten eines POST eine Ereignisrückrufanforderung ausführt. Webhooks ermöglichen eine robuste Programmierung, indem sie Ihre Anwendung mit Echtzeit- und Sofortaktualisierungen versorgen.
 
-Im [pay as you go pricing](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), wenn Ihre sechsmonatige kostenlose Testversion der Adobe PDF Services API endet, sowie die kostenlose Adobe PDF Embed-API.
+Sehen Sie sich die [Pay-as-you-go-Preise](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), wenn Ihre sechsmonatige kostenlose Testversion der Adobe PDF Services API endet, sowie die kostenlose Adobe PDF Embed-API.
 
 Um Ihrer App spannende Funktionen wie die automatische Dokumenterstellung und Dokumentsignatur hinzuzufügen, beginnen Sie mit [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).

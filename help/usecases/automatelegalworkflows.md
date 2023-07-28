@@ -1,26 +1,27 @@
 ---
-title: Automatisierung von Workflows in Rechtsabteilungen.
-description: Workflows in Rechtsabteilungen mit bedingten Inhalten automatisieren
+title: Automatisierung von Workflows in Rechtsabteilungen
+description: Workflows mit bedingten Inhalten automatisieren
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-10202.jpg
 jira: KT-10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '2876'
 ht-degree: 1%
 
 ---
 
-# Automatisierung von Workflows in Rechtsabteilungen.
+# Automatisierung von Dokumenten-Workflows.
 
 ![Use Case Hero-Banner](assets/usecaseautomatelegalhero.jpg)
 
-Im Idealfall werden die Vertragsbedingungen ohne Änderungen akzeptiert. Oft müssen Vereinbarungen jedoch angepasst werden, was dann eine rechtliche Prüfung erfordert. Überprüfungen aufgrund von Gesetzesvorgaben verursachen erhebliche Kosten und verlangsamen die Vertragserstellung. Durch die Verwendung vordefinierter Vorlagen, die basierend auf der genehmigten Sprache geändert werden, können Teams in Rechtsabteilungen Vertragsbedingungen leichter verwalten und sicherer durchführen.
+Im Idealfall werden die Vertragsbedingungen ohne Änderungen akzeptiert. Oft müssen Vereinbarungen jedoch angepasst werden, was dann eine rechtliche Prüfung erfordert. Überprüfungen aufgrund von Rechtsabschlüssen verursachen erhebliche Kosten und verlangsamen die Vertragserstellung. Durch die Verwendung vordefinierter Vorlagen, die basierend auf der genehmigten Sprache geändert werden, können Teams in Rechtsabteilungen Vertragsklauseln leichter verwalten und Vertragsklauseln sicherer ausführen.
 
-In diesem Tutorial lernen Sie, wie Sie eine rechtsgültige Vereinbarung zwischen zwei Bundesstaaten abschließen. Um diese Änderungen zu berücksichtigen, wird eine Vereinbarungsvorlage mit bedingten Abschnitten erstellt, die nur enthalten sind, wenn bestimmte Kriterien erfüllt sind. Das generierte Dokument kann entweder ein Word- oder ein PDF-Dokument sein. Sie können auch einige Möglichkeiten kennenlernen, wie Sie Ihr Dokument mit der Adobe PDF Services-API oder der Acrobat Sign schützen können.
+In diesem Tutorial lernen Sie, wie Sie eine rechtsgültige Vereinbarung zwischen zwei Bundesstaaten abschließen. Um diese Änderungen zu berücksichtigen, wird eine Vereinbarungsvorlage mit bedingten Abschnitten erstellt, die nur enthalten sind, wenn bestimmte Kriterien erfüllt sind. Das generierte Dokument kann entweder ein Word- oder ein PDF-Dokument sein. Sie können auch einige der Möglichkeiten zum Sichern Ihres Dokuments mit der Adobe PDF Services-API oder Acrobat Sign kennenlernen.
 
 ## Zugangsdaten abrufen
 
@@ -28,11 +29,11 @@ Registrieren Sie sich zunächst für kostenlose Adobe PDF Services-Anmeldedaten:
 
 1. Navigieren [hier](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) , um Ihre Anmeldeinformationen zu registrieren.
 1. Melden Sie sich mit Ihrer Adobe ID an.
-1. Legen Sie Ihren Benutzernamen fest.
+1. Legen Sie Ihren Namen für die Anmeldeinformationen fest.
 
-   ![Screenshot der Einrichtung Ihres Anmeldenamens](assets/automatelegal_1.png)
+   ![Screenshot der Einrichtung Ihres Berechtigungsnamens](assets/automatelegal_1.png)
 
-1. Wählen Sie eine Sprache, in der Sie den Beispielcode herunterladen können (z. B. &quot;Node.js&quot;).
+1. Wählen Sie eine Sprache aus, in der Sie den Beispielcode herunterladen können (z. B. &quot;Node.js&quot;).
 1. Aktivieren, um zuzustimmen **[!UICONTROL Entwicklerbedingungen]**.
 1. Auswählen **[!UICONTROL Anmeldeinformationen erstellen]**.
 Eine Datei wird mit einer ZIP-Datei auf Ihren Computer heruntergeladen, die die Beispieldateien pdfservices-api-credentials.json und private.key für die Authentifizierung enthält.
@@ -87,7 +88,7 @@ In diesem Szenario wird ein Dokument mit Nutzungsbedingungen verwendet, das heru
 
 ![Screenshot des Dokuments mit den Nutzungsbedingungen](assets/automatelegal_3.png)
 
-1. Öffnen Sie die *TermsAndConditions.docx* Beispieldokument in Microsoft Word.
+1. Öffnen Sie die *TermsAndConditions.docx* Beispieldokument in Microsoft Word verwenden.
 1. Wenn die Option [Dokumenterstellung](https://appsource.microsoft.com/en-cy/product/office/WA200002654) -Plug-In installiert ist, wählen Sie **[!UICONTROL Dokumenterstellung]** in der Multifunktionsleiste. Wenn die Dokumentgenerierung nicht in Ihrem Menüband angezeigt wird, befolgen Sie diese Anweisungen.
 1. Auswählen **[!UICONTROL Erste Schritte]**.
 1. Kopieren Sie die oben beschriebenen JSON-Beispieldaten in das Feld JSON-Daten.
@@ -96,11 +97,11 @@ In diesem Szenario wird ein Dokument mit Nutzungsbedingungen verwendet, das heru
 
 Navigieren Sie zur Registerkarte *Tagger für Dokumenterstellung* , um Tags im Dokument zu platzieren.
 
-## Firmennamen einfügen
+## Fügen Sie den Firmennamen ein
 
 1. Wählen Sie den Text aus, den Sie ersetzen möchten. In diesem Szenario ersetzen Sie das UNTERNEHMEN im ersten Abschnitt des Dokuments.
 1. In *Tagger für Dokumenterstellung* nach &quot;name&quot;.
-1. Wählen Sie unter Unternehmen *name*.
+1. Wählen Sie unter Unternehmen die Option *name*.
 
    ![Screenshot der Suche nach einem Namen in Document Generation Tagger](assets/automatelegal_5.png)
 
@@ -118,15 +119,15 @@ Dadurch wird ein Tag mit dem Namen `{{company.name}}` da sich das Tag in der JSO
 }
 ```
 
-Wiederholen Sie diesen Schritt im ersten Abschnitt des KUNDEN-Texts. Wiederholen **Schritte 1-4**, wobei KUNDE durch &quot;Name&quot; unter Kunde ersetzt wird. Die Ausgabe sollte `{{customer.name}}`, der angibt, dass der Text von unterhalb des Kundenobjekts kommt.
+Wiederholen Sie diesen Schritt im ersten Abschnitt des KUNDEN-Textes. Wiederholen **Schritte 1-4**, wobei KUNDE durch &quot;Name&quot; unter Kunde ersetzt wird. Die Ausgabe sollte `{{customer.name}}`, der angibt, dass der Text von unterhalb des Kundenobjekts kommt.
 
 Mit der Adobe-API für die Dokumentenerzeugung können Sie Tags auch in Ihre Kopf- und Fußzeilen und ganz am Ende der Stelle einfügen, an die die Titel für die Signaturen übergeben werden müssen.
 
-Wiederholen Sie diesen Vorgang mit **Schritte 1-4** für den Text &quot;UNTERNEHMEN&quot; und &quot;KUNDE&quot; in der Fußzeile.
+Wiederholen Sie diesen Vorgang erneut mit **Schritte 1-4** für den Text &quot;UNTERNEHMEN&quot; und &quot;KUNDE&quot; in der Fußzeile.
 
 ![Screenshot des Hinzufügens von FIRMA- und KUNDEN-Tags in der Fußzeile](assets/automatelegal_6.png)
 
-Schließlich müssen Sie **Wiederholen der Schritte 1-4** , um VORNAME UND NACHNAME im Abschnitt Kunde der Signaturseite durch die Tags für `{{customer.signer.firstName}}` und `{{customer.signer.lastName}}` bzw. Sie brauchen sich keine Sorgen zu machen, wenn das Tag lang ist und in die nächste Zeile umgebrochen wird, weil das Tag beim Generieren des Dokuments ersetzt wird.
+Schließlich müssen Sie **Wiederholen der Schritte 1-4** , um VORNAME UND NACHNAME im Abschnitt Kunde der Signaturseite durch die Tags für zu ersetzen. `{{customer.signer.firstName}}` und `{{customer.signer.lastName}}` entsprechend. Sie brauchen sich keine Sorgen zu machen, wenn das Tag lang ist und in die nächste Zeile umgebrochen wird, weil das Tag beim Generieren des Dokuments ersetzt wird.
 
 Der Anfang Ihres Dokuments und die Fußzeile sollten ungefähr so aussehen:
 
@@ -149,7 +150,7 @@ Nachdem die Tags im Dokument platziert wurden, können Sie eine Vorschau der gen
 Direkt in Microsoft Word können Sie eine Vorschau Ihres generierten Dokuments auf der Grundlage der Beispiel-JSON-Daten anzeigen.
 
 1. In *Tagger für Dokumenterstellung*&quot; die Option **[!UICONTROL Dokument generieren]**.
-1. Wenn Sie zum ersten Mal aufgefordert werden, sich mit Ihrer Adobe ID anzumelden, Auswählen **[!UICONTROL Anmelden]** und füllen Sie die Anweisungen zur Anmeldung mit Ihren Anmeldedaten aus.
+1. Wenn Sie zum ersten Mal aufgefordert werden, sich mit Ihrer Adobe ID anzumelden, Auswählen **[!UICONTROL Anmelden]** und füllen Sie die Eingabeaufforderungen aus, um sich mit Ihren Anmeldeinformationen anzumelden.
 
    ![Screenshot der Auswahl der Schaltfläche &quot;Dokument generieren&quot;](assets/automatelegal_10.png)
 
@@ -180,7 +181,7 @@ Im nächsten Abschnitt legen Sie fest, dass nur bestimmte Abschnitte basierend a
 1. In *[!UICONTROL Wert]* Feld, Typ *CA*.
 1. Auswählen **[!UICONTROL Bedingung einfügen]**.
 
-Der Abschnitt ist jetzt mit einigen Tags umschlossen, die als Bedingungs-Tags bezeichnet werden. Nachdem Sie die Tags hinzugefügt haben, wurde das Bedingungs-Tag möglicherweise als nummerierte Zeile hinzugefügt. Sie können dies entfernen, indem Sie vor dem Tag einen Backspacing eingeben. Andernfalls wird das Tag so nummeriert, als wäre es beim Generieren des Dokuments nicht vorhanden. Der bedingte Abschnitt endet mit dem `{% end-section %}` Tag.
+Der Abschnitt ist jetzt mit einigen Tags umschlossen, die als Bedingungs-Tags bezeichnet werden. Nachdem Sie die Tags hinzugefügt haben, wurde das Bedingungs-Tag möglicherweise als nummerierte Zeile hinzugefügt. Sie können dies entfernen, indem Sie vor dem Tag einen Backspacing eingeben. Andernfalls wird das Tag so nummeriert, als wäre es bei der Generierung des Dokuments nicht vorhanden. Der bedingte Abschnitt endet mit dem `{% end-section %}` Tag.
 
 ![Screenshot des Tags &quot;Bedingter Abschnitt&quot;](assets/automatelegal_16.png)
 
@@ -255,7 +256,7 @@ Mit Acrobat Sign könnt ihr Verträge zur Unterzeichnung versenden oder in ein W
 
 >[!NOTE]
 >
->Wenn die Option **Adobe Sign-Text-Tag einfügen** scheint zu fehlen, scrollen Sie nach unten.
+>Wenn die Option **Adobe Sign-Text-Tag einfügen** -Schaltfläche scheint zu fehlen, scrollen Sie nach unten.
 
 Dadurch wird ein Signaturfeld an der Stelle platziert, an der der erste Unterzeichner unterzeichnen muss.
 
@@ -270,9 +271,9 @@ Platzieren Sie als Nächstes ein Datenfeld für den Unterzeichner, der beim Unte
 1. Setzen Sie den Feldtyp auf Datum.
 1. Auswählen **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-Das platzierte Datumstag ist ziemlich lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. Das Acrobat Sign-Text-Tag muss in derselben Zeile bleiben, was sich von den Tags für die Dokumentgenerierung unterscheidet. Die `:format()` und `font()` Parameter sind optional. In diesem Fall können wir das Tag auf `{{Date 3_es_:signer1:date}}`.
+Das platzierte Tag &quot;Datum&quot; ist ziemlich lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. Das Acrobat Sign-Text-Tag muss in derselben Zeile bleiben, was sich von den Tags für die Dokumentgenerierung unterscheidet. Die `:format()` und `font()` Parameter sind optional. In diesem Fall können wir das Tag auf `{{Date 3_es_:signer1:date}}`.
 
-Wiederholen Sie die Schritte über der *Unterschrift des Unternehmens* Abschnitt. Ändern Sie dazu das Feld Empfänger in **Unterzeichner 2**, andernfalls werden alle Signaturfelder derselben Person zugewiesen.
+Wiederholen Sie die Schritte über der *Unternehmensunterschrift* Abschnitt. In diesem Fall müssen Sie das Feld Empfänger in **Unterzeichner 2**, andernfalls werden alle Signaturfelder derselben Person zugewiesen.
 
 ## Vereinbarung generieren
 
@@ -363,7 +364,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 [Adobe Acrobat Sign](https://www.adobe.com/de/sign.html) können Sie Vereinbarungen an einen oder mehrere Empfänger senden, damit diese Dokumente anzeigen und signieren können. Neben einer benutzerfreundlichen Oberfläche zum Senden eines Dokuments zum Signieren sind REST-APIs verfügbar, mit denen Sie Word-, PDF-, HTML- und andere Formate zum Signieren senden können.
 
-Im folgenden Beispiel wird erläutert, wie Sie die REST API-Dokumentationsseite verwenden, um das zuvor generierte Dokument zu übernehmen und zum Signieren zu senden. Zunächst lernen Sie, wie Sie dies über die Acrobat Sign-Weboberfläche und dann über die REST-API tun können.
+Im folgenden Beispiel wird erläutert, wie Sie die REST API-Dokumentationsseite verwenden, um das zuvor generierte Dokument zu übernehmen und zum Signieren zu senden. Zuerst lernen Sie, wie Sie dies über die Acrobat Sign-Weboberfläche und dann über die REST-API tun können.
 
 ## Acrobat Sign-Konto anlegen
 
@@ -375,7 +376,7 @@ Wenn Sie kein Acrobat Sign-Konto haben, registrieren Sie sich für ein Entwickle
 
    ![Screenshot der Registerkarte &quot;Senden&quot; in Acrobat Sign](assets/automatelegal_28.png)
 
-1. In *Empfänger* &quot; zwei E-Mail-Adressen an. Es empfiehlt sich, eine E-Mail-Adresse zu verwenden, die nicht mit Ihrem Acrobat Sign-Konto verknüpft ist.
+1. In *Empfänger* geben Sie zwei E-Mail-Adressen an. Es empfiehlt sich, eine E-Mail-Adresse zu verwenden, die nicht mit Ihrem Acrobat Sign-Konto verknüpft ist.
 
    ![Screenshot der Empfängerfelder](assets/automatelegal_29.png)
 
@@ -385,7 +386,7 @@ Wenn Sie kein Acrobat Sign-Konto haben, registrieren Sie sich für ein Entwickle
 1. Wählen Sie **[!UICONTROL Weiter]** aus.
 1. Wenn Sie nach unten zur Signaturseite scrollen, können Sie die platzierten Signaturfelder basierend auf den Tags sehen.
 
-   ![Screenshot der Signaturfelder](assets/automatelegal_30.png)
+   ![Screenshot der Unterschriftsfelder](assets/automatelegal_30.png)
 
 1. Wählen Sie **[!UICONTROL Senden]** aus.
 1. In deiner E-Mail wird eine Nachricht mit einem Link zum Anzeigen und Unterschreiben angezeigt.
@@ -396,7 +397,7 @@ Wenn Sie kein Acrobat Sign-Konto haben, registrieren Sie sich für ein Entwickle
 1. Auswählen **[!UICONTROL Weiter]** Nutzungsbedingungen zu akzeptieren.
 1. Auswählen **[!UICONTROL Start]** , um zu der Stelle zu wechseln, an der Sie unterschreiben müssen.
 
-   ![Screenshot des Start-Tags](assets/automatelegal_32.png)
+   ![Screenshot des Starttags](assets/automatelegal_32.png)
 
 1. Auswählen **[!UICONTROL Zum Unterschreiben hier klicken]**.
 
@@ -451,8 +452,8 @@ Die *transientDocumentId* wird zum Verweisen auf ein Dokument verwendet, das vor
 
 Nachdem ein Dokument hochgeladen wurde, müssen Sie die Vereinbarung zur Signatur senden.
 
-1. Erweitern Sie die Abschnitte &quot;Vereinbarung&quot; und &quot;POST&quot;.
-1. Im Dialogfeld *AgreementInfo* das Feld mit der folgenden JSON-Datei ausfüllen:
+1. Erweitern Sie die Abschnitte &quot;Vereinbarung&quot; und &quot;Vereinbarung der POST&quot;.
+1. Im Dialogfeld &quot; *AgreementInfo* das Feld mit der folgenden JSON-Datei ausfüllen:
 
    ```
    {
@@ -500,7 +501,7 @@ Sobald Sie über eine Vereinbarungs-ID verfügen, können Sie einen Vereinbarung
 1. Kopieren Sie die agreementId aus der vorherigen API-Aufrufantwort in das agreementId-Feld.
 1. Auswählen **[!UICONTROL Jetzt ausprobieren!]**.
 
-Sie haben jetzt Informationen zu dieser Vereinbarung.
+Sie verfügen jetzt über Informationen zu dieser Vereinbarung.
 
 ```
 {
@@ -558,16 +559,16 @@ Die effizientere Methode, um Benachrichtigungen zu erhalten, wenn Aktualisierung
 Sobald das Dokument signiert wurde, kann es mit der Datei GET /agreements/combinedDocument abgerufen werden.
 
 1. Erweitern **[!UICONTROL GET /agreements/{agreementId}/combinedDocument]**.
-1. Festlegen **[!UICONTROL agreementId]** in der *agreementId* aus dem vorherigen API-Aufruf bereitgestellt.
+1. Festlegen **[!UICONTROL agreementId]** in der *agreementId* die vom vorherigen API-Aufruf bereitgestellt wurden.
 1. Auswählen **[!UICONTROL Jetzt ausprobieren!]**.
 
 Zusätzliche Parameter zum Anhängen eines Audit-Berichts oder unterstützender Dokumente können mithilfe der Parameter attachSupportingDocuments und attachAuditReport festgelegt werden.
 
-Im Dialogfeld **Antworttext**, kann es dann auf Ihren Computer heruntergeladen und dort gespeichert werden, wo Sie möchten.
+Im Dialogfeld &quot; **Antworttext**, kann es dann auf Ihren Computer heruntergeladen und dort gespeichert werden, wo Sie möchten.
 
 ## Weitere Optionen
 
-Neben dem Generieren und Senden zum Unterschreiben sind weitere Aktionen verfügbar.
+Zusätzlich zum Generieren und Senden eines Dokuments zum Unterschreiben sind weitere Aktionen verfügbar.
 
 Wenn das Dokument beispielsweise nicht signiert ist, bietet die Adobe PDF Services-API viele Möglichkeiten, Dokumente nach der Generierung der Vereinbarung zu transformieren, z. B.:
 
@@ -578,7 +579,7 @@ Wenn das Dokument beispielsweise nicht signiert ist, bietet die Adobe PDF Servic
 Darüber hinaus bietet Acrobat Sign verschiedene zusätzliche Funktionen wie:
 
 * Einbetten des Signiererlebnisses in eine Anwendung
-* Methoden zur Identitätsüberprüfung für Unterzeichner hinzufügen
+* Hinzufügen von Methoden zur Identitätsüberprüfung für Unterzeichner
 * E-Mail-Benachrichtigungseinstellungen konfigurieren
 * Einzelne separate Dokumente als Teil einer Vereinbarung herunterladen
 

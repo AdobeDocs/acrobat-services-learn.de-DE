@@ -4,10 +4,11 @@ description: Hier erfahren Sie, wie Sie ein Angebotsschreiben generieren, das ei
 role: Developer
 level: Intermediate
 type: Tutorial
+feature: Use Cases
 thumbnail: KT-8096.jpg
 jira: KT-8096
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 2%
@@ -18,17 +19,17 @@ ht-degree: 2%
 
 ![Use Case Hero-Banner](assets/UseCaseOfferHero.jpg)
 
-Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services] APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile der [Erstellen und Zustellen von Angebotsschreiben an neue Mitarbeiter](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
+Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services] APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile der [Generieren und Zustellen von Angebotsschreiben an neue Mitarbeiter](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
 
 ## Lernziel.
 
-Dieses praktische Tutorial führt Sie durch die Einrichtung eines Node Express-Projekts, das ein Webformular für einen Benutzer anzeigt, um die Mitarbeiterdetails anzuzeigen. Diese Details verwenden [!DNL Acrobat Services] über das Internet, um ein Angebotsschreiben als PDF zu generieren, das mit der Adobe Sign-API an einen Kunden zur Signatur gesendet werden kann.
+Dieses praktische Tutorial führt Sie durch die Einrichtung eines Node Express-Projekts, das ein Webformular für einen Benutzer anzeigt, um die Mitarbeiterdetails anzuzeigen. Diese Details verwenden [!DNL Acrobat Services] über das Web senden, um ein Angebotsschreiben als PDF zu generieren, das mithilfe der Adobe Sign-API an einen Kunden zur Signatur gesendet werden kann.
 
 ## Relevante APIs und Ressourcen
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe Dokumentenerzeugung API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API für die Dokumentenerzeugung in Adoben](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 
 * [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
 
@@ -38,25 +39,25 @@ Dieses praktische Tutorial führt Sie durch die Einrichtung eines Node Express-P
 
 ## Erste Schritte
 
-[Node.js](https://nodejs.org/) ist die Programmierplattform. Es verfügt über eine enorme Menge an Bibliotheken, wie den Express-Webserver. [Node.js herunterladen](https://nodejs.org/en/download/) und folgen Sie den Schritten, um diese großartige Open-Source-Entwicklungsumgebung zu installieren.
+[Node.js](https://nodejs.org/) ist die Programmierplattform. Es verfügt über eine enorme Menge an Bibliotheken, wie z. B. den Express Webserver. [Node.js herunterladen](https://nodejs.org/en/download/) und folgen Sie den Schritten, um diese großartige Open-Source-Entwicklungsumgebung zu installieren.
 
-Um die Adobe Document Generation API in Node.js zu verwenden, navigieren Sie zu [API für Dokumentenerzeugung](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) , um auf Ihr Konto zuzugreifen oder sich für ein neues Konto zu registrieren. Dein Konto ist [sechs Monate lang kostenlos und dann nach Bedarf bezahlen](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es testen können, ohne Risiken dann nur bezahlen, wenn Ihr Unternehmen wächst.
+Um die API für die Generierung von Adobe-Dokumenten in Node.js zu verwenden, navigieren Sie zu [API für Dokumentenerzeugung](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) , um auf Ihr Konto zuzugreifen oder sich für ein neues Konto zu registrieren. Dein Konto ist [sechs Monate lang kostenlos und dann nach Bedarf bezahlen](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es testen können, ohne Risiken dann nur bezahlen, wenn Ihr Unternehmen wächst.
 
-Nach der Anmeldung bei der [Adobe Developer Console](https://console.adobe.io/)klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Das Projekt hat standardmäßig den Namen &quot;Projekt 1&quot;. Klicken Sie auf **[!UICONTROL Projekt bearbeiten]** und ändern Sie den Namen in &quot;Offer Letter Generator&quot;. In der Mitte des Bildschirms befindet sich ein **[!UICONTROL Erste Schritte mit Ihrem neuen Projekt]** Abschnitt. Um die Sicherheit Ihres Projekts zu aktivieren, führen Sie die folgenden Schritte aus:
+Nach der Anmeldung bei der [Adobe Developer Console](https://console.adobe.io/)auf **[!UICONTROL Neues Projekt erstellen]**. Das Projekt hat standardmäßig den Namen &quot;Projekt 1&quot;. Klicken Sie auf **[!UICONTROL Projekt bearbeiten]** und ändern Sie den Namen in &quot;Offer Letter Generator&quot;. In der Mitte des Bildschirms befindet sich ein **[!UICONTROL Erste Schritte mit Ihrem neuen Projekt]** Abschnitt. Um die Sicherheit Ihres Projekts zu aktivieren, führen Sie die folgenden Schritte aus:
 
-Klicken **API hinzufügen**. Es wird eine Reihe von APIs zur Auswahl angezeigt. Im Dialogfeld **[!UICONTROL Nach Produkt filtern]** Abschnitt wählen Sie **[!UICONTROL Document Cloud]** und klicken dann auf **[!UICONTROL Weiter]**.
+Klicken **API hinzufügen**. Es wird eine Reihe von APIs zur Auswahl angezeigt. Im Dialogfeld &quot; **[!UICONTROL Nach Produkt filtern]** Abschnitt, wählen Sie **[!UICONTROL Document Cloud]** und klicken dann auf **[!UICONTROL Weiter]**.
 
 Generieren Sie jetzt die Anmeldeinformationen, um auf die API zuzugreifen. Die Anmeldeinformationen werden in Form eines JSON-Web-Tokens ([JWT](https://jwt.io/)): ein offener Standard für sichere Kommunikation. Wenn Sie mit JWT vertraut sind und bereits Schlüssel generiert haben, können Sie hier Ihren öffentlichen Schlüssel hochladen. Alternativ können Sie fortfahren, indem Sie **Option 1** um die Adobe zu veranlassen, die Schlüssel für Sie zu generieren.
 
 ![Screenshot des Generierens von Anmeldeinformationen](assets/offer_1.png)
 
-Klicken Sie auf **[!UICONTROL Generieren von Schlüsselpaar]** klicken. Sie erhalten eine config.zip -Datei zum Herunterladen. Entpacken Sie die Archivdatei. Es enthält zwei Dateien: certificate_pub.crt und private.key. Achten Sie darauf, dass die Sicherheitseinstellungen aktiviert sind, da sie Ihre persönlichen Daten enthalten und dazu verwendet werden können, falsche Dokumente zu erstellen, falls Sie diese nicht mehr kontrollieren.
+Klicken Sie auf **[!UICONTROL Generieren von Schlüsselpaar]** klicken. Sie erhalten eine config.zip -Datei zum Herunterladen. Entpacken Sie die Archivdatei. Es enthält zwei Dateien: certificate_pub.crt und private.key. Achten Sie darauf, dass die Sicherheitseinstellungen aktiviert sind, da sie Ihre persönlichen Daten enthalten und dazu verwendet werden können, falsche Dokumente zu generieren, falls Sie diese nicht mehr kontrollieren.
 
 Klicken Sie auf **[!UICONTROL Weiter]**. Nein, ermöglicht den Zugriff auf die PDF-Generierungs-API. Im Fenster &quot; **[!UICONTROL Produktprofile auswählen]** screen, check **[!UICONTROL Enterprise PDF Services Developer]** und klicken Sie auf die Schaltfläche **[!UICONTROL Konfigurierte API speichern]** klicken. Jetzt können Sie die API verwenden.
 
 ## Einrichten des Projekts
 
-Richten Sie ein Knotenprojekt ein, um den Code auszuführen. In diesem Beispiel wird [Visual Studio-Code](https://code.visualstudio.com/) (VS-Code) als Editor. Erstellen Sie einen Ordner namens &quot;letter-generator&quot; und öffnen Sie ihn in VS Code. Im Fenster &quot; **[!UICONTROL Datei]** wählen Sie **[!UICONTROL Terminal]** \> **[!UICONTROL Neues Terminal]** , um eine Shell in diesem Ordner zu öffnen. Überprüfen Sie, ob Node installiert ist und sich auf Ihrem Pfad befindet, indem Sie Folgendes eingeben:
+Einrichten eines Knotenprojekts, um den Code auszuführen. In diesem Beispiel wird [Visual Studio-Code](https://code.visualstudio.com/) (VS-Code) als Editor. Erstellen Sie einen Ordner namens &quot;letter-generator&quot; und öffnen Sie ihn in VS Code. Im Fenster &quot; **[!UICONTROL Datei]** wählen Sie **[!UICONTROL Terminal]** \> **[!UICONTROL Neuer Terminal]** , um eine Shell in diesem Ordner zu öffnen. Überprüfen Sie, ob Node installiert ist und sich auf Ihrem Pfad befindet, indem Sie Folgendes eingeben:
 
 ```
 node -v
@@ -82,7 +83,7 @@ npm install --save @adobe/documentservices-pdftools-node-sdk
 
 Es sollte ein neuer Ordner mit dem Namen node_modules zu Ihrem Projekt hinzugefügt werden. In diesem Ordner werden alle Bibliotheken (im Knoten Abhängigkeiten genannt) heruntergeladen. Die Datei package.json wird ebenfalls mit einem Verweis auf Adobe PDF Services aktualisiert.
 
-Jetzt möchten Sie Express als Ihr einfaches Web-Framework installieren. Geben Sie den folgenden Befehl ein:
+Jetzt möchten Sie Express als Ihr schlankes Web-Framework installieren. Geben Sie den folgenden Befehl ein:
 
 ```
 npm install express –save
@@ -92,7 +93,7 @@ Wie zuvor wird der Abschnitt &quot;Abhängigkeiten&quot; von package.json entspr
 
 ## Vorlagen für Angebotsschreiben erstellen
 
-Erstellen Sie nun im Projektstamm eine Datei mit dem Namen &quot;app.js&quot;. Fügen wir folgenden Startcode hinzu:
+Erstellen Sie nun im Projektstamm eine Datei mit dem Namen &quot;app.js&quot;. Fügen wir den folgenden Startcode hinzu:
 
 ```
 const express = require('express');
@@ -114,7 +115,7 @@ console.log(`Candidate offer letter app listening on port ${port}!`)
 });
 ```
 
-Beachten Sie, dass die GET-Route eine **index.html** -Datei. Erstellen Sie eine HTML-Datei mit diesem Namen und der folgenden einfachen Form. Sie können CSS-Stile und andere Design-Elemente später nach Bedarf hinzufügen. Dieses Formular enthält die grundlegenden Details des Bewerbers zum Erstellen eines Begrüßungsschreibens:
+Beachten Sie, dass die GET-Route eine **index.html** -Datei. Erstellen Sie eine HTML-Datei mit diesem Namen und der folgenden einfachen Form. Sie können CSS-Stile und andere Design-Elemente später nach Belieben hinzufügen. Dieses Formular enthält die grundlegenden Details des Bewerbers zum Erstellen eines Begrüßungsschreibens:
 
 ```
 <!DOCTYPE html>
@@ -162,7 +163,7 @@ Sie sollten die Meldung &quot;Candidate offer letter app listen on port 8000&quo
 
 ![Screenshot des Webformulars](assets/offer_2.png)
 
-Beachten Sie, dass das Formular an sich selbst gesendet wird. Wenn Sie Daten eingeben und auf **Buchstaben generieren** Sie sollten die folgenden Informationen auf der Konsole sehen:
+Beachten Sie, dass das Formular an sich selbst gesendet wird. Wenn Sie Daten eingeben und auf **Buchstaben generieren,** Sie sollten die folgenden Informationen auf der Konsole sehen:
 
 ```
 Got body: { firstname: 'John',
@@ -171,7 +172,7 @@ salary: '887888',
 startdate: '2021-04-01' }
 ```
 
-Sie ersetzen diese Konsolenprotokollierung durch einen Webdienstaufruf an [!DNL Acrobat Services]. Zunächst müssen Sie ein JSON-basiertes Modell der Informationen erstellen. Das Format dieses Modells sieht folgendermaßen aus:
+Sie ersetzen diese Konsolenprotokollierung durch einen Webdienstaufruf an [!DNL Acrobat Services]. Zuerst müssen Sie ein JSON-basiertes Modell der Informationen erstellen. Das Format dieses Modells sieht folgendermaßen aus:
 
 ```
 {
@@ -184,7 +185,7 @@ Sie ersetzen diese Konsolenprotokollierung durch einen Webdienstaufruf an [!DNL 
 }
 ```
 
-Du kannst das Modell auf Wunsch etwas aufwändiger gestalten. In diesem Tutorial lernst du aber ein einfaches Beispiel. Dieses Formular enthält keine Validierung, da es nicht in den Geltungsbereich dieses Artikels fällt. Um den Formulartext in das oben beschriebene Datenmodell zu konvertieren, ändern Sie die app.post Handler-Methode in folgenden Code:
+Du kannst das Modell auf Wunsch etwas aufwändiger gestalten. In diesem Tutorial lernst du aber ein einfaches Beispiel. Dieses Formular wurde nicht validiert, da es nicht in den Geltungsbereich dieses Artikels fällt. Um den Formulartext in das oben beschriebene Datenmodell zu konvertieren, ändern Sie die app.post-Handler-Methode in folgenden Code:
 
 ```
 app.post('/', (req, res) => {
@@ -194,7 +195,7 @@ res.sendStatus(200);
 });
 ```
 
-Die erste Zeile platziert Ihre JSON-Daten im gewünschten Format. Diese Daten übergeben Sie nun an eine generateLetter-Funktion. Beenden Sie den Server und fügen Sie den folgenden Code am Ende von app.js ein. In diesem Code wird ein Word-Dokument als Vorlage verwendet und Platzhalter werden mit Informationen aus einem JSON-Dokument gefüllt.
+In der ersten Zeile werden Ihre JSON-Daten im gewünschten Format abgelegt. Diese Daten übergeben Sie nun an eine generateLetter-Funktion. Beenden Sie den Server und fügen Sie den folgenden Code am Ende von app.js ein. In diesem Code wird ein Word-Dokument als Vorlage verwendet, und Platzhalter werden mit Informationen aus einem JSON-Dokument gefüllt.
 
 ```
 // Letter generation function
@@ -237,7 +238,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Dort gibt es viel Code zum Entpacken. Lassen Sie uns zuerst den Hauptteil betrachten: der `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten mit einer Word-Dokumentvorlage zusammenführen. Sie können den Befehl [Beispiel auf der Website der Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) als Referenz, aber lassen Sie uns Ihr eigenes, einfaches Beispiel erstellen. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
+Dort gibt es viel Code zum Entpacken. Lassen Sie uns zuerst den Hauptteil betrachten: die `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können den Befehl [Beispiel auf der Website der Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) als Referenz verwenden, aber lassen Sie uns ein eigenes, einfaches Beispiel erstellen. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
 
 Hallo X,
 
@@ -245,9 +246,9 @@ Wir freuen uns, Ihnen eine Position für $X pro Jahr anbieten zu können. Ihr St
 
 Willkommen
 
-Speichern Sie das Dokument unter dem Namen &quot;OfferLetter-Template.docx&quot; im Ordner &quot;resources&quot; im Stammordner Ihres Projekts. Beachten Sie die drei Xs in dem Dokument. Diese Xs sind temporäre Platzhalter für Ihre JSON-Informationen. Obwohl Sie diese Platzhalter durch eine spezielle Syntax ersetzen können, bietet Adobe ein Word-Add-in, das diese Aufgabe vereinfacht. Um das Add-in zu installieren, gehen Sie zur Adobe [Word-Add-in für Tagger zur Dokumentgenerierung](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) Website.
+Speichern Sie das Dokument unter dem Namen &quot;OfferLetter-Template.docx&quot; in einem Ordner namens &quot;resources&quot; im Stammordner Ihres Projekts. Beachten Sie die drei Xs in dem Dokument. Diese Xs sind temporäre Platzhalter für Ihre JSON-Informationen. Obwohl Sie diese Platzhalter durch eine spezielle Syntax ersetzen können, bietet Adobe ein Word-Add-in, das diese Aufgabe vereinfacht. Um das Add-in zu installieren, gehen Sie zur Adobe [Word-Add-in für Tagger zur Dokumentgenerierung](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) Website.
 
-Klicken Sie in Ihrer OfferLetter-Vorlage auf das neue **Dokumenterstellung** klicken. Ein Seitenbedienfeld wird geöffnet. Klicken Sie auf **Erste Schritte**. Es wird ein Textbereich zum Einfügen in die JSON-Beispieldaten bereitgestellt. Kopieren Sie das &quot;Angebot-Daten&quot;-Snippet von JSON von oben in den Textbereich. Es sollte wie folgt aussehen:
+Klicken Sie in Ihrer OfferLetter-Vorlage auf das neue **Dokumenterstellung** klicken. Ein Seitenbedienfeld wird geöffnet. Klicken Sie auf **Erste Schritte**. Sie erhalten einen Textbereich, der in die JSON-Beispieldaten eingefügt werden kann. Kopieren Sie den &quot;Angebot-Daten&quot;-Ausschnitt von JSON von oben in den Textbereich. Es sollte wie folgt aussehen:
 
 ![Screenshot von Buchstaben und Code](assets/offer_3.png)
 
@@ -255,13 +256,13 @@ Klicken Sie auf **Tags generieren** klicken. Sie erhalten ein Dropdown-Menü mit
 
 Sehr geehrte*r ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```,
 
-Wir freuen uns, Ihnen eine Position für $ ```{{`offer_letter`.salary}}``` pro Jahr. Dein Startdatum ist der . ```{{`offer_letter`.startdate}}```.
+Wir freuen uns, Ihnen eine Position für $ anbieten zu können ```{{`offer_letter`.salary}}``` pro Jahr. Dein Startdatum ist der . ```{{`offer_letter`.startdate}}```.
 
 Willkommen
 
 Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispiel: ```{{`offer_letter`.`firstname`}}``` am Anfang des Word-Dokuments wird durch den Wert im Abschnitt &quot;Vorname&quot; der JSON-Daten ersetzt.
 
-Zurück zu Ihrem `generateLetter` Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein und passen Sie sie mit Details aus dem Abschnitt Service Account (JWT) Ihres [Entwicklerkonsole](https://console.adobe.io/).
+Zurück zu Ihrem `generateLetter` -Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein und passen Sie sie mit Details aus dem Abschnitt Service Account (JWT) Ihres [Entwicklerkonsole](https://console.adobe.io/).
 
 ```
 {
@@ -277,7 +278,7 @@ Zurück zu Ihrem `generateLetter` Funktion. Erstellen Sie zum Sichern Ihres REST
 }
 ```
 
-* Die Client-ID, der Client-Schlüssel und die Organisations-ID können direkt aus der **[!UICONTROL Berechtigungsdetails]** der Konsole.
+* Die Client-ID, der Client-Schlüssel und die Organisations-ID können direkt aus der **[!UICONTROL Berechtigungsdetails]** -Abschnitt der Konsole.
 
 * Die Konto-ID ist die **Technische Konto-ID**.
 
@@ -287,7 +288,7 @@ Um eine PDF mit den ausgefüllten JSON-Daten zu generieren, kehren Sie zu Ihrem 
 
 ## Nächste Schritte
 
-Das ist alles! Das ist erst der Anfang. Wenn Sie sich im Abschnitt &quot;Erweitert&quot; der Registerkarte &quot;Dokumenterstellung&quot; des Word-Add-ins umsehen, werden Sie feststellen, dass nicht alle Platzhaltermarken aus den zugeordneten JSON-Daten stammen. Sie können auch Signatur-Tags hinzufügen. Mit diesen Tags können Sie das resultierende Dokument in [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) zur Zustellung und Unterzeichnung an den neuen Mitarbeiter. Lesen Sie &quot;Erste Schritte mit der Adobe Sign API&quot;, um mehr über diese Möglichkeiten zu erfahren. Dieser Vorgang ist ähnlich, da Sie REST-Aufrufe verwenden, die mit einem JWT-Token gesichert sind.
+Das war&#39;s! Das ist erst der Anfang. Wenn Sie sich im Abschnitt &quot;Erweitert&quot; der Registerkarte &quot;Dokumenterstellung&quot; des Word-Add-ins umsehen, werden Sie feststellen, dass nicht alle Platzhaltermarken aus den zugeordneten JSON-Daten stammen. Sie können auch Signatur-Tags hinzufügen. Mit diesen Tags können Sie das resultierende Dokument in [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) für die Zustellung und Unterzeichnung an den neuen Mitarbeiter. Lesen Sie &quot;Erste Schritte mit der Adobe Sign API&quot;, um mehr über diese Möglichkeiten zu erfahren. Dieser Vorgang ist ähnlich, da Sie REST-Aufrufe verwenden, die mit einem JWT-Token gesichert sind.
 
 Das oben angegebene Beispiel für ein einzelnes Dokument kann als Grundlage für eine Anwendung verwendet werden, wenn eine Organisation [Beschleunigung der Saisonbeschäftigung](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) von Mitarbeitern an mehreren Standorten. Wie gezeigt, besteht der Hauptfluss darin, Daten von Bewerbern über eine Online-Bewerbung zu sammeln. Die Daten werden verwendet, um die Felder eines Angebotsschreibens auszufüllen und zum elektronischen Unterschreiben zu senden.
 

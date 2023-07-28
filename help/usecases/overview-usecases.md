@@ -4,10 +4,11 @@ description: Übersichtsseite für [!DNL Adobe Acrobat Services] API-Anwendungsf
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: Use Cases
 thumbnail: KT-8115.jpg
 jira: KT-8115
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 ## Was kann die [!DNL Adobe Acrobat Services] APIs für mich?
 
-Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit diesen praktischen Use Cases verändern.
+Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit diesen praktischen Use Cases verändern.
 
 ### [!DNL Acrobat Services] APIs
 
@@ -28,22 +29,22 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
 <tr>
   <td>
     <a href="automatelegalworkflows.md">
-      <img alt="Automatisierung von Workflows in Rechtsabteilungen." src="assets/automatelegal_thumb.png" />
+      <img alt="Automatisierung von Dokumenten-Workflows." src="assets/automatelegal_thumb.png" />
     </a>
     <div>
-    <a href="automatelegalworkflows.md"><strong>Automatisierung von Workflows in Rechtsabteilungen.</strong></a>
+    <a href="automatelegalworkflows.md"><strong>Automatisierung von Dokumenten-Workflows.</strong></a>
     </div>
-    <em>Workflows in Rechtsabteilungen mit bedingten Inhalten automatisieren</em>
+    <em>Workflows mit bedingten Inhalten automatisieren</em>
     <br>
   </td>
   <td>
       <a href="employeeonboarding.md">
-        <img alt="Modernisierung des Mitarbeiter-Onboarding" src="assets/employee_thumb.png" />
+        <img alt="Modernisierung des Mitarbeiter-Onboarding." src="assets/employee_thumb.png" />
       </a>
       <div>
-      <a href="employeeonboarding.md"><strong>Modernisierung des Mitarbeiter-Onboarding</strong></a>
+      <a href="employeeonboarding.md"><strong>Modernisierung des Mitarbeiter-Onboarding.</strong></a>
       </div>
-      <em>Hier erfahrt ihr, wie ihr das Onboarding von Mitarbeitern modernisiert.</em>
+      <em>Weitere Informationen zur Modernisierung des Mitarbeiter-Onboarding</em>
       <br>
   </td>
   <td>
@@ -85,7 +86,7 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
     <div>
     <a href="legal.md"><strong>Verwaltung von Rechtsverträgen</strong></a>
     </div>
-    <em>Erfahrt, wie ihr Rechtsdokumente automatisch mit benutzerdefinierten Dateneingaben erstellt und schützt.</em>
+    <em>Erfahrt, wie ihr Rechtsdokumente automatisch durch benutzerdefinierte Dateneingaben schützt.</em>
     <br>
   </td>
   <td>
@@ -117,7 +118,7 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
     <div>
     <a href="reviews.md"><strong>Überprüfungen und Genehmigungen</strong></a>
     </div>
-    <em>Workflow zur Abstimmung und Genehmigung von Dokumenten im Team lernen</em>
+    <em>Workflow zur Abstimmung und Genehmigung von Dokumenten im Team entwickeln</em>
     <br>
   </td>
   <td>
@@ -127,7 +128,7 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
     <div>
     <a href="reportcreation.md"><strong>Erstellen und Bearbeiten von Berichten</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website erstellen.</em>
+    <em>Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website generieren.</em>
     <br>
   </td>
   <td>
@@ -142,7 +143,7 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
   </td>
   <td>
     <a href="educationcollab.md">
-      <img alt="Zusammenarbeit zwischen Schülern und Lehrern" src="assets/edu_thumb.png" />
+      <img alt="Zusammenarbeit von Schülern, Studierenden, Lehrkräften" src="assets/edu_thumb.png" />
     </a>
     <div>
     <a href="educationcollab.md"><strong>Zusammenarbeit von Schülern, Studierenden, Lehrkräften</strong></a>
@@ -233,7 +234,7 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen
     <div>
     <a href="ddppdfembedapi.md"><strong>Veröffentlichung digitaler Dokumente.</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie eingebettete PDF-Dokumente mithilfe der Adobe PDF Embed-API in Webseiten anzeigen</em>
+    <em>Erfahren Sie, wie Sie eingebettete PDF-Dokumente mithilfe der Adobe PDF Embed-API in Webseiten anzeigen.</em>
     <br>
   </td>
   <td>

@@ -4,10 +4,11 @@ description: Übersichtsseite für [!DNL Adobe Acrobat Services]
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API
 thumbnail: KT-7463.jpg
 jira: KT-7463
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 2%
@@ -18,13 +19,13 @@ ht-degree: 2%
 
 ![[!DNL Acrobat Services] Banner](assets/acrobatserviceshero.jpg)
 
-[!DNL Adobe Acrobat Services] verfügt über fünf Haupt-APIs: der [!DNL Adobe PDF Services API], den Katalog [!DNL Adobe PDF Embed API], den Katalog [!DNL Adobe Document Generation API], den Katalog [!DNL Adobe PDF Extract API] und [!DNL Adobe PDF Accessibility Auto-Tag API]. Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines bezahlten Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs.
+[!DNL Adobe Acrobat Services] hat fünf APIs: die [!DNL Adobe PDF Services API], den Katalog [!DNL Adobe PDF Embed API], den Katalog [!DNL Adobe Document Generation API], den Katalog [!DNL Adobe PDF Extract API] und [!DNL Adobe PDF Accessibility Auto-Tag API]. Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines kostenpflichtigen Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs
 
 <table style="table-layout:fixed">
 <tr>
  <td>
    <a href="pdfservices/overview-pdfservices.md">
-      <img alt="PDF Services API" src="assets/pdfservicescard.png" />
+      <img alt="PDF Services-API" src="assets/pdfservicescard.png" />
    </a>
   </td>
   <td>

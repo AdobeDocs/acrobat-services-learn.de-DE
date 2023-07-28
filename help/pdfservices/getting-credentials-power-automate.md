@@ -4,10 +4,11 @@ description: Hier erfahren Sie, wie Sie Anmeldeinformationen abrufen, um Adobe P
 type: Tutorial
 role: Developer
 level: Beginner
+feature: PDF Services API
 thumbnail: KT-10382.jpg
 jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 2%
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 # Abrufen von Anmeldedaten für Microsoft Power Automate
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/) bietet Entwicklern und Entwicklern eine leistungsstarke Möglichkeit, leistungsstarke automatisierte Prozesse zu erstellen, um ihre Geschäfte zu verbessern, ohne Code schreiben zu müssen. [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) als Teil der [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)können Benutzer alle in der Adobe PDF Services-API in Microsoft Power Automate verfügbaren Aktionen ausführen.
+[Microsoft Power Automate](https://powerautomate.microsoft.com/) bietet Entwicklern und Entwicklern eine leistungsstarke Möglichkeit, leistungsstarke automatisierte Prozesse zu erstellen, um ihre Geschäfte zu verbessern, ohne Code schreiben zu müssen. [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) Stecker, als Teil der [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)können Benutzer alle in der Adobe PDF Services-API in Microsoft Power Automate verfügbaren Aktionen ausführen.
 
 In diesem Tutorial lernen Sie, wie Sie Ihre Zugangsdaten abrufen, um Adobe PDF Services zu verwenden oder zu testen. Abhängig davon, ob Sie ein Benutzer der Testversion oder ein bestehender Kunde sind, führt dieses Tutorial die richtigen Schritte zum Abrufen von Anmeldedaten durch.
 
@@ -91,13 +92,13 @@ Wenn Sie bereits Anmeldeinformationen erstellt und die heruntergeladenen Anmelde
 
    ![Bestehende Anmeldedaten](assets/credentials_7.png)
 
-1. Beachten Sie die fünf hier angezeigten Werte: *Client-ID*, *Client-Geheimnis*, *Technische Konto-ID*, *Technische Konto-E-Mail* und *Organisations-ID*.
+1. Beachten Sie die fünf Werte, die hier angezeigt werden: *Client-ID*, *Geheimer Clientschlüssel*, *Technische Konto-ID*, *Technische Konto-E-Mail* und *Organisations-ID*.
 
 Leider können Sie den vorherigen privaten Schlüssel nicht herunterladen, aber Sie können die Schaltfläche &quot;Öffentliches/Privates Schlüsselpaar generieren&quot; verwenden, um einen neuen Schlüssel zu erstellen.
 
 ## Verwenden bestehender Adobe PDF Services-Anmeldedaten
 
-Wenn Sie bereits über Adobe PDF Services-API-Zugangsberechtigungen verfügen, die von [!DNL Adobe Acrobat Services] Website verwenden, können Sie sie mit Microsoft Power Automate verwenden. Wenn Sie während der Anmeldung ein SDK heruntergeladen haben, liegen Ihre bestehenden Anmeldeinformationen in Form einer JSON-Datei vor, die höchstwahrscheinlich den Namen `pdfservices-api-credentials.json`. Diese JSON-Datei enthält die fünf Schlüssel, die zum Erstellen Ihrer Verbindungsinformationen erforderlich sind. Kopieren Sie jeden Wert aus der JSON-Datei in das entsprechende Verbindungsfeld.
+Wenn Sie bereits vorhandene Adobe PDF Services-API-Zugangsberechtigungen von [!DNL Adobe Acrobat Services] Website verwenden möchten, können Sie sie mit Microsoft Power Automate verwenden. Wenn Sie während der Anmeldung ein SDK heruntergeladen haben, wurden Ihre bestehenden Anmeldeinformationen in Form einer JSON-Datei mit dem wahrscheinlichsten Namen `pdfservices-api-credentials.json`. Diese JSON-Datei enthält die fünf Schlüssel, die zum Erstellen Ihrer Verbindungsanmeldeinformationen erforderlich sind. Kopieren Sie jeden Wert aus der JSON-Datei in das entsprechende Verbindungsfeld.
 
 Der Wert für den privaten Schlüssel stammt aus einer zweiten Datei mit dem Namen `private.key`.
 
