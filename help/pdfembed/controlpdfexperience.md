@@ -1,13 +1,14 @@
 ---
 title: Kontrolle über Ihr PDF-Online-Erlebnis und Sammeln von Analysen
 description: In diesem praktischen Tutorial lernen Sie, wie Sie die Adobe PDF Embed-API verwenden, um das Erscheinungsbild zu steuern, die Zusammenarbeit zu ermöglichen und Analysen über die Interaktion von Benutzern mit PDF zu sammeln, einschließlich der Zeit, die auf einer Seite und bei Suchvorgängen verbracht wird.
-type: Tutorial
+feature: PDF Embed API
 role: Developer
 level: Intermediate
-thumbnail: KT-7487.jpg
+type: Tutorial
 jira: KT-7487
+thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
