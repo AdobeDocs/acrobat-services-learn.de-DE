@@ -5,7 +5,9 @@ user-guide-description: Weitere Informationen über [!DNL Adobe Acrobat Services
 solution: Acrobat Services
 feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+role: Developer
+level: Beginner, Intermediate, Experienced
+source-git-commit: 382518232e804a5a64504bead419e6b822df42c0
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -28,7 +30,7 @@ ht-degree: 7%
 + API für Dokumentenerzeugung {#docgen}
    + [Überblick](docgen/overview-docgen.md)
    + Erstellen von Vorlagen {#docgentemplates}
-      + [Übersicht über das Generieren von Adobe-Dokumenten](docgen/taggeroverview.md)
+      + [Überblick über das Adobe-Tagger zum Generieren von Dokumenten](docgen/taggeroverview.md)
       + [Hinzufügen von Text-Tags](docgen/taggeraddtexttags.md)
       + [Hinzufügen von Bild-Tags](docgen/taggeraddimagetags.md)
       + [Hinzufügen von Tabellen und Listen-Tags](docgen/taggertables.md)
