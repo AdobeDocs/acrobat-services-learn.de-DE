@@ -7,7 +7,8 @@ feature-set: Acrobat Services
 feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation API
 role: Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 382518232e804a5a64504bead419e6b822df42c0
+auto-video-transcripts: true
+source-git-commit: eb396a3960f49881fcb94df83765a9bc8eee284c
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -17,9 +18,9 @@ ht-degree: 7%
 
 # [!DNL Adobe Acrobat Services] API {#tutorials}
 
-+ [Überblick](overview.md)
++ [Übersicht](overview.md)
 + PDF Services-API {#pdfservices}
-   + [Überblick](pdfservices/overview-pdfservices.md)
+   + [Übersicht](pdfservices/overview-pdfservices.md)
    + [Abrufen von Anmeldedaten für Microsoft Power Automate](pdfservices/getting-credentials-power-automate.md)
    + [Erstellen Sie Ihren ersten Flow in Microsoft Power Automate](pdfservices/create-workflow-power-automate.md)
    + [PDF von HTML erstellen](pdfservices/createpdffromhtml.md)
@@ -28,7 +29,7 @@ ht-degree: 7%
    + [Erste Schritte mit Adobe PDF Services API und .Net](pdfservices/gettingstartednet.md)
    + [Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien](pdfservices/ocr.md)
 + API für Dokumentenerzeugung {#docgen}
-   + [Überblick](docgen/overview-docgen.md)
+   + [Übersicht](docgen/overview-docgen.md)
    + Erstellen von Vorlagen {#docgentemplates}
       + [Überblick über das Adobe-Tagger zum Generieren von Dokumenten](docgen/taggeroverview.md)
       + [Hinzufügen von Text-Tags](docgen/taggeraddtexttags.md)
@@ -37,12 +38,12 @@ ht-degree: 7%
       + [Festlegen von numerischen Berechnungstags](docgen/taggercalculations.md)
       + [Festlegen von bedingtem Inhalt](docgen/taggerconditional.md)
 + PDF Extract API {#pdfextract}
-   + [Überblick](pdfextract/overview-extract.md)
+   + [Übersicht](pdfextract/overview-extract.md)
 + PDF Embed-API {#pdfembed}
-   + [Überblick](pdfembed/overview-embed.md)
+   + [Übersicht](pdfembed/overview-embed.md)
    + [PDF-Onlineerlebnis kontrollieren und Analysen einholen](pdfembed/controlpdfexperience.md)
 + Acrobat Sign-API {#acrobatsign}
-   + [Überblick](acrobatsign/overview-sign.md)
+   + [Übersicht](acrobatsign/overview-sign.md)
    + [Erste Schritte mit der Adobe Sign API](acrobatsign/signapi.md)
    + OEM/Embedded-Partner {#oem}
       + [Registrieren für ein Entwicklerkonto](acrobatsign/sign-up-developer-account.md)
@@ -51,7 +52,7 @@ ht-degree: 7%
       + [Generieren eines Zugriffstokens](acrobatsign/generating-an-access-token.md)
       + [Erstellen von temporären Dokumenten](acrobatsign/creating-a-transient-document.md)
 + Anwendungsfälle {#usecases}
-   + [Überblick](usecases/overview-usecases.md)
+   + [Übersicht](usecases/overview-usecases.md)
    + [Automatisierung von Dokumenten-Workflows.](usecases/automatelegalworkflows.md)
    + [Modernisierung des Mitarbeiter-Onboarding.](usecases/employeeonboarding.md)
    + [Schnellere Vertriebsprozesse.](usecases/acceleratesales.md)
