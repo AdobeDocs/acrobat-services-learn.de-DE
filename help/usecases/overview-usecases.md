@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API-Anwendungsfälle
-
-![[!DNL Acrobat Services] API-Nutzungsszenario-Banner](../assets/usecaseshero.jpg)
 
 ## Was kann die [!DNL Adobe Acrobat Services] APIs für mich?
 
@@ -118,7 +116,7 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <div>
     <a href="reviews.md"><strong>Überprüfungen und Genehmigungen</strong></a>
     </div>
-    <em>Workflow zur Abstimmung und Genehmigung von Dokumenten im Team entwickeln</em>
+    <em>Workflow zur Abstimmung und Genehmigung von Dokumenten im Team lernen.</em>
     <br>
   </td>
   <td>

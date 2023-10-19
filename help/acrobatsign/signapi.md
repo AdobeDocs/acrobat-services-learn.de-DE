@@ -8,22 +8,20 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
 
 # Erste Schritte mit der Adobe Sign API
 
-![Use Case Hero-Banner](assets/UseCaseStartedHero.jpg)
-
 [ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) ist eine großartige Möglichkeit, die Verwaltung von signierten Vereinbarungen zu verbessern. Entwickler können ihre Systeme ganz einfach mit der Sign-API integrieren, die eine zuverlässige, einfache Möglichkeit bietet, Dokumente hochzuladen, zum Signieren zu senden, Erinnerungen zu senden und elektronische Signaturen zu erfassen.
 
 ## Lernziel.
 
-In diesem praktischen Tutorial wird erläutert, wie Entwickler die Sign-API verwenden können, um Anwendungen und Workflows zu verbessern, die mit [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] umfasst [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (kostenlos) und [API für die Dokumentenerzeugung in Adoben](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+In diesem praktischen Tutorial wird erläutert, wie Entwickler die Sign-API verwenden können, um Anwendungen und Workflows zu verbessern, die mit [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] umfasst [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/viesdk) (kostenlos) und [API für die Dokumentenerzeugung in Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
 Insbesondere erfahren Sie, wie Sie die Acrobat Sign API in Ihre Anwendung integrieren, um Signaturen und andere Informationen, wie z. B. Mitarbeiterinformationen in einem Versicherungsformular, zu erfassen. Es werden generische Schritte mit vereinfachten HTTP-Anforderungen und -Antworten verwendet. Sie können diese Anforderungen in Ihrer bevorzugten Sprache implementieren. Sie können eine PDF mit einer Kombination aus [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/), laden Sie sie als [vorübergehend](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Dokument hinzufügen und Endbenutzersignaturen mit der Vereinbarung oder [Widget](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) Arbeitsablauf.
 
@@ -39,7 +37,7 @@ In diesem Beispiel ist die Vorlage nur ein einfaches Dokument mit einigen Unterz
 
 Vor der Arbeit mit der Sign-API: [ein kostenloses Entwicklerkonto erstellen](https://acrobat.adobe.com/ca/en/sign/developer-form.html) , um auf die API zuzugreifen, den Austausch und die Ausführung von Dokumenten zu testen und die E-Mail-Funktion zu testen.
 
-Adobe verteilt die Acrobat Sign-API in vielen Bereitstellungseinheiten, die als &quot;Shards&quot; bezeichnet werden, auf der ganzen Welt. Jeder Shard dient dem Konto eines Kunden, z. B. NA1, NA2, NA3, EU1, JP1, AU1, IN1 und andere. Die Shard-Namen entsprechen geografischen Standorten. Diese Shards bilden den Basis-URI (Zugriffspunkte) der API-Endpunkte.
+Adobe verteilt die Acrobat Sign-API in vielen Bereitstellungseinheiten, so genannten &quot;Shards&quot;, rund um den Globus. Jeder Shard dient dem Konto eines Kunden, z. B. NA1, NA2, NA3, EU1, JP1, AU1, IN1 und andere. Die Shard-Namen entsprechen geografischen Standorten. Diese Shards bilden den Basis-URI (Zugriffspunkte) der API-Endpunkte.
 
 Um auf die Sign-API zuzugreifen, müssen Sie zunächst den richtigen Zugriffspunkt für Ihr Konto ermitteln, der je nach Speicherort api.na1.adobesign.com, api.na4.adobesign.com, api.eu1.adobesign.com oder andere sein kann.
 
@@ -240,7 +238,7 @@ Als Nächstes signiert der Benutzer das Dokument mit einer zuvor gespeicherten S
 
 ![Screenshot der Unterschrift](assets/GSASAPI_10.png)
 
-Wenn der Benutzer auf **Anwenden**, weist die Adobe sie an, ihre E-Mail zu öffnen und die Signatur zu bestätigen. Die Signatur steht bis zum Eingang der Bestätigung aus.
+Wenn der Benutzer auf **Anwenden**, Adobe fordert sie auf, ihre E-Mail zu öffnen und die Signatur zu bestätigen. Die Signatur steht bis zum Eingang der Bestätigung aus.
 
 ![Screenshot von &quot;Nur ein weiterer Schritt&quot;](assets/GSASAPI_11.png)
 
@@ -329,7 +327,7 @@ Um einen Vereinbarungsstatus zu ändern, verwenden Sie den Katalog `PUT /agreeme
 
 Die `participantSetsInfo` Die obige Eigenschaft enthält E-Mails von Personen, von denen erwartet wird, dass sie an der Vereinbarung teilnehmen, und gibt an, welche Aktion sie ausführen (signieren, genehmigen, bestätigen usw.). Im obigen Beispiel gibt es nur einen Teilnehmer: den Unterzeichner. Schriftliche Signaturen sind auf vier pro Dokument beschränkt.
 
-Im Gegensatz zu Webformularen versendet die Adobe eine Vereinbarung automatisch zur Signatur, wenn Sie eine Vereinbarung erstellen. Der Endpunkt gibt den eindeutigen Bezeichner der Vereinbarung zurück.
+Im Gegensatz zu Webformularen versendet der Adobe beim Erstellen einer Vereinbarung diese automatisch zur Signatur. Der Endpunkt gibt den eindeutigen Bezeichner der Vereinbarung zurück.
 
 
 ```
