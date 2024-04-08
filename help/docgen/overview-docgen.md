@@ -5,12 +5,12 @@ feature: Document Generation API
 role: Developer
 level: Beginner, Intermediate, Experienced
 type: Tutorial
-jira: 7480
+jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,37 @@ Die Dokumentenerzeugung-API erstellt PDF- und Word-Dokumente aus Word-Vorlagen u
 >[!NOTE]
 >
 >Die Dokumentenerzeugung-API ist in der PDF Services-API enthalten.
+
+<table style="table-layout:fixed">
+<tr>
+ <td>
+   <a href="automate-doc-gen.md">
+      <img alt="Automatisierte Generierung von Dokumenten" src="assets/automate-doc-gen.png" />
+   </a>
+    <div>
+   <a href="taggeroverview.md"><strong>Automatisierte Generierung von Dokumenten</strong></a>
+    </div>
+    <em>Automatisches Generieren skalierter Dokumente.</em>
+    <br>
+  </td>
+    <td>
+    <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+   <td>
+    <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+  </td>
+   <td>
+    <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+</tr>
+</table>
 
 ## Erstellen von Vorlagen
 
