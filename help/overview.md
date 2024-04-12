@@ -8,16 +8,25 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: eee88418f6d94c1f35ba05b23ab7fea6a5f54847
+source-git-commit: cdbefd8bd0d4b65e0d34e5bbf74065f80faf20e1
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '122'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API-Tutorials
 
-[!DNL Adobe Acrobat Services] verfügt über sechs HauptAPIs: die [!DNL Adobe PDF Services API], den Katalog [!DNL Adobe PDF Embed API], den Katalog [!DNL Adobe Document Generation API], den Katalog [!DNL Adobe PDF Electronic Seal API], den Katalog [!DNL Adobe PDF Extract API]und [!DNL Adobe PDF Accessibility Auto-Tag API]. Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines kostenpflichtigen Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs
+[!DNL Adobe Acrobat Services] verfügt über sechs Haupt-APIs:
+
+* [!DNL Adobe PDF Services API]
+* [!DNL Adobe PDF Embed API]
+* [!DNL Adobe Document Generation API]
+* [!DNL Adobe PDF Electronic Seal API]
+* [!DNL Adobe PDF Extract API]
+* [!DNL Adobe PDF Accessibility Auto-Tag API]
+
+Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines kostenpflichtigen Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs
 
 <table style="table-layout:fixed">
 <tr>
