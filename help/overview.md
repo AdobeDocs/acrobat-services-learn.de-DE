@@ -8,16 +8,16 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: c130591ed32bb1aab457556938fc994756e8b04a
+source-git-commit: eee88418f6d94c1f35ba05b23ab7fea6a5f54847
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '128'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API-Tutorials
 
-[!DNL Adobe Acrobat Services] verfügt über sechs HauptAPIs: die [!DNL Adobe PDF Services API], den Katalog [!DNL Adobe PDF Embed API], den Katalog [!DNL Adobe Document Generation API], den Katalog [!DNL Adobe PDF Accessibility Auto-Tag API], der [!DNL Adobe PDF Extract API]und [!DNL Adobe PDF Accessibility Auto-Tag API]. Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines kostenpflichtigen Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs
+[!DNL Adobe Acrobat Services] verfügt über sechs HauptAPIs: die [!DNL Adobe PDF Services API], den Katalog [!DNL Adobe PDF Embed API], den Katalog [!DNL Adobe Document Generation API], den Katalog [!DNL Adobe PDF Electronic Seal API], den Katalog [!DNL Adobe PDF Extract API]und [!DNL Adobe PDF Accessibility Auto-Tag API]. Die beiden letztgenannten APIs und ihre SDKs sind in [!DNL Adobe PDF Services API] als Teil eines kostenpflichtigen Angebots. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen euch, mit der [!DNL Adobe Acrobat Services] APIs
 
 <table style="table-layout:fixed">
 <tr>
@@ -44,6 +44,11 @@ ht-degree: 2%
 </tr>
 <tr>
   <td>
+   <a href="pdfelectronicseal/overview-electronic-seal.md">
+      <img alt="PDF Electronic Seal API" src="assets/PDFElectronicSeal.png" />
+   </a>
+  </td>
+ <td>
    <a href="pdfembed/overview-embed.md">
       <img alt="Erste Schritte mit der Adobe PDF Tools-API und Java" src="assets/pdfembedcard.png" />
    </a>
@@ -57,11 +62,6 @@ ht-degree: 2%
    <a href="usecases/overview-usecases.md">
       <img alt="[!DNL Adobe Acrobat Services] API-Anwendungsfälle" src="assets/usecasescard.png" />
    </a>
-  </td>
-  <td>
-    <img alt="Spacer" src="assets/GrayBanner_Placeholder.png" />
-    <div>
-    <br>
   </td>
 </tr>
 </table>
