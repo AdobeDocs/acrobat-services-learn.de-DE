@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 558bd677d3b357a98488ada9dda1054bb21b81af
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Die Verarbeitung und Automatisierung des PDF-Formats kann sich als Herausforderu
 
 ## Lernziel.
 
-In diesem praktischen Tutorial erfahren Sie, wie Sie [!DNL Adobe Acrobat Services] APIs für [!DNL Java Spring Boot] Anwendungen. Sie erstellen eine MVC-App (Model-View-Controller), die Inhalte aus PDF-Dokumenten extrahiert, in andere Datenformate wie Excel konvertiert, mehrere PDF kombiniert und die Ressourcen mit einem Kennwort schützt. In diesem Tutorial wird erläutert, wie Sie PDF-Dokumente verarbeiten und mithilfe der Adobe auf Ihren Websites anzeigen. [PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+In diesem praktischen Tutorial erfahren Sie, wie Sie [!DNL Adobe Acrobat Services] APIs für [!DNL Java Spring Boot] Anwendungen. Sie erstellen eine MVC-App (Model-View-Controller), die Inhalte aus PDF-Dokumenten extrahiert, in andere Datenformate wie Excel konvertiert, mehrere PDF kombiniert und die Ressourcen mit einem Kennwort schützt. In diesem Tutorial wird erläutert, wie Sie PDF-Dokumente verarbeiten und auf Ihren Websites mit der Adobe anzeigen. [PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 ## Relevante APIs und Ressourcen
 
@@ -37,7 +37,7 @@ In diesem praktischen Tutorial erfahren Sie, wie Sie [!DNL Adobe Acrobat Service
 
 ## Einrichten
 
-[!DNL Adobe Acrobat Services] verwendet ein Authentifizierungssystem, um den Ressourcenzugriff zu steuern. Um auf die Services zugreifen zu können, müssen Sie in der Adobe einen API-Schlüssel für Ihr Unternehmen oder Ihre Anwendung anfordern. Wenn Sie über einen API-Schlüssel verfügen, fahren Sie mit dem nächsten Abschnitt fort. Um einen neuen API-Schlüssel zu erstellen, besuchen Sie [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in der &quot; [!DNL Acrobat Services] Website. Sie können einen Schlüssel mit ihrer kostenlosen Testversion erstellen, die 1.000 Dokumenttransaktionen bietet, die bis zu sechs Monate lang genutzt werden können.
+[!DNL Adobe Acrobat Services] verwendet ein Authentifizierungssystem, um den Ressourcenzugriff zu steuern. Um auf die Services zugreifen zu können, müssen Sie von der Adobe einen API-Schlüssel für Ihre Organisation oder Anwendung anfordern. Wenn Sie über einen API-Schlüssel verfügen, fahren Sie mit dem nächsten Abschnitt fort. Um einen neuen API-Schlüssel zu erstellen, besuchen Sie [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) in der &quot; [!DNL Acrobat Services] Website. Sie können einen Schlüssel mit ihrer kostenlosen Testversion erstellen, die 1.000 Dokumenttransaktionen bietet, die bis zu sechs Monate lang genutzt werden können.
 
 Um dieses Tutorial nachzuvollziehen, benötigen Sie zwei Sätze von API-Schlüsseln:
 
@@ -49,7 +49,7 @@ Kopieren Sie nach dem Erstellen der Anmeldeinformationen die API-Anmeldeinformat
 
 ![Screenshot des Verzeichnisspeicherorts für PDF Services-API-Zugangsberechtigungen](assets/FAWJ_1.png)
 
-Informationen zum Konfigurieren der Protokollierungsdienste finden Sie unter [Dokumentation zur Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) und scrollen Sie zum Abschnitt Protokollierung .
+Informationen zum Konfigurieren der Protokollierungsdienste finden Sie unter [Adobe-Dokumentation](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) und scrollen Sie zum Abschnitt Protokollierung .
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Alle diese Beispiele finden Sie im [GitHub-Beispiele](https://github.com/adobe/p
 
 Als Nächstes in [!DNL Spring Boot]können Sie eine Datei mithilfe des String-Pfads oder des Streams abrufen, in den die Datei hochgeladen wird. Jeder ausgeführte Vorgang muss initialisiert und ein Pfad für die Eingabedatei festgelegt werden. Für dieses Tutorial verwenden Sie die öffentlich verfügbaren PDF-Berichte von [Blackrock](https://www.blackrock.com/us/individual/products/investment-funds). Sie können jede andere Quelle verwenden, einschließlich Ihrer eigenen Berichte.
 
-Beginnen Sie mit der Aufnahme des [FileRef](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/io/FileRef.html) -Objekt aus der Datei. Der Einfachheit halber sollten Sie sich auf die Dateien konzentrieren, indem Sie den Pfad &quot;Zeichenfolge&quot; eingeben. Im Folgenden erstellen Sie einen Vorgang zum Konvertieren einer Datei in Ihrem Pfad von PDF in Excel:
+Erfassen Sie zunächst das FileRef-Objekt aus der Datei. Der Einfachheit halber sollten Sie sich auf die Dateien konzentrieren, indem Sie den Pfad &quot;Zeichenfolge&quot; eingeben. Im Folgenden erstellen Sie einen Vorgang zum Konvertieren einer Datei in Ihrem Pfad von PDF in Excel:
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 Dieser Code generiert aus dem Bericht ein PDF-Dokument im Excel-Format.
 
-Bevor Sie diese PDF an Ihre Kunden senden, können Sie sie mit einem Kennwort schützen. Erstellen Sie einen weiteren Vorgang, der diesen Schutz für Sie behandelt. [ProtectPDFOperation](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/ProtectPDFOperation.html), verwenden Sie dann [ProtectPDFOptions](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/options/protectpdf/package-summary.html) , um das Kennwort zum Dokument hinzuzufügen.
+Bevor Sie diese PDF an Ihre Kunden senden, können Sie sie mit einem Kennwort schützen. Erstellen Sie einen weiteren Vorgang, der diesen Schutz für Sie behandelt, ProtectPDFOperation, und verwenden Sie dann ProtectPDFOptions, um dem Dokument das Kennwort hinzuzufügen.
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
