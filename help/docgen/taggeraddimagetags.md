@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Bild-Tags
-description: Erfahren Sie, wie Sie mithilfe von Tagger für die Dokumentgenerierung von Adobe Bild-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der API für die Dokumentgenerierung von Adobe Bilder dynamisch in Dokumente zu übertragen.
+description: Erfahren Sie, wie Sie mit dem Adobe-Tagger für die Dokumentgenerierung Bild-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der Adobe-API für die Dokumentgenerierung Bilder dynamisch in Dokumente zu übertragen.
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Hinzufügen von Bild-Tags
 
-Erfahren Sie, wie Sie mithilfe von Tagger für die Dokumentgenerierung von Adobe Bild-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der API für die Dokumentgenerierung von Adobe Bilder dynamisch in Dokumente zu übertragen.
+Erfahren Sie, wie Sie mit dem Adobe-Tagger für die Dokumentgenerierung Bild-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der Adobe-API für die Dokumentgenerierung Bilder dynamisch in Dokumente zu übertragen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332114?hidetitle=true)

@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Adobe PDF Electronic Seal API Tutorials
 
-Die Adobe PDF-API für elektronische Siegel versieht Dokumente in großem Umfang mit einem elektronischen Siegel, das von bestimmten Vertrauensdiensten ausgestellt wurde [Adobe Approved Trust List (AATL)](https://helpx.adobe.com/acrobat/kb/approved-trust-list1.html). Das elektronische Siegel hilft bei der Überprüfung der Identität und Integrität von Dokumenten. Dies kann verwendet werden, um Dokumente in großem Umfang elektronisch zu versiegeln, und ist in der PDF Services-API enthalten.
+Die Adobe PDF Electronic Seal API wendet ein elektronisches Siegel auf Dokumente in großem Umfang an, indem sie ein Zertifikat verwendet, das von bestimmten Vertrauensdiensten (Trust Service Providers) auf der Liste der zulässigen Vertrauensstellungen (Approved Trust List, AATL) von [Adobe ausgestellt wurde](https://helpx.adobe.com/acrobat/kb/approved-trust-list1.html). Das elektronische Siegel hilft bei der Überprüfung der Identität und Integrität von Dokumenten. Dies kann verwendet werden, um Dokumente in großem Umfang elektronisch zu versiegeln, und ist in der PDF Services-API enthalten.
 
 <table style="table-layout:fixed">
 <tr>

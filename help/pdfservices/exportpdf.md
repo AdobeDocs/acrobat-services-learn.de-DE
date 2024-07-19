@@ -10,14 +10,14 @@ thumbnail: KT-6674.jpg
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 5%
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
 # Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr
 
-![PDF Hero Image erstellen](assets/ExportPDF_hero.jpg)
+![PDF-Hero-Image erstellen](assets/ExportPDF_hero.jpg)
 
 Adobe PDF Services API konvertiert PDF-Dateien mithilfe von APIs in MS Office-, Text- und Bilddateien. Es gibt viele gängige Anwendungsfälle, um bestehende PDF für die Bearbeitung und Analyse von Inhalten freizuschalten, und mit PDF Services API können Entwickler diese Funktion ganz einfach in bestehende Systeme und Anwendungen integrieren. Wandle PDF-Dateien in Microsoft Word um, um Inhalte zu bearbeiten, Genehmigungen zu erteilen und später zur Unterzeichnung zu versenden. So erstellst du benutzerdefinierte Vertrags-Workflows. Oder exportieren Sie PDF-Inhalte in das MS Excel-Format, um sie für Rechnungs- und Finanzberechnungen oder Datenanalysen zu verwenden.
 
@@ -57,7 +57,7 @@ Verwenden Sie die folgenden Tutorials zu ersten Schritten, um Ihre API-Zugangsbe
 
 Die PDF wird im Verzeichnis &quot;src/main/resources&quot; erstellt.
 
-**.NET**
+**.Net**
 
 1. Öffnen Sie eine Eingabeaufforderung.
 
@@ -101,10 +101,10 @@ in ein anderes Format konvertieren.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie auf der [[!DNL Adobe Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie im [[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)-Community-Forum
 
 * PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) für PDF Services API-Fragen
+* [Häufige Fragen](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) zu PDF Services-API-Fragen
 
-* [Kontakt](https://www.adobe.com/go/pdftoolsapi_requestform) bei Fragen zur Lizenzierung und Preisgestaltung
+* [Wenden Sie sich an uns](https://www.adobe.com/go/pdftoolsapi_requestform), wenn Sie Fragen zur Lizenzierung und zu den Preisen haben

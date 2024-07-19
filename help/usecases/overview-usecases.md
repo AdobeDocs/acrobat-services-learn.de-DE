@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Adobe Acrobat Services] API-Anwendungsfälle"
-description: Übersichtsseite für [!DNL Adobe Acrobat Services] API-Anwendungsfälle
+description: Übersichtsseite für  [!DNL Adobe Acrobat Services] API-Anwendungsfälle
 feature: Use Cases
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # [!DNL Adobe Acrobat Services] API-Anwendungsfälle
 
-## Was kann die [!DNL Adobe Acrobat Services] APIs für mich?
+## Was können die [!DNL Adobe Acrobat Services]-APIs für mich tun?
 
-Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit diesen praktischen Use Cases verändern.
+Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilfe dieser praktischen Anwendungsfälle verändern können.
 
 ### [!DNL Acrobat Services] APIs
 
@@ -30,40 +30,40 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
       <img alt="Automatisierung von Dokumenten-Workflows." src="assets/automatelegal_thumb.png" />
     </a>
     <div>
-    <a href="automatelegalworkflows.md"><strong>Automatisierung von Dokumenten-Workflows.</strong></a>
+    <a href="automatelegalworkflows.md"><strong>Rechtsgültige Arbeitsabläufe automatisieren</strong></a>
     </div>
-    <em>Workflows mit bedingten Inhalten automatisieren</em>
-    <br>
+    <em>Erfahren Sie, wie Sie rechtliche Workflows mit bedingten Inhalten automatisieren</em>
+    2<br>
   </td>
   <td>
       <a href="employeeonboarding.md">
         <img alt="Modernisierung des Mitarbeiter-Onboarding." src="assets/employee_thumb.png" />
       </a>
       <div>
-      <a href="employeeonboarding.md"><strong>Modernisierung des Mitarbeiter-Onboarding.</strong></a>
+      <a href="employeeonboarding.md"><strong>Modernisierung des Mitarbeitereinstiegs</strong></a>
       </div>
-      <em>Weitere Informationen zur Modernisierung des Mitarbeiter-Onboarding</em>
-      <br>
+      <em>Erfahren Sie, wie Sie das Onboarding von Mitarbeitern modernisieren</em>
+      2<br>
   </td>
   <td>
       <a href="acceleratesales.md">
         <img alt="Schnellere Vertriebsprozesse." src="assets/accsales_thumb.png" />
       </a>
       <div>
-      <a href="acceleratesales.md"><strong>Schnellere Vertriebsprozesse.</strong></a>
+      <a href="acceleratesales.md"><strong>Vertriebsprozess beschleunigen</strong></a>
       </div>
-      <em>Erfahrt, wie ihr durch die Integration von Dokumentenerlebnissen den Vertrieb beschleunigen könnt.</em>
-      <br>
+      <em>Informationen zur Beschleunigung des Umsatzes durch die Integration von Dokumentenerlebnissen</em>
+      2<br>
     </td>
     <td>
       <a href="sales.md">
         <img alt="Verwaltung von Verkaufsangeboten und Verträgen" src="assets/sales_thumb.png" />
       </a>
       <div>
-      <a href="sales.md"><strong>Verwaltung von Verkaufsangeboten und Verträgen</strong></a>
+      <a href="sales.md"><strong>Verwalten von Verkaufsangeboten und Verträgen</strong></a>
       </div>
-      <em>Erfahrt, wie ihr einen effizienten Workflow zur Automatisierung und Vereinfachung von Verkaufsangeboten entwickeln könnt.</em>
-      <br>
+      <em>Erfahren Sie, wie Sie einen effizienten Workflow zur Automatisierung und Vereinfachung von Verkaufsangeboten erstellen</em>
+      2<br>
     </td>
 </tr>
 <tr>
@@ -74,28 +74,28 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <div>
     <a href="nda.md"><strong>Erstellen einer Geheimhaltungsvereinbarung</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie eine dynamische PDF mit Vertraulichkeitsvereinbarung für Zusammenarbeit erstellen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie eine dynamische PDF mit Geheimhaltungsvereinbarung für die Zusammenarbeit erstellen</em>
+    2<br>
   </td>
   <td>
     <a href="legal.md">
       <img alt="Verwaltung von Rechtsverträgen" src="assets/legal_thumb.png" />
     </a>
     <div>
-    <a href="legal.md"><strong>Verwaltung von Rechtsverträgen</strong></a>
+    <a href="legal.md"><strong>Verwalten rechtsgültiger Verträge</strong></a>
     </div>
-    <em>Erfahrt, wie ihr Rechtsdokumente automatisch durch benutzerdefinierte Dateneingaben schützt.</em>
-    <br>
+    <em>Weitere Informationen zum automatischen Generieren und Schützen von Rechtsdokumenten mit benutzerdefinierten Dateneingaben</em>
+    2<br>
   </td>
   <td>
     <a href="offer.md">
       <img alt="Angebotsschreiben von Mitarbeitern verwalten" src="assets/offer_thumb.png" />
     </a>
     <div>
-    <a href="offer.md"><strong>Angebotsschreiben von Mitarbeitern verwalten</strong></a>
+    <a href="offer.md"><strong>Angebotsschreiben für Mitarbeiter verwalten</strong></a>
     </div>
-    <em>Hier erfahren Sie, wie Sie ein Angebotsschreiben generieren, das einem neuen Mitarbeiter zum Unterschreiben zugestellt werden kann.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie ein Angebotsschreiben generieren, das einem neuen Mitarbeiter zur Unterzeichnung zugestellt werden kann</em>
+    2<br>
   </td>
   <td>
     <a href="searching.md">
@@ -104,8 +104,8 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <div>
     <a href="searching.md"><strong>Suchen und Indizieren</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie aus gescannten Dokumenten durchsuchbare PDF-Dateien erstellen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie aus gescannten Dokumenten durchsuchbare PDF-Dateien erstellen</em>
+    2<br>
   </td>
 </tr>
 <tr>
@@ -116,8 +116,8 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <div>
     <a href="reviews.md"><strong>Überprüfungen und Genehmigungen</strong></a>
     </div>
-    <em>Workflow zur Abstimmung und Genehmigung von Dokumenten im Team lernen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie einen Workflow für die Überprüfung und Genehmigung von Dokumenten für die Zusammenarbeit zwischen Teams erstellen</em>
+    2<br>
   </td>
   <td>
     <a href="reportcreation.md">
@@ -126,28 +126,28 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <div>
     <a href="reportcreation.md"><strong>Erstellen und Bearbeiten von Berichten</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website generieren.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie PDF-Berichte für Kunden auf Ihrer Website generieren</em>
+    2<br>
   </td>
   <td>
     <a href="jobposting.md">
       <img alt="Stellenausschreibung" src="assets/job_thumb.png" />
     </a>
     <div>
-    <a href="jobposting.md"><strong>Stellenausschreibung</strong></a>
+    <a href="jobposting.md"><strong>Auftragsbuchung</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie ein reibungsloses und konsistentes Web-Erlebnis für Bewerber und Arbeitgeber entwickeln können.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie ein reibungsloses und konsistentes Weberlebnis für Stellenbewerber und Arbeitgeber entwickeln</em>
+    2<br>
   </td>
   <td>
     <a href="educationcollab.md">
       <img alt="Zusammenarbeit von Schülern, Studierenden, Lehrkräften" src="assets/edu_thumb.png" />
     </a>
     <div>
-    <a href="educationcollab.md"><strong>Zusammenarbeit von Schülern, Studierenden, Lehrkräften</strong></a>
+    <a href="educationcollab.md"><strong>Zusammenarbeit zwischen Schülern und Lehrern</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie eine Online-Lernplattform erstellen, mit der Lehrkräfte, Schüler und Studierende Ressourcen in PDF gemeinsam nutzen können.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie eine Online-Lernplattform erstellen, mit der Lehrkräfte und Schüler Ressourcen auf PDF einfach gemeinsam nutzen können</em>
+    2<br>
   </td>
 </tr>
 <tr>
@@ -159,27 +159,27 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
     <a href="AgreementWorkflowsNodejs.md"><strong>Vereinbarungs-Workflows in Node.js</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre Webanwendungen</em>
-    <br>
+    2<br>
   </td>
   <td>
     <a href="HRAgreementWorkflowsJava.md">
       <img alt="HR-Dokumenten-Workflows auf Java" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="HRAgreementWorkflowsJava.md"><strong>HR-Dokumenten-Workflows auf Java</strong></a>
+    <a href="HRAgreementWorkflowsJava.md"><strong>Workflows für HR-Dokumente in Java</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre HR-Webanwendungen</em>
-    <br>
+    2<br>
   </td>
   <td>
     <a href="FinanceWorkflowsJava.md">
       <img alt="Verwalten von Workflows für Finanzdokumente auf Java" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="FinanceWorkflowsJava.md"><strong>Verwalten von Workflows für Finanzdokumente auf Java</strong></a>
+    <a href="FinanceWorkflowsJava.md"><strong>Verwalten von Workflows für Finanzdokumente in Java</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] stellt alle erforderlichen Tools, Services und Funktionen bereit, um Daten aus PDF-Finanzdokumenten zu verarbeiten und zu extrahieren</em>
-    <br>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/GrayBanner_Placeholder.png" />
@@ -198,10 +198,10 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
       <img alt="Verarbeiten von Rechnungen" src="assets/invoices_thumb.png" />
     </a>
     <div>
-    <a href="invoices.md"><strong>Verarbeiten von Rechnungen</strong></a>
+    <a href="invoices.md"><strong>Rechnungen verarbeiten</strong></a>
     </div>
-    <em>Hier erfahren Sie, wie Sie Kundenrechnungen automatisch erstellen, mit einem Kennwort schützen und bereitstellen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie Kundenrechnungen automatisch generieren, mit einem Kennwort schützen und bereitstellen</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />
@@ -230,10 +230,10 @@ Erfahren Sie, [!DNL Adobe Acrobat Services] APIs können Ihr Unternehmen mit die
       <img alt="Veröffentlichung digitaler Dokumente." src="assets/ddp_thumb.png" />
     </a>
     <div>
-    <a href="ddppdfembedapi.md"><strong>Veröffentlichung digitaler Dokumente.</strong></a>
+    <a href="ddppdfembedapi.md"><strong>Veröffentlichung digitaler Dokumente</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie eingebettete PDF-Dokumente mithilfe der Adobe PDF Embed-API in Webseiten anzeigen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie eingebettete PDF-Dokumente mithilfe der Adobe PDF Embed-API in Webseiten anzeigen</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />

@@ -1,6 +1,6 @@
 ---
 title: Festlegen von numerischen Berechnungstags
-description: Erfahren Sie, wie Sie numerische Berechnungs-Tags in Microsoft Word-Vorlagen mit dem Adobe-Tag "Dokumenterstellung" festlegen, um Aggregationen oder die Arithmetik von Datenwerten mit der Adobe-API für die Dokumenterstellung zu berechnen
+description: Erfahren Sie, wie Sie numerische Berechnungs-Tags in Microsoft Word-Vorlagen mit dem Adobe-Tagger für die Dokumentgenerierung festlegen, um Aggregationen oder die Arithmetik von Datenwerten mit der Adobe-API für die Dokumentgenerierung zu berechnen
 feature: Document Generation API
 role: Developer
 level: Beginner

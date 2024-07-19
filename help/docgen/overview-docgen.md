@@ -61,10 +61,10 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
       <img alt="Überblick über das Adobe-Tagger zum Generieren von Dokumenten" src="assets/Taggeroverview_thumb.png" />
    </a>
     <div>
-   <a href="taggeroverview.md"><strong>Überblick über das Adobe-Tagger zum Generieren von Dokumenten</strong></a>
+   <a href="taggeroverview.md"><strong>Übersicht über das Adobe-Tag zum Generieren von Dokumenten</strong></a>
     </div>
-    <em>Verschaffen Sie sich einen Überblick über den Adobe-Tagger für die Dokumentgenerierung, der für die Verwendung mit der Adobe-API für die Dokumentgenerierung entwickelt wurde.</em>
-    <br>
+    <em>Verschaffen Sie sich einen Überblick über den Adobe-Tagger für die Dokumentgenerierung, der für die Verwendung mit der Adobe-API für die Dokumentgenerierung entwickelt wurde</em>
+    2<br>
   </td>
   <td>
    <a href="taggeraddtexttags.md">
@@ -73,8 +73,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
     <div>
    <a href="taggeraddtexttags.md"><strong>Hinzufügen von Text-Tags</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie Adobe-Tagger für die Dokumentgenerierung verwenden und mit der Adobe-API für die Dokumentgenerierung verwenden.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie den Adobe-Tagger für die Dokumentgenerierung zur Verwendung mit der Adobe-API für die Dokumentengenerierung verwenden</em>
+    2<br>
   </td>
   <td>
    <a href="taggeraddimagetags.md">
@@ -83,8 +83,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
     <div>
    <a href="taggeraddimagetags.md"><strong>Hinzufügen von Bild-Tags</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie mit dem Adobe-Tagger für die Dokumentgenerierung Bild-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der Adobe-API für die Dokumentgenerierung Bilder dynamisch in Dokumente zu übertragen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie mit dem Adobe-Tagger für die Dokumentgenerierung Image-Tags zu Microsoft Word-Vorlagen hinzufügen, um mithilfe der API für die Dokumentgenerierung von Adobe-Dokumenten Bilder dynamisch in Dokumente zu übertragen</em>
+    2<br>
   </td>
   <td>
    <a href="taggertables.md">
@@ -93,8 +93,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
     <div>
    <a href="taggertables.md"><strong>Hinzufügen von Tabellen und Listen-Tags</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie Microsoft Word-Vorlagen Tabellen und Listen-Tags mithilfe des Adobe-Taggers für die Dokumentgenerierung hinzufügen, um Tabellen- oder Listenzeilen basierend auf Daten mithilfe der Adobe-API für die Dokumentgenerierung dynamisch hinzuzufügen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie Tabellen und Listen-Tags mithilfe des Adobe-Taggers für die Dokumentgenerierung zu Microsoft Word-Vorlagen hinzufügen, um Tabellen- oder Listenzeilen anhand von Daten mithilfe der Adobe-API für die Dokumentengenerierung dynamisch hinzuzufügen</em>
+    2<br>
   </td>
 </tr>
 <tr>
@@ -103,20 +103,20 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
       <img alt="Festlegen von numerischen Berechnungstags" src="assets/Taggercalculations_thumb.png" />
    </a>
     <div>
-   <a href="taggercalculations.md"><strong>Festlegen von numerischen Berechnungstags</strong></a>
+   <a href="taggercalculations.md"><strong>Festlegen von numerischen Berechnungs-Tags</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie numerische Berechnungs-Tags in Microsoft Word-Vorlagen mit dem Adobe-Tagger für die Dokumentgenerierung festlegen, um Aggregationen oder die Arithmetik von Datenwerten mit der Adobe-API für die Dokumentgenerierung zu berechnen</em>
-    <br>
+    <em>Erfahren Sie, wie Sie numerische Berechnungs-Tags in Microsoft Word-Vorlagen mithilfe des Adobe-Taggers für die Dokumentgenerierung festlegen, um Aggregationen oder die Arithmetik von Datenwerten mithilfe der Adobe-API für die Dokumentgenerierung zu berechnen</em>
+    2<br>
   </td>
   <td>
    <a href="taggerconditional.md">
       <img alt="Festlegen von bedingtem Inhalt" src="assets/Taggerconditional_thumb.png" />
    </a>
     <div>
-   <a href="taggerconditional.md"><strong>Festlegen von bedingtem Inhalt</strong></a>
+   <a href="taggerconditional.md"><strong>Bedingten Inhalt einstellen</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie Abschnitte in Microsoft Word-Vorlagen mit dem Adobe-Tagger für die Dokumentgenerierung festlegen, um Abschnitte eines Dokuments basierend auf Daten mithilfe der Adobe-API für die Dokumentgenerierung dynamisch ein- oder auszuschließen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie Abschnitte in Microsoft Word-Vorlagen mithilfe des Adobe-Taggers für die Dokumentenerzeugung festlegen, um Abschnitte eines Dokuments anhand von Daten mithilfe der Adobe-API für die Dokumentenerzeugung dynamisch ein- oder auszuschließen</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/GrayBanner_Placeholder.png" />

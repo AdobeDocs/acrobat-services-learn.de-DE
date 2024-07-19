@@ -15,8 +15,8 @@ ht-degree: 2%
 
 ---
 
-# Übersicht über das Generieren von Adobe-Dokumenten
+# Überblick über das Adobe-Tagger zum Generieren von Dokumenten
 
-Verschaffen Sie sich einen Überblick über das Adobe-Tagger für die Dokumentenerzeugung, das für die Verwendung mit der Adobe-API für die Dokumentenerzeugung entwickelt wurde.
+Verschaffen Sie sich einen Überblick über den Adobe-Tagger für die Dokumentgenerierung, der für die Verwendung mit der Adobe-API für die Dokumentgenerierung entwickelt wurde.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332120?hidetitle=true)

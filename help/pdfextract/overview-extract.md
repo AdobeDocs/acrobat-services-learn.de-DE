@@ -35,10 +35,10 @@ Nutzt einen Web-Service auf Basis von maschinellem Lernen von Adobe Sensei, um S
       <img alt="Parsing PDF: So einfach wie die Arbeit mit JSON-Daten mit PDF Extract API" src="assets/ParsingPDF_1280.png" />
    </a>
     <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>Parsing PDF: So einfach wie die Arbeit mit JSON-Daten mit PDF Extract API</strong></a>
+   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>PDF wird analysiert: So einfach wie die Arbeit mit JSON-Daten mit der PDF Extract-API</strong></a>
     </div>
-    <em>Erfahren Sie, wie der PDF Extract-Dienst in der Adobe PDF Services-API das Analysieren von PDF so einfach machen kann wie das Analysieren von JSON</em>
-    <br>
+    <em>Erfahren Sie, wie der PDF Extract-Dienst in der Adobe PDF Services-API die Analyse von PDF so einfach machen kann wie die Analyse von JSON</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />

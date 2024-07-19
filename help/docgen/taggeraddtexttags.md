@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Text-Tags
-description: Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie Adobe Document Generation Tagger zur Verwendung mit der Adobe Document Generation API verwenden.
+description: Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie Adobe-Tagger für die Dokumentgenerierung verwenden und mit der Adobe-API für die Dokumentgenerierung verwenden.
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Hinzufügen von Text-Tags
 
-Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie den Adobe-Tag &quot;Dokumenterstellung&quot; verwenden und ihn mit der Adobe-API &quot;Dokumenterstellung&quot; verwenden.
+Erfahren Sie, wie Sie Text-Tags zu Microsoft Word-Vorlagen hinzufügen, indem Sie den Adobe-Tagger für die Dokumentgenerierung verwenden und ihn mit der Adobe-API für die Dokumentgenerierung verwenden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332116?hidetitle=true)

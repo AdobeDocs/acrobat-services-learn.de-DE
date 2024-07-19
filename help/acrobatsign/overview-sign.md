@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Acrobat Sign API - Tutorials.
 
-Mit Acrobat Sign-APIs können Sie Anwendungen erstellen und die Acrobat Sign-Benutzungsoberfläche und -funktionen in Ihre Anwendungen einbetten.
+Mit Acrobat Sign-APIs kannst du Anwendungen erstellen und die Acrobat Sign-Benutzungsoberfläche und -funktionen in deine Anwendungen einbetten.
 
 ## Erste Schritte
 
@@ -30,8 +30,8 @@ Mit Acrobat Sign-APIs können Sie Anwendungen erstellen und die Acrobat Sign-Ben
     <div>
     <a href="signapi.md"><strong>Erste Schritte</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie die Sign-API in Ihre Anwendung einbeziehen, um Signaturen und andere Informationen zu erfassen</em>
-    <br>
+    <em>Erfahren Sie, wie Sie die Sign-API in Ihre Anwendung einschließen, um Signaturen und andere Informationen zu erfassen</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/WhiteBanner_Placeholder.png" />
@@ -62,20 +62,20 @@ Erfahren Sie, wie Sie beginnen, die OEM-Version von Acrobat Sign in Ihre Anwendu
       <img alt="Registrieren für ein Entwicklerkonto" src="assets/Signingup_1280.png" />
    </a>
     <div>
-   <a href="sign-up-developer-account.md"><strong>Registrieren für ein Entwicklerkonto</strong></a>
+   <a href="sign-up-developer-account.md"><strong>Registrierung für ein Entwicklerkonto</strong></a>
     </div>
-    <em>Hier erfahren Sie, wie Sie sich für ein Entwicklerkonto für Acrobat Sign registrieren, das mit der Sign- und API-Funktion vollständig aktiviert ist.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie sich für ein Entwicklerkonto für Acrobat Sign anmelden, das mit der Sign- und API-Funktionalität vollständig aktiviert ist</em>
+    2<br>
   </td>
   <td>
    <a href="creating-your-application.md">
       <img alt="Erstellen der Anwendung" src="assets/Creatingyourapplication_1280.png" />
    </a>
     <div>
-   <a href="creating-your-application.md"><strong>Erstellen der Anwendung</strong></a>
+   <a href="creating-your-application.md"><strong>Anwendung wird erstellt</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie eine Anwendung in Acrobat Sign erstellen.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie eine Anwendung in Acrobat Sign erstellen</em>
+    2<br>
   </td>
    <td>
    <a href="creating-an-embed-link.md">
@@ -84,8 +84,8 @@ Erfahren Sie, wie Sie beginnen, die OEM-Version von Acrobat Sign in Ihre Anwendu
     <div>
    <a href="creating-an-embed-link.md"><strong>Erstellen eines Einbettungslinks</strong></a>
     </div>
-    <em>Hier erfahren Sie, wie Sie einen Einbettungslink für OAuth erstellen, mit dem die Anwendung Berechtigungen für Benutzer erhält.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie einen Einbettungslink für OAuth erstellen. Dabei handelt es sich um die Methode, mit der Ihre Anwendung Berechtigungen für Benutzer erhält</em>
+    2<br>
   </td>
   <td>
    <a href="generating-an-access-token.md">
@@ -94,8 +94,8 @@ Erfahren Sie, wie Sie beginnen, die OEM-Version von Acrobat Sign in Ihre Anwendu
     <div>
    <a href="generating-an-access-token.md"><strong>Generieren eines Zugriffstokens</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie ein Zugriffstoken generieren, das mit der Acrobat Sign API verwendet werden kann</em>
-    <br>
+    <em>Erfahren Sie, wie Sie ein Zugriffstoken generieren, das mit der Acrobat Sign-API verwendet werden kann</em>
+    2<br>
   </td>
 </tr>
 <tr>
@@ -104,10 +104,10 @@ Erfahren Sie, wie Sie beginnen, die OEM-Version von Acrobat Sign in Ihre Anwendu
       <img alt="Erstellen von temporären Dokumenten" src="assets/Creatingatransientdocument_1280.png" />
    </a>
     <div>
-   <a href="creating-a-transient-document.md"><strong>Erstellen von temporären Dokumenten</strong></a>
+   <a href="creating-a-transient-document.md"><strong>Erstellen eines temporären Dokuments</strong></a>
     </div>
-    <em>Erfahren Sie, wie Sie ein temporäres Dokument erstellen, das mit der Acrobat Sign-API verwendet werden kann.</em>
-    <br>
+    <em>Erfahren Sie, wie Sie ein temporäres Dokument erstellen, das mit der Acrobat Sign-API verwendet werden kann</em>
+    2<br>
   </td>
   <td>
     <img alt="Spacer" src="../assets/GrayBanner_Placeholder.png" />

@@ -10,14 +10,14 @@ thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 3%
+source-wordcount: '1072'
+ht-degree: 0%
 
 ---
 
 # Erstellen einer Geheimhaltungsvereinbarung
 
-![Use Case Hero-Banner](assets/UseCaseNDAHero.jpg)
+![Banner &quot;Use Case Hero&quot;](assets/UseCaseNDAHero.jpg)
 
 Organisationen arbeiten mit externen Anbietern zusammen, um ihre Dienste und Produkte aufzubauen. Eine Vertraulichkeitsvereinbarung ist eine wichtige dieser Kooperationen. Alle Parteien sind verpflichtet, vertrauliche Informationen, die einer der beiden Parteien schaden könnten, weiterzugeben.
 
@@ -25,17 +25,17 @@ Das am häufigsten verwendete Format für eine Geheimhaltungsvereinbarung ist ei
 
 ## Lernziel.
 
-In diesem Tutorial erfährst du, wie du eine Microsoft Word-Vorlage für deine Vertraulichkeitsvereinbarung erstellst. Das kostenlose Add-in von Adobe für Microsoft Word, [Tagger für die Generierung von Adobe-Dokumenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo), fügt &quot;Tags&quot; ein, um die dynamischen Werte einzugeben. Erfahren Sie, wie Sie die JSON-Daten an die Vorlage übergeben und eine dynamische PDF erstellen. Die resultierende PDF kann je nach Ihren Geschäftsanforderungen und -zielen per E-Mail an Ihre Mitarbeiter in deren Browser gesendet oder angezeigt werden. Um die Schritte in diesem Tutorial besser nachvollziehen zu können, brauchst du nur ein wenig Erfahrung mit Node.js, JavaScript, Express.js, HTML und CSS.
+In diesem Tutorial erfährst du, wie du eine Microsoft Word-Vorlage für deine Vertraulichkeitsvereinbarung erstellst. Das kostenlose Add-In von Adobe für Microsoft Word, [Adobe Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo), fügt &quot;Tags&quot; ein, um die dynamischen Werte einzugeben. Erfahren Sie, wie Sie die JSON-Daten an die Vorlage übergeben und eine dynamische PDF erstellen. Die resultierende PDF kann je nach Ihren Geschäftsanforderungen und -zielen per E-Mail an Ihre Mitarbeiter in deren Browser gesendet oder angezeigt werden. Um die Schritte in diesem Tutorial besser nachvollziehen zu können, brauchst du nur ein wenig Erfahrung mit Node.js, JavaScript, Express.js, HTML und CSS.
 
 ## Relevante APIs und Ressourcen
 
-Mit [!DNL Adobe Acrobat Services]können Sie PDF-Dokumente mithilfe dynamischer Daten im Handumdrehen generieren. [!DNL Acrobat Services] bietet eine Reihe von PDF-Tools, einschließlich Adobe Document Generation API zur Automatisierung von [Erstellung einer Geheimhaltungsvereinbarung](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+Mit [!DNL Adobe Acrobat Services] können Sie PDF-Dokumente mithilfe dynamischer Daten im laufenden Betrieb generieren. [!DNL Acrobat Services] bietet eine Reihe von PDF-Tools, einschließlich der Adobe-API zum Generieren von Dokumenten, um die [Erstellung von Geheimhaltungsvereinbarungen](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) zu automatisieren.
 
-* [API für die Dokumentenerzeugung in Adoben](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [API für die Dokumentenerzeugung ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) für Adobe
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
 
-* [Tagger für die Generierung von Adobe-Dokumenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Adobe-Tagger für Dokumenterstellung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 * [Projektcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
 
@@ -73,27 +73,27 @@ Verwenden Sie diese Struktur in Microsoft Word, um eine Vorlage zu generieren. D
 
 ## Erstellen der Microsoft Word-Vorlage
 
-Erstellen Sie die Vorlage für die Geheimhaltungsvereinbarung in einem Microsoft Word-Dokument. Die Adobe PDF Services-API erwartet, dass das Microsoft Word-Dokument Tags enthält, in die der Dienst Werte aus JSON-Dokumenten einfügen kann. Obwohl die Vorlage für alle Anforderungen an die Adobe identisch ist, ändern sich die dynamischen Daten in JSON. Diese Tags helfen dabei, PDF-Dokumente für jeden Hersteller in diesem Fall mit einer einzigen Microsoft Word-Vorlage zu erstellen und den Prozess durch die Automatisierung der Generierung von Dokumenten mit Geheimhaltungsvereinbarung zu beschleunigen.
+Erstellen Sie die Vorlage für die Geheimhaltungsvereinbarung in einem Microsoft Word-Dokument. Die Adobe PDF Services-API erwartet, dass das Microsoft Word-Dokument Tags enthält, in die der Dienst Werte aus JSON-Dokumenten einfügen kann. Obwohl die Vorlage für alle Anforderungen zum Adobe identisch ist, ändern sich die dynamischen Daten in JSON. Diese Tags helfen dabei, PDF-Dokumente für jeden Hersteller in diesem Fall mit einer einzigen Microsoft Word-Vorlage zu erstellen und den Prozess durch die Automatisierung der Generierung von Dokumenten mit Geheimhaltungsvereinbarung zu beschleunigen.
 
-Sie können die [kostenloses Add-in für die Dokumentgenerierung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) in Microsoft Word. Wenn Sie Teil eines Unternehmens sind, können Sie Ihren Microsoft Office-Administrator bitten, das kostenlose Add-in für alle zu installieren.
+Sie können das [kostenlose Add-in für Tagger für die Dokumentenerzeugung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) in Microsoft Word installieren. Wenn Sie Teil eines Unternehmens sind, können Sie Ihren Microsoft Office-Administrator bitten, das kostenlose Add-in für alle zu installieren.
 
-Sobald Sie das Add-In installiert haben, finden Sie es auf der Registerkarte Startseite unter der Kategorie Adobe . Um die Registerkarte zu öffnen, wählen Sie **Dokumenterstellung**:
+Sobald Sie das Add-In installiert haben, finden Sie es auf der Registerkarte Startseite unter der Kategorie Adobe. Um die Registerkarte zu öffnen, wählen Sie **Dokumentenerzeugung**:
 
-![Screenshot des Add-Ins &quot;Dokumentenerzeugung&quot; in Word](assets/nda_1.png)
+![Screenshot des Add-Ins für die Dokumentengenerierung in Word](assets/nda_1.png)
 
 Auf der Registerkarte können Sie das Beispiel-JSON-Dokument hochladen. Dieses Dokument kann ein Beispiel sein, da Sie es nur zum Erstellen einer Microsoft Word-Vorlage verwenden.
 
 ![Screenshot der Beispieldaten im Add-in &quot;Dokumentenerzeugung&quot;](assets/nda_2.png)
 
-Auswählen **Tags generieren** , um Elemente anzuzeigen, die Sie in Ihrer Vorlage verwenden können. Hier sind die Eigenschaften, die aus der JSON-Struktur extrahiert wurden und in der Vorlage verwendet werden können:
+Wählen Sie **Tags generieren**, um Elemente anzuzeigen, die Sie in Ihrer Vorlage verwenden können. Hier sind die Eigenschaften, die aus der JSON-Struktur extrahiert wurden und in der Vorlage verwendet werden können:
 
-![Screenshot von Text-Tags im Add-in &quot;Dokumentenerzeugung&quot;](assets/nda_3.png)
+![Screenshot der Text-Tags im Add-in für die Dokumentenerzeugung](assets/nda_3.png)
 
-Dies sind die Funktionen aus der `authorizedSigner` ein. Andere Felder sind umgebrochen und Sie können die Ansicht in Microsoft Word erweitern. Das Add-In bietet auch erweiterte Datenoptionen wie Tabellen, Listen, berechnete Werte und mehr.
+Dies sind die Features aus dem Feld `authorizedSigner`. Andere Felder sind umgebrochen und Sie können die Ansicht in Microsoft Word erweitern. Das Add-In bietet auch erweiterte Datenoptionen wie Tabellen, Listen, berechnete Werte und mehr.
 
 ## Erstellen der Tags
 
-Du kannst auch eine Vorlage erstellen oder ein [vorhandene Vorlage](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) in Microsoft Word. Nachdem Sie das Dokument eingerichtet haben, fügen Sie den einzelnen Feldern Tags hinzu, indem Sie auf die entsprechenden Token im Add-In klicken.
+Erstellen Sie eine Vorlage, oder importieren Sie eine [vorhandene Vorlage](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) in Microsoft Word. Nachdem Sie das Dokument eingerichtet haben, fügen Sie den einzelnen Feldern Tags hinzu, indem Sie auf die entsprechenden Token im Add-In klicken.
 
 Die folgende Vorlage in einer Microsoft Word-Datei:
 
@@ -123,7 +123,7 @@ Innerhalb der Beispielanwendung haben Sie Ordner für Eingabe und Ausgabe vorber
 
 Dieser Code generiert die folgende Benutzeroberfläche im Browser:
 
-![Screenshot der Benutzeroberfläche für die Erstellung einer Geheimhaltungsvereinbarung](assets/nda_5.png)
+![Screenshot der Benutzeroberfläche zum Erstellen einer Geheimhaltungsvereinbarung](assets/nda_5.png)
 
 Wenn der Administrator eine Person auswählt, verwendet die App Adobe PDF Services, um die Geheimhaltungsvereinbarung unterwegs zu generieren.
 
@@ -171,9 +171,9 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-Sie können [der vollständige Beispielcode](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) auf GitHub.
+Sie können [ den vollständigen Beispielcode ](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) auf GitHub anzeigen.
 
-Dieser Code verwendet ein JSON-Dokument und die Microsoft Word-Vorlage im API-Aufruf der [!DNL Adobe Acrobat Services] SDK In der Antwort erhalten Sie die Ausgabe und speichern sie im Dateisystem der App. Sie können das generierte Dokument per E-Mail an Ihre Kunden weiterleiten oder ihnen eine Vorschau im Browser mit der kostenlosen [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Dieser Code verwendet ein JSON-Dokument und die Microsoft Word-Vorlage im API-Aufruf des [!DNL Adobe Acrobat Services]-SDK. In der Antwort erhalten Sie die Ausgabe und speichern sie im Dateisystem der App. Sie können das generierte Dokument per E-Mail an Ihre Kunden weiterleiten oder ihnen mithilfe der kostenlosen [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) eine Vorschau im Browser anzeigen.
 
 Durch diesen Aufruf wird das folgende Dokument mit der Geheimhaltungsvereinbarung erstellt:
 
@@ -181,13 +181,13 @@ Durch diesen Aufruf wird das folgende Dokument mit der Geheimhaltungsvereinbarun
 
 [!DNL Adobe Acrobat Services] APIs fügen Inhalt zum Erstellen eines PDF-Dokuments ein. Ohne diese Tools müssen Sie möglicherweise den Code schreiben, um Office-Dokumente zu verarbeiten und mit Raw-PDF-Dateiformaten zu arbeiten. Mithilfe von Adobe PDF Services können Sie all diese Schritte mit einem einzigen API-Aufruf ausführen.
 
-Verwenden Sie jetzt [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) um Unterschriften für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, unterzeichnete Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [Verwenden eines Webhooks](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
+Verwenden Sie jetzt [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html), um Signaturen für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, signierte Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [ mithilfe eines Webhooks ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
 
-Weitere Informationen zum Adobe Sign-Prozess finden Sie unter [die Dokumentation konsultieren](https://www.adobe.io/apis/documentcloud/sign/docs.html) oder lesen Sie diesen ausführlichen Blogpost.
+Eine ausführlichere Erläuterung des Adobe Sign-Prozesses finden Sie in [der Dokumentation](https://www.adobe.io/apis/documentcloud/sign/docs.html) oder in diesem ausführlichen Blogpost.
 
 ## Nächste Schritte
 
-In diesem praktischen Tutorial wurde der Adobe Document Generation Tagger verwendet, um PDF-Dokumente mithilfe von Microsoft Word-Vorlagen und JSON-Datendateien dynamisch zu generieren. Das Add-In unterstützte die [automatisch Vertraulichkeitsvereinbarungen erstellen](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) für jede Partei angepasst und nehmen Sie dann Signaturen mit der Sign-API ein.
+In diesem praktischen Tutorial wurde der Adobe-Tagger zum Generieren von Dokumenten verwendet, um PDF-Dokumente mithilfe von Microsoft Word-Vorlagen und JSON-Datendateien dynamisch zu generieren. Das Add-In half [, automatisch für jede Partei angepasste Vertraulichkeitsvereinbarungen zu erstellen](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) und dann Signaturen über die Sign-API zu erfassen.
 
-Mit diesen Techniken könnt ihr eigene Vertraulichkeitsvereinbarungen oder andere Dokumente dynamisch erstellen. So haben eure Teams mehr Zeit für produktive Aufgaben. Entdecken [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) um APIs und SDKs für Ihre bevorzugte Sprache und Laufzeit zu finden, sodass Sie PDF-Funktionen direkt zu Ihren Anwendungen hinzufügen können, um schnell PDF-Dokumente zu erstellen. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit einer sechsmonatigen kostenlosen Testversion
-[pay as you go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion.
+Mit diesen Techniken könnt ihr eigene Vertraulichkeitsvereinbarungen oder andere Dokumente dynamisch erstellen. So haben eure Teams mehr Zeit für produktive Aufgaben. Erkunden Sie [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html), um APIs und SDKs für Ihre bevorzugte Sprache und Laufzeit zu finden, sodass Sie PDF-Funktionen direkt zu Ihren Anwendungen hinzufügen können, um schnell PDF-Dokumente zu erstellen. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit einer sechsmonatigen kostenlosen Testversion
+[Pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 $ pro Dokumenttransaktion.

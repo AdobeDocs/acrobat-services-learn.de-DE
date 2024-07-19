@@ -10,14 +10,14 @@ thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
 # Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien
 
-![PDF Hero Image erstellen](assets/OCR_hero.jpg)
+![PDF-Hero-Image erstellen](assets/OCR_hero.jpg)
 
 Mit OCR (Optical Character Recognition) können Sie gescannte PDF entsperren, um Text zu extrahieren und durchsuchbare Dateien zu erstellen. Mit unseren leistungsstarken Cloud-basierten APIs lässt sich OCR in jeden Dokumenten-Workflow integrieren. Das ist die perfekte Lösung für die Archivierung, das Kopieren von Text und die Erstellung durchsuchbarer Dokumentindizes. Erstellen Sie durchsuchbare Archive aus gescannten PDF-Repositorys, um wichtige Informationen freizugeben und Zeit mit schneller Durchsuchbarkeit zu sparen. Oder wende OCR auf PDF von hochgeladenen Scans an, um sie zur Verwendung in Onboarding-Workflows bearbeiten zu können.
 
@@ -37,7 +37,7 @@ Verwenden Sie die folgenden Tutorials zu ersten Schritten, um Ihre API-Zugangsbe
 
 ## Führen Sie das in den Beispieldateien bereitgestellte OCR-Beispiel aus
 
-Der OCR-Vorgang ermöglicht standardmäßig das englische Gebietsschema, unterstützt aber auch Deutsch, Französisch, Dänisch und [andere Sprachen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). Die Standardeinstellung ist das en-us-Gebietsschema.
+Der OCR-Vorgang ermöglicht standardmäßig das englische Gebietsschema, bietet aber auch Unterstützung für Deutsch, Französisch, Dänisch und [andere Sprachen](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). Die Standardeinstellung ist das en-us-Gebietsschema.
 
 Wenn Sie Optionen mit OCR-Vorgang einschließlich eines bestimmten Gebietsschemas übergeben, akzeptiert die Methode auch den Parameter &quot;type&quot;, der zwei Optionen enthält:
 
@@ -59,7 +59,7 @@ Wenn Sie Optionen mit OCR-Vorgang einschließlich eines bestimmten Gebietsschema
 
 Die PDF wird im Verzeichnis &quot;src/main/resources&quot; erstellt.
 
-**.NET**
+**.Net**
 
 1. Öffnen Sie eine Eingabeaufforderung.
 
@@ -99,10 +99,10 @@ Von hier aus können Sie einfach Ihre Eingabe- und Ausgabedateien im Beispiel er
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie in der Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie im Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)-Community-Forum
 
 * PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [FAQ](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) für PDF Services API-Fragen
+* [Häufige Fragen](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) zu PDF Services-API-Fragen
 
-* [Kontakt](https://www.adobe.com/go/pdftoolsapi_requestform) bei Fragen zur Lizenzierung und Preisgestaltung
+* [Wenden Sie sich an uns](https://www.adobe.com/go/pdftoolsapi_requestform), wenn Sie Fragen zur Lizenzierung und zu den Preisen haben

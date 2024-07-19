@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Tabellen und Listen-Tags
-description: Erfahren Sie, wie Sie Microsoft Word-Vorlagen Tabellen und Listen-Tags mithilfe von Adobe-Dokumentgenerierungs-Tagger hinzufügen, um Tabellen- oder Listenzeilen basierend auf Daten mithilfe der Adobe-Dokumentgenerierungs-API dynamisch hinzuzufügen.
+description: Erfahren Sie, wie Sie Microsoft Word-Vorlagen Tabellen und Listen-Tags mithilfe des Adobe-Taggers für die Dokumentgenerierung hinzufügen, um Tabellen- oder Listenzeilen basierend auf Daten mithilfe der Adobe-API für die Dokumentgenerierung dynamisch hinzuzufügen.
 feature: Document Generation API
 role: Developer
 level: Beginner
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Hinzufügen von Tabellen und Listen-Tags
 
-Erfahren Sie, wie Sie Microsoft Word-Vorlagen Tabellen und Listen-Tags mithilfe von Adobe-Dokumentgenerierungs-Tagger hinzufügen, um Tabellen- oder Listenzeilen basierend auf Daten mithilfe der Adobe-Dokumentgenerierungs-API dynamisch hinzuzufügen.
+Erfahren Sie, wie Sie Microsoft Word-Vorlagen Tabellen und Listen-Tags mit dem Adobe-Tagger für die Dokumentgenerierung hinzufügen, um Tabellen- oder Listenzeilen basierend auf Daten mithilfe der Adobe-API für die Dokumentgenerierung dynamisch hinzuzufügen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)
