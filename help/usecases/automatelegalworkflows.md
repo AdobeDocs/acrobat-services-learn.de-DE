@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -552,7 +552,7 @@ Sie verfügen jetzt über Informationen zu dieser Vereinbarung.
   }
 ```
 
-Die effizientere Methode, Benachrichtigungen zu erhalten, wenn Aktualisierungen geändert werden, ist über Webhooks, über die Sie mehr über [hier] (https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) erfahren können.
+Die effizientere Methode, Benachrichtigungen zu erhalten, wenn Aktualisierungen geändert werden, ist über Webhooks, über die Sie mehr über [hier](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) erfahren können.
 
 ## Signiertes Dokument speichern
 

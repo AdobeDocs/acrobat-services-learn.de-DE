@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Sehen wir uns nun an, wie die Berichte veröffentlicht werden können.
 
 Um es einfach zu halten, verwenden Sie hier nur das dateisystembasierte Hochladen und Verarbeiten. In Express.js können Sie das fs-Modul verwenden, um alle verfügbaren Dateien unter einem Verzeichnis aufzulisten.
 
-Aktivieren Sie auf derselben Seite den Administrator, um Berichtsdateien auf den Server hochzuladen, damit Kunden sie sehen können. Diese Dateien können in vielen verschiedenen Formaten vorliegen, z. B. Microsoft Word, Microsoft Excel, HTML und [andere Datenformate]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), einschließlich Grafikdateien. Die Verwaltungsseite sieht folgendermaßen aus:
+Aktivieren Sie auf derselben Seite den Administrator, um Berichtsdateien auf den Server hochzuladen, damit Kunden sie sehen können. Diese Dateien können in vielen verschiedenen Formaten vorliegen, z. B. Microsoft Word, Microsoft Excel, HTML und [andere Datenformate](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf), einschließlich Grafikdateien. Die Verwaltungsseite sieht folgendermaßen aus:
 
 ![Screenshot der Admin-Funktion](assets/report_2.png)
 
