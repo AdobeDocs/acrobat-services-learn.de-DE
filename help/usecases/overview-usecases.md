@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8115
 thumbnail: KT-8115.jpg
 exl-id: 4188897e-f6e6-41ea-be6f-359a3ef0e040
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -152,31 +152,31 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
 </tr>
 <tr>
   <td>
-    <a href="AgreementWorkflowsNodejs.md">
+    <a href="agreementworkflowsnodejs.md">
       <img alt="Vereinbarungs-Workflows in Node.js" src="assets/AWNjs_thumb.png" />
     </a>
     <div>
-    <a href="AgreementWorkflowsNodejs.md"><strong>Vereinbarungs-Workflows in Node.js</strong></a>
+    <a href="agreementworkflowsnodejs.md"><strong>Vereinbarungs-Workflows in Node.js</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre Webanwendungen</em>
     2<br>
   </td>
   <td>
-    <a href="HRAgreementWorkflowsJava.md">
+    <a href="hragreementworkflowsjava.md">
       <img alt="HR-Dokumenten-Workflows auf Java" src="assets/HRWJ_thumb.png" />
     </a>
     <div>
-    <a href="HRAgreementWorkflowsJava.md"><strong>Workflows für HR-Dokumente in Java</strong></a>
+    <a href="hragreementworkflowsjava.md"><strong>Workflows für HR-Dokumente in Java</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre HR-Webanwendungen</em>
     2<br>
   </td>
   <td>
-    <a href="FinanceWorkflowsJava.md">
+    <a href="financeworkflowsjava.md">
       <img alt="Verwalten von Workflows für Finanzdokumente auf Java" src="assets/FAWJ_thumb.png" />
     </a>
     <div>
-    <a href="FinanceWorkflowsJava.md"><strong>Verwalten von Workflows für Finanzdokumente in Java</strong></a>
+    <a href="financeworkflowsjava.md"><strong>Verwalten von Workflows für Finanzdokumente in Java</strong></a>
     </div>
     <em>[!DNL Adobe Acrobat Services] stellt alle erforderlichen Tools, Services und Funktionen bereit, um Daten aus PDF-Finanzdokumenten zu verarbeiten und zu extrahieren</em>
     2<br>
