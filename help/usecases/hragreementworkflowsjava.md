@@ -1,6 +1,6 @@
 ---
 title: HR Document Workflows in Java
-description: "[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre HR-Webanwendungen."
+description: '[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre HR-Webanwendungen'
 feature: Use Cases
 role: Developer
 level: Intermediate

@@ -1,6 +1,6 @@
 ---
 title: Vereinbarungsarbeitsabläufe in Node.js
-description: "[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre Webanwendungen."
+description: '[!DNL Adobe Acrobat Services] APIs integrieren PDF-Funktionen ganz einfach in Ihre Webanwendungen'
 feature: Use Cases
 role: Developer
 level: Beginner

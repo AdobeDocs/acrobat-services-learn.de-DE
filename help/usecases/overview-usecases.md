@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Adobe Acrobat Services] API-Anwendungsfälle"
+title: '[!DNL Adobe Acrobat Services] API-Anwendungsfälle'
 description: Übersichtsseite für  [!DNL Adobe Acrobat Services] API-Anwendungsfälle
 feature: Use Cases
 role: Developer

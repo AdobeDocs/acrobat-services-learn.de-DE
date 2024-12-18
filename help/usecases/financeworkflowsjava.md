@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Workflows für Finanzdokumente in Java
-description: "[!DNL Adobe Acrobat Services] bietet alle erforderlichen Tools, Services und Funktionen zum Verarbeiten und Extrahieren von Daten aus PDF-Finanzdokumenten."
+description: '[!DNL Adobe Acrobat Services] stellt alle erforderlichen Tools, Services und Funktionen bereit, um Daten aus PDF-Finanzdokumenten zu verarbeiten und zu extrahieren.'
 feature: Use Cases
 role: Developer
 level: Intermediate

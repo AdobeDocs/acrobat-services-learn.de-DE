@@ -10,7 +10,7 @@ thumbnail: KT-11073.jpg
 exl-id: 6fc50cc7-bb65-4d4b-9e4f-3b4a3ab8adab
 source-git-commit: 13f708e6c5ec63494181312d2e83c32a54345232
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '67'
 ht-degree: 0%
 
 ---
