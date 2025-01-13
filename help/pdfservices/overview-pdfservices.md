@@ -8,98 +8,200 @@ type: Tutorial
 jira: KT-8116
 thumbnail: KT-8116.jpg
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
 # API-Tutorials zu Adobe PDF Services
 
-<table style="table-layout:fixed">
-<tr>
- <td>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html">
-      <img alt="Einführung in die PDF Services API" src="assets/introduction_1280.png" />
-   </a>
-    <div>
-   <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/pdf-services-api.html"><strong>Einführung in die PDF Services-API</strong></a>
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Introduction to Adobe PDF Services API">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-services-api" title="Einführung in Adobe PDF Services API" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_10bdc2df8bda2e357f9bcf9913c7c799f35ab16d1.png?width=400&format=webply&optimize=medium" alt="Einführung in Adobe PDF Services API"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-services-api" target="_self" rel="referrer" title="Einführung in Adobe PDF Services API">Einführung in die Adobe PDF Services-API</a>
+                    </p>
+                    <p class="is-size-6">Adobe PDF Services API ermöglicht Entwicklern das Erstellen, Kombinieren, Exportieren und Extrahieren von Daten aus PDF über leistungsstarke und flexible Cloud-basierte APIs</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-services-api" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    Mit der PDF Services API von <em>Adobe können Entwickler Daten aus PDF mithilfe leistungsstarker und flexibler Cloud-basierter APIs erstellen, kombinieren, exportieren und extrahieren</em>
-    2<br>
-  </td>
-  <td>
-   <a href="getting-credentials-power-automate.md">
-      <img alt="Abrufen von Anmeldedaten für Microsoft Power Automate" src="assets/createcredentials_1280.png" />
-   </a>
-    <div>
-   <a href="getting-credentials-power-automate.md"><strong>Anmeldeinformationen für [!DNL Microsoft Power Automate]</strong></a> werden abgerufen.
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Getting credentials for Microsoft Power Automate">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate" title="Abrufen von Anmeldedaten für Microsoft Power Automate" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_17606f025e0364a3bdf5e2c3f34744191a654147b.png?width=400&format=webply&optimize=medium" alt="Abrufen von Anmeldedaten für Microsoft Power Automate"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate" target="_self" rel="referrer" title="Abrufen von Anmeldedaten für Microsoft Power Automate">Anmeldeinformationen für Microsoft Power Automate abrufen</a>
+                    </p>
+                    <p class="is-size-6">Hier erfahren Sie, wie Sie Anmeldeinformationen abrufen, um Adobe PDF Services zu verwenden oder zu testen.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>Erfahren Sie, wie Sie Anmeldeinformationen abrufen, um [!DNL Adobe PDF Services]</em> zu verwenden oder zu testen.
-    2<br>
-  </td>
-  <td>
-   <a href="create-workflow-power-automate.md">
-      <img alt="Erstellen Sie Ihren ersten Arbeitsablauf in Microsoft Power Automate" src="assets/firstflow_1280.png" />
-   </a>
-    <div>
-   <a href="create-workflow-power-automate.md"><strong>Erstellen des ersten Workflows in [!DNL Microsoft Power Automate]</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Create your first flow in Microsoft Power Automate">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate" title="Erstellen Sie Ihren ersten Flow in Microsoft Power Automate" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_1b9c2f022d9f6b9181ffc9d6a272459b7b1f2e558.png?width=400&format=webply&optimize=medium" alt="Erstellen Sie Ihren ersten Flow in Microsoft Power Automate"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate" target="_self" rel="referrer" title="Erstellen Sie Ihren ersten Flow in Microsoft Power Automate">Erstellen Sie Ihren ersten Flow in Microsoft Power Automate</a>
+                    </p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie den Adobe PDF Services-Connector in Microsoft Power Automate verwenden.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>Erfahren Sie, wie Sie den [!DNL Adobe PDF Services]-Connector in [!DNL Microsoft Power Automate]</em> verwenden.
-    3<br>
-  </td>
-  <td>
-   <a href="createpdffromhtml.md">
-      <img alt="Erstellen Sie mit der PDF Services-API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office" src="assets/PDFServices_GettingStartedNode_thumb.jpg" />
-   </a>
-    <div>
-   <a href="createpdffromhtml.md"><strong>Erstellen einer PDF von HTML oder [!DNL MS Office] in wenigen Minuten mit der PDF Services-API und "Node.js"</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Create a PDF from HTML or MS Office in a few minutes with PDF Services API and Node.js">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/createpdffromhtml" title="Erstellen Sie mit der PDF Services-API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_1938a490b89dc72095fe255feb780028d0e35bfd3.jpeg?width=400&format=webply&optimize=medium" alt="Erstellen Sie mit der PDF Services-API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/createpdffromhtml" target="_self" rel="referrer" title="Erstellen Sie mit der PDF Services-API und Node.js in wenigen Minuten eine PDF von HTML oder MS Office">Erstellen einer PDF von HTML oder MS Office in wenigen Minuten mit der PDF Services-API und Node.js</a>
+                    </p>
+                    <p class="is-size-6">Adobe PDF Services-API bietet Entwicklern eine freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/createpdffromhtml" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>[!DNL Adobe PDF Services API] bietet Entwicklern eine freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulationsdiensten, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</em>
-    2<br>
-  </td>
-</tr>
-<tr>
-  <td>
-   <a href="exportpdf.md">
-      <img alt="Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr" src="assets/PDFServices_ExportPDF_thumb.jpg" />
-   </a>
-    <div>
-   <a href="exportpdf.md"><strong>Nutzung von [!DNL PDF Services API] zum Exportieren von PDF nach [!DNL Word], [!DNL PowerPoint] und mehr</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Using PDF Services API to export PDF to Word, PowerPoint, and more">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/exportpdf" title="Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_1c2a613f83230468611aafd79440394925783712e.jpeg?width=400&format=webply&optimize=medium" alt="Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/exportpdf" target="_self" rel="referrer" title="Verwenden der PDF Services API zum Exportieren von PDF in Word, PowerPoint und mehr">Verwenden der PDF Services-API zum Exportieren von PDF in Word, PowerPoint und mehr</a>
+                    </p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie den PDF Services API-Exportvorgang mithilfe von Beispieldateien für die Sprachen Node.js, Java und .Net ausführen.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/exportpdf" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>Erfahren Sie, wie Sie den [!DNL PDF Services API]-Exportvorgang mithilfe von Beispieldateien für die Sprachen "Node.js", "Java" und ".Net" ausführen.</em>
-    3<br>
-  </td>
-   <td>
-   <a href="gettingstartedjava.md">
-      <img alt="Erste Schritte mit Adobe PDF Services API und Java" src="assets/PDFServices_GettingStartedJAVA_thumb.jpg" />
-   </a>
-    <div>
-   <a href="gettingstartedjava.md"><strong>Erste Schritte mit der Adobe PDF Services-API und Java</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Getting started with Adobe PDF Services API and Java">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartedjava" title="Erste Schritte mit Adobe PDF Services API und Java" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_1dbfd1a00e5cfc2219b46df6ffbdae9edaaee44e3.jpeg?width=400&format=webply&optimize=medium" alt="Erste Schritte mit Adobe PDF Services API und Java"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartedjava" target="_self" rel="referrer" title="Erste Schritte mit Adobe PDF Services API und Java">Erste Schritte mit der Adobe PDF Services-API und Java</a>
+                    </p>
+                    <p class="is-size-6">Entwickler können in nur wenigen Minuten mit der Ausführung von Beispieldateien beginnen, die für den Zugriff auf alle verfügbaren Webdienste bereitgestellt werden.</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartedjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>Entwickler können in nur wenigen Minuten mit der Ausführung der bereitstehenden Beispieldateien für den Zugriff auf alle verfügbaren Webdienste beginnen</em>
-    2<br>
-  </td>
-   <td>
-   <a href="ocr.md">
-      <img alt="Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien" src="assets/PDFServices_OCR_Thumb.jpg" />
-   </a>
-    <div>
-   <a href="ocr.md"><strong>Verwenden von [!DNL Adobe PDF Services API] zum OCR-PDF von Dateien</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Using Adobe PDF Services API to OCR PDF files">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/ocr" title="Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_142c638a3b6c3b21eb2fb54dab0af688a19e23731.jpeg?width=400&format=webply&optimize=medium" alt="Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/ocr" target="_self" rel="referrer" title="Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien">Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien</a>
+                    </p>
+                    <p class="is-size-6">Mit OCR (Optical Character Recognition) können Sie gescannte PDF entsperren, um Text zu extrahieren und durchsuchbare Dateien zu erstellen</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/ocr" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>Mit OCR (Optical Character Recognition) können Sie gescannte PDF entsperren, um Text zu extrahieren und durchsuchbare Dateien zu erstellen</em>
-    2<br>
-  </td>
-  <td>
-   <a href="gettingstartednet.md">
-      <img alt="Erste Schritte mit Adobe PDF Services API und .Net" src="assets/PDFServices_GettingStartedNET_thumb.jpg" />
-   </a>
-    <div>
-   <a href="gettingstartednet.md"><strong>Erste Schritte mit [!DNL Adobe PDF Services API] und .Net</strong></a>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Getting started with Adobe PDF Services API and .Net">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartednet" title="Erste Schritte mit Adobe PDF Services API und .Net" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/media_11d550069c9dce1a7aa350f44b414ceb4ce859172.jpeg?width=400&format=webply&optimize=medium" alt="Erste Schritte mit Adobe PDF Services API und .Net"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartednet" target="_self" rel="referrer" title="Erste Schritte mit Adobe PDF Services API und .Net">Erste Schritte mit der Adobe PDF Services-API und .Net</a>
+                    </p>
+                    <p class="is-size-6">Die Adobe PDF Services-API bietet Entwicklern eine freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulations-Services, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</p>
+                </div>
+                <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/gettingstartednet" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
+                3</a>
+            </div>
+        </div>
     </div>
-    <em>[!DNL Adobe PDF Services API] bietet Entwicklern eine freie Auswahl zwischen mehreren leistungsstarken PDF-Manipulationsdiensten, um die Anforderungen komplizierter Geschäftsabläufe zu erfüllen</em>
-    2<br>
-  </td>
-</tr>
-</table>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
