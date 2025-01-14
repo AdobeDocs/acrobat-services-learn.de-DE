@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
+source-git-commit: 3df27690c677d8ad51e8f26ea95b5da12694f89a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,7 @@ Mit Acrobat Sign-APIs kannst du Anwendungen erstellen und die Acrobat Sign-Benut
 
 ## Kurzanleitung für Acrobat Sign Embed
 
-Erfahren Sie, wie Sie beginnen, die OEM-Version von Acrobat Sign in Ihre Anwendung einzubetten. Dieses Handbuch wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
+Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung einbetten. Dieses Handbuch wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
