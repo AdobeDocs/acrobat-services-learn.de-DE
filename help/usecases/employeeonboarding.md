@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -35,9 +35,9 @@ Obwohl es sich nicht um eine API handelt, können Entwickler auch die kostenlose
 
 ## Was ist Acrobat Sign?
 
-[Acrobat Sign](https://www.adobe.com/de/sign.html) ist der weltweit führende Anbieter elektronischer Signaturdienste. Sie können Dokumente mit verschiedenen Arbeitsabläufen zum Unterschreiben senden, einschließlich mehrerer Unterschriften. Acrobat Sign unterstützt auch Workflows, die Signaturen und zusätzliche Informationen erfordern. Alle diese Funktionen werden von einem leistungsstarken Dashboard mit einem flexiblen Authoring-System unterstützt.
+[Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) ist der weltweit führende Anbieter elektronischer Signaturdienste. Sie können Dokumente mit verschiedenen Arbeitsabläufen zum Unterschreiben senden, einschließlich mehrerer Unterschriften. Acrobat Sign unterstützt auch Workflows, die Signaturen und zusätzliche Informationen erfordern. Alle diese Funktionen werden von einem leistungsstarken Dashboard mit einem flexiblen Authoring-System unterstützt.
 
-Wie bei [!DNL Acrobat Services] verfügt Acrobat Sign über eine [kostenlose Testversion](https://www.adobe.com/sign.html#sign_free_trial), mit der Entwickler den Signiervorgang sowohl über das Dashboard als auch mit einer benutzerfreundlichen REST-basierten API testen können.
+Wie bei [!DNL Acrobat Services] verfügt Acrobat Sign über eine [kostenlose Testversion](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial), mit der Entwickler den Signiervorgang sowohl über das Dashboard als auch mit einer benutzerfreundlichen REST-basierten API testen können.
 
 ## Ein Onboarding-Szenario
 
@@ -192,7 +192,7 @@ Dieser Code nimmt die beiden PDF, führt sie zusammen und speichert das Ergebnis
 
 ## Der Signiervorgang
 
-Am Ende des Onboarding-Prozesses muss der Mitarbeiter eine Vereinbarung unterzeichnen, in der er bestätigt, dass er alle darin definierten Richtlinien gelesen hat und damit einverstanden ist. [Acrobat Sign](https://www.adobe.com/de/sign.html) unterstützt viele verschiedene Workflows und Integrationen, einschließlich eines automatisierten Workflows über eine [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). Im Großen und Ganzen lässt sich der letzte Abschnitt des Szenarios wie folgt abschließen:
+Am Ende des Onboarding-Prozesses muss der Mitarbeiter eine Vereinbarung unterzeichnen, in der er bestätigt, dass er alle darin definierten Richtlinien gelesen hat und damit einverstanden ist. [Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) unterstützt viele verschiedene Workflows und Integrationen, einschließlich eines automatisierten Workflows über eine [API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html). Im Großen und Ganzen lässt sich der letzte Abschnitt des Szenarios wie folgt abschließen:
 
 Zunächst müssen Sie das Dokument entwerfen, das das zu unterzeichnende Formular enthält. Hierfür gibt es mehrere Möglichkeiten, einschließlich eines visuellen Designs im Adobe Sign-Benutzer-Dashboard. Eine weitere Möglichkeit besteht darin, die Tags mit dem Add-in &quot;Word für die Dokumentgenerierung&quot; einzufügen. In diesem Beispiel werden eine Signatur und ein Datum angefordert.
 
@@ -206,6 +206,6 @@ Die Vorlage kann in das Acrobat Sign-Dashboard hochgeladen und dann für neue Ve
 
 ## Jetzt selbst erleben
 
-Alles, was in diesem Artikel beschrieben wird, kann jetzt getestet werden. Die [!DNL Adobe Acrobat Services]-API [kostenlose Testversion](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) stellt Ihnen derzeit 1.000 kostenlose Anfragen über einen Zeitraum von sechs Monaten zur Verfügung. Mit der [kostenlosen Testversion von Acrobat Sign](https://www.adobe.com/sign.html#sign_free_trial) können Sie Vereinbarungen mit Wasserzeichen zu Testzwecken senden.
+Alles, was in diesem Artikel beschrieben wird, kann jetzt getestet werden. Die [!DNL Adobe Acrobat Services]-API [kostenlose Testversion](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) stellt Ihnen derzeit 1.000 kostenlose Anfragen über einen Zeitraum von sechs Monaten zur Verfügung. Mit der [kostenlosen Testversion von Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) können Sie Vereinbarungen mit Wasserzeichen zu Testzwecken senden.
 
-Hast du Fragen? Das [Supportforum](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK) wird täglich von Adobe-Entwicklern und Supportmitarbeitern überwacht. Um weitere Anregungen zu erhalten, sollten Sie sich die nächste [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)-Episode ansehen. Es gibt regelmäßige Live-Meetings mit Nachrichten, Demos und Gesprächen mit Kunden.
+Hast du Fragen? Das [Supportforum](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) wird täglich von Adobe-Entwicklern und Supportmitarbeitern überwacht. Um weitere Anregungen zu erhalten, sollten Sie sich die nächste [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)-Episode ansehen. Es gibt regelmäßige Live-Meetings mit Nachrichten, Demos und Gesprächen mit Kunden.

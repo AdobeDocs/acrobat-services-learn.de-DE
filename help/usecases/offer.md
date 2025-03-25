@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Banner &quot;Use Case Hero&quot;](assets/UseCaseOfferHero.jpg)
 
-Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services]-APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile von [ zu verarbeiten, indem sie Angebotsschreiben erstellen und an neue Mitarbeiter senden](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html).
+Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services]-APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile von [ zu verarbeiten, indem sie Angebotsschreiben erstellen und an neue Mitarbeiter senden](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
 
 ## Lernziel.
 
@@ -29,21 +29,21 @@ Dieses praktische Tutorial führt Sie durch die Einrichtung eines Node Express-P
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API für die Dokumentenerzeugung ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) für Adobe
+* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
-* [Word-Add-in für Tagger für Dokumenterstellung](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
+* [Word-Add-in für Tagger für Dokumenterstellung](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [Projektbeispiel](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)
+* [Projektbeispiel](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## Erste Schritte
 
 [Node.js](https://nodejs.org/) ist die Programmierplattform. Es verfügt über eine enorme Menge an Bibliotheken, wie z. B. den Express Webserver. [Laden Sie Node.js](https://nodejs.org/en/download/) herunter und befolgen Sie die Schritte zum Installieren dieser großartigen Open-Source-Entwicklungsumgebung.
 
-Um die Adobe-Dokumentengenerierungs-API in &quot;Node.js&quot; zu verwenden, wechseln Sie zur Website [Dokumentengenerierungs-API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html), um auf Ihr Konto zuzugreifen oder sich für ein neues Konto zu registrieren. Ihr Konto ist sechs Monate lang [kostenlos und zahlt dann nach Bedarf](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es risikofrei ausprobieren und dann nur zahlen können, wenn Ihr Unternehmen wächst.
+Um die Adobe-Dokumentengenerierungs-API in &quot;Node.js&quot; zu verwenden, wechseln Sie zur Website [Dokumentengenerierungs-API](https://developer.adobe.com/document-services/apis/doc-generation), um auf Ihr Konto zuzugreifen oder sich für ein neues Konto zu registrieren. Ihr Konto ist sechs Monate lang [kostenlos und zahlt dann nach Bedarf](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es risikofrei ausprobieren und dann nur zahlen können, wenn Ihr Unternehmen wächst.
 
-Nachdem Sie sich bei der [Adobe Developer Console](https://console.adobe.io/) angemeldet haben, klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Das Projekt hat standardmäßig den Namen &quot;Projekt 1&quot;. Klicken Sie auf die Schaltfläche **[!UICONTROL Projekt bearbeiten]** und ändern Sie den Namen in &quot;Angebotsschreiben-Generator&quot;. In der Mitte des Bildschirms befindet sich der Abschnitt **[!UICONTROL Erste Schritte mit Ihrem neuen Projekt]**. Um die Sicherheit Ihres Projekts zu aktivieren, führen Sie die folgenden Schritte aus:
+Nachdem Sie sich bei der [Adobe Developer Console](https://developer.adobe.com/console/) angemeldet haben, klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**. Das Projekt hat standardmäßig den Namen &quot;Projekt 1&quot;. Klicken Sie auf die Schaltfläche **[!UICONTROL Projekt bearbeiten]** und ändern Sie den Namen in &quot;Angebotsschreiben-Generator&quot;. In der Mitte des Bildschirms befindet sich der Abschnitt **[!UICONTROL Erste Schritte mit Ihrem neuen Projekt]**. Um die Sicherheit Ihres Projekts zu aktivieren, führen Sie die folgenden Schritte aus:
 
 Klicken Sie auf **API hinzufügen**. Es wird eine Reihe von APIs zur Auswahl angezeigt. Wählen Sie im Abschnitt **[!UICONTROL Nach Produkt filtern]** die Option **[!UICONTROL Document Cloud]** aus, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Dort gibt es viel Code zum Entpacken. Nehmen wir zuerst den Hauptteil: die `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
+Dort gibt es viel Code zum Entpacken. Nehmen wir zuerst den Hauptteil: die `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
 
 Hallo X,
 
@@ -247,7 +247,7 @@ Wir freuen uns, Ihnen eine Position für $X pro Jahr anbieten zu können. Ihr St
 
 Willkommen
 
-Speichern Sie das Dokument unter dem Namen &quot;OfferLetter-Template.docx&quot; in einem Ordner namens &quot;resources&quot; im Stammordner Ihres Projekts. Beachten Sie die drei Xs in dem Dokument. Diese Xs sind temporäre Platzhalter für Ihre JSON-Informationen. Obwohl Sie diese Platzhalter durch eine spezielle Syntax ersetzen können, bietet Adobe ein Word-Add-in, das diese Aufgabe vereinfacht. Um das Add-In zu installieren, wechseln Sie zur Website Adobe [Document Generation Tagger Word Add-In](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin).
+Speichern Sie das Dokument unter dem Namen &quot;OfferLetter-Template.docx&quot; in einem Ordner namens &quot;resources&quot; im Stammordner Ihres Projekts. Beachten Sie die drei Xs in dem Dokument. Diese Xs sind temporäre Platzhalter für Ihre JSON-Informationen. Obwohl Sie diese Platzhalter durch eine spezielle Syntax ersetzen können, bietet Adobe ein Word-Add-in, das diese Aufgabe vereinfacht. Um das Add-In zu installieren, wechseln Sie zur Website Adobe [Document Generation Tagger Word Add-In](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin).
 
 Klicken Sie in Ihrer OfferLetter-Vorlage auf die neue Schaltfläche **Dokumentengenerierung**. Ein Seitenbedienfeld wird geöffnet. Klicken Sie auf **Erste Schritte**. Sie erhalten einen Textbereich, der in die JSON-Beispieldaten eingefügt werden kann. Kopieren Sie den &quot;Angebot-Daten&quot;-Ausschnitt von JSON von oben in den Textbereich. Es sollte wie folgt aussehen:
 
@@ -263,7 +263,7 @@ Willkommen
 
 Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispielsweise wird ```{{`offer_letter`.`firstname`}}``` am Anfang des Word-Dokuments durch den Wert im Abschnitt &quot;firstName&quot; der JSON-Daten ersetzt.
 
-Zurück zur `generateLetter`-Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein, und passen Sie sie mit Details aus dem Abschnitt &quot;Service Account (JWT)&quot; (Dienstkonto (JSON-Konto) Ihrer [Entwicklerkonsole](https://console.adobe.io/)) an.
+Zurück zur `generateLetter`-Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein, und passen Sie sie mit Details aus dem Abschnitt &quot;Service Account (JWT)&quot; (Dienstkonto (JSON-Konto) Ihrer [Entwicklerkonsole](https://developer.adobe.com/console/)) an.
 
 ```
 {
@@ -290,9 +290,9 @@ Um eine PDF mit ausgefüllten JSON-Daten zu generieren, kehren Sie zu Ihrem Webf
 
 ## Nächste Schritte
 
-Das war&#39;s! Das ist erst der Anfang. Wenn Sie sich im Abschnitt &quot;Erweitert&quot; der Registerkarte &quot;Dokumenterstellung&quot; des Word-Add-ins umsehen, werden Sie feststellen, dass nicht alle Platzhaltermarken aus den zugeordneten JSON-Daten stammen. Sie können auch Signatur-Tags hinzufügen. Mit diesen Tags können Sie das resultierende Dokument an [Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html) hochladen, um es an den neuen Mitarbeiter zu senden und zu signieren. Lesen Sie &quot;Erste Schritte mit der Adobe Sign API&quot;, um mehr über diese Möglichkeiten zu erfahren. Dieser Vorgang ist ähnlich, da Sie REST-Aufrufe verwenden, die mit einem JWT-Token gesichert sind.
+Das war&#39;s! Das ist erst der Anfang. Wenn Sie sich im Abschnitt &quot;Erweitert&quot; der Registerkarte &quot;Dokumenterstellung&quot; des Word-Add-ins umsehen, werden Sie feststellen, dass nicht alle Platzhaltermarken aus den zugeordneten JSON-Daten stammen. Sie können auch Signatur-Tags hinzufügen. Mit diesen Tags können Sie das resultierende Dokument an [Adobe Sign](https://www.adobe.com/ca/sign.html) hochladen, um es an den neuen Mitarbeiter zu senden und zu signieren. Lesen Sie &quot;Erste Schritte mit der Adobe Sign API&quot;, um mehr über diese Möglichkeiten zu erfahren. Dieser Vorgang ist ähnlich, da Sie REST-Aufrufe verwenden, die mit einem JWT-Token gesichert sind.
 
-Das oben angegebene Beispiel für ein einzelnes Dokument kann als Grundlage für eine Anwendung verwendet werden, wenn eine Organisation [die saisonale Einstellung](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html) von Mitarbeitern an mehreren Standorten erhöhen muss. Wie gezeigt, besteht der Hauptfluss darin, Daten von Bewerbern über eine Online-Bewerbung zu sammeln. Die Daten werden verwendet, um die Felder eines Angebotsschreibens auszufüllen und zum elektronischen Unterschreiben zu senden.
+Das oben angegebene Beispiel für ein einzelnes Dokument kann als Grundlage für eine Anwendung verwendet werden, wenn eine Organisation [die saisonale Einstellung](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) von Mitarbeitern an mehreren Standorten erhöhen muss. Wie gezeigt, besteht der Hauptfluss darin, Daten von Bewerbern über eine Online-Bewerbung zu sammeln. Die Daten werden verwendet, um die Felder eines Angebotsschreibens auszufüllen und zum elektronischen Unterschreiben zu senden.
 
-[!DNL Adobe Acrobat Services] kann sechs Monate lang kostenlos genutzt werden, danach [Pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es ausprobieren und Ihren Workflow für Angebotsschreiben skalieren können, wenn Ihr Unternehmen wächst. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-Ihre eigenen Vorlagen zu erstellen, [melden Sie sich für Ihr Entwicklerkonto an](https://www.adobe.io/).
+[!DNL Adobe Acrobat Services] kann sechs Monate lang kostenlos genutzt werden, danach [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es ausprobieren und Ihren Workflow für Angebotsschreiben skalieren können, wenn Ihr Unternehmen wächst. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+Ihre eigenen Vorlagen zu erstellen, [melden Sie sich für Ihr Entwicklerkonto an](https://developer.adobe.com/).

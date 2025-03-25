@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Wenn ihr eine Website mit mehreren Benutzern betreibt, ist es wichtig, ein Erlebnis zu gestalten, das jedem ein reibungsloses Erlebnis gewährleistet.
 
-Stellen Sie sich folgendes Szenario vor: Sie haben eine Website, auf der Arbeitgeber [Stellenausschreibungen hochladen können](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). Für Arbeitssuchende ist es einfach, alle Dokumente im Zusammenhang mit einer Ausschreibung in einem einheitlichen Format anzuzeigen. Es ist jedoch für Arbeitgeber bequem, Informationen in jedem beliebigen Dateiformat anzuhängen. Um beiden Benutzertypen Komfort zu bieten, können Sie alle hochgeladenen Dokumente automatisch in PDF konvertieren und in die Veröffentlichung einbetten.
+Stellen Sie sich folgendes Szenario vor: Sie haben eine Website, auf der Arbeitgeber [Stellenausschreibungen hochladen können](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting). Für Arbeitssuchende ist es einfach, alle Dokumente im Zusammenhang mit einer Ausschreibung in einem einheitlichen Format anzuzeigen. Es ist jedoch für Arbeitgeber bequem, Informationen in jedem beliebigen Dateiformat anzuhängen. Um beiden Benutzertypen Komfort zu bieten, können Sie alle hochgeladenen Dokumente automatisch in PDF konvertieren und in die Veröffentlichung einbetten.
 
 ## Lernziel.
 
@@ -37,13 +37,13 @@ Richten Sie zunächst eine einfache Express-basierte Web-Anwendung Node.js ein. 
 
 ## Erstellen von Adobe API-Zugangsberechtigungen
 
-Zuerst müssen Sie [Anmeldeinformationen erstellen](https://www.adobe.com/go/dcsdks_credentials) für die Adobe PDF Embed-API (kostenlos) und die Adobe PDF Services-API (kostenlos für sechs Monate, dann [Pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) für nur \$0,05 pro Dokumenttransaktion). Wenn Sie Anmeldeinformationen für die PDF Services-API erstellen, wählen Sie die Option &quot;Persönliches Codebeispiel erstellen&quot;. Speichern Sie die ZIP-Datei und extrahieren Sie pdftools-api-credentials.json und private.key in das Stammverzeichnis Ihres Node.js Express-Projekts.
+Zuerst müssen Sie [Anmeldeinformationen erstellen](https://www.adobe.com/go/dcsdks_credentials) für die Adobe PDF Embed-API (kostenlos) und die Adobe PDF Services-API (kostenlos für sechs Monate, dann [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion). Wenn Sie Anmeldeinformationen für die PDF Services-API erstellen, wählen Sie die Option &quot;Persönliches Codebeispiel erstellen&quot;. Speichern Sie die ZIP-Datei und extrahieren Sie pdftools-api-credentials.json und private.key in das Stammverzeichnis Ihres Node.js Express-Projekts.
 
-Sie benötigen auch einen API-Schlüssel für die frei verfügbare Embed-API. Wechseln Sie von [Projekte](https://console.adobe.io/projects) zu dem von Ihnen erstellten Projekt. Klicken Sie dann auf **Zu Projekt hinzufügen** und wählen Sie **API** aus. Klicken Sie abschließend auf **PDF Embed API**.
+Sie benötigen auch einen API-Schlüssel für die frei verfügbare Embed-API. Wechseln Sie von [Projekte](https://developer.adobe.com/console/projects) zu dem von Ihnen erstellten Projekt. Klicken Sie dann auf **Zu Projekt hinzufügen** und wählen Sie **API** aus. Klicken Sie abschließend auf **PDF Embed API**.
 
 Geben Sie die Domäne für die PDF Embed-API an. Der API-Schlüssel muss öffentlich sein (finden Sie ihn im vom Browser ausgeführten Code). Indem Sie eine Domäne angeben, stellen Sie sicher, dass eine andere Person in einer anderen Domäne den API-Schlüssel nicht verwenden kann.
 
-Sie können &quot;localhost&quot; nicht als Domäne verwenden. Geben Sie eine Domäne an, z. B. &quot;testing.local&quot;, und bearbeiten Sie die Hostdatei auf Ihrem Computer, um diese Domäne zu 127.0.0.1, Ihrem Computer, umzuleiten. Anstatt die Anwendung dann auf localhost:3000 zu testen, können Sie sie auf testing.local:3000 testen. Wenn Sie fertig sind, finden Sie den API-Schlüssel für PDF Embed-API auf der Projektseite.
+Sie können &quot;localhost&quot; nicht als Domäne verwenden. Geben Sie eine Domäne an, z. B. &quot;testing.local&quot;, und bearbeiten Sie die Hostdatei auf Ihrem Computer, um diese Domäne zu 127.0.0.1 umzuleiten, d. h. zu Ihrem Computer. Anstatt die Anwendung dann auf localhost:3000 zu testen, können Sie sie auf testing.local:3000 testen. Wenn Sie fertig sind, finden Sie den API-Schlüssel für PDF Embed-API auf der Projektseite.
 
 ## Hinzufügen eines Upload-Formulars und eines Handlers
 
@@ -274,7 +274,7 @@ Um eine Inline-Einbettung in Aktion anzuzeigen, sehen Sie sich diese [Live-Demo]
 
 ## Nächste Schritte
 
-In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit &quot;[!DNL Acrobat Services]&quot; verwenden, um eine hochgeladene [Stellenausschreibung](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) in verschiedenen Formaten in eine PDF zu konvertieren. Die resultierende PDF wurde dann in eine Webseite eingebettet. Diese Funktion können Sie nun auf Ihrer Website hinzufügen, um es Arbeitgebern zu erleichtern, Stellenbeschreibungen, Broschüren und mehr hochzuladen, damit Arbeitssuchende sie leichter finden können. Diese Funktionen helfen jedem, die nötigen Informationen zu erhalten, um seinen Traumjob zu finden.
+In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit &quot;[!DNL Acrobat Services]&quot; verwenden, um eine hochgeladene [Stellenausschreibung](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting) in verschiedenen Formaten in eine PDF zu konvertieren. Die resultierende PDF wurde dann in eine Webseite eingebettet. Diese Funktion können Sie nun auf Ihrer Website hinzufügen, um es Arbeitgebern zu erleichtern, Stellenbeschreibungen, Broschüren und mehr hochzuladen, damit Arbeitssuchende sie leichter finden können. Diese Funktionen helfen jedem, die nötigen Informationen zu erhalten, um seinen Traumjob zu finden.
 
 [!DNL Acrobat Services] hilft Ihnen beim Hinzufügen wichtiger Dokumentbehandlungsfunktionen zu Ihrer Website oder App. Weitere Informationen zu den Möglichkeiten dieser APIs finden Sie in der folgenden Kurzanleitung:
 
@@ -282,4 +282,4 @@ In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-Um mit dem Hinzufügen benutzerfreundlicher Dokumentbearbeitungsfunktionen zu Ihrer Website zu beginnen, [melden Sie sich für Ihre kostenlose Testversion an](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Die Adobe PDF Embed-API kann immer kostenlos verwendet werden, und die Adobe PDF Services-API ist sechs Monate lang kostenlos. Danach kostet sie nur \$0,05 pro Dokumenttransaktion, sodass Sie [umlagepflichtig](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) sind, wenn Ihr Unternehmen wächst.
+Um mit dem Hinzufügen benutzerfreundlicher Dokumentbearbeitungsfunktionen zu Ihrer Website zu beginnen, [melden Sie sich für Ihre kostenlose Testversion an](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Die Adobe PDF Embed-API kann immer kostenlos verwendet werden, und die Adobe PDF Services-API ist sechs Monate lang kostenlos. Danach kostet sie nur \$0,05 pro Dokumenttransaktion, sodass Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) sind, wenn Ihr Unternehmen wächst.

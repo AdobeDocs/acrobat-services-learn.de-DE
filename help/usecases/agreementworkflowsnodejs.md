@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Empfohlen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: f8a31b8f98d99bf1f3787e0f0f19cc9f26e24d8d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -32,7 +32,7 @@ In diesem Tutorial lernen Sie, wie Sie PDF-Services zu einer Anwendung &quot;Nod
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/adobe/pdftools-node-sdk-samples)
 
@@ -294,7 +294,7 @@ Fügen Sie auf der Seite, auf der die PDF angezeigt wird, ein `<div />`-Element 
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-Der letzte Code, den Sie benötigen, ist eine Funktion, die das Dokument anzeigt, sobald der JavaScript-Code der Adobe PDF Embed-API geladen wurde. Wenn Sie eine Benachrichtigung erhalten, dass das Skript über ein adobe_dc_view\_sdk.ready-Ereignis geladen wird, erstellen Sie ein neues AdobeDC.View-Objekt. Dieses Objekt benötigt Ihre Client-ID und die ID des zuvor erstellten Elements. Suchen Sie Ihre Client-ID in [Adobe Developer Console](https://console.adobe.io/). Wenn Sie die Einstellungen für die Anwendung anzeigen, die Sie zuvor beim Generieren von Anmeldeinformationen erstellt haben, wird dort die Client-ID angezeigt.
+Der letzte Code, den Sie benötigen, ist eine Funktion, die das Dokument anzeigt, sobald der JavaScript-Code der Adobe PDF Embed-API geladen wurde. Wenn Sie eine Benachrichtigung erhalten, dass das Skript über ein adobe_dc_view\_sdk.ready-Ereignis geladen wird, erstellen Sie ein neues AdobeDC.View-Objekt. Dieses Objekt benötigt Ihre Client-ID und die ID des zuvor erstellten Elements. Suchen Sie Ihre Client-ID in [Adobe Developer Console](https://developer.adobe.com/console/). Wenn Sie die Einstellungen für die Anwendung anzeigen, die Sie zuvor beim Generieren von Anmeldeinformationen erstellt haben, wird dort die Client-ID angezeigt.
 
 ![Abbild des API-Clientschlüssels](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ Sie können verschiedene Optionen aktivieren und deaktivieren und sofort sehen, 
 
 Sobald ein Dokument fertig ist, können Sie mit Adobe Sign digitale Signaturen zur Genehmigung hinzufügen. Diese Funktion funktioniert etwas anders als die bisher verwendete Funktion. Für digitale Signaturen muss eine Anwendung so konfiguriert sein, dass sie OAuth für die Benutzerauthentifizierung verwendet.
 
-Der erste Schritt beim Einrichten Ihrer Anwendung besteht darin, [Ihre Anwendung zu registrieren](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md), um OAuth für Adobe Sign zu verwenden. Navigieren Sie nach der Anmeldung zum Bildschirm zum Erstellen von Anwendungen, indem Sie auf *Konto* klicken, dann den Abschnitt *Adobe Sign API* öffnen und auf *API-Anwendungen* klicken, um die Liste der registrierten Anwendungen zu öffnen.
+Der erste Schritt beim Einrichten Ihrer Anwendung besteht darin, [Ihre Anwendung zu registrieren](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md), um OAuth für Adobe Sign zu verwenden. Navigieren Sie nach der Anmeldung zum Bildschirm zum Erstellen von Anwendungen, indem Sie auf *Konto* klicken, dann den Abschnitt *Adobe Sign API* öffnen und auf *API-Anwendungen* klicken, um die Liste der registrierten Anwendungen zu öffnen.
 
 ![Bild des ersten Schritts bei der Registrierung Ihrer Anwendung](assets/AWNjs_9.png)
 
@@ -519,4 +519,4 @@ Wie Sie an den Schnellstarts und dem bereitgestellten Code sehen können, ist es
 
 Um die erforderlichen Bereiche für einen Aufruf zu ermitteln oder zu sehen, wie der Aufruf erstellt wird, können Sie Beispielaufrufe aus der [REST-API-Dokumentation](https://secure.na4.adobesign.com/public/docs/restapi/v6) erstellen. Die [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples) veranschaulichen auch andere Funktionen und Dateiformate, die von den [!DNL Adobe Acrobat Services]-APIs verarbeitet werden.
 
-Sie können Ihren Anwendungen eine Vielzahl von PDF-Funktionen hinzufügen, mit denen Ihre Benutzer ihre Dokumente schnell und einfach anzeigen und signieren können und vieles mehr. Beginnen Sie noch heute mit [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/).
+Sie können Ihren Anwendungen eine Vielzahl von PDF-Funktionen hinzufügen, mit denen Ihre Benutzer ihre Dokumente schnell und einfach anzeigen und signieren können und vieles mehr. Beginnen Sie noch heute mit [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/).

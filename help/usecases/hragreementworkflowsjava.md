@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ In diesem praktischen Tutorial lernen Sie, wie Sie ein webbasiertes HR-Formular 
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ Um ein Autorisierungstoken zu erhalten, müssen Sie mehrere Schritte ausführen:
 
 Registrieren Sie zunächst ein [Entwicklerkonto](https://acrobat.adobe.com/de/de/sign/developer-form.html).
 
-Erstellen Sie die CLIENT-Anwendung im [Adobe Sign-Portal](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+Erstellen Sie die CLIENT-Anwendung im [Adobe Sign-Portal](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 
-Konfigurieren Sie OAuth für die Anwendung wie [hier](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) und [hier](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp) beschrieben. Notieren Sie sich Ihre Client-ID und Ihr Client-Geheimnis. Anschließend können Sie `https://www.google.com` als Umleitungs-URI und die folgenden Bereiche verwenden:
+Konfigurieren Sie OAuth für die Anwendung wie [hier](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) und [hier](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp) beschrieben. Notieren Sie sich Ihre Client-ID und Ihr Client-Geheimnis. Anschließend können Sie `https://www.google.com` als Umleitungs-URI und die folgenden Bereiche verwenden:
 
 * user_login: self
 
@@ -602,4 +602,4 @@ Wie Sie sehen, können Sie mithilfe der quickstarts ein einfaches Webformular im
 
 Auf der Basis dieses Beispiels könnt ihr Formulare erstellen, die Empfänger per Remote-Zugriff und auf sichere Weise unterzeichnen können. Wenn mehrere Unterschriften benötigt werden, könnt ihr Formulare in einem Workflow sogar automatisch an mehrere Personen weiterleiten. Dein Mitarbeiter-Onboarding wurde verbessert, und deine Personalabteilung wird dich lieben.
 
-Probieren Sie [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) aus, um Ihren Anwendungen heute eine Vielzahl von PDF-Funktionen hinzuzufügen.
+Probieren Sie [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) aus, um Ihren Anwendungen heute eine Vielzahl von PDF-Funktionen hinzuzufügen.

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Verkaufsangebote sind der erste Schritt auf dem Weg eines Unternehmens zur Kundenakquise. Wie bei allem, der erste Eindruck dauert. Ihre erste Interaktion mit Kunden bestimmt also deren Erwartungen an Ihr Unternehmen. Ihr Vorschlag muss präzise, präzise und bequem sein.
 
-Verträge und Angebote enthalten verschiedene Datentypen innerhalb ihrer Dokumentstruktur. Sie enthalten sowohl dynamische Daten (Kundenname, Angebotsmenge usw.) als auch statische Daten (Standardtexte wie feste Funktionen, Teamprofile und Standard-Leistungsbeschreibung). Das Erstellen von Vorlagendokumenten, z. B. Verkaufsangebote, erfordert oft monotone Aufgaben, z. B. das manuelle Ersetzen von Projektdetails in einer Mustervorlage. In diesem Tutorial verwenden Sie dynamische Daten und Workflows, um einen effizienten Prozess für die [Erstellung von Verkaufsangeboten](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html) zu erstellen.
+Verträge und Angebote enthalten verschiedene Datentypen innerhalb ihrer Dokumentstruktur. Sie enthalten sowohl dynamische Daten (Kundenname, Angebotsmenge usw.) als auch statische Daten (Standardtexte wie feste Funktionen, Teamprofile und Standard-Leistungsbeschreibung). Das Erstellen von Vorlagendokumenten, z. B. Verkaufsangebote, erfordert oft monotone Aufgaben, z. B. das manuelle Ersetzen von Projektdetails in einer Mustervorlage. In diesem Tutorial verwenden Sie dynamische Daten und Workflows, um einen effizienten Prozess für die [Erstellung von Verkaufsangeboten](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts) zu erstellen.
 
 ## Lernziel.
 
@@ -35,11 +35,11 @@ In diesem praktischen Tutorial lernen Sie, wie Sie dynamische Daten und Workflow
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] APIs](https://www.adobe.io/apis/documentcloud/dcsdk/)
+* [[!DNL Acrobat Services] APIs](https://developer.adobe.com/document-services/homepage/)
 
-* [API für die Dokumentenerzeugung ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) für Adobe
+* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Adobe-Tagger für Dokumenterstellung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
@@ -47,11 +47,11 @@ In diesem praktischen Tutorial lernen Sie, wie Sie dynamische Daten und Workflow
 
 Nachdem Sie die Tools installiert haben, können Sie mit der Lösung des Problems beginnen. Die Angebote enthalten sowohl statischen als auch dynamischen Inhalt, der für jeden Kunden spezifisch ist. Engpässe treten auf, weil bei jedem Angebot beide Datentypen erforderlich sind. Die Eingabe des statischen Texts ist zeitaufwendig. Sie müssen ihn also automatisieren und nur manuell mit den dynamischen Daten der einzelnen Clients umgehen.
 
-Erstellen Sie zunächst ein Datenerfassungsformular in [Microsoft Forms](https://www.office.com/launch/forms?auth=1) (oder in Ihrem bevorzugten Formularersteller). Dieses Formular ist für dynamische Kundendaten gedacht, die zu einem Verkaufsangebot hinzugefügt werden. Fülle das Formular mit Fragen aus, um die benötigten Kundendaten abzurufen, z. B. Firmenname, Datum, Adresse, Projektumfang, Preise und zusätzliche Kommentare. Verwenden Sie zum Erstellen Ihres eigenen Formulars [form](https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy). Das Ziel ist es, dass potenzielle Kunden das Formular ausfüllen und ihre Antworten dann als JSON-Dateien exportieren, die an den nächsten Teil Ihres Workflows übergeben werden.
+Erstellen Sie zunächst ein Datenerfassungsformular in [Microsoft Forms](https://www.office.com/launch/forms?auth=1) (oder in Ihrem bevorzugten Formularersteller). Dieses Formular ist für dynamische Kundendaten gedacht, die zu einem Verkaufsangebot hinzugefügt werden. Fülle das Formular mit Fragen aus, um die benötigten Kundendaten abzurufen, z. B. Firmenname, Datum, Adresse, Projektumfang, Preise und zusätzliche Kommentare. Verwenden Sie zum Erstellen Ihres eigenen Formulars [form]&#x200B;(https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKmUy). Das Ziel ist es, dass potenzielle Kunden das Formular ausfüllen und ihre Antworten dann als JSON-Dateien exportieren, die an den nächsten Teil Ihres Workflows übergeben werden.
 
 Manche Formularersteller bieten nur die Möglichkeit, Daten als CSV-Dateien zu exportieren. Daher ist es möglicherweise nützlich, [die generierte CSV-Datei in eine JSON-Datei zu konvertieren](http://csvjson.com/csv2json).
 
-Die statischen Daten werden in jedem Verkaufsangebot wiederverwendet. Sie können also eine Vorlage für ein Verkaufsangebot in Microsoft Word verwenden, um den statischen Text bereitzustellen. Sie können diese [Vorlage](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2) verwenden, aber Sie können Ihre eigene Vorlage erstellen oder eine [Adobe-Vorlage](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) verwenden.
+Die statischen Daten werden in jedem Verkaufsangebot wiederverwendet. Sie können also eine Vorlage für ein Verkaufsangebot in Microsoft Word verwenden, um den statischen Text bereitzustellen. Sie können diese [Vorlage](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2) verwenden, aber Sie können Ihre eigene Vorlage erstellen oder eine [Adobe-Vorlage](https://developer.adobe.com/document-services/apis/doc-generation) verwenden.
 
 Sie benötigen jetzt etwas, das sowohl die dynamischen Daten der Kunden im JSON-Format als auch den statischen Text in der Microsoft Word-Vorlage zu einem individuellen Verkaufsvorschlag für einen Kunden zusammenfasst. Die [!DNL Acrobat Services]-APIs werden verwendet, um die beiden zusammenzuführen und eine PDF zu generieren, die signiert werden kann.
 
@@ -79,7 +79,7 @@ Nach dem Generieren der Tags können Sie sie in das Dokument einfügen. Tags wer
 
 ## Verwenden der APIs
 
-Wechseln Sie zu den [!DNL Acrobat Services] APIs [Homepage](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html). Um [!DNL Acrobat Services] APIs verwenden zu können, benötigen Sie Anmeldeinformationen für Ihre Anwendung. Scrollen Sie ganz nach unten und wählen Sie **Kostenlose Testversion starten**, um Anmeldeinformationen zu erstellen. Sie können diese Dienste [sechs Monate lang kostenlos nutzen und dann für nur 0,05 US-Dollar pro Dokumenttransaktion nach Bedarf](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) bezahlen, sodass Sie nur das bezahlen, was Sie benötigen.
+Wechseln Sie zu den [!DNL Acrobat Services] APIs [Homepage](https://developer.adobe.com/document-services/apis/doc-generation). Um [!DNL Acrobat Services] APIs verwenden zu können, benötigen Sie Anmeldeinformationen für Ihre Anwendung. Scrollen Sie ganz nach unten und wählen Sie **Kostenlose Testversion starten**, um Anmeldeinformationen zu erstellen. Sie können diese Dienste [sechs Monate lang kostenlos nutzen und dann für nur 0,05 US-Dollar pro Dokumenttransaktion nach Bedarf](https://developer.adobe.com/document-services/pricing/main) bezahlen, sodass Sie nur das bezahlen, was Sie benötigen.
 
 Wählen Sie **PDF Services API** als Ihren bevorzugten Dienst aus und geben Sie die anderen Informationen wie unten gezeigt ein.
 
@@ -137,12 +137,12 @@ console.log('Exception encountered while executing operation', err);
 
 Dieser Code ruft Ihre JSON-Datei mithilfe der Tags, die Sie mit [!DNL Acrobat Services] erstellt haben, aus dem Microsoft-Formular ab. Anschließend werden die Daten mit der von Ihnen in Microsoft Word erstellten Vorlage für Verkaufsangebote zusammengeführt, um eine brandneue PDF zu erstellen. Die PDF wird im neu erstellten gespeichert./Ausgabeordner.
 
-Außerdem verwendet der Code die [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html), damit beide Unternehmen das generierte Verkaufsangebot unterzeichnen. In diesem Blogpost finden Sie eine detaillierte Erklärung zu dieser API.
+Außerdem verwendet der Code die [Adobe Sign-API](https://developer.adobe.com/adobesign-api/), damit beide Unternehmen das generierte Verkaufsangebot unterzeichnen. In diesem Blogpost finden Sie eine detaillierte Erklärung zu dieser API.
 
 ## Nächste Schritte
 
-Am Anfang stand ein ineffizienter, mühsamer Prozess, der der Automatisierung bedurfte. Sie sind von der manuellen Erstellung von Dokumenten für jeden Client zur Erstellung eines optimierten Workflows übergegangen, um [den Vertriebsangebot-Prozess zu automatisieren und zu vereinfachen](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html).
+Am Anfang stand ein ineffizienter, mühsamer Prozess, der der Automatisierung bedurfte. Sie sind von der manuellen Erstellung von Dokumenten für jeden Client zur Erstellung eines optimierten Workflows übergegangen, um [den Vertriebsangebot-Prozess zu automatisieren und zu vereinfachen](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts).
 
 Mit Microsoft Forms erhaltet ihr wichtige Daten von euren Kunden, die in ihre individuellen Vorschläge einfließen. Sie haben in Microsoft Word eine Vorlage für ein Verkaufsangebot erstellt, die den statischen Text enthält, den Sie nicht jedes Mal neu erstellen möchten. Sie haben dann [!DNL Acrobat Services] APIs verwendet, um Daten aus dem Formular und der Vorlage zusammenzuführen, um eine Verkaufsangebot-PDF für Ihre Kunden auf effizientere Weise zu erstellen.
 
-In diesem Tutorial erfahren Sie, was mit diesen APIs alles möglich ist. Weitere Lösungen finden Sie auf der Seite [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) APIs. Nutze diese Tools 6 Monate lang kostenlos. Dann zahlen Sie nur 0,05 US-Dollar pro Dokumenttransaktion für das [Pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)-Abo, sodass Sie nur zahlen, wenn Ihr Team mehr Interessenten zu Ihrer Vertriebspipeline hinzufügt.
+In diesem Tutorial erfahren Sie, was mit diesen APIs alles möglich ist. Weitere Lösungen finden Sie auf der Seite [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) APIs. Nutze diese Tools 6 Monate lang kostenlos. Dann zahlen Sie nur 0,05 US-Dollar pro Dokumenttransaktion für das [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main)-Abo, sodass Sie nur zahlen, wenn Ihr Team mehr Interessenten zu Ihrer Vertriebspipeline hinzufügt.

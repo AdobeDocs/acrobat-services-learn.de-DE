@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -19,29 +19,29 @@ ht-degree: 0%
 
 ![Banner &quot;Use Case Hero&quot;](assets/UseCaseLegalHero.jpg)
 
-Die Digitalisierung bringt Herausforderungen mit sich. Heute verfügen die meisten Organisationen über viele Typen von [rechtsgültigen Verträgen](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html), die sie erstellen, bearbeiten, genehmigen und von verschiedenen Parteien signieren müssen. Diese Verträge erfordern häufig individuelle Anpassungen und ein einzigartiges Branding. Unternehmen müssen sie möglicherweise auch in einem geschützten Format speichern, sobald sie signiert wurden, um sie zu schützen. Um all diese Aufgaben zu erledigen, benötigen sie eine robuste Lösung zur Dokumentenerstellung und -verwaltung.
+Die Digitalisierung bringt Herausforderungen mit sich. Heute verfügen die meisten Organisationen über viele Typen von [rechtsgültigen Verträgen](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts), die sie erstellen, bearbeiten, genehmigen und von verschiedenen Parteien signieren müssen. Diese Verträge erfordern häufig individuelle Anpassungen und ein einzigartiges Branding. Unternehmen müssen sie möglicherweise auch in einem geschützten Format speichern, sobald sie signiert wurden, um sie zu schützen. Um all diese Aufgaben zu erledigen, benötigen sie eine robuste Lösung zur Dokumentenerstellung und -verwaltung.
 
 Viele Lösungen bieten eine gewisse Dokumentenerstellung, können aber keine Dateneingaben und bedingte Logik anpassen, wie z. B. Klauseln, die nur für bestimmte Szenarien gelten. Die manuelle Aktualisierung der Rechtsvorlagen eines Unternehmens ist eine Herausforderung und fehleranfällig, da diese Dokumente immer umfangreicher werden. Die Notwendigkeit, diese Prozesse zu automatisieren, ist beträchtlich.
 
 ## Lernziel.
 
-In diesem praktischen Tutorial lernen Sie die Funktionen von [[!DNL Adobe Acrobat Services] APIs](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) bei der Generierung benutzerdefinierter Eingabefelder in Dokumenten kennen. Erfahren Sie außerdem, wie Sie diese generierten Dokumente ganz einfach in ein geschütztes portables Dokumentformat (PDF) konvertieren können, um Datenmanipulation zu verhindern.
+In diesem praktischen Tutorial lernen Sie die Funktionen von [[!DNL Adobe Acrobat Services] APIs](https://developer.adobe.com/document-services/apis/doc-generation) bei der Generierung benutzerdefinierter Eingabefelder in Dokumenten kennen. Erfahren Sie außerdem, wie Sie diese generierten Dokumente ganz einfach in ein geschütztes portables Dokumentformat (PDF) konvertieren können, um Datenmanipulation zu verhindern.
 
 In diesem Tutorial lernen Sie, wie Verträge in PDF umgewandelt werden. Damit Sie die Schritte effektiv nachvollziehen können, sollten [Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) und [Node.js](https://nodejs.org/) auf Ihrem PC installiert sein. Es wird außerdem empfohlen, die Syntax &quot;Node.js&quot; und &quot;[ES6&quot;](https://www.w3schools.com/js/js_es6.asp)&quot; zu verstehen.
 
 ## Relevante APIs und Ressourcen
 
-* [API für die Dokumentenerzeugung ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) für Adobe
+* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/agavitalis/adobe_legal_contracts.git)
 
 ## Erstellen von Vorlagendokumenten
 
-Sie können mithilfe der Microsoft Word-Anwendung oder durch Herunterladen der [Word-Mustervorlagen](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) von Adobe rechtliche Dokumente erstellen. Trotzdem ist es nicht einfach, die Eingaben anzupassen und diese Dokumente digital zu signieren, ohne einige Hilfstools wie das [Add-in zum Erzeugen von Adobe-Dokumenten](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) für Microsoft Word zu verwenden.
+Sie können mithilfe der Microsoft Word-Anwendung oder durch Herunterladen der [Word-Mustervorlagen](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) von Adobe rechtliche Dokumente erstellen. Trotzdem ist es nicht einfach, die Eingaben anzupassen und diese Dokumente digital zu signieren, ohne einige Hilfstools wie das [Add-in zum Erzeugen von Adobe-Dokumenten](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin) für Microsoft Word zu verwenden.
 
 Der Tagger für die Dokumentgenerierung ist ein Microsoft Word-Add-in, das die Anpassung von Dokumenten mithilfe von Tags erleichtert. Es ermöglicht die Erstellung dynamischer Felder in Dokumentvorlagen, die mithilfe von JSON-Daten dynamisch ausgefüllt werden.
 
@@ -175,7 +175,7 @@ Stellen Sie nach der Installation der Pakete sicher, dass der Inhalt der Datei p
 
 In diesen Codefragmenten haben Sie die Anwendungsabhängigkeiten installiert, einschließlich des Handlebars-Vorlagenmoduls für die Ansicht.
 
-Der Hauptschwerpunkt in diesem Tutorial liegt auf der Verwendung von [[!DNL Acrobat Services] APIs](https://www.adobe.io/apis/documentcloud/dcsdk/) zum Konvertieren von Dokumenten in PDF. Daher gibt es keinen schrittweisen Prozess zum Erstellen dieser Anwendung &quot;Node.js&quot;. Sie können jedoch den vollständigen funktionierenden Anwendungscode &quot;Node.js&quot; auf &quot;[GitHub](https://github.com/agavitalis/adobe_legal_contracts.git)&quot; abrufen.
+Der Hauptschwerpunkt in diesem Tutorial liegt auf der Verwendung von [[!DNL Acrobat Services] APIs](https://developer.adobe.com/document-services/homepage/) zum Konvertieren von Dokumenten in PDF. Daher gibt es keinen schrittweisen Prozess zum Erstellen dieser Anwendung &quot;Node.js&quot;. Sie können jedoch den vollständigen funktionierenden Anwendungscode &quot;Node.js&quot; auf &quot;[GitHub](https://github.com/agavitalis/adobe_legal_contracts.git)&quot; abrufen.
 
 ## Integrieren von [!DNL Adobe Acrobat Services] APIs in eine Node.js-Anwendung
 
@@ -187,7 +187,7 @@ Der Hauptschwerpunkt in diesem Tutorial liegt auf der Verwendung von [[!DNL Acro
 
 * API für die Dokumentenerzeugung in Adobe
 
-Sie benötigen Anmeldeinformationen, um [!DNL Acrobat Services]-APIs verwenden zu können (die sich von Ihren PDF Embed-API-Anmeldeinformationen unterscheiden). Wenn Sie keine gültigen Anmeldeinformationen haben, [registrieren Sie sich](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) und schließen Sie den Arbeitsablauf ab, wie in der Bildschirmaufnahme unten dargestellt. Profitieren Sie von einer [kostenlosen sechsmonatigen Testversion und einer Vorauszahlung](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html), nur $0,05 pro Dokumenttransaktion.
+Sie benötigen Anmeldeinformationen, um [!DNL Acrobat Services]-APIs verwenden zu können (die sich von Ihren PDF Embed-API-Anmeldeinformationen unterscheiden). Wenn Sie keine gültigen Anmeldeinformationen haben, [registrieren Sie sich](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) und schließen Sie den Arbeitsablauf ab, wie in der Bildschirmaufnahme unten dargestellt. Profitieren Sie von einer [kostenlosen sechsmonatigen Testversion und einer Vorauszahlung](https://developer.adobe.com/document-services/pricing/main), nur $0,05 pro Dokumenttransaktion.
 
 ![Screenshot des Erstellens neuer Anmeldeinformationen](assets/legal_6.png)
 
@@ -424,8 +424,8 @@ In der Controller-Datei oben gibt es drei Funktionen: listFiles, previewPDF und 
 In diesem praktischen Tutorial haben Sie ein Dokument mit dem Microsoft Word-Add-in zum Generieren von Dokumenten mit Tags versehen. Integrieren Sie dann [!DNL Acrobat Services] APIs in eine Node.js-Anwendung, und
 hat ein Dokument mit Tags in ein herunterladbares PDF-Format konvertiert, obwohl Sie den Rechtsvertrag auch direkt auf PDF hätten erstellen können. Schließlich haben Sie die Adobe PDF Embed-API verwendet, um eine Vorschau der generierten PDF zur Überprüfung und Signatur anzuzeigen.
 
-Die fertige Anwendung erleichtert es erheblich, [Vorlagen für rechtsgültige Verträge](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) mit dynamischen Feldern zu taggen, sie in PDF zu konvertieren, in der Vorschau anzuzeigen und sie mit [!DNL Acrobat Services] APIs zu signieren. Anstatt Zeit für die Erstellung eines individuellen Vertrags aufzuwenden, kann euer Team automatisch den richtigen Vertrag an jeden Kunden senden und so mehr Zeit für den Ausbau eures Unternehmens aufwenden.
+Die fertige Anwendung erleichtert es erheblich, [Vorlagen für rechtsgültige Verträge](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/legal-contracts) mit dynamischen Feldern zu taggen, sie in PDF zu konvertieren, in der Vorschau anzuzeigen und sie mit [!DNL Acrobat Services] APIs zu signieren. Anstatt Zeit für die Erstellung eines individuellen Vertrags aufzuwenden, kann euer Team automatisch den richtigen Vertrag an jeden Kunden senden und so mehr Zeit für den Ausbau eures Unternehmens aufwenden.
 
-Organisationen verwenden [!DNL Adobe Acrobat Services]-APIs für ihre Vollständigkeit und Benutzerfreundlichkeit. Und das Beste ist: Sie können eine [sechsmonatige kostenlose Testversion und dann Pay-as-you-go](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) nutzen. Du bezahlst nur für das, was du nutzt. Die PDF Embed-API ist immer kostenlos.
+Organisationen verwenden [!DNL Adobe Acrobat Services]-APIs für ihre Vollständigkeit und Benutzerfreundlichkeit. Und das Beste ist: Sie können eine [sechsmonatige kostenlose Testversion und dann Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) nutzen. Du bezahlst nur für das, was du nutzt. Die PDF Embed-API ist immer kostenlos.
 
 Sind Sie bereit, Ihre Produktivität durch Verbesserung Ihres Dokumentflusses zu steigern? [Jetzt loslegen](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) heute.

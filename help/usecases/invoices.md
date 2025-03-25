@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Es ist großartig, wenn das Geschäft boomt, aber die Produktivität leidet, wenn es an der Zeit ist, all diese Rechnungen vorzubereiten. Das manuelle Generieren von Rechnungen ist zeitaufwendig, und Sie laufen Gefahr, einen Fehler zu machen, Geld zu verlieren oder einen Kunden mit einem falschen Betrag zu verärgern.
 
-Denken Sie beispielsweise an Danielle, die in der [Buchhaltung](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html) [ eines medizinischen Versorgungsunternehmens arbeitet](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html). Es ist das Ende des Monats, also holt sie Informationen aus verschiedenen Systemen, überprüft ihre Richtigkeit noch einmal und formatiert die Rechnungen. Nach all der Arbeit ist sie endlich bereit, die Dokumente in PDF zu konvertieren (damit jeder sie sehen kann, ohne eine bestimmte Software zu kaufen) und jedem Kunden seine personalisierte Rechnung zu schicken.
+Denken Sie beispielsweise an Danielle, die in der [Buchhaltung](https://developer.adobe.com/document-services/use-cases/financial/invoices) [ eines medizinischen Versorgungsunternehmens arbeitet](https://developer.adobe.com/document-services/use-cases/financial/invoices). Es ist das Ende des Monats, also holt sie Informationen aus verschiedenen Systemen, überprüft ihre Richtigkeit noch einmal und formatiert die Rechnungen. Nach all der Arbeit ist sie endlich bereit, die Dokumente in PDF zu konvertieren (damit jeder sie sehen kann, ohne eine bestimmte Software zu kaufen) und jedem Kunden seine personalisierte Rechnung zu schicken.
 
 Selbst wenn die monatliche Rechnungsstellung abgeschlossen ist, kann Danielle diesen Rechnungen einfach nicht entkommen. Manche Kunden haben nicht-monatliche Abrechnungszeiträume, daher erstellt sie immer eine Rechnung für jemanden. Gelegentlich bearbeitet ein Kunde seine Rechnung und unterbezahlt. Danielle verbringt dann Zeit mit der Fehlerbehebung dieser Rechnungsabweichung. Bei dieser Geschwindigkeit muss sie einen Assistenten einstellen, um mit der ganzen Arbeit Schritt zu halten!
 
@@ -37,9 +37,9 @@ Der vollständige Code für dieses Projekt ist [ auf GitHub ](https://github.com
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API für die Dokumentenerzeugung ](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) für Adobe
+* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
-* [Adobe Sign-API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation)
 
@@ -107,7 +107,7 @@ Dieses Beispiel für eine Rechnung enthält Kundeninformationen, die bestellten 
 
 Verwenden Sie das Adobe PDF Services Node.js-SDK (Software Development Kit), um Microsoft Word- und JSON-Dokumente zusammenzuführen. Erstellen Sie eine Anwendung &quot;Node.js&quot;, um die Rechnung mithilfe der API &quot;Dokumentenerzeugung&quot; zu erstellen.
 
-Die PDF Services-API umfasst den Dokumentengenerierungsdienst, sodass Sie für beide dieselben Anmeldeinformationen verwenden können. Profitieren Sie von einer [sechsmonatigen kostenlosen Testversion](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) und zahlen Sie dann nur 0,05 US-Dollar pro Dokumenttransaktion.
+Die PDF Services-API umfasst den Dokumentengenerierungsdienst, sodass Sie für beide dieselben Anmeldeinformationen verwenden können. Profitieren Sie von einer [sechsmonatigen kostenlosen Testversion](https://developer.adobe.com/document-services/pricing/main) und zahlen Sie dann nur 0,05 US-Dollar pro Dokumenttransaktion.
 
 Hier ist der Code zum Zusammenführen der PDF:
 
@@ -224,11 +224,11 @@ Wenn Sie die Rechnung fertig haben, möchten Sie sie möglicherweise automatisch
 
 ## Nächste Schritte
 
-In diesem praktischen Tutorial haben Sie eine einfache App erstellt, die Danielle bei der Buchhaltung mit [Rechnungsstellung](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html) unterstützt. Mithilfe der PDF Services API und des SDK für die Dokumentenerzeugung haben Sie eine Microsoft Word-Vorlage mit Kundenbestellungsinformationen aus einem JSON-Dokument gefüllt und eine PDF-Rechnung erstellt. Anschließend wird jedes Dokument mit Kennwortschutzdiensten durch die [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) mit einem Kennwort geschützt.
+In diesem praktischen Tutorial haben Sie eine einfache App erstellt, die Danielle bei der Buchhaltung mit [Rechnungsstellung](https://developer.adobe.com/document-services/use-cases/financial/invoices) unterstützt. Mithilfe der PDF Services API und des SDK für die Dokumentenerzeugung haben Sie eine Microsoft Word-Vorlage mit Kundenbestellungsinformationen aus einem JSON-Dokument gefüllt und eine PDF-Rechnung erstellt. Anschließend wird jedes Dokument mit Kennwortschutzdiensten durch die [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html) mit einem Kennwort geschützt.
 
 Da Danielle ihre Rechnungen automatisch erstellen kann und sich keine Sorgen über die Bearbeitung ihrer Rechnungen machen muss, braucht sie keinen Assistenten einzustellen, der sie bei allen manuellen Aufgaben unterstützt. Sie kann ihre zusätzliche Zeit nutzen, um Kosteneinsparungen in den Kreditorendateien zu finden.
 
-Nachdem Sie nun gesehen haben, wie einfach dies ist, können Sie diese einfache App mit anderen Adobe-Tools erweitern, um Rechnungen auf Ihrer Website einzubetten. So können Kunden beispielsweise ihre Rechnungen oder ihren Kontostand jederzeit einsehen. Die [Adobe PDF Embed-API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) kann kostenlos verwendet werden. oder direkt an die Personalabteilung oder den Vertrieb wenden, um die Automatisierung von Verträgen und die Einholung elektronischer Unterschriften zu erleichtern.
+Nachdem Sie nun gesehen haben, wie einfach dies ist, können Sie diese einfache App mit anderen Adobe-Tools erweitern, um Rechnungen auf Ihrer Website einzubetten. So können Kunden beispielsweise ihre Rechnungen oder ihren Kontostand jederzeit einsehen. Die [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed) kann kostenlos verwendet werden. oder direkt an die Personalabteilung oder den Vertrieb wenden, um die Automatisierung von Verträgen und die Einholung elektronischer Unterschriften zu erleichtern.
 
-Um alle Möglichkeiten zu erkunden und mit dem Erstellen Ihrer eigenen praktischen Anwendung zu beginnen, erstellen Sie ein kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Konto, um noch heute loszulegen. Teste das Programm sechs Monate lang kostenlos. Danach kannst du [nach Bedarf bezahlen](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)
+Um alle Möglichkeiten zu erkunden und mit dem Erstellen Ihrer eigenen praktischen Anwendung zu beginnen, erstellen Sie ein kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Konto, um noch heute loszulegen. Teste das Programm sechs Monate lang kostenlos. Danach kannst du [nach Bedarf bezahlen](https://developer.adobe.com/document-services/pricing/main)
 bei nur 0,05 US-Dollar pro Dokumenttransaktion, je nachdem, wie Ihr Unternehmen skaliert.
