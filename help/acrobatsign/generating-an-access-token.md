@@ -23,4 +23,4 @@ Hier erfahren Sie, wie Sie ein Zugriffstoken generieren, das mit der Acrobat Sig
 >
 >Dieses Tutorial wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347350?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444198?hidetitle=true&captions=ger)

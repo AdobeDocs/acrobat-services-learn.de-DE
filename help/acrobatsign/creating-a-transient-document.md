@@ -22,4 +22,4 @@ Hier erfahren Sie, wie Sie ein temporäres Dokument erstellen, das mit der Acrob
 >
 >Dieses Tutorial wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347351?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444779?hidetitle=true&captions=ger)

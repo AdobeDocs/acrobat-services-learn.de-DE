@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Erfahre, wie du mithilfe von KI skalierte Tags für Barrierefreiheit erstellst. Automatisches Tagging reduziert den Zeit- und Kostenaufwand für die Compliance.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446268?hidetitle=true&captions=ger)

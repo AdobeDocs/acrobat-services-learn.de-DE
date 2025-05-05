@@ -23,4 +23,4 @@ Erfahren Sie, wie Sie einen Einbettungslink für OAuth erstellen, der die Method
 >
 >Dieses Tutorial wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445417?hidetitle=true&captions=ger){transcript=true}

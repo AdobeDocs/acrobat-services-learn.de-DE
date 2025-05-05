@@ -23,4 +23,4 @@ Erfahren Sie, wie Sie eine Anwendung in Acrobat Sign erstellen.
 >
 >Dieses Tutorial wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347348?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3444587?hidetitle=true&captions=ger)
