@@ -19,7 +19,7 @@ von dir wird erwartet, dass du diesen Kodex einhältst. Melden Sie unangemessene
 
 ## Leitfaden für Mitwirkende - Dokumentation
 
-Siehe [Leitfaden für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Siehe [Leitfaden für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Haben Sie eine Frage?
 
@@ -57,4 +57,4 @@ können sich an bestehende Committer wenden, um ein Gespräch darüber zu führe
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht über diesen Problem-Tracker gemeldet werden. Stattdessen [senden Sie ein Problem an unsere Sicherheitsexperten](https://helpx.adobe.com/security/alertus.html).
+Sicherheitsprobleme sollten nicht über diesen Problem-Tracker gemeldet werden. Stattdessen [senden Sie ein Problem an unsere Sicherheitsexperten](https://helpx.adobe.com/de/security/alertus.html).

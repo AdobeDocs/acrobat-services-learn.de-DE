@@ -31,7 +31,7 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 ### Was Sie benötigen
 
 * **Anmeldeinformationen für Testversion oder Produktion für Adobe PDF Services**
-Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate mit Premium-Connectors**
 Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [überprüfen](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Es gibt zwei [Beispieldateien](assets/sample-assets.zip), die Sie entpacken und 
 
 ### Abrufen von Anmeldedaten
 
-Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Teil 1: Erstellen eines neuen Textflusses und Konvertieren von Word in PDF
 
