@@ -189,7 +189,7 @@ Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der 
 1. Wählen Sie unter *[!UICONTROL Berechnungstyp auswählen]* die Option **[!UICONTROL Aggregation]**.
 1. Wählen Sie unter *[!UICONTROL Typ auswählen]* die Option **[!UICONTROL Summe]**.
 1. Wählen Sie unter *[!UICONTROL Datensätze auswählen]* **[!UICONTROL ReferencesOrder]** aus.
-1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen]** **[!UICONTROL totalPaymentsDue.price]** aus.
+1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; **&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
 1. Wählen Sie **[!UICONTROL Berechnung einfügen]**.
 
 Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:

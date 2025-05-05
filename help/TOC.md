@@ -28,10 +28,10 @@ ht-degree: 3%
    + [Erste Schritte mit Adobe PDF Services API und Java](pdfservices/gettingstartedjava.md)
    + [Erste Schritte mit Adobe PDF Services API und .Net](pdfservices/gettingstartednet.md)
    + [Verwenden der Adobe PDF Services-API zum OCR-PDF von Dateien](pdfservices/ocr.md)
-+ API &quot;{#docgen}&quot; für die Dokumentenerzeugung
++ API &quot;&quot; für die Dokumentenerzeugung{#docgen}
    + [Überblick](docgen/overview-docgen.md)
    + [Automatisierte Dokumentenerstellung](docgen/automate-doc-gen.md)
-   + Vorlagen {#docgentemplates} werden erstellt.
+   + Vorlagen werden erstellt. {#docgentemplates}
       + [Überblick über das Adobe-Tagger zum Generieren von Dokumenten](docgen/taggeroverview.md)
       + [Hinzufügen von Text-Tags](docgen/taggeraddtexttags.md)
       + [Hinzufügen von Bild-Tags](docgen/taggeraddimagetags.md)

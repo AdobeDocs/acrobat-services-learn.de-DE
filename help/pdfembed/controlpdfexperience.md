@@ -112,7 +112,7 @@ Im zweiten Teil lernen Sie, wie Sie die PDF Embed-API ganz einfach in eine Webse
 
 ### Abrufen des Übungscodes
 
-Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
+Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
 
 1. Gehen Sie zu [[!DNL Adobe Acrobat Services] Website](https://developer.adobe.com/document-services/homepage/).
 
