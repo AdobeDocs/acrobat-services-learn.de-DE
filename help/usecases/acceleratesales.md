@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Navigieren Sie dann zum Fenster &quot;Dokumentenerzeugung - Tags&quot;, um Tags 
 
    ![Screenshot des Einfügens von Tag](assets/accsales_5.png)
 
-   Dieser Prozess platziert ein Tag mit dem Namen &quot;{{company.name}}&quot;, da sich das Tag unter dem Pfad in der JSON befindet.
+   Dieser Prozess platziert ein Tag mit dem Namen &quot;`{{company.name}}`&quot;, da sich das Tag unter dem Pfad in der JSON befindet.
 
    ```
    {
@@ -189,7 +189,7 @@ Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der 
 1. Wählen Sie unter *[!UICONTROL Berechnungstyp auswählen]* die Option **[!UICONTROL Aggregation]**.
 1. Wählen Sie unter *[!UICONTROL Typ auswählen]* die Option **[!UICONTROL Summe]**.
 1. Wählen Sie unter *[!UICONTROL Datensätze auswählen]* **[!UICONTROL ReferencesOrder]** aus.
-1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; &#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
+1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen]** **[!UICONTROL totalPaymentsDue.price]** aus.
 1. Wählen Sie **[!UICONTROL Berechnung einfügen]**.
 
 Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
@@ -248,7 +248,7 @@ Sie möchten das Bild jedoch dynamisch für ein Bild festlegen, das bereits im L
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Wähle ein anderes Bild in deinem Dokument aus, das dynamisch sein soll.
 
-   ![Screenshot des neuen Bildes im Dokument &#x200B;](assets/accsales_14.png)
+   ![Screenshot des neuen Bildes im Dokument ](assets/accsales_14.png)
 
 1. Klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie **[!UICONTROL Alt-Text bearbeiten]**.
 1. Fügen Sie den Wert in das Fenster ein.
@@ -272,11 +272,12 @@ Ein Tag wird in das Dokument eingefügt.
 ![Screenshot des Signatur-Tags im Dokument](assets/accsales_15.png)
 
 Acrobat Sign bietet verschiedene andere Feldtypen, die Sie einfügen können, z. B. Datumsfelder.
+
 1. Wählen Sie im Typ *Feld* die Option **[!UICONTROL Datum]** aus.
 1. Bewegen Sie den Cursor über die Datumsposition im Dokument.
 1. Wählen Sie **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-![Screenshot des Datumstags im Dokument &#x200B;](assets/accsales_16.png)
+![Screenshot des Datumstags im Dokument ](assets/accsales_16.png)
 
 ## Vereinbarung generieren
 
