@@ -96,13 +96,13 @@ C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/creat
 
 Beispielausgabe:
 
-![Beispielausgabe ](assets/exampleoutput.png)
+![Beispielausgabe &#x200B;](assets/exampleoutput.png)
 
 Die PDF wird an dem in der Ausgabe angegebenen Speicherort erstellt, der standardmäßig das Verzeichnis pdfServicesSdkResult ist.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie im Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)-Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie im Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)-Community-Forum
 
 PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 

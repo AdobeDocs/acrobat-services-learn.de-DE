@@ -26,7 +26,7 @@ Sehen wir uns ein beliebtes Szenario an. Ein Unternehmen veröffentlicht [Whitep
 
 ## Lernziel.
 
-In diesem praktischen Tutorial lernen Sie, wie Sie eingebettete PDF-Dokumente mithilfe der [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed) in Webseiten anzeigen. Diese ist kostenlos und einfach zu verwenden. In diesen Beispielen werden einige Formate von JavaScript, Node.js, Express.js, HTML und CSS verwendet. Sie können den vollständigen Projektcode auf [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) anzeigen.
+In diesem praktischen Tutorial lernen Sie, wie Sie eingebettete PDF-Dokumente mithilfe der [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed) in Webseiten anzeigen. Diese ist kostenlos und einfach zu verwenden. In diesen Beispielen werden einige Formate von JavaScript, Node.js, Express.js, HTML und CSS verwendet. Sie können den vollständigen Projektcode auf [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1) anzeigen.
 
 ## Relevante APIs und Ressourcen
 
@@ -34,7 +34,7 @@ In diesem praktischen Tutorial lernen Sie, wie Sie eingebettete PDF-Dokumente mi
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Projektcode](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [Projektcode](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## Erstellen einer Knoten-Webanwendung
 
@@ -347,7 +347,7 @@ Führen Sie nun die Anwendung mit dem Befehl npm start aus und öffnen Sie die W
 
 Wählen Sie als Letztes ein Whitepaper aus, und klicken Sie auf **Dokument anzeigen**, um eine neue Seite mit der eingebetteten In-Line-PDF zu öffnen:
 
-![Screenshot des PDF-Whitepapers ](assets/ddp_11.png)
+![Screenshot des PDF-Whitepapers &#x200B;](assets/ddp_11.png)
 
 Beachten Sie, dass jetzt die Optionen PDF herunterladen und PDF drucken verfügbar sind.
 
@@ -559,4 +559,4 @@ Wenn Sie ein Angular- oder React-Entwickler sind, können Sie [zusätzliche Beis
 
 Mit Adobe könnt ihr durchgängige Kundenerlebnisse mit innovativen Lösungen entwickeln. [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed/) ist kostenlos. Probieren Sie die Adobe PDF Services-API mit [pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main) [icing](https://developer.adobe.com/document-services/pricing/main) aus, um herauszufinden, was Sie sonst noch tun können.
 
-[Starten Sie noch heute ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit [!DNL Adobe Acrobat Services] APIs.
+[Starten Sie noch heute &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit [!DNL Adobe Acrobat Services] APIs.

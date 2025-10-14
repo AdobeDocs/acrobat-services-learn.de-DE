@@ -31,7 +31,7 @@ In diesem Tutorial lernen Sie, wie Verträge in PDF umgewandelt werden. Damit Si
 
 ## Relevante APIs und Ressourcen
 
-* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -99,7 +99,7 @@ Speichern Sie rechtliche Dokumente in einem geschützten Format, um die Datenint
 
 ## Projekteinrichtung
 
-Richten Sie zunächst die Ordnerstruktur für die Anwendung Node.js ein. Rufen Sie in diesem Beispiel diese einfache Anwendung AdobeLegalContractAPI auf. Sie können den Quellcode [ hier abrufen: ](https://github.com/agavitalis/adobe_legal_contracts.git).
+Richten Sie zunächst die Ordnerstruktur für die Anwendung Node.js ein. Rufen Sie in diesem Beispiel diese einfache Anwendung AdobeLegalContractAPI auf. Sie können den Quellcode [&#x200B; hier abrufen: &#x200B;](https://github.com/agavitalis/adobe_legal_contracts.git).
 
 ### Verzeichnisstruktur
 
@@ -197,7 +197,7 @@ Installieren Sie jetzt Adobe PDF Services Node SDK, indem Sie den Befehl &quot;`
 
 ## Erstellen eines PDF-Dokuments
 
-[!DNL Acrobat Services] APIs unterstützen die Erstellung von PDF aus Microsoft Office-Dokumenten (Word, Excel und PowerPoint) und anderen [ unterstützten Dateiformaten](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) wie TXT, RTF, BMP, JPEG, GIF, TIFF und PNG. Mit Acrobat Service-APIs können Sie Rechtsverträge ganz einfach aus jedem anderen Dateiformat in PDF konvertieren.
+[!DNL Acrobat Services] APIs unterstützen die Erstellung von PDF aus Microsoft Office-Dokumenten (Word, Excel und PowerPoint) und anderen [&#x200B; unterstützten Dateiformaten](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) wie TXT, RTF, BMP, JPEG, GIF, TIFF und PNG. Mit Acrobat Service-APIs können Sie Rechtsverträge ganz einfach aus jedem anderen Dateiformat in PDF konvertieren.
 
 Die Adobe-API für die Dokumentgenerierung ermöglicht die Konvertierung in eine Word-Datei oder eine PDF. Sie können z. B. eine Word-Vorlage verwenden, um einen Vertrag zu generieren, einschließlich des Redlinings, um bearbeiteten Text zu markieren. Konvertieren Sie es dann auf eine PDF und verwenden Sie die PDF Services API, um das Dokument mit einem Kennwort zu schützen, zum Unterschreiben zu senden und vieles mehr.
 

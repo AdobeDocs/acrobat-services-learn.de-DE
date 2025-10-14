@@ -101,7 +101,7 @@ in ein anderes Format konvertieren.
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie im [[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)-Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie im [[!DNL Adobe Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)-Community-Forum
 
 * PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 

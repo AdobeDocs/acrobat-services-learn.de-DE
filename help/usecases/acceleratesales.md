@@ -189,7 +189,7 @@ Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der 
 1. Wählen Sie unter *[!UICONTROL Berechnungstyp auswählen]* die Option **[!UICONTROL Aggregation]**.
 1. Wählen Sie unter *[!UICONTROL Typ auswählen]* die Option **[!UICONTROL Summe]**.
 1. Wählen Sie unter *[!UICONTROL Datensätze auswählen]* **[!UICONTROL ReferencesOrder]** aus.
-1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; **&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
+1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; &#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
 1. Wählen Sie **[!UICONTROL Berechnung einfügen]**.
 
 Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
@@ -248,7 +248,7 @@ Sie möchten das Bild jedoch dynamisch für ein Bild festlegen, das bereits im L
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Wähle ein anderes Bild in deinem Dokument aus, das dynamisch sein soll.
 
-   ![Screenshot des neuen Bildes im Dokument ](assets/accsales_14.png)
+   ![Screenshot des neuen Bildes im Dokument &#x200B;](assets/accsales_14.png)
 
 1. Klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie **[!UICONTROL Alt-Text bearbeiten]**.
 1. Fügen Sie den Wert in das Fenster ein.
@@ -276,7 +276,7 @@ Acrobat Sign bietet verschiedene andere Feldtypen, die Sie einfügen können, z.
 1. Bewegen Sie den Cursor über die Datumsposition im Dokument.
 1. Wählen Sie **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-![Screenshot des Datumstags im Dokument ](assets/accsales_16.png)
+![Screenshot des Datumstags im Dokument &#x200B;](assets/accsales_16.png)
 
 ## Vereinbarung generieren
 

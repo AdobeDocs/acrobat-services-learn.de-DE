@@ -50,7 +50,7 @@ Sie erhalten eine ZIP-Datei namens PDFToolsSDK-JavaSamples.zip, die Sie herunter
 
 Die personalisierten Beispiele bieten alles von vorkonfiguriertem Beispielcode, einer eingebetteten JSON-Datei mit Anmeldeinformationen und vorkonfigurierten Verbindungen bis hin zu Abhängigkeiten.
 
-1. [ Beispielprojekt ](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
+1. [&#x200B; Beispielprojekt &#x200B;](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
 1. Erstellen Sie das Beispielprojekt mit Maven: mvn clean install.
 1. Testen Sie den Beispielcode in der Befehlszeile oder in der von Ihnen bevorzugten IDE.
 
@@ -60,7 +60,7 @@ Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige
 
 ## Ressourcen und nächste Schritte
 
-* Weitere Hilfe und Unterstützung finden Sie im Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)-Community-Forum
+* Weitere Hilfe und Unterstützung finden Sie im Adobe [[!DNL Acrobat Services] APIs](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)-Community-Forum
 
 * PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 

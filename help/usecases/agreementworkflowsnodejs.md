@@ -302,7 +302,7 @@ Der letzte Code, den Sie benötigen, ist eine Funktion, die das Dokument anzeigt
 
 Mit der [Adobe PDF Embed-API-Demo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) können Sie eine Vorschau der verschiedenen anderen Optionen zum Einbetten von PDF-Dokumenten anzeigen.
 
-![Bild vom Einbetten der PDF-Optionen ](assets/AWNjs_7.png)
+![Bild vom Einbetten der PDF-Optionen &#x200B;](assets/AWNjs_7.png)
 
 Sie können verschiedene Optionen aktivieren und deaktivieren und sofort sehen, wie sie gerendert werden. Wenn Ihnen eine Kombination gefällt, klicken Sie auf die Schaltfläche *\&lt;/\> Code generieren*, um den eigentlichen HTML-Code mithilfe dieser Optionen zu generieren.
 
