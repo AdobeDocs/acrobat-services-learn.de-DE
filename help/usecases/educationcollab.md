@@ -197,7 +197,7 @@ Hier ist eine Bildschirmaufnahme der Webbrowser-Konsole:
 
 Diese Bildschirmaufnahme zeigt, dass der Schüler die Aufgabendatei geöffnet hat, er die erste Seite gelesen hat - er hat entweder nicht zu weiteren Seiten gescrollt oder das Dokument hatte nur eine Seite - dann hat er die Datei heruntergeladen. Ihr könnt diese Kennzahlen erfassen, um Analysen durchzuführen und das Verhalten eurer Schüler zu untersuchen.
 
-Außerdem ist [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) mit der PDF Embed-API integriert. Wenn Sie also über ein Abonnement für die Adobe Analytics-Suite verfügen, können Sie Ihre Kennzahlen in Ihrem Abonnement veröffentlichen. Um die Metriken in Adobe Analytics zu veröffentlichen, müssen Sie lediglich Ihre Suite-ID an den PDF Embed-API-Konstruktor übergeben. (Beachten Sie, dass Sie Ihre PDF Embed-API-Anmeldedaten verwenden müssen, nicht Ihre PDF Services API-Anmeldedaten).
+Außerdem ist [Adobe Analytics](https://business.adobe.com/de/products/adobe-analytics.html) mit der PDF Embed-API integriert. Wenn Sie also über ein Abonnement für die Adobe Analytics-Suite verfügen, können Sie Ihre Kennzahlen in Ihrem Abonnement veröffentlichen. Um die Metriken in Adobe Analytics zu veröffentlichen, müssen Sie lediglich Ihre Suite-ID an den PDF Embed-API-Konstruktor übergeben. (Beachten Sie, dass Sie Ihre PDF Embed-API-Anmeldedaten verwenden müssen, nicht Ihre PDF Services API-Anmeldedaten).
 
 Hier ist ein Beispielcode, der zeigt, wie die Suite ID an den PDF Embed-API-Konstruktor übergeben wird:
 
