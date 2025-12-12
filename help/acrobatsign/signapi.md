@@ -276,7 +276,7 @@ Alternativ zu Webformularen können Sie Vereinbarungen erstellen. In den folgend
 
 Wenn ein Dokument zum Signieren oder Genehmigen an bestimmte Empfänger gesendet wird, wird eine Vereinbarung erstellt. Sie können den Status und den Abschluss einer Vereinbarung mithilfe von APIs nachverfolgen.
 
-Sie können eine Vereinbarung mit einem [temporären Dokument](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) oder einer URL erstellen. In diesem Beispiel basiert die Vereinbarung auf `transientDocumentId`, genau wie das zuvor erstellte Webformular.
+Sie können eine Vereinbarung mit einem [temporären Dokument](https://helpx.adobe.com/de/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) oder einer URL erstellen. In diesem Beispiel basiert die Vereinbarung auf `transientDocumentId`, genau wie das zuvor erstellte Webformular.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
