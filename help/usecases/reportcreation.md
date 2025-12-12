@@ -92,7 +92,7 @@ Verwenden Sie das PDF Services SDK, um die PDF-Berichte aus Ihren Dateneingaben 
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Bevor Sie beginnen, müssen Sie über API-Zugangsberechtigungen verfügen, [, die auf dem Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred) kostenlos sind. Verwenden Sie Ihr [!DNL Acrobat Services]-Konto [ sechs Monate lang kostenlos, und bezahlen Sie dann nach Bedarf](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion.
+Bevor Sie beginnen, müssen Sie über API-Zugangsberechtigungen verfügen, [, die auf dem Adobe &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred) kostenlos sind. Verwenden Sie Ihr [!DNL Acrobat Services]-Konto [&#x200B; sechs Monate lang kostenlos, und bezahlen Sie dann nach Bedarf](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion.
 
 Laden Sie die Archivdatei herunter und extrahieren Sie die JSON-Datei für Anmeldeinformationen und den privaten Schlüssel. Im Beispielprojekt platzieren Sie die Datei im Verzeichnis &quot;src&quot;.
 

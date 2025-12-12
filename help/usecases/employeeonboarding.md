@@ -80,7 +80,7 @@ Die Dokumentgenerierung unterstützt nicht nur einfache Tags, sondern auch logis
 
 Diese können Sie dann einfügen und um den Absatz legen:
 
-![Screenshot der Bedingung in Dokument ](assets/onboarding_7.png)
+![Screenshot der Bedingung in Dokument &#x200B;](assets/onboarding_7.png)
 
 Wählen Sie &quot;**Dokument generieren**&quot; aus, um zu testen, wie dies funktioniert. Beim ersten Mal müssen Sie sich dafür mit einer Adobe ID anmelden. Nach der Anmeldung wird die Standard-JSON-Datei angezeigt, die manuell bearbeitet werden kann.
 

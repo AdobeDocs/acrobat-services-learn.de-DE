@@ -37,7 +37,7 @@ Sie müssen [Node.js](https://nodejs.org/) installiert haben und wissen, wie Nod
 
 ## Projekteinrichtung
 
-Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [ hier abrufen: ](https://github.com/agavitalis/AdobeDocumentAPI.git).
+Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [&#x200B; hier abrufen: &#x200B;](https://github.com/agavitalis/AdobeDocumentAPI.git).
 
 ## Verzeichnisstruktur
 
@@ -135,7 +135,7 @@ Mit diesen Codeausschnitten werden die Anwendungsabhängigkeiten installiert, ei
 
 Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von PDF-Inhalten über eine Reihe Cloud-basierter Webdienste.
 
-Zum Abrufen der Anmeldeinformationen müssen Sie [sich ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
+Zum Abrufen der Anmeldeinformationen müssen Sie [sich &#x200B;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
 
 ![Screenshot der Erstellung von Anmeldeinformationen](assets/searching_1.png)
 
