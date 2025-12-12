@@ -23,5 +23,5 @@ Hier erfahren Sie, wie Sie sich für ein Entwicklerkonto für Acrobat Sign regis
 >
 >Dieses Tutorial wurde speziell für OEM-Partner entwickelt, die einen Signaturprozess in ihrer Anwendung erstellen und einbetten.
 
->[!VIDEO](https://video.tv.adobe.com/v/347347?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3445927?captions=ger&hidetitle=true)
 
