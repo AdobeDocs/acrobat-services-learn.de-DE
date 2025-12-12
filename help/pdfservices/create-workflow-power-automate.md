@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -31,7 +31,7 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 ### Was Sie benötigen
 
 * **Anmeldeinformationen für Testversion oder Produktion für Adobe PDF Services**
-Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate mit Premium-Connectors**
 Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [überprüfen](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
@@ -46,7 +46,7 @@ Es gibt zwei [Beispieldateien](assets/sample-assets.zip), die Sie entpacken und 
 
 ### Abrufen von Anmeldedaten
 
-Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Teil 1: Erstellen eines neuen Textflusses und Konvertieren von Word in PDF
 
@@ -278,7 +278,7 @@ Nach dem Generieren Ihres Dokuments können Sie es vor der Bearbeitung schützen
 
 ### PDF schützen
 
-1. Wählen Sie beim Bearbeiten Ihres Flows in Power Automate zwischen der Aktion **[!UICONTROL PDF zusammenführen]** und der Aktion **[!UICONTROL Datei erstellen 3]** **+** aus.
+1. Wählen Sie beim Bearbeiten Ihres Flows in Power Automate zwischen der Aktion **PDF zusammenführen** und der Aktion **[!UICONTROL Datei erstellen 3]** **[!UICONTROL +]** aus.
 
    ![Pluszeichen zwischen zwei Aktionen zum Hinzufügen einer neuen Aktion](assets/addActionToProtect.png)
 
@@ -315,3 +315,4 @@ In diesem Tutorial haben Sie ein Word-Dokument in einen PDF konvertiert, ein Dok
 * Sehen Sie sich die in Microsoft Power Automate verfügbaren vorgefertigten Vorlagen an.
 * Erfahren Sie von [Artikeln](https://medium.com/adobetech/tagged/microsoft-power-automate) im Adobe Tech Blog.
 * Überprüfen Sie die [Dokumentation](https://developer.adobe.com/document-services/docs/overview/document-generation-api/) auf die Adobe-API für die Dokumentenerzeugung.
+

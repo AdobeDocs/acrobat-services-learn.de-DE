@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6676
 thumbnail: KT-6676.jpg
 exl-id: 4a8f2119-c464-496b-bdc8-35dd387bef25
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Sie erhalten eine ZIP-Datei namens PDFToolsSDK-JavaSamples.zip, die Sie herunter
 
 Die personalisierten Beispiele bieten alles von vorkonfiguriertem Beispielcode, einer eingebetteten JSON-Datei mit Anmeldeinformationen und vorkonfigurierten Verbindungen bis hin zu Abhängigkeiten.
 
-1. [&#x200B; Beispielprojekt &#x200B;](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
+1. [ Beispielprojekt ](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
 1. Erstellen Sie das Beispielprojekt mit Maven: mvn clean install.
 1. Testen Sie den Beispielcode in der Befehlszeile oder in der von Ihnen bevorzugten IDE.
 
@@ -73,3 +73,4 @@ Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige
   [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [Juli-Version von  [!DNL Adobe Acrobat Services]: PDF-Einbettung und PDF-Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+

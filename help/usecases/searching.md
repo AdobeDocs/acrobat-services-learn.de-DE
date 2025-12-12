@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Sie müssen [Node.js](https://nodejs.org/) installiert haben und wissen, wie Nod
 
 ## Projekteinrichtung
 
-Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [&#x200B; hier abrufen: &#x200B;](https://github.com/agavitalis/AdobeDocumentAPI.git).
+Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [ hier abrufen: ](https://github.com/agavitalis/AdobeDocumentAPI.git).
 
 ## Verzeichnisstruktur
 
@@ -135,7 +135,7 @@ Mit diesen Codeausschnitten werden die Anwendungsabhängigkeiten installiert, ei
 
 Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von PDF-Inhalten über eine Reihe Cloud-basierter Webdienste.
 
-Zum Abrufen der Anmeldeinformationen müssen Sie [sich &#x200B;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
+Zum Abrufen der Anmeldeinformationen müssen Sie [sich ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
 
 ![Screenshot der Erstellung von Anmeldeinformationen](assets/searching_1.png)
 
@@ -432,3 +432,4 @@ Nachdem Sie nun wissen, wie Sie [!DNL Acrobat Services]-APIs verwenden, können 
 
 Sind Sie bereit, die Freigabe von Dokumenten und die Überprüfung in Ihrer eigenen App zu aktivieren? Für [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) anmelden
 Entwicklerkonto. Testet das Programm sechs Monate lang kostenlos. Danach könnt ihr bei Bedarf [für nur \$0,05 pro Dokumenttransaktion bezahlen](https://developer.adobe.com/document-services/pricing/main), wenn euer Unternehmen wächst.
+

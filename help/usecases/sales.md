@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -37,7 +37,7 @@ In diesem praktischen Tutorial lernen Sie, wie Sie dynamische Daten und Workflow
 
 * [[!DNL Acrobat Services] APIs](https://developer.adobe.com/document-services/homepage/)
 
-* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
@@ -146,3 +146,4 @@ Am Anfang stand ein ineffizienter, mühsamer Prozess, der der Automatisierung be
 Mit Microsoft Forms erhaltet ihr wichtige Daten von euren Kunden, die in ihre individuellen Vorschläge einfließen. Sie haben in Microsoft Word eine Vorlage für ein Verkaufsangebot erstellt, die den statischen Text enthält, den Sie nicht jedes Mal neu erstellen möchten. Sie haben dann [!DNL Acrobat Services] APIs verwendet, um Daten aus dem Formular und der Vorlage zusammenzuführen, um eine Verkaufsangebot-PDF für Ihre Kunden auf effizientere Weise zu erstellen.
 
 In diesem Tutorial erfahren Sie, was mit diesen APIs alles möglich ist. Weitere Lösungen finden Sie auf der Seite [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) APIs. Nutze diese Tools 6 Monate lang kostenlos. Dann zahlen Sie nur 0,05 US-Dollar pro Dokumenttransaktion für das [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main)-Abo, sodass Sie nur zahlen, wenn Ihr Team mehr Interessenten zu Ihrer Vertriebspipeline hinzufügt.
+

@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Empfohlen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -302,7 +302,7 @@ Der letzte Code, den Sie benötigen, ist eine Funktion, die das Dokument anzeigt
 
 Mit der [Adobe PDF Embed-API-Demo](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) können Sie eine Vorschau der verschiedenen anderen Optionen zum Einbetten von PDF-Dokumenten anzeigen.
 
-![Bild vom Einbetten der PDF-Optionen &#x200B;](assets/AWNjs_7.png)
+![Bild vom Einbetten der PDF-Optionen ](assets/AWNjs_7.png)
 
 Sie können verschiedene Optionen aktivieren und deaktivieren und sofort sehen, wie sie gerendert werden. Wenn Ihnen eine Kombination gefällt, klicken Sie auf die Schaltfläche *\&lt;/\> Code generieren*, um den eigentlichen HTML-Code mithilfe dieser Optionen zu generieren.
 
@@ -351,7 +351,7 @@ Der Benutzer wird aufgefordert, sich bei seiner ID für Adobe Sign anzumelden. N
 
 Wenn der Benutzer auf der Umleitungs-URL auf *Zugriff zulassen* klickt, übergibt ein Abfrageparameter mit dem Namen Code den Autorisierungscode:
 
-https://YourServer.com/?code=**\&lt;Autorisierungscode\>**\&amp;api_access_point=https://api.adobesign.com&amp;web_access_point=https://secure.adobesign.com
+https://YourServer.com/?code=**\<Autorisierungscode\>**\&api_access_point=https://api.adobesign.com&web_access_point=https://secure.adobesign.com
 
 Wenn Sie diesen Code zusammen mit Ihrer Client-ID und dem Client-Schlüssel an den Adobe Sign-Server senden, wird ein Zugriffstoken für den Zugriff auf den Dienst bereitgestellt. Speichern Sie die Werte in den Parametern `api_access_point` und `web_access_point`. Diese Werte werden für weitere Anforderungen verwendet.
 
@@ -520,3 +520,5 @@ Wie Sie an den Schnellstarts und dem bereitgestellten Code sehen können, ist es
 Um die erforderlichen Bereiche für einen Aufruf zu ermitteln oder zu sehen, wie der Aufruf erstellt wird, können Sie Beispielaufrufe aus der [REST-API-Dokumentation](https://secure.na4.adobesign.com/public/docs/restapi/v6) erstellen. Die [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples) veranschaulichen auch andere Funktionen und Dateiformate, die von den [!DNL Adobe Acrobat Services]-APIs verarbeitet werden.
 
 Sie können Ihren Anwendungen eine Vielzahl von PDF-Funktionen hinzufügen, mit denen Ihre Benutzer ihre Dokumente schnell und einfach anzeigen und signieren können und vieles mehr. Beginnen Sie noch heute mit [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/).
+
+

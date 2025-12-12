@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Sie benötigen auch einen API-Schlüssel für die frei verfügbare Embed-API. We
 
 Geben Sie die Domäne für die PDF Embed-API an. Der API-Schlüssel muss öffentlich sein (finden Sie ihn im vom Browser ausgeführten Code). Indem Sie eine Domäne angeben, stellen Sie sicher, dass eine andere Person in einer anderen Domäne den API-Schlüssel nicht verwenden kann.
 
-Sie können &quot;localhost&quot; nicht als Domäne verwenden. Geben Sie eine Domäne an, z. B. &quot;testing.local&quot;, und bearbeiten Sie die Hostdatei auf Ihrem Computer, um diese Domäne zu 127.0.0.1 umzuleiten, d. h. zu Ihrem Computer. Anstatt die Anwendung dann auf localhost:3000 zu testen, können Sie sie auf testing.local:3000 testen. Wenn Sie fertig sind, finden Sie den API-Schlüssel für PDF Embed-API auf der Projektseite.
+Sie können &quot;localhost&quot; nicht als Domäne verwenden. Geben Sie eine Domäne an, z. B. &quot;testing.local&quot;, und bearbeiten Sie die Hostdatei auf Ihrem Computer, um diese Domäne zu 127.0.0.1 umzuleiten, d. h. zu Ihrem Computer. Anstatt die Anwendung auf localhost:3000 zu testen, können Sie sie dann auf testing.local:3000 testen. Wenn Sie fertig sind, finden Sie den API-Schlüssel für PDF Embed-API auf der Projektseite.
 
 ## Hinzufügen eines Upload-Formulars und eines Handlers
 
@@ -283,3 +283,4 @@ In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 Um mit dem Hinzufügen benutzerfreundlicher Dokumentbearbeitungsfunktionen zu Ihrer Website zu beginnen, [melden Sie sich für Ihre kostenlose Testversion an](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Die Adobe PDF Embed-API kann immer kostenlos verwendet werden, und die Adobe PDF Services-API ist sechs Monate lang kostenlos. Danach kostet sie nur \$0,05 pro Dokumenttransaktion, sodass Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) sind, wenn Ihr Unternehmen wächst.
+
