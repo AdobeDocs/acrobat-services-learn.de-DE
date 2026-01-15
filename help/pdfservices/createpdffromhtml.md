@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6673
 thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
@@ -107,11 +107,8 @@ Die PDF wird an dem in der Ausgabe angegebenen Speicherort erstellt, der standar
 PDF Services-API [Dokumentation](https://www.adobe.com/go/pdftoolsapi_doc)
 
 * [Häufige Fragen](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197) zu PDF Services-API-Fragen
-
 * [Wenden Sie sich an uns](https://www.adobe.com/go/pdftoolsapi_requestform), wenn Sie Fragen zur Lizenzierung und zu den Preisen haben
-
 * Verwandte Artikel:
-  [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [Juli-Version von  [!DNL Adobe Acrobat Services]: PDF-Einbettung und PDF-Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
-
+   * [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+   * [Juli-Version von  [!DNL Adobe Acrobat Services]: PDF-Einbettung und PDF-Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

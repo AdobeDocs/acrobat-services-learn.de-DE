@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -448,4 +448,3 @@ In diesem praktischen Tutorial wurde gezeigt, wie [!DNL Acrobat Services] APIs e
 Sie können diese Verfahren verwenden, um die Zusammenarbeit in Ihrer App zu aktivieren, oder [PDF Services Node SDK Samples](https://github.com/adobe/pdftools-node-sdk-samples) und [PDF Embed API Samples](https://github.com/adobe/pdf-embed-api-samples) auf GitHub durchsuchen, um zu erfahren, wie Sie Adobe-APIs sonst noch verwenden können.
 
 Sind Sie bereit, die Freigabe von Dokumenten und die Überprüfung in Ihrer eigenen App zu aktivieren? Registrieren Sie sich bei Ihrem [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Entwicklerkonto. Greifen Sie kostenlos auf Adobe PDF Embed zu und testen Sie die anderen APIs sechs Monate lang kostenlos. Nach Ablauf Ihres Probe-Abos können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion, wenn Ihr Unternehmen wächst.
-

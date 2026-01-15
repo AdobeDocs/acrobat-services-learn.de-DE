@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -370,10 +370,11 @@ Möchten Sie mehr erfahren? Sehen Sie sich einige zusätzliche Möglichkeiten an
 * Verwenden Sie die Beispielskripte im Ordner /src, um zu sehen, wie Sie PDF
 * Im [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) finden Sie aktuelle Tipps und Tricks.
 * Abonnieren Sie [Paper Clips (den monatlichen Livestream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), um mehr über die Automatisierung mit [!DNL Adobe Acrobat Services] zu erfahren.
+
 =======
+
 * Weitere Informationen von [Dokumentation](https://developer.adobe.com/document-services/docs/overview/)
 * Weitere Tutorials zu Adobe Experience League
 * Verwenden Sie die Beispielskripte im Ordner /src, um zu sehen, wie Sie PDF
 * Im [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) finden Sie aktuelle Tipps und Tricks.
 * Abonnieren Sie [Paper Clips (den monatlichen Livestream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), um mehr über die Automatisierung mit [!DNL Adobe Acrobat Services] zu erfahren.
-

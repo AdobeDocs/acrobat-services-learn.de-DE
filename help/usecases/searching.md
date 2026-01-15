@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -432,4 +432,3 @@ Nachdem Sie nun wissen, wie Sie [!DNL Acrobat Services]-APIs verwenden, können 
 
 Sind Sie bereit, die Freigabe von Dokumenten und die Überprüfung in Ihrer eigenen App zu aktivieren? Für [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) anmelden
 Entwicklerkonto. Testet das Programm sechs Monate lang kostenlos. Danach könnt ihr bei Bedarf [für nur \$0,05 pro Dokumenttransaktion bezahlen](https://developer.adobe.com/document-services/pricing/main), wenn euer Unternehmen wächst.
-

@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: Empfohlen
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -520,5 +520,3 @@ Wie Sie an den Schnellstarts und dem bereitgestellten Code sehen können, ist es
 Um die erforderlichen Bereiche für einen Aufruf zu ermitteln oder zu sehen, wie der Aufruf erstellt wird, können Sie Beispielaufrufe aus der [REST-API-Dokumentation](https://secure.na4.adobesign.com/public/docs/restapi/v6) erstellen. Die [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples) veranschaulichen auch andere Funktionen und Dateiformate, die von den [!DNL Adobe Acrobat Services]-APIs verarbeitet werden.
 
 Sie können Ihren Anwendungen eine Vielzahl von PDF-Funktionen hinzufügen, mit denen Ihre Benutzer ihre Dokumente schnell und einfach anzeigen und signieren können und vieles mehr. Beginnen Sie noch heute mit [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/).
-
-

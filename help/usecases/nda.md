@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -191,4 +191,3 @@ In diesem praktischen Tutorial wurde der Adobe-Tagger zum Generieren von Dokumen
 
 Mit diesen Techniken könnt ihr eigene Vertraulichkeitsvereinbarungen oder andere Dokumente dynamisch erstellen. So haben eure Teams mehr Zeit für produktive Aufgaben. Erkunden Sie [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services), um APIs und SDKs für Ihre bevorzugte Sprache und Laufzeit zu finden, sodass Sie PDF-Funktionen direkt zu Ihren Anwendungen hinzufügen können, um schnell PDF-Dokumente zu erstellen. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit einer sechsmonatigen kostenlosen Testversion
 [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 $ pro Dokumenttransaktion.
-

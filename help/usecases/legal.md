@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -429,4 +429,3 @@ Die fertige Anwendung erleichtert es erheblich, [Vorlagen für rechtsgültige Ve
 Organisationen verwenden [!DNL Adobe Acrobat Services]-APIs für ihre Vollständigkeit und Benutzerfreundlichkeit. Und das Beste ist: Sie können eine [sechsmonatige kostenlose Testversion und dann Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) nutzen. Du bezahlst nur für das, was du nutzt. Die PDF Embed-API ist immer kostenlos.
 
 Sind Sie bereit, Ihre Produktivität durch Verbesserung Ihres Dokumentflusses zu steigern? [Jetzt loslegen](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) heute.
-

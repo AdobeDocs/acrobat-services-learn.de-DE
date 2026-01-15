@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -216,4 +216,3 @@ In diesem praktischen Tutorial wurde die Verwendung der PDF Services API und der
 Nachdem Sie nun wissen, wie Sie PDF-Berichte kommentieren, die Anmerkungen archivieren und die Verwendung von PDF-Berichten verfolgen, können Sie mit der Implementierung dieser Lösungen in Ihren eigenen Projekten beginnen.
 
 Sie können [!DNL Adobe Acrobat Services]-APIs verwenden, um benutzerfreundliche, interaktive PDF-Erlebnisse auf Ihrer Website zu erstellen. Nutzen Sie die Adobe PDF Services API sechs Monate lang kostenlos, danach nur [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) (über AWS oder einen Direktvertrag) für nur \$0,05 pro Dokumenttransaktion. Nutze Adobe PDF Embed kostenlos und unbegrenzt. Erstellen Sie noch heute ein kostenloses Konto für [Erste Schritte](https://www.adobe.com/go/dcsdks_credentials).
-

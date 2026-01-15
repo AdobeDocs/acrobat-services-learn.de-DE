@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -603,4 +603,3 @@ Wie Sie sehen, können Sie mithilfe der quickstarts ein einfaches Webformular im
 Auf der Basis dieses Beispiels könnt ihr Formulare erstellen, die Empfänger per Remote-Zugriff und auf sichere Weise unterzeichnen können. Wenn mehrere Unterschriften benötigt werden, könnt ihr Formulare in einem Workflow sogar automatisch an mehrere Personen weiterleiten. Dein Mitarbeiter-Onboarding wurde verbessert, und deine Personalabteilung wird dich lieben.
 
 Probieren Sie [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/) aus, um Ihren Anwendungen heute eine Vielzahl von PDF-Funktionen hinzuzufügen.
-

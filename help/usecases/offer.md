@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -296,4 +296,3 @@ Das oben angegebene Beispiel für ein einzelnes Dokument kann als Grundlage für
 
 [!DNL Adobe Acrobat Services] kann sechs Monate lang kostenlos genutzt werden, danach [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es ausprobieren und Ihren Workflow für Angebotsschreiben skalieren können, wenn Ihr Unternehmen wächst. [Erste Schritte](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 Ihre eigenen Vorlagen zu erstellen, [melden Sie sich für Ihr Entwicklerkonto an](https://developer.adobe.com/).
-
