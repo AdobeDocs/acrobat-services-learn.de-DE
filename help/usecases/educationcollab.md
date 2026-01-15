@@ -28,7 +28,7 @@ PDF. Sie können auch komplexere Vorgänge durchführen, z. B. mehrere Berichte 
 
 ## Lernziel.
 
-In diesem praktischen Tutorial lernen Sie, wie Sie eine Online-Lernplattform erstellen, mit der [ Lehrkräfte, Schüler und Studierende Ressourcen](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration) auf dem PDF einfach gemeinsam nutzen können. In diesem Tutorial wird ein [Lernportal](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) verwendet, das mit der JavaScript-Laufzeit Node.js (Node.js) und den PDF-Diensten erstellt wurde.
+In diesem praktischen Tutorial lernen Sie, wie Sie eine Online-Lernplattform erstellen, mit der [&#x200B; Lehrkräfte, Schüler und Studierende Ressourcen](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration) auf dem PDF einfach gemeinsam nutzen können. In diesem Tutorial wird ein [Lernportal](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers) verwendet, das mit der JavaScript-Laufzeit Node.js (Node.js) und den PDF-Diensten erstellt wurde.
 
 Das Lernportal verfügt über die folgenden Funktionen:
 

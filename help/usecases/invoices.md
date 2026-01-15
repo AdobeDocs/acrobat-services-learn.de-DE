@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Es ist großartig, wenn das Geschäft boomt, aber die Produktivität leidet, wenn es an der Zeit ist, all diese Rechnungen vorzubereiten. Das manuelle Generieren von Rechnungen ist zeitaufwendig, und Sie laufen Gefahr, einen Fehler zu machen, Geld zu verlieren oder einen Kunden mit einem falschen Betrag zu verärgern.
 
-Denken Sie beispielsweise an Danielle, die in der [Buchhaltung](https://developer.adobe.com/document-services/use-cases/financial/invoices) [ eines medizinischen Versorgungsunternehmens arbeitet](https://developer.adobe.com/document-services/use-cases/financial/invoices). Es ist das Ende des Monats, also holt sie Informationen aus verschiedenen Systemen, überprüft ihre Richtigkeit noch einmal und formatiert die Rechnungen. Nach all der Arbeit ist sie endlich bereit, die Dokumente in PDF zu konvertieren (damit jeder sie sehen kann, ohne eine bestimmte Software zu kaufen) und jedem Kunden seine personalisierte Rechnung zu schicken.
+Denken Sie beispielsweise an Danielle, die in der [Buchhaltung](https://developer.adobe.com/document-services/use-cases/financial/invoices) [&#x200B; eines medizinischen Versorgungsunternehmens arbeitet](https://developer.adobe.com/document-services/use-cases/financial/invoices). Es ist das Ende des Monats, also holt sie Informationen aus verschiedenen Systemen, überprüft ihre Richtigkeit noch einmal und formatiert die Rechnungen. Nach all der Arbeit ist sie endlich bereit, die Dokumente in PDF zu konvertieren (damit jeder sie sehen kann, ohne eine bestimmte Software zu kaufen) und jedem Kunden seine personalisierte Rechnung zu schicken.
 
 Selbst wenn die monatliche Rechnungsstellung abgeschlossen ist, kann Danielle diesen Rechnungen einfach nicht entkommen. Manche Kunden haben nicht-monatliche Abrechnungszeiträume, daher erstellt sie immer eine Rechnung für jemanden. Gelegentlich bearbeitet ein Kunde seine Rechnung und unterbezahlt. Danielle verbringt dann Zeit mit der Fehlerbehebung dieser Rechnungsabweichung. Bei dieser Geschwindigkeit muss sie einen Assistenten einstellen, um mit der ganzen Arbeit Schritt zu halten!
 
@@ -31,13 +31,13 @@ Was Danielle braucht, ist eine Möglichkeit, Rechnungen schnell und präzise zu 
 
 In diesem Tutorial lernen Sie, wie Sie mit der Adobe-API für die Dokumentenerzeugung automatisch Rechnungen generieren, die PDF mit einem Kennwort schützen und jedem Kunden eine Rechnung ausstellen können. Dazu brauchst du nur ein wenig Wissen über Node.js, JavaScript, Express.js, HTML und CSS.
 
-Der vollständige Code für dieses Projekt ist [ auf GitHub ](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation) verfügbar. Sie müssen das öffentliche Verzeichnis mit Ihrer Vorlage und den Ordnern für Rohdaten einrichten. In der Produktion müssen Sie die Daten von einer externen API abrufen. Sie können auch diese archivierte Version der Anwendung durchsuchen, die die Vorlagenressourcen enthält.
+Der vollständige Code für dieses Projekt ist [&#x200B; auf GitHub &#x200B;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation) verfügbar. Sie müssen das öffentliche Verzeichnis mit Ihrer Vorlage und den Ordnern für Rohdaten einrichten. In der Produktion müssen Sie die Daten von einer externen API abrufen. Sie können auch diese archivierte Version der Anwendung durchsuchen, die die Vorlagenressourcen enthält.
 
 ## Relevante APIs und Ressourcen
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
@@ -218,7 +218,7 @@ async function applyPassword(password, inputFile, outputFile) {
 }
 ```
 
-Wenn Sie diesen Code verwenden, wird Ihr Dokument mit einem Kennwort geschützt und eine neue Rechnung wird auf das System hochgeladen. Weitere Informationen zur Verwendung dieses Codes bzw. zum Ausprobieren finden Sie im [Codebeispiel ](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation).
+Wenn Sie diesen Code verwenden, wird Ihr Dokument mit einem Kennwort geschützt und eine neue Rechnung wird auf das System hochgeladen. Weitere Informationen zur Verwendung dieses Codes bzw. zum Ausprobieren finden Sie im [Codebeispiel &#x200B;](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation).
 
 Wenn Sie die Rechnung fertig haben, möchten Sie sie möglicherweise automatisch per E-Mail an den Kunden senden. Es gibt mehrere Möglichkeiten, eine automatische E-Mail an Ihre Kunden auszuführen. Der schnellste Weg ist, eine E-Mail-API eines Drittanbieters zusammen mit einer Hilfsbibliothek wie [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs) zu verwenden. Wenn Sie bereits Zugriff auf einen SMTP-Server haben, können Sie [nodemailer](https://www.npmjs.com/package/nodemailer) verwenden, um E-Mails über SMTP zu senden.
 

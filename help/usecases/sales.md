@@ -37,7 +37,7 @@ In diesem praktischen Tutorial lernen Sie, wie Sie dynamische Daten und Workflow
 
 * [[!DNL Acrobat Services] APIs](https://developer.adobe.com/document-services/homepage/)
 
-* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 

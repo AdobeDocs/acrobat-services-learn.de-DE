@@ -454,7 +454,7 @@ Notieren Sie sich Ihr access_token. Sie benötigen sie, um Ihren Clientcode zu a
 
 ## Verwenden des Adobe Sign Java SDK
 
-Sobald Sie über das Zugriffstoken verfügen, können Sie REST API-Aufrufe an Adobe Sign senden. Um diesen Vorgang zu vereinfachen, verwenden Sie das Adobe Sign Java SDK. Der Quellcode ist im [Adobe-GitHub-Repository ](https://github.com/adobe-sign/AdobeSignJavaSdk) verfügbar.
+Sobald Sie über das Zugriffstoken verfügen, können Sie REST API-Aufrufe an Adobe Sign senden. Um diesen Vorgang zu vereinfachen, verwenden Sie das Adobe Sign Java SDK. Der Quellcode ist im [Adobe-GitHub-Repository &#x200B;](https://github.com/adobe-sign/AdobeSignJavaSdk) verfügbar.
 
 Um dieses Paket in Ihre Anwendung zu integrieren, müssen Sie den Code klonen. Erstellen Sie dann das Maven-Paket (mvn-Paket) und installieren Sie die folgenden Dateien im Projekt (Sie finden sie im Companion-Code im Ordner adobe-sign-sdk ):
 

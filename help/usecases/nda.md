@@ -31,7 +31,7 @@ In diesem Tutorial erfährst du, wie du eine Microsoft Word-Vorlage für deine V
 
 Mit [!DNL Adobe Acrobat Services] können Sie PDF-Dokumente mithilfe dynamischer Daten im laufenden Betrieb generieren. [!DNL Acrobat Services] bietet eine Reihe von PDF-Tools, einschließlich der Adobe-API zum Generieren von Dokumenten, um die [Erstellung von Geheimhaltungsvereinbarungen](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation) zu automatisieren.
 
-* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
@@ -171,7 +171,7 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-Sie können [ den vollständigen Beispielcode ](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) auf GitHub anzeigen.
+Sie können [&#x200B; den vollständigen Beispielcode &#x200B;](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) auf GitHub anzeigen.
 
 Dieser Code verwendet ein JSON-Dokument und die Microsoft Word-Vorlage im API-Aufruf des [!DNL Adobe Acrobat Services]-SDK. In der Antwort erhalten Sie die Ausgabe und speichern sie im Dateisystem der App. Sie können das generierte Dokument per E-Mail an Ihre Kunden weiterleiten oder ihnen mithilfe der kostenlosen [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed) eine Vorschau im Browser anzeigen.
 
@@ -181,7 +181,7 @@ Durch diesen Aufruf wird das folgende Dokument mit der Geheimhaltungsvereinbarun
 
 [!DNL Adobe Acrobat Services] APIs fügen Inhalt zum Erstellen eines PDF-Dokuments ein. Ohne diese Tools müssen Sie möglicherweise den Code schreiben, um Office-Dokumente zu verarbeiten und mit Raw-PDF-Dateiformaten zu arbeiten. Mithilfe von Adobe PDF Services können Sie all diese Schritte mit einem einzigen API-Aufruf ausführen.
 
-Verwenden Sie jetzt [Adobe Sign API](https://developer.adobe.com/adobesign-api/), um Signaturen für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, signierte Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [ mithilfe eines Webhooks ](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
+Verwenden Sie jetzt [Adobe Sign API](https://developer.adobe.com/adobesign-api/), um Signaturen für die Geheimhaltungsvereinbarungen anzufordern und das endgültige, signierte Dokument an alle Parteien zu übermitteln. Adobe Sign benachrichtigt Sie [&#x200B; mithilfe eines Webhooks &#x200B;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md). Wenn Sie diesem Webhook zuhören, können Sie den Status der Geheimhaltungsvereinbarung abrufen.
 
 Eine ausführlichere Erläuterung des Adobe Sign-Prozesses finden Sie in [der Dokumentation](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html) oder in diesem ausführlichen Blogpost.
 

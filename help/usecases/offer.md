@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Banner &quot;Use Case Hero&quot;](assets/UseCaseOfferHero.jpg)
 
-Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services]-APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile von [ zu verarbeiten, indem sie Angebotsschreiben erstellen und an neue Mitarbeiter senden](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
+Angebotsschreiben von Mitarbeitern sind eine der ersten Erfahrungen, die Mitarbeiter mit Ihrer Organisation machen. Daher ist es wichtig, dass eure Angebotsschreiben zur Marke passen, aber ihr möchtet nicht jedes Mal einen Brief von Grund auf neu in eurem Textverarbeitungsprogramm erstellen müssen. [!DNL Adobe Acrobat Services]-APIs bieten eine schnelle, einfache und effektive Möglichkeit, wichtige Teile von [&#x200B; zu verarbeiten, indem sie Angebotsschreiben erstellen und an neue Mitarbeiter senden](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters).
 
 ## Lernziel.
 
@@ -29,7 +29,7 @@ Dieses praktische Tutorial führt Sie durch die Einrichtung eines Node Express-P
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API für die Dokumentenerzeugung ](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Dort gibt es viel Code zum Entpacken. Nehmen wir zuerst den Hauptteil: die `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
+Dort gibt es viel Code zum Entpacken. Nehmen wir zuerst den Hauptteil: die `documentMergeOperation`. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
 
 Hallo X,
 

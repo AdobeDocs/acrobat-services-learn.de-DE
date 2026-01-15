@@ -50,7 +50,7 @@ Sie erhalten eine ZIP-Datei namens PDFToolsSDK-JavaSamples.zip, die Sie herunter
 
 Die personalisierten Beispiele bieten alles von vorkonfiguriertem Beispielcode, einer eingebetteten JSON-Datei mit Anmeldeinformationen und vorkonfigurierten Verbindungen bis hin zu Abhängigkeiten.
 
-1. [ Beispielprojekt ](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
+1. [&#x200B; Beispielprojekt &#x200B;](https://github.com/adobe/pdftools-java-sdk-samples) herunterladen.
 1. Erstellen Sie das Beispielprojekt mit Maven: mvn clean install.
 1. Testen Sie den Beispielcode in der Befehlszeile oder in der von Ihnen bevorzugten IDE.
 
