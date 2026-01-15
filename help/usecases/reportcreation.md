@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Verwenden Sie das PDF Services SDK, um die PDF-Berichte aus Ihren Dateneingaben 
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-Bevor Sie beginnen, müssen Sie über API-Zugangsberechtigungen verfügen, [, die auf dem Adobe &#x200B;](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred) kostenlos sind. Verwenden Sie Ihr [!DNL Acrobat Services]-Konto [&#x200B; sechs Monate lang kostenlos, und bezahlen Sie dann nach Bedarf](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion.
+Bevor Sie beginnen, müssen Sie über API-Zugangsberechtigungen verfügen, [, die auf dem Adobe ](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred) kostenlos sind. Verwenden Sie Ihr [!DNL Acrobat Services]-Konto [ sechs Monate lang kostenlos, und bezahlen Sie dann nach Bedarf](https://developer.adobe.com/document-services/pricing/main) für nur \$0,05 pro Dokumenttransaktion.
 
 Laden Sie die Archivdatei herunter und extrahieren Sie die JSON-Datei für Anmeldeinformationen und den privaten Schlüssel. Im Beispielprojekt platzieren Sie die Datei im Verzeichnis &quot;src&quot;.
 
@@ -220,4 +220,3 @@ In diesem praktischen Tutorial erfahren Sie, wie Sie die PDF Services-API verwen
 Mit dieser Adobe-basierten Anwendung können [Social-Media-Dashboard-Kunden](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation) die benötigten Berichte erhalten und freigeben, ohne sich Gedanken darüber machen zu müssen, ob auf allen Empfängern Microsoft Office oder andere Software installiert ist. Sie können die gleichen Techniken in Ihrer eigenen Anwendung verwenden, um die Benutzer beim Anzeigen, Kombinieren und Herunterladen von Dokumenten zu unterstützen. Oder sehen Sie sich die vielen anderen APIs der Adobe an, um Signaturen hinzuzufügen und zu verfolgen und vieles mehr.
 
 Fordern Sie zunächst Ihr kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Konto an und erstellen Sie ansprechende Berichterlebnisse für Ihre Mitarbeiter und Kunden. Genießen Sie Ihr Konto sechs Monate lang kostenlos und dann [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main), wenn Ihre Marketing-Maßnahmen ausgebaut werden, nur \$0,05 pro Dokumenttransaktion.
-

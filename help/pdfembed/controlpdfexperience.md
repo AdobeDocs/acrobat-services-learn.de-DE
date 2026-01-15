@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Im zweiten Teil lernen Sie, wie Sie die PDF Embed-API ganz einfach in eine Webse
 
 ### Abrufen des Übungscodes
 
-Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
+Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
 
 1. Gehen Sie zu [[!DNL Adobe Acrobat Services] Website](https://developer.adobe.com/document-services/homepage/).
 
@@ -327,4 +327,3 @@ Jetzt können Sie die Demo ansehen.
 ## Weitere Ressourcen
 
 Weitere Ressourcen finden Sie [hier](https://developer.adobe.com/document-services/docs/overview).
-

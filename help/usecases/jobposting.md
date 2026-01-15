@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 0%
@@ -283,4 +283,3 @@ In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 Um mit dem Hinzufügen benutzerfreundlicher Dokumentbearbeitungsfunktionen zu Ihrer Website zu beginnen, [melden Sie sich für Ihre kostenlose Testversion an](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Die Adobe PDF Embed-API kann immer kostenlos verwendet werden, und die Adobe PDF Services-API ist sechs Monate lang kostenlos. Danach kostet sie nur \$0,05 pro Dokumenttransaktion, sodass Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) sind, wenn Ihr Unternehmen wächst.
-

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -189,7 +189,7 @@ Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der 
 1. Wählen Sie unter *[!UICONTROL Berechnungstyp auswählen]* die Option **[!UICONTROL Aggregation]**.
 1. Wählen Sie unter *[!UICONTROL Typ auswählen]* die Option **[!UICONTROL Summe]**.
 1. Wählen Sie unter *[!UICONTROL Datensätze auswählen]* **[!UICONTROL ReferencesOrder]** aus.
-1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; **&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
+1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen]** **[!UICONTROL totalPaymentsDue.price]** aus.
 1. Wählen Sie **[!UICONTROL Berechnung einfügen]**.
 
 Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
@@ -248,7 +248,7 @@ Sie möchten das Bild jedoch dynamisch für ein Bild festlegen, das bereits im L
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Wähle ein anderes Bild in deinem Dokument aus, das dynamisch sein soll.
 
-   ![Screenshot des neuen Bildes im Dokument &#x200B;](assets/accsales_14.png)
+   ![Screenshot des neuen Bildes im Dokument ](assets/accsales_14.png)
 
 1. Klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie **[!UICONTROL Alt-Text bearbeiten]**.
 1. Fügen Sie den Wert in das Fenster ein.
@@ -277,7 +277,7 @@ Acrobat Sign bietet verschiedene andere Feldtypen, die Sie einfügen können, z.
 1. Bewegen Sie den Cursor über die Datumsposition im Dokument.
 1. Wählen Sie **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-![Screenshot des Datumstags im Dokument &#x200B;](assets/accsales_16.png)
+![Screenshot des Datumstags im Dokument ](assets/accsales_16.png)
 
 ## Vereinbarung generieren
 
@@ -370,10 +370,11 @@ Möchten Sie mehr erfahren? Sehen Sie sich einige zusätzliche Möglichkeiten an
 * Verwenden Sie die Beispielskripte im Ordner /src, um zu sehen, wie Sie PDF
 * Im [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) finden Sie aktuelle Tipps und Tricks.
 * Abonnieren Sie [Paper Clips (den monatlichen Livestream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), um mehr über die Automatisierung mit [!DNL Adobe Acrobat Services] zu erfahren.
+
 =======
+
 * Weitere Informationen von [Dokumentation](https://developer.adobe.com/document-services/docs/overview/)
 * Weitere Tutorials zu Adobe Experience League
 * Verwenden Sie die Beispielskripte im Ordner /src, um zu sehen, wie Sie PDF
 * Im [Adobe Tech Blog](https://medium.com/adobetech/tagged/adobe-document-cloud) finden Sie aktuelle Tipps und Tricks.
 * Abonnieren Sie [Paper Clips (den monatlichen Livestream)](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF), um mehr über die Automatisierung mit [!DNL Adobe Acrobat Services] zu erfahren.
-

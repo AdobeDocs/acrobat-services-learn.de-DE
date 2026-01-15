@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
@@ -276,7 +276,7 @@ Alternativ zu Webformularen können Sie Vereinbarungen erstellen. In den folgend
 
 Wenn ein Dokument zum Signieren oder Genehmigen an bestimmte Empfänger gesendet wird, wird eine Vereinbarung erstellt. Sie können den Status und den Abschluss einer Vereinbarung mithilfe von APIs nachverfolgen.
 
-Sie können eine Vereinbarung mit einem [temporären Dokument](https://helpx.adobe.com/de/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) oder einer URL erstellen. In diesem Beispiel basiert die Vereinbarung auf `transientDocumentId`, genau wie das zuvor erstellte Webformular.
+Sie können eine Vereinbarung mit einem [temporären Dokument](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html), [Bibliotheksdokument](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md) oder einer URL erstellen. In diesem Beispiel basiert die Vereinbarung auf `transientDocumentId`, genau wie das zuvor erstellte Webformular.
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -441,4 +441,3 @@ Die Acrobat Sign-API ist über mehrere Ebenen von [Einzelbenutzer- und Mehrbenut
 Informieren Sie sich über das [Pay-as-you-go-Angebot](https://developer.adobe.com/document-services/pricing/main) für den Zeitpunkt, zu dem Ihre sechsmonatige kostenlose Adobe PDF Services-API-Testversion endet, sowie über die kostenlose Adobe PDF Embed-API.
 
 Beginnen Sie mit [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html), um Ihrer App aufregende Funktionen wie automatische Dokumenterstellung und Dokumentsignierung hinzuzufügen.
-

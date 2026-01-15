@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Die Dokumentgenerierung unterstützt nicht nur einfache Tags, sondern auch logis
 
 Diese können Sie dann einfügen und um den Absatz legen:
 
-![Screenshot der Bedingung in Dokument &#x200B;](assets/onboarding_7.png)
+![Screenshot der Bedingung in Dokument ](assets/onboarding_7.png)
 
 Wählen Sie &quot;**Dokument generieren**&quot; aus, um zu testen, wie dies funktioniert. Beim ersten Mal müssen Sie sich dafür mit einer Adobe ID anmelden. Nach der Anmeldung wird die Standard-JSON-Datei angezeigt, die manuell bearbeitet werden kann.
 
@@ -209,4 +209,3 @@ Die Vorlage kann in das Acrobat Sign-Dashboard hochgeladen und dann für neue Ve
 Alles, was in diesem Artikel beschrieben wird, kann jetzt getestet werden. Die [!DNL Adobe Acrobat Services]-API [kostenlose Testversion](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) stellt Ihnen derzeit 1.000 kostenlose Anfragen über einen Zeitraum von sechs Monaten zur Verfügung. Mit der [kostenlosen Testversion von Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial) können Sie Vereinbarungen mit Wasserzeichen zu Testzwecken senden.
 
 Hast du Fragen? Das [Supportforum](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK) wird täglich von Adobe-Entwicklern und Supportmitarbeitern überwacht. Um weitere Anregungen zu erhalten, sollten Sie sich die nächste [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)-Episode ansehen. Es gibt regelmäßige Live-Meetings mit Nachrichten, Demos und Gesprächen mit Kunden.
-
