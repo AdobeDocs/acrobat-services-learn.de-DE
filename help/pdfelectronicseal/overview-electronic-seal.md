@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 Die Adobe PDF Electronic Seal API wendet ein elektronisches Siegel auf Dokumente in großem Umfang an, indem sie ein Zertifikat verwendet, das von bestimmten Vertrauensdiensten (Trust Service Providers) auf der Liste der zulässigen Vertrauensstellungen (Approved Trust List, AATL) von [Adobe ausgestellt wurde](https://helpx.adobe.com/de/acrobat/kb/approved-trust-list1.html). Das elektronische Siegel hilft bei der Überprüfung der Identität und Integrität von Dokumenten. Dies kann verwendet werden, um Dokumente in großem Umfang elektronisch zu versiegeln, und ist in der PDF Services-API enthalten.
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
   {target = _self}
@@ -52,8 +53,8 @@ Die Adobe PDF Electronic Seal API wendet ein elektronisches Siegel auf Dokumente
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3</a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>

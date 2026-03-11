@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
 exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 Diese KI-gestützte API taggt automatisch Tabellen, Absätze, Listen, Überschriften und mehr, um das Leseerlebnis nativer oder gescannter PDF mithilfe unterstützender Technologien zu verbessern. Außerdem wird die Leserichtung festgelegt, um den logischen Fluss von Informationen mit mehreren Spalten oder Elementen über Seiten hinweg sicherzustellen. Wenden Sie dies auf Dokumentrückstände oder neue Dokumenten-Workflows an und arbeiten Sie mit mehr Leichtigkeit auf die Konformität zu.
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfaccessibility/automatically-add-tags
   {target = _self}
@@ -52,8 +53,8 @@ Diese KI-gestützte API taggt automatisch Tabellen, Absätze, Listen, Überschri
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfaccessibility/automatically-add-tags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3</a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>

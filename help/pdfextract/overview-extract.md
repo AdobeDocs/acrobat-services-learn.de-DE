@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: 5d00f4e8b7ed1c36670f0f669110b85e887ffe69
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Struktur und Content jedes PDF mit einem Webservice auf Basis von Adobe-KI.
 >Die PDF Extract-API ist in der PDF Services-API enthalten.
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfextract/automate-content-extraction
   {target = _self}
@@ -57,8 +58,8 @@ Struktur und Content jedes PDF mit einem Webservice auf Basis von Adobe-KI.
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfextract/automate-content-extraction" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3</a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>
