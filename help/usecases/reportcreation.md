@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/E6grXk4Sptkhetpgt-MoDndf-Ezm97qnutLbUqD-a20
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: 1391
 ht-degree: 0%
 
 ---
@@ -19,7 +35,7 @@ ht-degree: 0%
 
 ![Banner &quot;Use Case Hero&quot;](assets/UseCaseReportHero.jpg)
 
-In Finanz-, Bildungs-, Marketing- und anderen Branchen nutzen PDF den Austausch von Daten mit Kunden und Stakeholdern. PDF erleichtern den Austausch umfangreicher Dokumente mit Tabellen, Grafiken und interaktiven Inhalten in einem für jeden sichtbaren Format. [!DNL Adobe Acrobat Services]-APIs helfen diesen Unternehmen, gemeinsam nutzbare PDF-Berichte aus Microsoft Word, Microsoft Excel, Grafiken und anderen diversen Dokumentformaten zu erstellen.
+In Finanz-, Bildungs-, Marketing- und anderen Branchen nutzen PDF den Austausch von Daten mit Kunden und Stakeholdern. PDF erleichtern den Austausch umfangreicher Dokumente mit Tabellen, Grafiken und interaktiven Inhalten in einem für jeden sichtbaren Format. [!DNL Adobe Acrobat Services] APIs helfen diesen Unternehmen, gemeinsam nutzbare PDF-Berichte aus Microsoft Word, Microsoft Excel, Grafiken und anderen vielfältigen Dokumentformaten zu erstellen.
 
 Angenommen, Sie [führen ein Social-Media-Tracking-Unternehmen aus](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation). Ihre Kunden melden sich bei einem passwortgeschützten Teil Ihrer Website an, um ihre Kampagnenanalysen anzuzeigen. Oft möchten sie diese Statistiken mit ihren Führungskräften, Aktionären, Spendern oder anderen Stakeholdern teilen. Herunterladbare PDF-Dokumente sind eine großartige Möglichkeit für Ihre Kunden, Zahlen, Diagramme und mehr zu teilen.
 
@@ -161,7 +177,7 @@ Und hier ist die Ausgabe-PDF:
 
 ![Screenshot des generischen Berichts](assets/report_6.png)
 
-Kunden können mehrere Dateien auswählen, um einen kombinierten Bericht zu erstellen. Wenn der Kunde mehr als ein Dokument auswählt, führen Sie zwei Vorgänge aus: Erstens erstellt er eine partielle PDF für jedes Dokument, und zweitens fasst er diese in einem einzigen PDF-Bericht zusammen.
+Kunden können mehrere Dateien auswählen, um einen kombinierten Bericht zu erstellen. Wenn der Kunde mehr als ein Dokument auswählt, führen Sie zwei Vorgänge aus: Das erste erstellt eine partielle PDF für jedes Dokument, das zweite kombiniert sie zu einem einzigen PDF-Bericht.
 
 ```
 async function combinePdf(pdfs, outputPdf) {

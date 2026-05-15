@@ -8,13 +8,21 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: 2046
 ht-degree: 1%
 
 ---
-
 
 # Erstellen Sie Ihren ersten Flow in Microsoft Power Automate
 
@@ -30,10 +38,10 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 
 ### Was Sie benötigen
 
-* **Anmeldeinformationen für Testversion oder Produktion für Adobe PDF Services**
+* **Anmeldeinformationen für die Testversion oder die Produktion für Adobe PDF Services**
 Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate mit Premium-Connectors**
-Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [überprüfen](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
+Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [&#x200B; überprüfen &#x200B;](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
 Der OneDrive-Speicheranschluss wird in diesem Tutorial verwendet, aber jeder Speicheranschluss kann ersetzt werden.
 
@@ -225,7 +233,7 @@ Sobald das Dokument generiert wurde, können Sie die Datei wieder in OneDrive sp
 Im OneDrive-Ordner wird jetzt eine aus dem Word-Dokument generierte PDF angezeigt. Wenn Sie das PDF-Dokument in OneDrive öffnen, sehen Sie, dass die Daten in den Text-Tag-Speicherorten zusammengeführt werden.
 
 
-## Teil 3: PDF in einem Programm kombinieren
+## Teil 3: PDF in einem Gerät kombinieren
 
 Nachdem Sie nun ein Word-Dokument erstellt und in eine PDF konvertiert haben, können Sie als Nächstes mehrere PDF-Dokumente kombinieren.
 
@@ -272,13 +280,13 @@ Nachdem das Dokument kombiniert wurde, können Sie es wieder in OneDrive speiche
 
 Im OneDrive-Ordner wird die zusammengeführte PDF mit den Seiten aus dem ersten und zweiten Dokument angezeigt.
 
-## Teil 4: Protect PDF-Dokument
+## Teil 4: Protect PDF Dokument
 
 Nach dem Generieren Ihres Dokuments können Sie es vor der Bearbeitung schützen, indem Sie vor dem Speichern in OneDrive einen zusätzlichen Schritt hinzufügen.
 
 ### PDF schützen
 
-1. Wählen Sie beim Bearbeiten Ihres Flows in Power Automate zwischen der Aktion **PDF zusammenführen** und der Aktion **[!UICONTROL Datei erstellen 3]** **[!UICONTROL +]** aus.
+1. Wählen Sie beim Bearbeiten Ihres Flows in Power Automate zwischen der Aktion **[!UICONTROL PDF zusammenführen]** und der Aktion **[!UICONTROL Datei erstellen 3]** **+** aus.
 
    ![Pluszeichen zwischen zwei Aktionen zum Hinzufügen einer neuen Aktion](assets/addActionToProtect.png)
 

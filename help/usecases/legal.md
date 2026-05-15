@@ -8,9 +8,26 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Gd7B7jUfhZPSRujwKVp7hRzb2Nj9-VJFKLYxqwO-GFM
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: 2045
 ht-degree: 0%
 
 ---
@@ -31,11 +48,11 @@ In diesem Tutorial lernen Sie, wie Verträge in PDF umgewandelt werden. Damit Si
 
 ## Relevante APIs und Ressourcen
 
-* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung in Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/agavitalis/adobe_legal_contracts.git)
 
@@ -87,7 +104,7 @@ Neben den grundlegenden Tags, die mit dem importierten JSON-Datenmodell erstellt
 
 Diese erweiterten Funktionen unterscheiden sich nicht von den grundlegenden Tags. Um bedingte Logik einzubeziehen, wählen Sie den Teil des Dokuments aus, der ausgefüllt werden soll. Konfigurieren Sie dann die Regel, die das Einfügen des Tags bestimmt.
 
-Zur weiteren Veranschaulichung, z. B. in der Vereinbarung, gibt es einen Abschnitt, den Sie nur bedingt einbeziehen möchten. Wählen Sie im Feld Inhaltstyp auswählen den Abschnitt **aus.** Wählen Sie im Feld &quot;Datensätze auswählen&quot; die Option aus, die bestimmt, ob der bedingte Abschnitt angezeigt wird. Wählen Sie den gewünschten bedingten Operator aus und legen Sie im Feld Wert den Wert fest, auf den Sie testen. Klicken Sie dann auf **Bedingung einfügen.** Die folgende Bildschirmaufnahme veranschaulicht diesen Vorgang.
+Zur weiteren Veranschaulichung, z. B. in der Vereinbarung, gibt es einen Abschnitt, den Sie nur bedingt einbeziehen möchten. Wählen Sie im Feld Inhaltstyp auswählen die Option **Abschnitt.** Wählen Sie im Feld Datensätze auswählen die Option aus, die bestimmt, ob der bedingte Abschnitt angezeigt wird. Wählen Sie den gewünschten bedingten Operator aus und legen Sie im Feld Wert den Wert fest, auf den Sie testen. Klicken Sie dann auf **Bedingung einfügen.** Die Bildschirmaufnahme unten veranschaulicht diesen Vorgang.
 
 ![Screenshot des Einfügens von bedingtem Inhalt](assets/legal_5.png)
 
@@ -284,7 +301,7 @@ Der obige Codeausschnitt benötigte das Dokumentmodell und das [!DNL Acrobat Ser
 
 Die Funktionen speichern die transformierten PDF-Dokumente im Views/Output Verzeichnis, wo Sie sie auf Ihren PC herunterladen können.
 
-Sie können die transformierte PDF-Datei auch mithilfe der kostenlosen PDF Embed-API in der Vorschau anzeigen. Mit der PDF Embed-API können Sie hier [&#x200B; Adobe-Anmeldeinformationen (anders als Ihre &#x200B;](https://www.adobe.com/go/dcsdks_credentials)-Anmeldeinformationen) generieren und die zugelassenen Domänen für den Zugriff auf die API registrieren. [!DNL Acrobat Services] Führen Sie den Vorgang aus und generieren Sie die PDF Embed-API-Zugangsberechtigungen für Ihre Anwendung. Sie können sich auch die Demonstration [hier](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ansehen, aus der Sie ganz einfach Codes generieren können, um schnell loszulegen.
+Sie können die transformierte PDF-Datei auch mithilfe der kostenlosen PDF Embed-API in der Vorschau anzeigen. Mit der PDF Embed-API können Sie hier [&#128279;](https://www.adobe.com/go/dcsdks_credentials) Adobe-Anmeldeinformationen (anders als Ihre [!DNL Acrobat Services]-Anmeldeinformationen) generieren und die zugelassenen Domänen für den Zugriff auf die API registrieren. Führen Sie den Vorgang aus und generieren Sie die PDF Embed-API-Zugangsberechtigungen für Ihre Anwendung. Sie können sich auch die Demonstration [hier](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) ansehen, aus der Sie ganz einfach Codes generieren können, um schnell loszulegen.
 
 Erstellen Sie in der Anwendung die Dateien list.hbs und preview.hbs im Ansichtsordner der Anwendung und fügen Sie den folgenden Codeausschnitt in die Dateien list.hbs bzw. preview.hbs ein.
 

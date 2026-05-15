@@ -8,9 +8,22 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cRSC1vIKbwdoQhwz8HkU-L6sO7ENukJhOqgw2C1O-6Y
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: 1487
 ht-degree: 0%
 
 ---
@@ -37,9 +50,9 @@ Der vollständige Code für dieses Projekt ist [&#x200B; auf GitHub &#x200B;](ht
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung in Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation)
 
@@ -230,5 +243,5 @@ Da Danielle ihre Rechnungen automatisch erstellen kann und sich keine Sorgen üb
 
 Nachdem Sie nun gesehen haben, wie einfach dies ist, können Sie diese einfache App mit anderen Adobe-Tools erweitern, um Rechnungen auf Ihrer Website einzubetten. So können Kunden beispielsweise ihre Rechnungen oder ihren Kontostand jederzeit einsehen. Die [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed) kann kostenlos verwendet werden. oder direkt an die Personalabteilung oder den Vertrieb wenden, um die Automatisierung von Verträgen und die Einholung elektronischer Unterschriften zu erleichtern.
 
-Um alle Möglichkeiten zu erkunden und mit dem Erstellen Ihrer eigenen praktischen Anwendung zu beginnen, erstellen Sie ein kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Konto, um noch heute loszulegen. Teste das Programm sechs Monate lang kostenlos. Danach kannst du [nach Bedarf bezahlen](https://developer.adobe.com/document-services/pricing/main)
+Um alle Möglichkeiten zu erkunden und mit dem Erstellen Ihrer eigenen praktischen Anwendung zu beginnen, erstellen Sie ein kostenloses [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)-Konto, um noch heute loszulegen. Teste sechs Monate lang kostenlos. Danach kannst du [nach Bedarf bezahlen](https://developer.adobe.com/document-services/pricing/main)
 bei nur 0,05 US-Dollar pro Dokumenttransaktion, je nachdem, wie Ihr Unternehmen skaliert.

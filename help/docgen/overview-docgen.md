@@ -8,13 +8,20 @@ type: Tutorial
 jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
+TQID: https://experienceleague.adobe.com/eOaC3JiRZgpJYzecoow7GP-g7-EDo-nEkd2Qdg-x7Rk
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: 587
 ht-degree: 0%
 
 ---
-
 
 # API-Tutorials zur Dokumenterstellung
 
@@ -61,8 +68,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -93,8 +100,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeroverview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding text tags">
@@ -116,8 +123,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddtexttags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding image tags">
@@ -139,8 +146,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggeraddimagetags" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adding tables and list tags">
@@ -162,8 +169,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggertables" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Setting numerical calculation tags">
@@ -185,8 +192,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggercalculations" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Setting conditional content">
@@ -208,8 +215,8 @@ Die API für die Dokumentenerzeugung akzeptiert eine Dokumentvorlage (mit Vorlag
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/docgentemplates/taggerconditional" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -8,9 +8,29 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
+TQID: https://experienceleague.adobe.com/ybG7xD9KSXaS4blMesQieOT4Z2RpqwnD5haRPxBfFKo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: ab4ae87a-aa37-4da4-8f10-14bcd836549e
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 607
 ht-degree: 1%
 
 ---
@@ -26,7 +46,7 @@ ht-degree: 1%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-Die beiden letztgenannten APIs und ihre SDKs werden im Rahmen eines kostenpflichtigen Angebots in [!DNL Adobe PDF Services API] gebündelt. 1[!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen Ihnen, mit den [!DNL Adobe Acrobat Services]-APIs die Bereitstellung einfacherer, schnellerer und markenkonformer Erlebnisse zu beschleunigen.
+Die beiden letztgenannten APIs und ihre SDKs werden im Rahmen eines kostenpflichtigen Angebots in [!DNL Adobe PDF Services API] gebündelt. [!DNL PDF Embed API] ist ein kostenloses Angebot. Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von Dokumentinhalten über eine Reihe moderner Cloud-basierter Webdienste. Mit ihnen können Sie einfachere, schnellere und markenkonforme Erlebnisse bereitstellen, sodass Sie die Interaktion des Benutzers mit Ihren Dokumenten steuern, PDF-Workflows optimieren und die Nutzung und Bindung fördern. Diese Tutorials helfen Ihnen, mit den [!DNL Adobe Acrobat Services]-APIs die Bereitstellung einfacherer, schnellerer und markenkonformer Erlebnisse zu beschleunigen.
 
 <!-- Comment -->
 <!--
@@ -105,8 +125,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Document Generation API">
@@ -128,8 +148,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/docgen/overview-docgen" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adobe PDF Accessibility Auto-Tag API tutorials">
@@ -151,8 +171,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfaccessibility/overview-accessibility" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Extract API">
@@ -174,8 +194,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfextract/overview-extract" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Electronic Seal API">
@@ -197,8 +217,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/eseal/overview-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="PDF Embed API">
@@ -220,8 +240,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Acrobat Sign API">
@@ -243,8 +263,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/overview-sign" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adobe Acrobat Services API use cases">
@@ -266,8 +286,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/overview-usecases" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Tutorials durchsuchen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -8,9 +8,22 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/fsD7hB9-yEhVElQUFkM1RmUB1aVJq6C9USXa3Ru9lks
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: 1549
 ht-degree: 0%
 
 ---
@@ -31,10 +44,10 @@ Hat Ihr Unternehmen PDF auf Ihrer Website veröffentlicht? Hier erfahren Sie, wi
   </td>
   <td>
     <a href="controlpdfexperience.md#part2">
-        <img alt="Teil 2: PDF Embed-API zu einer Webseite hinzufügen" src="assets/ControlPDFPart2_thumb.png" />
+        <img alt="Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite" src="assets/ControlPDFPart2_thumb.png" />
     </a>
     <div>
-    <a href="controlpdfexperience.md#part2"><strong>Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite</strong></a>
+    <a href="controlpdfexperience.md#part2"><strong>Teil 2: Die PDF Embed-API wird einer Webseite hinzugefügt</strong></a>
     </div>
   </td>
   <td>
@@ -106,7 +119,7 @@ Im ersten Teil lernst du, wie du mit allem anfängst, was du für die ersten Tei
 
    ![Screenshot der Schaltfläche &quot;Anmeldeinformationen erstellen&quot;](assets/ControlPDF_4.png)
 
-## Teil 2: PDF Embed-API zu einer Webseite hinzufügen {#part2}
+## Teil 2: Hinzufügen der PDF Embed-API zu einer Webseite {#part2}
 
 Im zweiten Teil lernen Sie, wie Sie die PDF Embed-API ganz einfach in eine Webseite einbetten können. Dazu verwenden Sie die Online-Demo von Adobe PDF Embed API, um unseren Code zu erstellen.
 
@@ -162,7 +175,7 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
 1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie die Datei **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]**.
 
-1. Fügen Sie den Skriptcode in Zeile 18 in `<head>` der Datei unter dem Kommentar mit folgendem Text ein: **TODO: EXERCISE 1: INSERT EMBED API SCRIPT TAG**.
+1. Fügen Sie den Skriptcode in Zeile 18 unter dem folgenden Kommentar in `<head>` der Datei ein: **TODO: ÜBUNG 1: EINBETTEN DES API-SKRIPT-TAGS &quot;**&quot;.
 
    ![Screenshot, wo Skriptcode eingefügt werden soll](assets/ControlPDF_13.png)
 
@@ -176,7 +189,7 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
 1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie die Datei **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]** erneut.
 
-1. Fügen Sie den `<div>`-Code in Zeile 67 in `<body>` der Datei unter dem Kommentar **HINWEIS: ÜBUNG 1: PDF-EINBETTUNGS-API-CODE EINFÜGEN** ein.
+1. Fügen Sie den `<div>`-Code in Zeile 67 in `<body>` der Datei unter dem Kommentar mit der Meldung **TODO: ÜBUNG 1: EINFÜGEN DES PDF-EINBETTUNGS-API-CODES**.
 
    ![Screenshot der Stelle, an der Code eingefügt werden soll](assets/ControlPDF_15.png)
 
@@ -196,7 +209,7 @@ Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigen
 
 1. Wechseln Sie zu Ihrem Code-Editor und öffnen Sie die Datei **[!UICONTROL Web]** -> **[!UICONTROL Übung]** -> **[!UICONTROL index.html]** erneut.
 
-1. Fügen Sie den Code &quot;`<script>`&quot; in Zeile 68 unter dem Tag &quot;`<body>`&quot; in &quot;`<div>`&quot; der Datei ein.
+1. Fügen Sie den Code &quot;`<script>`&quot; in Zeile 68 unter dem Tag &quot;`<div>`&quot; in &quot;`<body>`&quot; der Datei ein.
 
 1. Ändern Sie Zeile 70 derselben Datei **index.html**, um die zuvor erstellte clientID-Variable einzuschließen.
 
