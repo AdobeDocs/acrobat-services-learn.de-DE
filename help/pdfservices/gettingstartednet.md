@@ -9,9 +9,16 @@ jira: KT-6675
 thumbnail: KT-6675.jpg
 keywords: Empfohlen
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/H10l4sa6OGC15UBDjMHlVFfANtjFro9YnRnGU17K2kM
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: 566
 ht-degree: 0%
 
 ---
@@ -42,7 +49,7 @@ Wählen Sie als Nächstes &quot;Node.js&quot; als Ihre Sprache aus, um die spezi
 
 Sie erhalten eine ZIP-Datei mit dem Namen PDFToolsSDK-.NetSamples.zip, die Sie herunterladen und in Ihrem lokalen Dateisystem speichern können.
 
-## Schritt 2: .NET-Umgebung einrichten und Beispielcode ausführen
+## Schritt 2: Einrichten der .NET-Umgebung und Ausführen des Beispielcodes
 
 1. [.Net SDK](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install) herunterladen und installieren
 1. Extrahieren Sie die heruntergeladene Datei **[!UICONTROL PDFToolsSDK-.NetSamples.zip]**, und entpacken Sie den Inhalt.
@@ -82,4 +89,4 @@ Die PDF Services API hilft Ihnen, manuelle Prozesse zu vermeiden, indem gängige
 * Verwandte Artikel
 
    * [Die neue PDF Services-API bietet noch mehr Funktionen für Dokumenten-Workflows](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
-   * [Juli-Version von  [!DNL Adobe Acrobat Services]: PDF-Einbettung und PDF-Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+   * [Juli-Version von  [!DNL Adobe Acrobat Services]: PDF Embed- und PDF-Services](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

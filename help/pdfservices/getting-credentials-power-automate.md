@@ -8,10 +8,14 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 1%
+source-wordcount: 930
+ht-degree: 2%
 
 ---
 
@@ -92,7 +96,7 @@ Wenn Sie bereits Anmeldeinformationen erstellt und die heruntergeladenen Anmelde
 
    ![Vorhandene Anmeldeinformationen](assets/credentials_7.png)
 
-1. Beachten Sie die fünf hier angegebenen Werte: *Client-ID*, *Client-Geheimnis*, *Technische Konto-ID*, *Technische Konto-E-Mail-Adresse* und *Organisations-ID*.
+1. Beachten Sie die fünf Werte, die hier angezeigt werden: *Client-ID*, *Client-Geheimnis*, *Technische Konto-ID*, *Technische Konto-E-Mail* und *Organisations-ID*.
 
 Leider können Sie den vorherigen privaten Schlüssel nicht herunterladen, aber Sie können die Schaltfläche &quot;Öffentliches/Privates Schlüsselpaar generieren&quot; verwenden, um einen neuen Schlüssel zu erstellen.
 
@@ -116,13 +120,13 @@ Wie am Anfang dieses Tutorials beschrieben, erstellen Sie einen neuen Flow, füg
 
 Wie der obige Screenshot zeigt, können Sie entweder zu einem Arbeitskonto wechseln oder ein neues Organisationskonto einrichten. Sobald Sie diese haben, können Sie die Aktion Adobe PDF Services hinzufügen.
 
-Weitere Informationen zum Erstellen Ihres ersten Microsoft Power Automate-Workflows mit [!DNL Adobe Acrobat Services] finden Sie unter [Erstellen Ihres ersten Workflows in Microsoft Power Automate](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
+Weitere Informationen zum Erstellen Ihres ersten Microsoft Power Automate-Workflows mit [!DNL Adobe Acrobat Services] finden Sie unter [Erstellen Ihres ersten Workflows in Microsoft Power Automate](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate).
 
 ## Weitere Ressourcen
 
 Wenn Sie weitere Hilfe benötigen, finden Sie hier eine Liste zusätzlicher Ressourcen:
 
-* Zuerst die Adobe PDF Services Power Automate-Dokumente: <https://docs.microsoft.com/en-us/connectors/adobepdftools/>. Diese Ressourcen ergänzen das, was Sie hier gelernt haben.
+* An erster Stelle stehen die Adobe PDF Services Power Automate-Dokumente: <https://docs.microsoft.com/en-us/connectors/adobepdftools/> Diese Ressourcen ergänzen das, was Sie hier gelernt haben.
 * Brauchst du Beispiele? Sie finden zahlreiche [Power Automate-Vorlagen](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/), die die PDF-Services zeigen.
 * Unser Live-Videoinhalt [Paper Clips](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) enthält auch Videos, die die Verwendung von Power Automate zeigen.
 * Der [Adobe Tech Blog](https://medium.com/adobetech/tagged/microsoft-power-automate) enthält viele Artikel zum Arbeiten mit Power Automate.

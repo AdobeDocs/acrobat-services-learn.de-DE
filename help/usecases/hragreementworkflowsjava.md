@@ -8,9 +8,15 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/3XG9hVuP8EXiHP19m-werP4yFx8ae-VIPuS7N0V2jpQ
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: 1960
 ht-degree: 0%
 
 ---
@@ -29,7 +35,7 @@ In diesem praktischen Tutorial lernen Sie, wie Sie ein webbasiertes HR-Formular 
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
 * [Projektcode](https://github.com/dawidborycki/adobe-sign)
 
@@ -154,7 +160,7 @@ public class PersonController {
 }
 ```
 
-Der Controller verfügt nur über eine Methode: showForm. Es ist für das Rendern des Formulars mit der HTML-Vorlage in resources/templates/form.html verantwortlich:
+Der Controller verfügt nur über eine Methode: showForm: Es ist für das Rendern des Formulars mit der HTML-Vorlage in resources/templates/form.html verantwortlich:
 
 ```
 <html>
@@ -202,7 +208,7 @@ Zum Rendern dynamischer Inhalte wird die Thymeleaf-Vorlagenwiedergabemaschine ve
 
 Generieren Sie jetzt das PDF-Dokument, das den virtuellen Vertrag enthält, indem Sie die ausgewählten Felder nach dem Rendern des Formulars für personenbezogene Daten dynamisch ausfüllen. Insbesondere müssen Sie die Personendaten in den vorab erstellten Vertrag einfügen.
 
-Hier haben Sie der Einfachheit halber nur eine Kopfzeile, eine Unterkopfzeile und eine Zeichenfolge mit konstantem Lesen: &quot;Dieser Vertrag wurde für \&lt;vollständiger Name der Person\> vorbereitet.&quot;
+Hier haben Sie der Einfachheit halber nur einen Header, einen Subheader und einen Zeichenfolgenkonstanten Wert: &quot;Dieser Vertrag wurde für \&lt;vollständiger Name der Person\> vorbereitet.&quot;
 
 Um dieses Ziel zu erreichen, beginnen Sie mit dem Beispiel [Erstellen einer PDF aus Dynamic HTML von Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html). Wenn Sie diesen Beispielcode analysieren, sehen Sie, dass der Prozess der dynamischen HTML-Feldauffüllung wie folgt funktioniert.
 
@@ -398,11 +404,11 @@ Konfigurieren Sie OAuth für die Anwendung wie [hier](https://opensource.adobe.c
 
 * user_login: self
 
-* agreement_read: account
+* agreement_read: Bericht
 
-* agreement_write: account
+* agreement_write: Bericht
 
-* agreement_send: account
+* agreement_send: Bericht
 
 Bereiten Sie mithilfe Ihrer Client-ID anstelle von \&lt;CLIENT_ID\> eine URL wie folgt vor:
 
@@ -422,7 +428,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 Notieren Sie sich die Werte für \&lt;YOUR_CODE\> und api_access_point.
 
-Zum Senden einer HTTP-POST-Anforderung, die das Zugriffstoken bereitstellt, verwenden Sie die Client-ID \&lt;YOUR_CODE\> und die Werte api_access_point. Sie können [Postman](https://helpx.adobe.com/de/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) oder cURL verwenden:
+Zum Senden einer HTTP-POST-Anforderung, die das Zugriffstoken bereitstellt, verwenden Sie die Client-ID \&lt;YOUR_CODE\> und die Werte api_access_point. Sie können [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) oder cURL verwenden:
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -454,7 +460,7 @@ Notieren Sie sich Ihr access_token. Sie benötigen sie, um Ihren Clientcode zu a
 
 ## Verwenden des Adobe Sign Java SDK
 
-Sobald Sie über das Zugriffstoken verfügen, können Sie REST API-Aufrufe an Adobe Sign senden. Um diesen Vorgang zu vereinfachen, verwenden Sie das Adobe Sign Java SDK. Der Quellcode ist im [Adobe-GitHub-Repository &#x200B;](https://github.com/adobe-sign/AdobeSignJavaSdk) verfügbar.
+Sobald Sie über das Zugriffstoken verfügen, können Sie REST API-Aufrufe an Adobe Sign senden. Um diesen Vorgang zu vereinfachen, verwenden Sie das Adobe Sign Java SDK. Der Quellcode ist im [Adobe-GitHub-Repository ](https://github.com/adobe-sign/AdobeSignJavaSdk) verfügbar.
 
 Um dieses Paket in Ihre Anwendung zu integrieren, müssen Sie den Code klonen. Erstellen Sie dann das Maven-Paket (mvn-Paket) und installieren Sie die folgenden Dateien im Projekt (Sie finden sie im Companion-Code im Ordner adobe-sign-sdk ):
 

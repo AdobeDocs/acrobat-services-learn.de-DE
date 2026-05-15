@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ceJsh2lv-S4b6mScT7DF83x1C85BAu-bPa5ju4JcYu4
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: 1389
 ht-degree: 0%
 
 ---
@@ -37,7 +44,7 @@ Sie müssen [Node.js](https://nodejs.org/) installiert haben und wissen, wie Nod
 
 ## Projekteinrichtung
 
-Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [&#x200B; hier abrufen: &#x200B;](https://github.com/agavitalis/AdobeDocumentAPI.git).
+Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [ hier abrufen: ](https://github.com/agavitalis/AdobeDocumentAPI.git).
 
 ## Verzeichnisstruktur
 
@@ -135,7 +142,7 @@ Mit diesen Codeausschnitten werden die Anwendungsabhängigkeiten installiert, ei
 
 Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von PDF-Inhalten über eine Reihe Cloud-basierter Webdienste.
 
-Zum Abrufen der Anmeldeinformationen müssen Sie [sich &#x200B;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
+Zum Abrufen der Anmeldeinformationen müssen Sie [sich ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
 
 ![Screenshot der Erstellung von Anmeldeinformationen](assets/searching_1.png)
 
@@ -319,7 +326,7 @@ module.exports = { makeOCR, makeOCRPost };
 
 Sie benötigen das [!DNL Acrobat Services]-Knoten-SDK und die Mongoose-, PDF-Parse- und FS-Module sowie Ihr Dokumentmodellschema. Diese Module sind notwendig, um den Inhalt der transformierten Datei in einer MongoDB-Datenbank zu speichern.
 
-Erstellen Sie nun zwei Funktionen: makeOCR zum Anzeigen des hochgeladenen Formulars und makeOCRPost zum Verarbeiten des hochgeladenen Dokuments. Speichern Sie das ursprüngliche Formular in einer Datenbank und speichern Sie das transformierte Formular dann im Ausgabeordner Ihrer Anwendung.
+Erstellen Sie nun zwei Funktionen: makeOCR zum Anzeigen des hochgeladenen Formulars und dann makeOCRPost zum Verarbeiten des hochgeladenen Dokuments. Speichern Sie das ursprüngliche Formular in einer Datenbank und speichern Sie das transformierte Formular dann im Ausgabeordner Ihrer Anwendung.
 
 Die von der Adobe bereitgestellten Anmeldeinformationen aus der Datei pdftools-api-credentials.json werden jeweils vor dem Transformieren der Datei geladen.
 
@@ -430,5 +437,5 @@ Die Verwendung von [!DNL Acrobat Services] für die Dokumenttransformation wird 
 
 Nachdem Sie nun wissen, wie Sie [!DNL Acrobat Services]-APIs verwenden, können Sie Ihre Kenntnisse mit Übung erweitern. Sie können das Repository klonen, das in diesem Tutorial verwendet wird, und mit einigen der Kenntnisse experimentieren, die Sie gerade gelernt haben. Noch besser ist, dass Sie versuchen können, diese Anwendung neu zu erstellen, während Sie die unbegrenzten Möglichkeiten von [!DNL Acrobat Services]-APIs erkunden.
 
-Sind Sie bereit, die Freigabe von Dokumenten und die Überprüfung in Ihrer eigenen App zu aktivieren? Für [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) anmelden
+Sind Sie bereit, die Freigabe von Dokumenten und die Überprüfung in Ihrer eigenen App zu aktivieren? Registrieren für [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 Entwicklerkonto. Testet das Programm sechs Monate lang kostenlos. Danach könnt ihr bei Bedarf [für nur \$0,05 pro Dokumenttransaktion bezahlen](https://developer.adobe.com/document-services/pricing/main), wenn euer Unternehmen wächst.

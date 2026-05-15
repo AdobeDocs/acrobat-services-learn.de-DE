@@ -8,10 +8,16 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/d-865GSolCybDdJcrN-ChmedE8m2um1K6jPWFTUIZBs
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 0%
+source-wordcount: 2933
+ht-degree: 1%
 
 ---
 
@@ -207,7 +213,7 @@ Um zu testen, ob sich die Vorlage korrekt verhält, wenn sich der Kunde im Bunde
 
    ![Screenshot des Taggers für die Dokumentgenerierung](assets/automatelegal_20.png)
 
-1. Wählen Sie **[!UICONTROL Bearbeiten]** aus.
+1. Wähle **[!UICONTROL Bearbeiten]** aus.
 
 1. Ändern Sie in den JSON-Daten *CA* in *WA*.
 
@@ -271,7 +277,7 @@ Platzieren Sie als Nächstes ein Datenfeld für den Unterzeichner, der beim Unte
 1. Setzen Sie den Feldtyp auf Datum.
 1. Wählen Sie **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-Das platzierte Datumstag ist ziemlich lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}`. Das Acrobat Sign-Text-Tag muss in derselben Zeile bleiben, was sich von den Tags für die Dokumentgenerierung unterscheidet. Die Parameter &quot;`:format()`&quot; und &quot;`font()`&quot; sind optional. Für dieses Szenario können wir das Tag daher auf &quot;`{{Date 3_es_:signer1:date}}`&quot; kürzen.
+Das platzierte Tag &quot;Datum&quot; ist ziemlich lang: `{{Date 3_es_:signer1:date:format(mm/dd/yyyy):font(size=Auto)}}` Das Acrobat Sign-Text-Tag muss in derselben Zeile bleiben, was sich von den Tags für die Dokumentgenerierung unterscheidet. Die Parameter &quot;`:format()`&quot; und &quot;`font()`&quot; sind optional. Für dieses Szenario können wir das Tag daher auf &quot;`{{Date 3_es_:signer1:date}}`&quot; kürzen.
 
 Wiederholen Sie die Schritte über dem Abschnitt *Unternehmenssignatur*. Wenn Sie dies tun, müssen Sie das Feld Empfänger in **Unterzeichner-2** ändern. Andernfalls werden alle Signaturfelder derselben Person zugewiesen.
 
@@ -408,7 +414,7 @@ Wenn Sie kein Acrobat Sign-Konto haben, melden Sie sich für ein Entwicklerkonto
    ![Screenshot der Eingabe der Signatur](assets/automatelegal_34.png)
 
 1. Wählen Sie **[!UICONTROL Anwenden]**.
-1. Wählen Sie **[!UICONTROL Hier signieren]**.
+1. Wählen Sie **[!UICONTROL Zum Signieren klicken]** aus.
 
 Eine E-Mail wird an den nächsten Unterzeichner gesendet. Wiederholen Sie die Schritte 9-16, um den zweiten Unterzeichner anzuzeigen und zu signieren.
 

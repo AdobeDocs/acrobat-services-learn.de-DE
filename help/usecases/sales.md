@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Jj-xhGUcWVWOMooS2fOPcYmELcH70cG1eRRaPPy66Yk
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: 1442
 ht-degree: 0%
 
 ---
@@ -37,11 +44,11 @@ In diesem praktischen Tutorial lernen Sie, wie Sie dynamische Daten und Workflow
 
 * [[!DNL Acrobat Services] APIs](https://developer.adobe.com/document-services/homepage/)
 
-* [API für die Dokumentenerzeugung &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation) für Adobe
+* [API für die Dokumentenerzeugung in Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
+* [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
-* [Adobe-Tagger für Dokumenterstellung](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Tagger für die Generierung von Adobe-Dokumenten](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 ## Lösung des Problems
 
@@ -87,9 +94,9 @@ Wählen Sie **PDF Services API** als Ihren bevorzugten Dienst aus und geben Sie 
 
 Nachdem Sie Ihre Anmeldeinformationen erstellt haben, erhalten Sie einige Codebeispiele. Wählen Sie Ihre bevorzugte Sprache aus (in diesem Tutorial wird Node.js verwendet). Ihre API-Zugangsberechtigungen befinden sich in einer ZIP-Datei. Extrahieren Sie die Dateien in PDFToolsSDK-Node.jsSamples.
 
-Erstellen Sie zunächst einen leeren Ordner mit dem Namen auto-doc\*\*.\*\* Führen Sie im Ordner den folgenden Befehl aus, um ein Projekt &quot;Node.js&quot; zu initialisieren: `npm init`. Nennen Sie Ihr Projekt &quot;auto-doc&quot;*.*
+Erstellen Sie zunächst einen leeren Ordner mit dem Namen auto-doc\*\*.\*\* Führen Sie im Ordner den folgenden Befehl aus, um ein Node.js-Projekt zu initialisieren: `npm init` Nennen Sie Ihr Projekt &quot;auto-doc&quot;*.*
 
-Im Ordner ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples, gibt es eine Datei namens pdftools-api-credentials.json. Verschieben Sie ihn und &quot;private.key&quot; in den Ordner &quot;auto-doc&quot;. Sie enthält Ihre API-Zugangsberechtigungen. Erstellen Sie außerdem im Ordner für automatische Dokumente einen Unterordner mit dem Namen &quot;resources&quot;. Es enthält die JSON-formatierten Daten, die von Kunden empfangen werden, wenn Sie ein Verkaufsangebot erstellen. Speichern Sie im selben Ordner die Vorlage für Verkaufsangebote aus Microsoft Word.
+Im Ordner ./PDFToolsSDK-Node.jsSamples/adobe-dc-pdf-tools-sdk-node-samples befindet sich die Datei pdftools-api-credentials.json. Verschieben Sie ihn und &quot;private.key&quot; in den Ordner &quot;auto-doc&quot;. Sie enthält Ihre API-Zugangsberechtigungen. Erstellen Sie außerdem im Ordner für automatische Dokumente einen Unterordner mit dem Namen &quot;resources&quot;. Es enthält die JSON-formatierten Daten, die von Kunden empfangen werden, wenn Sie ein Verkaufsangebot erstellen. Speichern Sie im selben Ordner die Vorlage für Verkaufsangebote aus Microsoft Word.
 
 Jetzt kannst du zaubern! Da Sie in diesem Tutorial &quot;Node.js&quot; verwenden, müssen Sie das SDK &quot;Node.js [!DNL Acrobat Services]&quot; installieren. Führen Sie dazu im Ordner &quot;Auto-doc&quot; die Datei &quot;thread add @adobe/documentservices-pdftools-node-sdk&quot; aus.
 
@@ -135,7 +142,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Dieser Code ruft Ihre JSON-Datei mithilfe der Tags, die Sie mit [!DNL Acrobat Services] erstellt haben, aus dem Microsoft-Formular ab. Anschließend werden die Daten mit der von Ihnen in Microsoft Word erstellten Vorlage für Verkaufsangebote zusammengeführt, um eine brandneue PDF zu erstellen. Die PDF wird im neu erstellten gespeichert./Ausgabeordner.
+Dieser Code ruft Ihre JSON-Datei mithilfe der Tags, die Sie mit [!DNL Acrobat Services] erstellt haben, aus dem Microsoft-Formular ab. Anschließend werden die Daten mit der von Ihnen in Microsoft Word erstellten Vorlage für Verkaufsangebote zusammengeführt, um eine brandneue PDF zu erstellen. Die PDF wird im neu erstellten &quot;./output&quot;-Ordner gespeichert.
 
 Außerdem verwendet der Code die [Adobe Sign-API](https://developer.adobe.com/adobesign-api/), damit beide Unternehmen das generierte Verkaufsangebot unterzeichnen. In diesem Blogpost finden Sie eine detaillierte Erklärung zu dieser API.
 

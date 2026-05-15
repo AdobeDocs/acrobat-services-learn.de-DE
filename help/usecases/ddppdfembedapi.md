@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ps-wxzaqHNuBwOlfWDDEmOamM3ZOmP-4Ys1H4X--Gk0
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: 1968
 ht-degree: 0%
 
 ---
@@ -21,8 +28,8 @@ ht-degree: 0%
 
 Elektronische Dokumente gibt es überall - tatsächlich gibt es weltweit wahrscheinlich [Billionen PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world), und diese Zahl steigt täglich. Durch Einbetten des PDF-Viewers in Ihre Webseiten ermöglichen Sie es Anwendern, Dokumente anzuzeigen, ohne dass Sie Ihren HTML oder CSS-Code neu gestalten oder den Zugriff auf Ihre Website behindern müssen.
 
-Sehen wir uns ein beliebtes Szenario an. Ein Unternehmen veröffentlicht [Whitepaper auf seiner Website](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing).
-, um den Kontext für ihre Anwendungen und Services bereitzustellen. Der Marketing-Experte der Website möchte besser verstehen, wie Anwender mit ihren PDF-basierten Inhalten interagieren, und diese in ihre Website und ihr Branding einbinden. Sie haben sich entschieden, die Whitepaper als [gated content](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.) zu veröffentlichen und zu kontrollieren, wer sie herunterladen kann.
+Sehen wir uns ein beliebtes Szenario an. Ein Unternehmen veröffentlicht [ Whitepaper auf seiner Website.](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)
+, um den Kontext für ihre Anwendungen und Services bereitzustellen. Der Marketing-Experte der Website möchte besser verstehen, wie Anwender mit ihren PDF-basierten Inhalten interagieren, und diese in ihre Website und ihr Branding einbinden. Sie haben sich entschieden, die Whitepaper als [gated content](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations) zu veröffentlichen und zu kontrollieren, wer sie herunterladen kann.
 
 ## Lernziel.
 
@@ -172,13 +179,13 @@ Verwenden Sie jetzt die PDF Embed-API, um PDF auf der Site anzuzeigen. Öffnen S
 
 Im linken Bereich können Sie den Einbettungsmodus auswählen, der am besten zu Ihren Website-Anforderungen passt:
 
-* **Volles Fenster**: Die PDF deckt den gesamten Webseitenbereich ab.
+* **Volles Fenster**: der PDF deckt alle Webseiten ab.
 
-* **Größe des Containers**: Die PDF wird innerhalb der Webseite seitenweise in einem DIV mit begrenzter Größe angezeigt.
+* **Größe des Containers**: Die PDF wird innerhalb der Webseite, Seite für Seite, in einem DIV mit begrenzter Größe angezeigt.
 
-* **In-Line**: Die gesamte PDF wird in einem DIV-Element auf der Webseite angezeigt.
+* **Inline**: Die gesamte PDF wird in einem DIV-Element auf der Webseite angezeigt.
 
-* **Lightbox**: Die PDF wird als Ebene über Ihrer Webseite angezeigt.
+* **Lightbox**: Der PDF wird als Ebene über Ihrer Webseite angezeigt.
 
 Es wird empfohlen, den In-Line-Einbettungsmodus für Whitepaper und den Codegenerator später zu verwenden, um eine PDF in die Anwendung einzubetten.
 
@@ -266,7 +273,7 @@ var indexRouter = require('./routes/index');
 var inLineRouter = require('./routes/in-line');
 ```
 
-Fügen Sie dann diesen Code nach app.use(&#39;/&#39;, indexRouter); hinzu, um die Inline-Einbettungsmodusansicht mit ihrem Router zu verknüpfen:
+Fügen Sie dann diesen Code nach app.use(&#39;/&#39;, indexRouter); , um die Inline-Einbettungsmodusansicht mit dem Router zu verknüpfen:
 
 ```
 app.use('/', indexRouter);
@@ -347,7 +354,7 @@ Führen Sie nun die Anwendung mit dem Befehl npm start aus und öffnen Sie die W
 
 Wählen Sie als Letztes ein Whitepaper aus, und klicken Sie auf **Dokument anzeigen**, um eine neue Seite mit der eingebetteten In-Line-PDF zu öffnen:
 
-![Screenshot des PDF-Whitepapers &#x200B;](assets/ddp_11.png)
+![Screenshot des PDF-Whitepapers ](assets/ddp_11.png)
 
 Beachten Sie, dass jetzt die Optionen PDF herunterladen und PDF drucken verfügbar sind.
 
@@ -557,6 +564,6 @@ Durch Zusammenführen dieses Workflows kann der [hypothetische Marketingspeziali
 
 Wenn Sie ein Angular- oder React-Entwickler sind, können Sie [zusätzliche Beispiele](https://github.com/adobe/pdf-embed-api-samples) ausprobieren, in denen die Integration der PDF Embed-API in React- und Angular-Projekte erläutert wird.
 
-Mit Adobe könnt ihr durchgängige Kundenerlebnisse mit innovativen Lösungen entwickeln. [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed/) ist kostenlos. Probieren Sie die Adobe PDF Services-API mit [pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main) [icing](https://developer.adobe.com/document-services/pricing/main) aus, um herauszufinden, was Sie sonst noch tun können.
+Mit Adobe könnt ihr durchgängige Kundenerlebnisse mit innovativen Lösungen entwickeln. [Adobe PDF Embed-API](https://developer.adobe.com/document-services/apis/pdf-embed/) ist kostenlos. Probieren Sie die Adobe PDF Services-API mit [pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main)[icing](https://developer.adobe.com/document-services/pricing/main) aus, um herauszufinden, was Sie sonst noch tun können.
 
-[Starten Sie noch heute &#x200B;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit [!DNL Adobe Acrobat Services] APIs.
+[Starten Sie noch heute ](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) mit [!DNL Adobe Acrobat Services] APIs.

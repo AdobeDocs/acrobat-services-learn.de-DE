@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Y9rEEmFRErrNRz8lwG2ertPmm95ScYCigzepibfBoB0
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: 1654
 ht-degree: 0%
 
 ---
@@ -57,7 +64,7 @@ Wählen Sie beim Erstellen von Anmeldeinformationen für die PDF Services-API di
 
 ## Projekt und Abhängigkeiten einrichten
 
-Richten Sie das Projekt &quot;Node.js&quot; und das Express-Projekt so ein, dass statische Dateien aus einem Ordner mit dem Namen &quot;public&quot; bereitgestellt werden. Sie können Ihre Projektmethoden entsprechend Ihren Vorlieben einrichten. Um schnell loszulegen, können Sie den [Express-App-Generator &#x200B;](https://expressjs.com/en/starter/generator.html) verwenden. Wenn Sie die Dinge einfach halten möchten, können Sie [ganz von vorne beginnen](https://expressjs.com/en/starter/hello-world.html) und den Code in einer einzigen JavaScript-Datei speichern. Im oben verknüpften Beispielprojekt verwenden Sie den Ein-Datei-Ansatz und behalten den gesamten Code in der Datei &quot;index.js&quot;.
+Richten Sie das Projekt &quot;Node.js&quot; und das Express-Projekt so ein, dass statische Dateien aus einem Ordner mit dem Namen &quot;public&quot; bereitgestellt werden. Sie können Ihre Projektmethoden entsprechend Ihren Vorlieben einrichten. Um schnell loszulegen, können Sie den [Express-App-Generator ](https://expressjs.com/en/starter/generator.html) verwenden. Wenn Sie die Dinge einfach halten möchten, können Sie [ganz von vorne beginnen](https://expressjs.com/en/starter/hello-world.html) und den Code in einer einzigen JavaScript-Datei speichern. Im oben verknüpften Beispielprojekt verwenden Sie den Ein-Datei-Ansatz und behalten den gesamten Code in der Datei &quot;index.js&quot;.
 
 Kopieren Sie die Dateien `pdftools-api-credentials.json` und `private.key` aus dem personalisierten Codebeispiel in das Stammverzeichnis des Projekts. Fügen Sie sie auch der .gitignore-Datei hinzu, sofern vorhanden, sodass Ihre Anmeldedaten nicht versehentlich an ein Repository gesendet werden.
 
@@ -101,7 +108,7 @@ Jetzt können Sie mit [!DNL Acrobat Services] APIs arbeiten.
 
 Für den ersten Teil des Dokumenten-Workflows muss der Endbenutzer Dokumente hochladen, um sie freizugeben. Um diese zu aktivieren, fügen Sie eine Upload-Funktion hinzu und konsolidieren die verschiedenen Dokumentdateiformate in PDF, um sie für den Review-Prozess vorzubereiten.
 
-Erstellen Sie zunächst eine Funktion zum Konvertieren von Dokumenten in PDF, die auf dem [-Beispielfragment für die PDF Services-API &#x200B;](https://developer.adobe.com/document-services/apis/pdf-services) basiert. In diesem Beispiel werden außerdem Snippets für viele andere wichtige Funktionen angezeigt, darunter die optische Zeichenerkennung (OCR), Kennwortschutz und -entfernung sowie Komprimierung.
+Erstellen Sie zunächst eine Funktion zum Konvertieren von Dokumenten in PDF, die auf dem [-Beispielfragment für die PDF Services-API ](https://developer.adobe.com/document-services/apis/pdf-services) basiert. In diesem Beispiel werden außerdem Snippets für viele andere wichtige Funktionen angezeigt, darunter die optische Zeichenerkennung (OCR), Kennwortschutz und -entfernung sowie Komprimierung.
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -178,7 +185,7 @@ Erstellen Sie jetzt zum Hochladen von Dateien aus der Webanwendung eine `index.h
   </form>
 ```
 
-![Screenshot der Funktion zum Hochladen von Dateien auf der Webseite &#x200B;](assets/reviews_1.png)
+![Screenshot der Funktion zum Hochladen von Dateien auf der Webseite ](assets/reviews_1.png)
 
 Sie können jetzt Dokumente auf den Server Node.js hochladen. Der Server speichert die Datei im Ordner &quot;uploads/drafts&quot; und erstellt daneben eine PDF-Format-Version.
 
@@ -330,7 +337,7 @@ Ihr Profil identifiziert Sie als einen bestimmten Benutzer, wenn Sie ein hochgel
 
 ## Dokumentfeedback wird gespeichert
 
-Nachdem ein Benutzer ein Dokument kommentiert hat, klickt er auf &quot;**Speichern&quot;.** Wenn Sie auf **Speichern** klicken, wird standardmäßig die aktualisierte PDF-Datei heruntergeladen. Ändern Sie diese Aktion, um die aktuelle PDF-Datei auf dem Server zu aktualisieren.
+Nachdem ein Benutzer ein Dokument kommentiert hat, klickt er auf **Speichern.** Standardmäßig wird durch Klicken auf **Speichern** die aktualisierte PDF-Datei heruntergeladen. Ändern Sie diese Aktion, um die aktuelle PDF-Datei auf dem Server zu aktualisieren.
 
 Fügen Sie dem Servercode einen Endpunkt `/save` hinzu, der die PDF-Datei im Ordner &quot;uploads/drafts&quot; überschreibt:
 
@@ -383,7 +390,7 @@ Registrieren Sie einen PDF-View-Rückruf für die SAVE_API, die den Inhalt auf d
   );
 ```
 
-Kommentare und Anmerkungen zu den Dokumententwürfen werden jetzt auf dem Server gespeichert. Sie können [mehr darüber lesen, wie Rückrufe &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in Ihren Workflow passen. [Status-Rückrufe](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) helfen z. B. bei Dateikonflikten, wenn mehrere Personen dasselbe Dokument gleichzeitig überprüfen und kommentieren möchten.
+Kommentare und Anmerkungen zu den Dokumententwürfen werden jetzt auf dem Server gespeichert. Sie können [mehr darüber lesen, wie Rückrufe ](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in Ihren Workflow passen. [Status-Rückrufe](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) helfen z. B. bei Dateikonflikten, wenn mehrere Personen dasselbe Dokument gleichzeitig überprüfen und kommentieren möchten.
 
 Im letzten Schritt kombinieren Sie alle bearbeiteten Dokumente mithilfe der PDF Services API zu einer PDF-Datei.
 
