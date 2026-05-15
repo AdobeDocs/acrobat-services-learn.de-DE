@@ -9,12 +9,21 @@ jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
 TQID: https://experienceleague.adobe.com/ceJsh2lv-S4b6mScT7DF83x1C85BAu-bPa5ju4JcYu4
-product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1389
@@ -44,7 +53,7 @@ Sie müssen [Node.js](https://nodejs.org/) installiert haben und wissen, wie Nod
 
 ## Projekteinrichtung
 
-Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [ hier abrufen: ](https://github.com/agavitalis/AdobeDocumentAPI.git).
+Richten Sie zunächst die Ordnerstruktur für die Anwendung ein. Sie können den Quellcode [&#x200B; hier abrufen: &#x200B;](https://github.com/agavitalis/AdobeDocumentAPI.git).
 
 ## Verzeichnisstruktur
 
@@ -142,7 +151,7 @@ Mit diesen Codeausschnitten werden die Anwendungsabhängigkeiten installiert, ei
 
 Diese APIs automatisieren die Erstellung, Bearbeitung und Transformation von PDF-Inhalten über eine Reihe Cloud-basierter Webdienste.
 
-Zum Abrufen der Anmeldeinformationen müssen Sie [sich ](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
+Zum Abrufen der Anmeldeinformationen müssen Sie [sich &#x200B;](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) registrieren und den Arbeitsablauf abschließen. Die PDF Embed-API kann kostenlos verwendet werden. PDF Services API und Document Generation API sind sechs Monate lang kostenlos. Wenn Ihr Probe-Abo endet, können Sie [umlagepflichtig](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion bezahlen. Sie zahlen nur, wenn Ihr Unternehmen wächst und mehr Verträge verarbeitet.
 
 ![Screenshot der Erstellung von Anmeldeinformationen](assets/searching_1.png)
 
