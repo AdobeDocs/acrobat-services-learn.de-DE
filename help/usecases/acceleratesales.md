@@ -9,20 +9,14 @@ jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
 TQID: https://experienceleague.adobe.com/xZ2TGxtFDXGq33Zcr1BvJ2V0v7goacfO8Z62mGINeTk
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 1789
+source-wordcount: 1767
 ht-degree: 0%
 
 ---
@@ -201,7 +195,7 @@ Mit numerischen Berechnungen können Sie Summen und andere Berechnungen auf der 
 1. Wählen Sie unter *[!UICONTROL Berechnungstyp auswählen]* die Option **[!UICONTROL Aggregation]**.
 1. Wählen Sie unter *[!UICONTROL Typ auswählen]* die Option **[!UICONTROL Summe]**.
 1. Wählen Sie unter *[!UICONTROL Datensätze auswählen]* **[!UICONTROL ReferencesOrder]** aus.
-1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen] **&#x200B; **&#x200B;[!UICONTROL totalPaymentsDue.price]** aus.
+1. Wählen Sie unter *[!UICONTROL Element auswählen, um Aggregation durchzuführen]** **[!UICONTROL totalPaymentsDue.price]** aus.
 1. Wählen Sie **[!UICONTROL Berechnung einfügen]**.
 
 Dieser Prozess fügt ein Berechnungs-Tag ein, das die Summe der Werte bereitstellt. Mit JSONata-Berechnungen können komplexere Berechnungen durchgeführt werden. Beispiel:
@@ -260,7 +254,7 @@ Sie möchten das Bild jedoch dynamisch für ein Bild festlegen, das bereits im L
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. Wähle ein anderes Bild in deinem Dokument aus, das dynamisch sein soll.
 
-   ![Screenshot des neuen Bildes im Dokument &#x200B;](assets/accsales_14.png)
+   ![Screenshot des neuen Bildes im Dokument ](assets/accsales_14.png)
 
 1. Klicken Sie mit der rechten Maustaste auf das Bild und wählen Sie **[!UICONTROL Alt-Text bearbeiten]**.
 1. Fügen Sie den Wert in das Fenster ein.
@@ -289,7 +283,7 @@ Acrobat Sign bietet verschiedene andere Feldtypen, die Sie einfügen können, z.
 1. Bewegen Sie den Cursor über die Datumsposition im Dokument.
 1. Wählen Sie **[!UICONTROL Adobe Sign-Text-Tag einfügen]**.
 
-![Screenshot des Datumstags im Dokument &#x200B;](assets/accsales_16.png)
+![Screenshot des Datumstags im Dokument ](assets/accsales_16.png)
 
 ## Vereinbarung generieren
 
