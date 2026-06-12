@@ -9,14 +9,10 @@ jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
 TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 2046
@@ -39,9 +35,9 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 ### Was Sie benötigen
 
 * **Anmeldeinformationen für die Testversion oder die Produktion für Adobe PDF Services**
-Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate mit Premium-Connectors**
-Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [&#x200B; überprüfen &#x200B;](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
+Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [ überprüfen ](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
 Der OneDrive-Speicheranschluss wird in diesem Tutorial verwendet, aber jeder Speicheranschluss kann ersetzt werden.
 
@@ -54,7 +50,7 @@ Es gibt zwei [Beispieldateien](assets/sample-assets.zip), die Sie entpacken und 
 
 ### Abrufen von Anmeldedaten
 
-Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
+Zum Durchführen dieses Tutorials benötigen Sie Ihre in Microsoft Power Automate für Adobe PDF Services bereits konfigurierten Anmeldeinformationen. Wenn Sie diesen Schritt nicht abgeschlossen haben, lesen Sie die [Anweisungen hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 
 ## Teil 1: Erstellen eines neuen Textflusses und Konvertieren von Word in PDF
 
