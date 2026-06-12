@@ -9,18 +9,12 @@ jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
 TQID: https://experienceleague.adobe.com/fsD7hB9-yEhVElQUFkM1RmUB1aVJq6C9USXa3Ru9lks
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1549
@@ -125,7 +119,7 @@ Im zweiten Teil lernen Sie, wie Sie die PDF Embed-API ganz einfach in eine Webse
 
 ### Abrufen des Übungscodes
 
-Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [&#128279;](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
+Wir haben Code erstellt, den Sie verwenden können. Sie können zwar Ihren eigenen Code verwenden, aber die Demonstrationen befinden sich im Kontext der Tutorial-Ressourcen. Laden Sie hier den Beispielcode [](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial) herunter.
 
 1. Gehen Sie zu [[!DNL Adobe Acrobat Services] Website](https://developer.adobe.com/document-services/homepage/).
 
