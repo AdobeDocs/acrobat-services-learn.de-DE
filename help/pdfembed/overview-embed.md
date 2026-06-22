@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 227
+source-wordcount: 225
 ht-degree: 0%
 
 ---
@@ -48,8 +48,8 @@ Die PDF Embed-API ist eine kostenlose JavaScript-API, mit der Sie High-Fidelity-
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Wrangle PDFs on the web like a pro">
@@ -71,8 +71,8 @@ Die PDF Embed-API ist eine kostenlose JavaScript-API, mit der Sie High-Fidelity-
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>

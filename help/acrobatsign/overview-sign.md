@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 524
+source-wordcount: 518
 ht-degree: 4%
 
 ---
@@ -51,8 +51,8 @@ Mit Acrobat Sign-APIs kannst du Anwendungen erstellen und die Acrobat Sign-Benut
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/signapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>
@@ -85,8 +85,8 @@ Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung ei
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Creating your application">
@@ -108,8 +108,8 @@ Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung ei
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-your-application" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Creating an embed link">
@@ -131,8 +131,8 @@ Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung ei
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-an-embed-link" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Generating an access token">
@@ -154,8 +154,8 @@ Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung ei
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/oem/generating-an-access-token" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Creating a transient document">
@@ -177,8 +177,8 @@ Hier erfahren Sie, wie Sie die OEM-Version von Acrobat Sign in Ihre Anwendung ei
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/acrobatsign/oem/creating-a-transient-document" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>

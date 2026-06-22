@@ -26,7 +26,7 @@ topic_v2:
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: 791
+source-wordcount: 778
 ht-degree: 0%
 
 ---
@@ -60,8 +60,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/automatelegalworkflows" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernizing employee onboarding">
@@ -83,8 +83,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/employeeonboarding" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Accelerate your sales process">
@@ -106,8 +106,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/acceleratesales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing sales proposals and contracts">
@@ -129,8 +129,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/sales" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Creating an NDA">
@@ -152,8 +152,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/nda" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing legal contracts">
@@ -175,8 +175,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/legal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Job posting">
@@ -198,8 +198,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/jobposting" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Student-Teacher collaboration">
@@ -221,8 +221,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/educationcollab" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Agreement workflows in Node.js">
@@ -244,8 +244,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/agreementworkflowsnodejs" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="HR document workflows in Java">
@@ -267,8 +267,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/hragreementworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Managing financial document workflows in Java">
@@ -290,8 +290,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>
@@ -321,8 +321,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/invoices" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>
@@ -351,8 +351,8 @@ Erfahren Sie, wie die [!DNL Adobe Acrobat Services]-APIs Ihr Unternehmen mithilf
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/usecases/ddppdfembedapi" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lesen</span>
-                </a>
-            </div>
+                3
+            </a></div>
         </div>
     </div>
 </div>
