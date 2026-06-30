@@ -9,22 +9,13 @@ jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
 TQID: https://experienceleague.adobe.com/ZfvtA3o-CQ28V-HdyzMR2TWgw-DpddXoh3zMOAUAqhY
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -255,7 +246,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-Dort gibt es viel Code zum Entpacken. Lassen Sie uns zuerst den Hauptteil betrachten: &quot;`documentMergeOperation`&quot;. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site &#x200B;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
+Dort gibt es viel Code zum Entpacken. Lassen Sie uns zuerst den Hauptteil betrachten: &quot;`documentMergeOperation`&quot;. In diesem Abschnitt können Sie Ihre JSON-Daten nehmen und mit einer Word-Dokumentvorlage zusammenführen. Sie können das [-Beispiel auf der Adobe-Site ](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade) als Referenz verwenden. Erstellen Sie ein eigenes, einfaches Beispiel. Öffnen Sie Word und erstellen Sie ein neues leeres Dokument. Du kannst sie beliebig oft anpassen, hast aber wenigstens etwas Ähnliches:
 
 Hallo X,
 
@@ -269,15 +260,15 @@ Klicken Sie in Ihrer OfferLetter-Vorlage auf die neue Schaltfläche **Dokumenten
 
 ![Screenshot von Brief und Code](assets/offer_3.png)
 
-Klicken Sie auf die Schaltfläche **Tags generieren**. Sie erhalten ein Dropdown-Menü mit Tags, die Sie an den entsprechenden Stellen im Dokument einfügen können. Markieren Sie das erste X im Dokument, und wählen Sie **[!UICONTROL Vorname]**. Klicken Sie auf **[!UICONTROL Text einfügen]**, und &quot;Lieber X,&quot; wird in &quot;Lieber ```{{`offer_letter`.firstname}}```,&quot; geändert. Dieses Tag hat das richtige Format für `documentMergeOperation`. Nun fügen Sie die restlichen drei Tags an den entsprechenden Xs hinzu. Vergessen Sie nicht, OfferLetter-template.docx zu speichern. Es sollte wie folgt aussehen:
+Klicken Sie auf die Schaltfläche **Tags generieren**. Sie erhalten ein Dropdown-Menü mit Tags, die Sie an den entsprechenden Stellen im Dokument einfügen können. Markieren Sie das erste X im Dokument, und wählen Sie **[!UICONTROL Vorname]**. Klicken Sie auf **[!UICONTROL Text einfügen]**, und &quot;Lieber X,&quot; wird in &quot;Lieber ``{{`offer_letter`.firstname}}``,&quot; geändert. Dieses Tag hat das richtige Format für `documentMergeOperation`. Nun fügen Sie die restlichen drei Tags an den entsprechenden Xs hinzu. Vergessen Sie nicht, OfferLetter-template.docx zu speichern. Es sollte wie folgt aussehen:
 
-Guten Tag ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```,
+Guten Tag ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``,
 
-Wir freuen uns, Ihnen eine Position für ```{{`offer_letter`.salary}}``` $ pro Jahr anbieten zu können. Ihr Startdatum ist ```{{`offer_letter`.startdate}}```.
+Wir freuen uns, Ihnen eine Position für ``{{`offer_letter`.salary}}`` $ pro Jahr anbieten zu können. Ihr Startdatum ist ``{{`offer_letter`.startdate}}``.
 
 Willkommen
 
-Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispielsweise wird ```{{`offer_letter`.`firstname`}}``` am Anfang des Word-Dokuments durch den Wert im Abschnitt &quot;firstName&quot; der JSON-Daten ersetzt.
+Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispielsweise wird ``{{`offer_letter`.`firstname`}}`` am Anfang des Word-Dokuments durch den Wert im Abschnitt &quot;firstName&quot; der JSON-Daten ersetzt.
 
 Zurück zur `generateLetter`-Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein, und passen Sie sie mit Details aus dem Abschnitt &quot;Service Account (JWT)&quot; (Dienstkonto (JSON-Konto) Ihrer [Entwicklerkonsole](https://developer.adobe.com/console/)) an.
 
@@ -310,5 +301,5 @@ Das war&#39;s! Das ist erst der Anfang. Wenn Sie sich im Abschnitt &quot;Erweite
 
 Das oben angegebene Beispiel für ein einzelnes Dokument kann als Grundlage für eine Anwendung verwendet werden, wenn eine Organisation [die saisonale Einstellung](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters) von Mitarbeitern an mehreren Standorten erhöhen muss. Wie gezeigt, besteht der Hauptfluss darin, Daten von Bewerbern über eine Online-Bewerbung zu sammeln. Die Daten werden verwendet, um die Felder eines Angebotsschreibens auszufüllen und zum elektronischen Unterschreiben zu senden.
 
-[!DNL Adobe Acrobat Services] kann sechs Monate lang kostenlos genutzt werden, danach [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es ausprobieren und Ihren Workflow für Angebotsschreiben skalieren können, wenn Ihr Unternehmen wächst. So [&#x200B; beginnen Sie](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+[!DNL Adobe Acrobat Services] kann sechs Monate lang kostenlos genutzt werden, danach [Pay-as-you-go](https://developer.adobe.com/document-services/pricing/main) für nur 0,05 US-Dollar pro Dokumenttransaktion, sodass Sie es ausprobieren und Ihren Workflow für Angebotsschreiben skalieren können, wenn Ihr Unternehmen wächst. So [ beginnen Sie](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 [Registrieren Sie Ihr Entwicklerkonto](https://developer.adobe.com/), um Ihre eigenen Vorlagen zu erstellen.
