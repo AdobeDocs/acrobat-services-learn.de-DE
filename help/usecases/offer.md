@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -269,15 +269,15 @@ Klicken Sie in Ihrer OfferLetter-Vorlage auf die neue Schaltfläche **Dokumenten
 
 ![Screenshot von Brief und Code](assets/offer_3.png)
 
-Klicken Sie auf die Schaltfläche **Tags generieren**. Sie erhalten ein Dropdown-Menü mit Tags, die Sie an den entsprechenden Stellen im Dokument einfügen können. Markieren Sie das erste X im Dokument, und wählen Sie **[!UICONTROL Vorname]**. Klicken Sie auf **[!UICONTROL Text einfügen]**, und &quot;Lieber X,&quot; wird in &quot;Lieber ```{{`offer_letter`.firstname}}```,&quot; geändert. Dieses Tag hat das richtige Format für `documentMergeOperation`. Nun fügen Sie die restlichen drei Tags an den entsprechenden Xs hinzu. Vergessen Sie nicht, OfferLetter-template.docx zu speichern. Es sollte wie folgt aussehen:
+Klicken Sie auf die Schaltfläche **Tags generieren**. Sie erhalten ein Dropdown-Menü mit Tags, die Sie an den entsprechenden Stellen im Dokument einfügen können. Markieren Sie das erste X im Dokument, und wählen Sie **[!UICONTROL Vorname]**. Klicken Sie auf **[!UICONTROL Text einfügen]**, und &quot;Lieber X,&quot; wird in &quot;Lieber ``{{`offer_letter`.firstname}}``,&quot; geändert. Dieses Tag hat das richtige Format für `documentMergeOperation`. Nun fügen Sie die restlichen drei Tags an den entsprechenden Xs hinzu. Vergessen Sie nicht, OfferLetter-template.docx zu speichern. Es sollte wie folgt aussehen:
 
-Guten Tag ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```,
+Guten Tag ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``,
 
-Wir freuen uns, Ihnen eine Position für ```{{`offer_letter`.salary}}``` $ pro Jahr anbieten zu können. Ihr Startdatum ist ```{{`offer_letter`.startdate}}```.
+Wir freuen uns, Ihnen eine Position für ``{{`offer_letter`.salary}}`` $ pro Jahr anbieten zu können. Ihr Startdatum ist ``{{`offer_letter`.startdate}}``.
 
 Willkommen
 
-Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispielsweise wird ```{{`offer_letter`.`firstname`}}``` am Anfang des Word-Dokuments durch den Wert im Abschnitt &quot;firstName&quot; der JSON-Daten ersetzt.
+Die Word-Vorlage enthält Markup, das dem JSON-Format entspricht. Beispielsweise wird ``{{`offer_letter`.`firstname`}}`` am Anfang des Word-Dokuments durch den Wert im Abschnitt &quot;firstName&quot; der JSON-Daten ersetzt.
 
 Zurück zur `generateLetter`-Funktion. Erstellen Sie zum Sichern Ihres REST-Aufrufs eine neue Datei mit dem Namen pdftools-api-credentials.json im Projektstamm. Fügen Sie die folgenden JSON-Daten ein, und passen Sie sie mit Details aus dem Abschnitt &quot;Service Account (JWT)&quot; (Dienstkonto (JSON-Konto) Ihrer [Entwicklerkonsole](https://developer.adobe.com/console/)) an.
 

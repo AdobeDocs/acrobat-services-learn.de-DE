@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: a02d17d88a2fb822f7715556b097767cb7f49ad5
 workflow-type: tm+mt
 source-wordcount: 2045
 ht-degree: 0%
@@ -120,7 +120,7 @@ Richten Sie zunächst die Ordnerstruktur für die Anwendung Node.js ein. Rufen S
 
 ### Verzeichnisstruktur
 
-Erstellen Sie einen Ordner mit dem Namen AdobeLegalContractAPI und öffnen Sie ihn in einem Editor Ihrer Wahl. Erstellen Sie mithilfe der folgenden Ordnerstruktur eine einfache Anwendung &quot;Node.js&quot; mit dem Befehl &quot;```npm init```&quot;:
+Erstellen Sie einen Ordner mit dem Namen AdobeLegalContractAPI und öffnen Sie ihn in einem Editor Ihrer Wahl. Erstellen Sie mithilfe der folgenden Ordnerstruktur eine einfache Anwendung &quot;Node.js&quot; mit dem Befehl &quot;`npm init`&quot;:
 
 ```
 ###Directory Structure
@@ -210,7 +210,7 @@ Sie benötigen Anmeldeinformationen, um [!DNL Acrobat Services]-APIs verwenden z
 
 Sobald der Anmeldevorgang abgeschlossen ist, wird automatisch ein Codebeispiel auf Ihren PC heruntergeladen, das Ihnen den Einstieg erleichtern soll. Sie können dieses Codebeispiel extrahieren und die Schritte nachvollziehen. Vergessen Sie nicht, die Dateien pdftools-api-credentials.json und private.key aus dem extrahierten Codebeispiel in das Stammverzeichnis des Node.js-Projekts zu kopieren. Die Anmeldeinformationen sind erforderlich, bevor Sie auf [!DNL Acrobat Services] API-Endpunkte zugreifen können. Sie können auch SDK-Beispiele mit Ihren personalisierten Anmeldedaten herunterladen, sodass Sie den Schlüssel im Beispielcode nicht aktualisieren müssen.
 
-Installieren Sie jetzt Adobe PDF Services Node SDK, indem Sie den Befehl &quot;```npm install \--save @adobe/documentservices-pdftools-node-sdk```&quot; mit dem Terminal im Stammverzeichnis der Anwendung ausführen. Nach erfolgreicher Installation können Sie [!DNL Acrobat Services] APIs verwenden, um Dokumente in Ihrer Anwendung zu bearbeiten.
+Installieren Sie jetzt Adobe PDF Services Node SDK, indem Sie den Befehl &quot;`npm install \--save @adobe/documentservices-pdftools-node-sdk`&quot; mit dem Terminal im Stammverzeichnis der Anwendung ausführen. Nach erfolgreicher Installation können Sie [!DNL Acrobat Services] APIs verwenden, um Dokumente in Ihrer Anwendung zu bearbeiten.
 
 ## Erstellen eines PDF-Dokuments
 
