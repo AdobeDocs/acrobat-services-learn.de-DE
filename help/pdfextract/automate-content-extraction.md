@@ -27,4 +27,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie die Extrahierung von Inhalten aus einem PDF-Dokument mithilfe der PDF Extract-API automatisieren. Durch das Extrahieren von PDF-Content können wichtige Geschäftsdaten freigeschaltet und für verschiedene nachgelagerte Prozesse verwendet werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428294?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446687?captions=ger&hidetitle=true)
