@@ -49,7 +49,7 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 * **Anmeldeinformationen für die Testversion oder die Produktion für Adobe PDF Services**
 Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
 * **Microsoft Power Automate mit Premium-Verbindungen**
-Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [ überprüfen ](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
+Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [&#x200B; überprüfen &#x200B;](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
 In diesem Tutorial wird die OneDrive-Speicher-Verbindung verwendet, es kann jedoch jede beliebige Speicher-Verbindung ersetzt werden.
 
