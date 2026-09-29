@@ -1,6 +1,6 @@
 ---
 title: Erstellen Sie Ihren ersten Arbeitsablauf in Microsoft Power Automate
-description: Erfahren Sie, wie Sie den Adobe PDF Services-Connector in Microsoft Power Automate verwenden.
+description: Erfahren Sie, wie Sie die Adobe PDF Services-Verbindung in Microsoft Power Automate verwenden.
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,25 +8,33 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+TQID: 'https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Customer experience
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 2046
+source-wordcount: '2046'
 ht-degree: 1%
-
 ---
-
 # Erstellen Sie Ihren ersten Flow in Microsoft Power Automate
 
-Erfahren Sie, wie Sie Ihren ersten Flow in [Microsoft Power Automate](https://flow.microsoft.com) mithilfe des Connectors für [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) erstellen.
+Erfahren Sie, wie Sie Ihren ersten Flow in [Microsoft Power Automate](https://flow.microsoft.com) mithilfe der Verbindung [Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/) erstellen.
 
 In diesem praktischen Tutorial lernen Sie Folgendes:
 
@@ -40,10 +48,10 @@ In diesem praktischen Tutorial lernen Sie Folgendes:
 
 * **Anmeldeinformationen für die Testversion oder die Produktion für Adobe PDF Services**
 Weitere Informationen zum Abrufen und Konfigurieren von Anmeldeinformationen in Microsoft Power Automate [finden Sie hier](https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate).
-* **Microsoft Power Automate mit Premium-Connectors**
+* **Microsoft Power Automate mit Premium-Verbindungen**
 Erfahren Sie hier, wie Sie die Lizenzierungsstufe für Power Automate [&#x200B; überprüfen &#x200B;](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types).
 * **OneDrive**
-Der OneDrive-Speicheranschluss wird in diesem Tutorial verwendet, aber jeder Speicheranschluss kann ersetzt werden.
+In diesem Tutorial wird die OneDrive-Speicher-Verbindung verwendet, es kann jedoch jede beliebige Speicher-Verbindung ersetzt werden.
 
 ### Beispieldateien
 
@@ -318,7 +326,7 @@ Im OneDrive-Ordner wird die kombinierte PDF angezeigt, auf der Sie jetzt aufgefo
 
 ## Nächste Schritte
 
-In diesem Tutorial haben Sie ein Word-Dokument in einen PDF konvertiert, ein Dokument auf der Grundlage von Daten generiert, Dokumente zusammengeführt und mit einem Kennwort geschützt. Um mehr zu erfahren, erkunden Sie einige der anderen Aktionen, die im Adobe PDF Services-Connector in Microsoft Power Automate verfügbar sind:
+In diesem Tutorial haben Sie ein Word-Dokument in einen PDF konvertiert, ein Dokument auf der Grundlage von Daten generiert, Dokumente zusammengeführt und mit einem Kennwort geschützt. Um mehr zu erfahren, erkunden Sie einige der anderen Aktionen, die in der Adobe PDF Services-Verbindung in Microsoft Power Automate verfügbar sind:
 
 * Sehen Sie sich die in Microsoft Power Automate verfügbaren vorgefertigten Vorlagen an.
 * Erfahren Sie von [Artikeln](https://medium.com/adobetech/tagged/microsoft-power-automate) im Adobe Tech Blog.

@@ -8,24 +8,36 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-TQID: https://experienceleague.adobe.com/vNGyRz2lI4EPl1UTaJxYmR-wa2rKLrI1KggNDTvehQY
+TQID: 'https://experienceleague.adobe.com/vNGyRz2lI4EPl1UTaJxYmR-wa2rKLrI1KggNDTvehQY'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: ab4ae87a-aa37-4da4-8f10-14bcd836549e
+    internal-label: PDF Extract API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Machine learning
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 110
+source-wordcount: '150'
 ht-degree: 0%
-
 ---
-
 # Adobe PDF Extract API - Tutorials.
 
 Struktur- und Inhaltselemente eines PDF können mit einem Webdienst auf Basis von Adobe KI freigeschaltet werden.
@@ -69,8 +81,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/pdfextract/automate-content-extraction" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -7,21 +7,31 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-TQID: https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ
+TQID: 'https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+    internal-label: PDF Electronic Seal API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 159
-ht-degree: 5%
-
+source-wordcount: '199'
+ht-degree: 4%
 ---
-
 # Adobe PDF Electronic Seal API Tutorials
 
 Die Adobe PDF Electronic Seal API wendet ein elektronisches Siegel auf Dokumente in großem Umfang an, indem sie ein Zertifikat verwendet, das von bestimmten Vertrauensdiensten (Trust Service Providers) auf der Liste der zulässigen Vertrauensstellungen (Approved Trust List, AATL) von [Adobe ausgestellt wurde](https://helpx.adobe.com/de/acrobat/kb/approved-trust-list1.html). Das elektronische Siegel hilft bei der Überprüfung der Identität und Integrität von Dokumenten. Dies kann verwendet werden, um Dokumente in großem Umfang elektronisch zu versiegeln, und ist in der PDF Services-API enthalten.
@@ -61,8 +71,8 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/de/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ansehen</span>
-                3
-            </a></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
