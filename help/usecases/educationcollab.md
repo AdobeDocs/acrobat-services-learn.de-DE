@@ -62,7 +62,7 @@ Erfahren Sie, wie [!DNL Adobe Acrobat Services] Ihren Schülern mit PDF ein reic
 
 ## Relevante APIs und Ressourcen
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 

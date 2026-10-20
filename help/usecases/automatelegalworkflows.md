@@ -375,7 +375,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## Vereinbarung zum Unterschreiben senden
 
-Mit [Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html) können Sie Vereinbarungen an einen oder mehrere Empfänger senden, damit diese Dokumente anzeigen und signieren können. Neben einer benutzerfreundlichen Oberfläche zum Senden eines Dokuments zum Signieren sind REST-APIs verfügbar, mit denen Sie Word-, PDF-, HTML- und andere Formate zum Signieren senden können.
+Mit [Adobe Acrobat Sign](https://www.adobe.com/de/acrobat/business/sign.html) können Sie Vereinbarungen an einen oder mehrere Empfänger senden, damit diese Dokumente anzeigen und signieren können. Neben einer benutzerfreundlichen Oberfläche zum Senden eines Dokuments zum Signieren sind REST-APIs verfügbar, mit denen Sie Word-, PDF-, HTML- und andere Formate zum Signieren senden können.
 
 Im folgenden Beispiel wird erläutert, wie Sie die REST API-Dokumentationsseite verwenden, um das zuvor generierte Dokument zu übernehmen und zum Signieren zu senden. Zuerst lernen Sie, wie Sie dies über die Acrobat Sign-Weboberfläche und dann über die REST-API tun können.
 

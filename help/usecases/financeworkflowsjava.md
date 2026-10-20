@@ -47,7 +47,7 @@ In diesem praktischen Tutorial erfahren Sie, wie Sie [!DNL Adobe Acrobat Service
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Projektbeispiele](https://github.com/adobe/pdftools-java-sdk-samples)
 

@@ -292,7 +292,7 @@ Wenn Sie Ihrem Viewer Adobe Analytics-Support hinzufügen möchten, können Sie 
 >
 >Auf Ihrer Webseite muss Adobe Analytics bereits auf der Seite in der Kopfzeile geladen sein.
 
-Navigieren Sie zur [Adobe Analytics-Dokumentation](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) und überprüfen Sie, ob Adobe Analytics bereits auf Ihrer Webseite aktiviert ist. Folgen Sie den Anweisungen zum Einrichten einer reportSuite.
+Navigieren Sie zur [Adobe Analytics-Dokumentation](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics) und überprüfen Sie, ob Adobe Analytics bereits auf Ihrer Webseite aktiviert ist. Folgen Sie den Anweisungen zum Einrichten einer reportSuite.
 
 ### Google Analytics
 

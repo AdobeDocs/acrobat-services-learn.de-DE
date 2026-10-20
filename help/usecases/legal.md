@@ -50,7 +50,7 @@ In diesem Tutorial lernen Sie, wie Verträge in PDF umgewandelt werden. Damit Si
 
 * [API für die Dokumentenerzeugung in Adobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Adobe Sign-API](https://developer.adobe.com/adobesign-api/)
 
