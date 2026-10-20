@@ -61,7 +61,7 @@ Die Anwendung verfügt über die folgenden Funktionen:
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Projektcode](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
@@ -399,7 +399,7 @@ Registrieren Sie einen PDF-View-Rückruf für die SAVE_API, die den Inhalt auf d
   );
 ```
 
-Kommentare und Anmerkungen zu den Dokumententwürfen werden jetzt auf dem Server gespeichert. Sie können [mehr darüber lesen, wie Rückrufe &#x200B;](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in Ihren Workflow passen. [Status-Rückrufe](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) helfen z. B. bei Dateikonflikten, wenn mehrere Personen dasselbe Dokument gleichzeitig überprüfen und kommentieren möchten.
+Kommentare und Anmerkungen zu den Dokumententwürfen werden jetzt auf dem Server gespeichert. Sie können [mehr darüber lesen, wie Rückrufe &#x200B;](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) in Ihren Workflow passen. [Status-Rückrufe](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) helfen z. B. bei Dateikonflikten, wenn mehrere Personen dasselbe Dokument gleichzeitig überprüfen und kommentieren möchten.
 
 Im letzten Schritt kombinieren Sie alle bearbeiteten Dokumente mithilfe der PDF Services API zu einer PDF-Datei.
 

@@ -47,7 +47,7 @@ Richten Sie zunächst eine einfache Express-basierte Web-Anwendung Node.js ein. 
 
 ## Relevante [!DNL Acrobat Services] APIs
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
@@ -294,7 +294,7 @@ In diesem praktischen Tutorial wurde erläutert, wie Sie &quot;Node.js&quot; mit
 
 [!DNL Acrobat Services] hilft Ihnen beim Hinzufügen wichtiger Dokumentbehandlungsfunktionen zu Ihrer Website oder App. Weitere Informationen zu den Möglichkeiten dieser APIs finden Sie in der folgenden Kurzanleitung:
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 

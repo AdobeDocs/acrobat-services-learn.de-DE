@@ -49,7 +49,7 @@ In diesem Tutorial lernen Sie, wie Sie das PDF Services SDK in einer Node.js- un
 
 * [PDF Services-API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF Embed-API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF Embed-API](https://www.adobe.com/de/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 ## Dashboard für Kampagnenberichte für Kunden
 
