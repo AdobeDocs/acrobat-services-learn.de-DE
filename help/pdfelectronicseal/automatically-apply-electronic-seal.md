@@ -32,4 +32,4 @@ ht-degree: 0%
 
 Erfahre, wie du PDF mit einem Cloud-basierten Zertifikat von Drittanbietern mit einem manipulationssicheren elektronischen Siegel versehen kannst. Ein elektronisches Siegel ist wie ein Stempel auf Papier, aber es ist sicherer. Elektronische Siegel tragen zur Überprüfung der Identität und Integrität offizieller Dokumente wie Rechnungen und Abschlüssen bei. Sie verringern so das Risiko in Ihrem Unternehmen, indem sie nachweisen, dass die Dokumente nicht manipuliert wurden. Sie tragen auch dazu bei, sicherzustellen, dass Dokumente in verschiedenen regulatorischen und rechtlichen Workflows rechtlich konform sind.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428346?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3506394?captions=ger&hidetitle=true)

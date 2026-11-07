@@ -32,4 +32,4 @@ ht-degree: 0%
 
 Erfahren Sie, wie Sie mithilfe der Adobe PDF Services-Verbindung in Microsoft Power Automate Dokumente automatisch in großem Umfang generieren, indem Sie die API für die Dokumentenerzeugung aufrufen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428227?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3506383?captions=ger&hidetitle=true)
